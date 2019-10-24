@@ -5,11 +5,11 @@ controller = KOJ
 culture = cosmopolitan_french
 religion = catholic
 capital = "Jerusalem"
-trade_goods = grain
+trade_goods = grain			#why not, leaving it. Too much wool around here anyway
 hre = no
-base_tax = 5 
-base_production = 5
-base_manpower = 3
+base_tax = 6
+base_production = 4
+base_manpower = 2 
 is_city = yes
 add_core = KOJ
 
@@ -23,9 +23,9 @@ discovered_by = east_african
 
 add_province_triggered_modifier = jerusalem_held
 
-#Fifth Crusade Successful
-1221.10.7 = {
-	add_core = KOJ
-	owner = KOJ
-	controller = KOJ
-}
+#1517.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#} # Part of the Ottoman empire
+#1750.1.1 = { add_core = SYR }
