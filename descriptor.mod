@@ -1,6 +1,9 @@
-version="0.0.1"
+version="1"
 tags={
 	"Alternative History"
-	"Historical"
+}
+supported_version = "1.29.*"
+dependencies = {
+	"Beyond Typus (hopefully temp post 1.29 launcher)"
 }
 name="Damietta"
