@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+
+primary_culture = tripolitain
+religion = catholic
+technology_group = western
+capital = 378	# Tripoli
+
+1444.1.1 = {
+	monarch = {
+		birth_date = 1418.3.6
+		name = "Guy"
+		dynasty = "de Tripoli"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

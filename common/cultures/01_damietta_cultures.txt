@@ -1,5 +1,86 @@
+#Crusader cultures, represents a mixing of local Arabs and Bedouins with the Latin Crusaders who migrated to the Levant following the Fifth Crusade
 crusader_cultures = {
+	graphical_culture = westerngfx
+	#Jerusalemite, a blend of French (langue d'oil) crusaders and local Syrian/Palestinian Arabs
 	jerusalemite = {
-		
+		primary = KOJ
+
+		dynasty_names = {
+			"de Brienne" "de Nazareth" "de la Galilée" "Le Tellier" "de Bissy" "de Montmorency" "de Savoie"
+		}
+
+		male_names = {
+			Édouard Aldebert Aldéric Barthélémi Baudouin Benoît Guy Jaufré Jean Josué Raoul Raymond Raynaud Thomas
+			Djamal Atuf Bakr Hisham Husayn Jamaal Malîk Muhammad Zaid Jafar Shihab 
+		}
+
+		female_names = {
+			Éléonore Adèle Adelaide Adelinde Alice Béatrice Blanche
+			Aisha Aziza Farida Hasti Huma Kamala Lala Neelab Niki Rabiya Munawwar Najela Nasiba Sadiya Salma
+		}
+
+	}
+	#Tripolitain, greater Latin (langue d'oc) influence than Jerusalemite. Primarily Occitan, but with remnants of old Syriac culture.
+	tripolitain = {
+
+		dynasty_names = {
+			"de Bohemond" "de Tripoli" "de Bayrut"
+		}
+
+		male_names = {
+			Édouard Aldebert Aldéric Barthélémi Baudouin Benoît Guy Jaufré Jean Raoul Raymond Raynaud Thomas 
+			Achille Adelfo Artemio Bartolomeo Basilio Basil Bassiano Ciro Ciuccio Emmanuele Filippo Flavio Jacopo Paolo Pasquale Otto Pietro
+			Djamal Atuf Bakr Hisham Husayn Jamaal Malîk Muhammad Zaid Jafar Shihab
+		}
+
+		female_names = {
+			Éléonore Adèle Adelaide Adelinde Alice Béatrice Blanche
+			Adelaida Adela Adriana Alda Anna Antonia Augusta Benedetta Chiara Claudia Eugenia Filippa Ginevra Giovanna Lucia
+			Aisha Aziza Farida Hasti Huma Kamala Lala Neelab Niki Rabiya Munawwar Najela Nasiba Sadiya Salma
+		}
+	}
+
+	#Damiettan, a blend of TONS of different Latin cultures (Tuscan, Provençal, Occitain, Norman) and Egyptian Arab
+	damiettan = {
+
+		dynasty_names = {
+			"of Tamiathis" "Rosette" "Alexandre" "Damiette"
+			"Dandolo" "Spinola" "Ventimiglia" "Rangoni" "Zaccaria" "Zorzi" "Tiepolo" "Borromeo"
+		}
+
+		male_names = {
+			Édouard Aldebert Aldéric Barthélémi Baudouin Benoît Guy Jaufré Jean Raoul Raymond Raynaud Thomas
+			Baibars Timurbougha Baye Kahit  
+		}
+
+		female_names = {
+			Éléonore Adèle Adelaide Adelinde Alice Béatrice Blanche
+			Abda Layla Munia Nadia Naila Yasmin
+		}
+
+	}
+	dynasty_names = {
+		"de Garlique"
+	}
+
+	male_names = {
+		Fronk
+	}
+
+	female_names = {
+		Fronka
+	}
+
+}
+
+tartar = {
+	kipchak = {
+		dynasty_names = {
+			Koptid Ghengisid Mansi "Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan" 
+			"Jochid" "Chagatayid" "Borjigin" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar" 
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal" 
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene" 
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
 	}
 }

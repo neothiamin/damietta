@@ -2,7 +2,7 @@
 
 owner = KOJ
 controller = KOJ
-culture = cosmopolitan_french
+culture = jerusalemite
 religion = catholic
 capital = "Jerusalem"
 trade_goods = grain			#why not, leaving it. Too much wool around here anyway

@@ -1,0 +1,10 @@
+#Should never really exist. Mostly for history purposes.
+
+government = monarchy
+add_government_reform = feudalism_reform
+
+primary_culture = kurdish
+religion = sunni
+technology_group = muslim
+capital = 382	#Damascus
+

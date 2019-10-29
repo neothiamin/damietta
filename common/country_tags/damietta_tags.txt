@@ -1,0 +1,9 @@
+#Levant
+
+AYB = "countries/Ayyubids.txt"
+CTR = "countries/CountyOfTripoli.txt"
+
+
+#Egypt
+
+DMI = "countries/Damietta.txt"

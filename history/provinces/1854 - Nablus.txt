@@ -1,9 +1,9 @@
 #1854 - Negev
 
-owner = MAM
-controller = MAM
-culture = al_suryah_arabic
-religion = sunni
+owner = KOJ
+controller = KOJ
+culture = jerusalemite
+religion = catholic
 capital = "Jaffa"
 trade_goods = fish
 hre = no
@@ -12,7 +12,7 @@ base_production = 4			#According to the traveller Cotwyk, Jaffa was a heap of ru
 base_manpower = 2 			#Still giving 5 dev, because it became important later and was important before
 is_city = yes
 estate = estate_nobles
-add_core = MAM
+add_core = KOJ
 
 discovered_by = western
 discovered_by = muslim
@@ -23,9 +23,9 @@ discovered_by = indian
 discovered_by = east_african
 
 
-1517.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-} # Part of the Ottoman empire
-1750.1.1 = { add_core = SYR }
+#1517.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#} # Part of the Ottoman empire
+#1750.1.1 = { add_core = SYR }

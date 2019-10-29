@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+
+primary_culture = jerusalemite
+religion = catholic
+technology_group = western
+capital = 379	# Jerusalem
+
+1210.1.1 = {
+	monarch = {
+		birth_date = 1170.1.1
+		death_date = 1237.3.22
+		name = "John"
+		dynasty = "of Brienne"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+
