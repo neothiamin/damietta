@@ -1,0 +1,4 @@
+damietta_lake_manzala = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}

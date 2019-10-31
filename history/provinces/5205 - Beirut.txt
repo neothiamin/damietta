@@ -1,8 +1,8 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = KOJ #was MAM
+controller = KOJ #was MAM
+add_core = KOJ #was MAM
 culture = syriac_culture
 religion = catholic			#Maronite Catholics
 capital = "Beirut"

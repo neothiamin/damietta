@@ -1,8 +1,8 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = KOJ #Was MAM
+controller = KOJ #Was MAM
+add_core = KOJ #Was MAM
 culture = al_suryah_arabic
 religion = sunni
 capital = "Shoubak"

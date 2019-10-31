@@ -2,14 +2,14 @@
 
 owner = KOJ #Was MAM
 controller = KOJ #Was MAM
-culture = jerusalemite #Was Levantine (Arabic)
-religion = catholic #Was Sunni
+culture = jerusalemite #Was al_suryah_arabic
+religion = catholic #Was sunni
 capital = "Jaffa"
 trade_goods = fish
 hre = no
-base_tax = 4 		#in the 14th century, the city was completely destroyed for fear of new crusades. 
-base_production = 4			#According to the traveller Cotwyk, Jaffa was a heap of ruins at the end of the 16th century.
-base_manpower = 2 			#Still giving 5 dev, because it became important later and was important before
+base_tax = 9 		#in the 14th century, the city was completely destroyed for fear of new crusades. 
+base_production = 7			#According to the traveller Cotwyk, Jaffa was a heap of ruins at the end of the 16th century.
+base_manpower = 6 			#Still giving 5 dev, because it became important later and was important before
 is_city = yes
 #estate = estate_nobles
 add_core = KOJ #Was MAM

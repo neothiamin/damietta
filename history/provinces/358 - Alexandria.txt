@@ -2,14 +2,14 @@
 
 owner = DMI #Was MAM
 controller = DMI #Was MAM
-culture = damiettan #Was al_misr_arabic
+culture = al_misr_arabic
 religion = coptic
 capital = "Alexandrie"
 trade_goods = fish			#spices in vanilla... what spices? or Even what trade route for others' spices? This was a major port, but the spice trade was elsewhere after Arab conquest
 hre = no
 base_tax = 8
 base_production = 8
-base_manpower = 4
+base_manpower = 5
 is_city = yes
 estate = estate_burghers
 add_core = DMI #Was MAM

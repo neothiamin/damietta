@@ -1,0 +1,5 @@
+358 = "Alessandrie" #French Alexandrie + Italian Alessandria
+362 = "Trascitta" #The names "Rashid","Rosetta", and "Rosette" are all corruptions of the Coptic "Trashit". I basically Italianized Trashit.
+5261 = "Damiette" #French for Damietta
+363 = "Pelusio" #Italianized Pelusium
+4316 = "Sagsic" #Bastardized "Zagazig"
