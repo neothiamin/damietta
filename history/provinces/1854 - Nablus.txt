@@ -1,9 +1,9 @@
 #1854 - Negev
 
-owner = KOJ
-controller = KOJ
-culture = jerusalemite
-religion = catholic
+owner = KOJ #Was MAM
+controller = KOJ #Was MAM
+culture = jerusalemite #Was Levantine (Arabic)
+religion = catholic #Was Sunni
 capital = "Jaffa"
 trade_goods = fish
 hre = no
@@ -11,8 +11,8 @@ base_tax = 4 		#in the 14th century, the city was completely destroyed for fear 
 base_production = 4			#According to the traveller Cotwyk, Jaffa was a heap of ruins at the end of the 16th century.
 base_manpower = 2 			#Still giving 5 dev, because it became important later and was important before
 is_city = yes
-estate = estate_nobles
-add_core = KOJ
+#estate = estate_nobles
+add_core = KOJ #Was MAM
 
 discovered_by = western
 discovered_by = muslim

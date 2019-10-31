@@ -1,10 +1,10 @@
 #New Province
 
-owner = DMI
-controller = DMI
-add_core = DMI
+owner = DMI #Was Mam
+controller = DMI #Was Mam
+add_core = DMI #Was Mam
 capital = "Damietta"
-culture = damiettan
+culture = damiettan #was al_misr_arabic
 religion = coptic
 trade_goods = fish			#famous for furniture (starting when?), cheese, deserts, fish, and one of the main routes to the Indian Ocean before Mamluk era...
 hre = no

@@ -1,8 +1,8 @@
 #363 - Diamientia
 
-owner = DMI
-controller = DMI
-culture = damiettan
+owner = DMI #was MAM
+controller = DMI #was MAM
+culture = damiettan #Was al_misr_arabic
 religion = sunni
 capital = "Pelusia"
 trade_goods = fish
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4 
 base_manpower = 2 
 is_city = yes
-add_core = DMI
+add_core = DMI #was MAM
 
 discovered_by = western
 discovered_by = muslim

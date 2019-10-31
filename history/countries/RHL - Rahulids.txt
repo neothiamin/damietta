@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = iqta_reform
+
+primary_culture = al_misr_arabic
+religion = sunni
+technology_group = muslim
+capital = 361	#Cairo
+
+1243.10.7 = {
+	monarch = {
+		name = "Omar"
+		dynasty = "Rahulid"
+		adm = 2
+		dip = 3
+		mil = 6
+		birth_date = 1205.4.15
+	}
+}

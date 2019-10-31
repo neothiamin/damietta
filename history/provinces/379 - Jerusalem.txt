@@ -1,9 +1,9 @@
 #379 - Judea
 
-owner = KOJ
-controller = KOJ
-culture = jerusalemite
-religion = catholic
+owner = KOJ #Was MAM
+controller = KOJ #Was MAM
+culture = jerusalemite #Was Levantine (Arabic)
+religion = catholic #Was Sunni
 capital = "Jerusalem"
 trade_goods = grain			#why not, leaving it. Too much wool around here anyway
 hre = no
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 4
 base_manpower = 2 
 is_city = yes
-add_core = KOJ
+add_core = KOJ #Was MAM
 
 discovered_by = muslim
 discovered_by = ottoman

@@ -1,10 +1,10 @@
 #4317 - Buhaira
 
-owner = DMI
-controller = DMI
-add_core = DMI
+owner = DMI #was MAM
+controller = DMI #was MAM
+add_core = DMI #was MAM
 capital = "Damanhur"
-culture = damiettan
+culture = damiettan #was al_misr_arabic
 religion = coptic
 trade_goods = grain			#great agriculture
 hre = no

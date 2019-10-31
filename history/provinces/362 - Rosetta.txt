@@ -1,7 +1,7 @@
 #362 - Delta
 
-owner = DMI
-controller = DMI
+owner = DMI #was MAM
+controller = DMI #was MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "Bolbitine"
@@ -11,7 +11,7 @@ base_tax = 10
 base_production = 10
 base_manpower = 6
 is_city = yes
-add_core = DMI
+add_core = DMI #was MAM
 add_core = KEM
 
 discovered_by = western

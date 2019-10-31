@@ -1,7 +1,7 @@
 #361 - Cairo
 
-owner = MAM
-controller = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "Al Qahira"
@@ -12,7 +12,7 @@ base_production = 16
 base_manpower = 12
 is_city = yes
 fort_15th = yes 
-add_core = MAM
+add_core = RHL #was MAM
 add_core = KEM
 
 discovered_by = western
@@ -25,7 +25,7 @@ discovered_by = east_african
 
 extra_cost = 10
 
-center_of_trade = 3
+center_of_trade = 2
 
 
 1517.1.1 = {	owner = TUR

@@ -1,10 +1,10 @@
 #4316 - Mansura
 
-owner = DMI
-controller = DMI
-add_core = DMI
+owner = DMI #Was MAM
+controller = DMI #Was MAM
+add_core = DMI #Was MAM
 capital = "Ez Zaqaziq"
-culture = damiettan
+culture = damiettan #was al_misr_arabic
 religion = coptic
 trade_goods = grain			#Main centre of grain & cotton industry
 hre = no
