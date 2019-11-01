@@ -1,7 +1,7 @@
 #2317 - Minya
 
-owner = MAM
-controller = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "El Minya"
@@ -12,7 +12,7 @@ base_production = 5
 base_manpower = 4 
 is_city = yes
 estate = estate_nobles
-add_core = MAM
+add_core = RHL #was MAM
 add_core = KEM
 
 discovered_by = western

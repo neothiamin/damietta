@@ -1,8 +1,8 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
+add_core = RHL #was MAM
 culture = bedouin_arabic
 religion = sunni
 capital = "Nekhel"

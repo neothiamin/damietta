@@ -1,12 +1,12 @@
 #1232 - Suakin
 
-owner = MAM
-controller = MAM
-add_core = MAM
+#owner = MAM
+#controller = MAM
+#add_core = MAM
 culture = beja
 religion = sunni
 capital = "Sawakin"
-is_city = yes
+#is_city = yes
 base_manpower = 2 
 trade_goods = slaves
 hre = no

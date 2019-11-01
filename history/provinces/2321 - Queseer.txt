@@ -1,8 +1,8 @@
 #2321 - Queseer
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
+add_core = RHL #was MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "El Oser"

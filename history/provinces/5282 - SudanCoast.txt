@@ -1,10 +1,10 @@
 #New Province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+#owner = MAM
+#controller = MAM
+#add_core = MAM
 capital = "Bur as Sudan"
-is_city = yes
+#is_city = yes
 culture = beja
 religion = sunni
 trade_goods = unknown

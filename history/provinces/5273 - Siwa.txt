@@ -1,8 +1,8 @@
 #New Province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+#owner = MAM
+#controller = MAM
+#add_core = MAM
 capital = "Siwah"
 culture = libyan_berber_culture
 religion = sunni
@@ -11,9 +11,9 @@ hre = no
 base_tax = 1 
 base_production = 1 
 base_manpower = 1 
-is_city = yes
+#is_city = no
 add_local_autonomy = 50
-estate = estate_nobles
+#estate = estate_nobles
 
 
 discovered_by = muslim

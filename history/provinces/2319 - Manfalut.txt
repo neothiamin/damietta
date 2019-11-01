@@ -1,7 +1,7 @@
 #2319 - Asyut
 
-owner = MAM
-controller = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
 culture = coptic_culture
 religion = coptic
 capital = "Asyut"
@@ -12,7 +12,7 @@ base_production = 6
 base_manpower = 3 
 is_city = yes
 estate = estate_dhimmi
-add_core = MAM
+add_core = RHL #was MAM
 add_core = KEM
 
 discovered_by = western

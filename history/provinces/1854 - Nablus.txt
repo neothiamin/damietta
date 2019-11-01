@@ -4,7 +4,7 @@ owner = KOJ #Was MAM
 controller = KOJ #Was MAM
 culture = jerusalemite #Was al_suryah_arabic
 religion = catholic #Was sunni
-capital = "Jaffa"
+capital = "Haifa"
 trade_goods = fish
 hre = no
 base_tax = 9 		#in the 14th century, the city was completely destroyed for fear of new crusades. 
@@ -13,6 +13,8 @@ base_manpower = 6 			#Still giving 5 dev, because it became important later and 
 is_city = yes
 #estate = estate_nobles
 add_core = KOJ #Was MAM
+
+center_of_trade = 2
 
 discovered_by = western
 discovered_by = muslim

@@ -1,7 +1,7 @@
 #359 - Faiyum
 
-owner = MAM
-controller = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
 culture = coptic_culture
 religion = coptic
 capital = "Al Fayyum"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 4 
 is_city = yes
-add_core = MAM
+add_core = RHL #was MAM
 add_core = KEM
 
 discovered_by = western

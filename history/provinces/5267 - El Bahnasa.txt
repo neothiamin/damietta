@@ -1,8 +1,8 @@
 #New Province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
+add_core = RHL #was MAM
 capital = "Baniswef"
 culture = al_misr_arabic
 religion = sunni

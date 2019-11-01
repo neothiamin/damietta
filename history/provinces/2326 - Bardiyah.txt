@@ -1,7 +1,7 @@
 #2326 - Bardiyah
 
-owner = MAM
-controller = MAM
+#owner = MAM
+#controller = MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "Tubruq"
@@ -10,8 +10,8 @@ hre = no
 base_tax = 1  
 base_production = 1 
 base_manpower = 1 
-is_city = yes
-add_core = MAM
+#is_city = yes
+#add_core = MAM
 add_local_autonomy = 50
 
 

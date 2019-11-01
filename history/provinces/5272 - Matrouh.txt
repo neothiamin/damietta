@@ -1,8 +1,8 @@
 #New Province
 
-owner = MAM
-controller = MAM
-add_core = MAM
+#owner = MAM
+#controller = MAM
+#add_core = MAM
 capital = "Mersa"
 culture = al_misr_arabic
 religion = sunni
@@ -11,7 +11,7 @@ hre = no
 base_tax = 1 
 base_production = 1 
 base_manpower = 1 
-is_city = yes
+#is_city = yes
 add_local_autonomy = 50
 
 

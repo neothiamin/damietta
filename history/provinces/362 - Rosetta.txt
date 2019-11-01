@@ -2,7 +2,7 @@
 
 owner = DMI #was MAM
 controller = DMI #was MAM
-culture = al_misr_arabic
+culture = coptic_culture #was al_misr_arabic
 religion = sunni
 capital = "Bolbitine"
 trade_goods = fish

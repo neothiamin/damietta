@@ -1,8 +1,8 @@
 #2324 - Halaib
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
+add_core = RHL #was MAM
 culture = beja
 religion = sunni
 capital = "Hala'ib"

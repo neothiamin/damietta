@@ -1,7 +1,7 @@
 #2315 - Suez
 
-owner = MAM
-controller = MAM
+owner = RHL #was MAM
+controller = RHL #was MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "Suweis"			#Sure, why not. Many spelling variations, going with vanilla. Also appears Suez existed prior to the Suez Canal
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3 
 base_manpower = 2 
 is_city = yes
-add_core = MAM
+add_core = RHL #was MAM
 
 discovered_by = muslim
 discovered_by = ottoman

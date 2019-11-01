@@ -1,6 +1,6 @@
-owner = BEJ
-controller = BEJ
-add_core = BEJ
+#owner = BEJ
+#controller = BEJ
+#add_core = BEJ
 capital = "Abrak"			#or Wadi Allaqi
 culture = beja
 religion = sunni
@@ -9,7 +9,7 @@ hre = no
 base_tax = 1 
 base_production = 1 
 base_manpower = 1 
-is_city = yes
+#is_city = yes
 
 
 discovered_by = muslim
