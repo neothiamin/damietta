@@ -1,11 +1,11 @@
 #2296 - Biga
 
-owner = TUR
-controller = TUR
-add_core = TUR
-culture = turkish
-religion = sunni
-capital = "Kale-i Sultaniye"			#Çanakkale was an Ottoman fortress called Kale-i Sultaniye. Not actually until 1460s, but whatever, close enough
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
+culture = greek #was turkish
+religion = orthodox #was sunni
+capital = "Dardanellia" #was "Kale-i Sultaniye"			#Çanakkale was an Ottoman fortress called Kale-i Sultaniye. Not actually until 1460s, but whatever, close enough
 trade_goods = glass			#From the late 17th century it alsor became known for its fine-glazed pottery, but before that, sure, Naval supplies are fine. 
 hre = no
 base_tax = 3

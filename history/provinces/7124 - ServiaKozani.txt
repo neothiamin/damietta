@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ
+controller = BYZ
+add_core = BYZ
 culture = greek
 religion = orthodox
 capital = "Servia"
@@ -12,7 +12,8 @@ base_manpower = 1
 trade_goods = bt_trade_good_apiculture			#mildly rugged area, generic good.
 is_city = yes
 hre = no
-estate = estate_dhimmi
+add_core = PRL
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

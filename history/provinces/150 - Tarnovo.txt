@@ -1,7 +1,7 @@
 #150 - Bulgaria
 
-owner = TUR
-controller = TUR
+owner = BUL
+controller = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Tarnovo"
@@ -10,9 +10,9 @@ hre = no
 base_tax = 3
 base_production = 3
 base_manpower = 3
-estate = estate_dhimmi
+#estate = estate_dhimmi
 is_city = yes
-add_core = TUR
+#add_core = TUR
 add_core = BUL
 fort_15th = yes
 
@@ -31,8 +31,8 @@ center_of_trade = 1
 
 #Country breaks
 #1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
-1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+#1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1413.1.1 = { revolt = {} controller = TUR }
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
 1556.1.1 = { unrest = 2 }
 1598.1.1 = { unrest = 6 } # Oppositions around Tarnovo

@@ -1,7 +1,7 @@
 #3171 - Komotini
 
-owner = TUR
-controller = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
 culture = greek
 religion = orthodox
 capital = "Komotini"
@@ -11,8 +11,8 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = TUR
-estate = estate_dhimmi
+add_core = BYZ #was TUR
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

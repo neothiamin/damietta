@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BUL
+controller = BUL
+#add_core = TUR
 add_core = BUL
 culture = bulgarian
 religion = orthodox

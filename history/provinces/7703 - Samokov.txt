@@ -1,8 +1,9 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = VBZ
+controller = VBZ
+add_core = BUL
+add_core = VBZ
 culture = bulgarian
 religion = orthodox
 capital = "Samokov"
@@ -12,7 +13,7 @@ base_manpower = 1
 trade_goods = naval_supplies
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

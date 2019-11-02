@@ -1,7 +1,8 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = ALI
-controller = ALI
+owner = RUM #was ALI
+controller = RUM #was ALI
+add_core = RUM #was ALI
 add_core = ALI
 culture = turkish
 religion = sunni

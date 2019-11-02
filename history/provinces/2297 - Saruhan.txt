@@ -1,11 +1,11 @@
 #2297 - Saruhan
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
 add_core = SRU
-culture = turkish
-religion = sunni
+culture = greek #was turkish
+religion = orthodox #was sunni
 capital = "Manisa"
 trade_goods = cotton			#eh... whatever, not the worst choice, had some good growing land, but I can't find evidence of anything outstanding at the moment
 hre = no

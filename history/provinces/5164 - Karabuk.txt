@@ -1,8 +1,8 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = CND
-controller = CND
-add_core = CND
+owner = RUM #was CND
+controller = RUM #was CND
+add_core = RUM #was CND
 culture = turkish
 religion = sunni
 capital = "Karabük"

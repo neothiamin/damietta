@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = VEN #Sold to Venice in Damietta's TL
+controller = VEN
+add_core = VEN
 add_core = BYZ
 culture = greek
 religion = orthodox
@@ -13,7 +13,7 @@ base_manpower = 1
 trade_goods = fish			#No real reason
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

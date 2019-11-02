@@ -1,11 +1,11 @@
 #318 - Sugla
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
 add_core = AYD
-culture = turkish #Should not be Greek or Orthodox in 1444. Its status as a majority Greek city dates to at least after the 17th Century	-Also a vanilla note, though I'd tend to agree in theory.
-religion = sunni
+culture = greek #was turkish #justification here being that Smyrna was a large, coastal city. Doukas Vatatzes, like in IRL, rebuilt the city in 1222, and though it sits on the border with the Seljuks, the local fortress kept the city wealthy.
+religion = orthodox #was sunni
 capital = "Izmir"			#Wonder where vanilla got Izmirni varient? I could only find Izmir
 trade_goods = salt 			#Major Ottoman Salt Work	-Driaocht that is a vanilla note, if they note it, they're usually sure, so going with it
 hre = no
@@ -13,6 +13,7 @@ base_tax = 3  			#arrival of Sephardic Jews from Spain after 1492; they later ma
 base_production = 3 			# as indicated by the first extant Ottoman records describing the town and dating from 1528. Total population estimated between 3500 and 5000 (in 1528). Despite earlier importance to the Byzantines, rather small at this point
 base_manpower = 2
 is_city = yes
+fort_15th = yes #see above
 
 extra_cost = 8
 center_of_trade = 1

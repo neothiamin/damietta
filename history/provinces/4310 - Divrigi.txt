@@ -1,10 +1,11 @@
 #4308 - Divrigi
 
-owner = AKK
-controller = AKK
+owner = RUM #was AKK
+controller = RUM #was AKK
+add_core = RUM
 add_core = AKK
 add_core = ERE
-add_core = QAR
+#add_core = QAR Don't think this is necessary
 culture = armenian
 religion = coptic
 capital = "Kharput"

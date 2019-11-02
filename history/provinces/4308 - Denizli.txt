@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = RUM #was TUR
+controller = RUM #was TUR
+add_core = RUM #was TUR
 add_core = AYD
 culture = turkish
 religion = sunni

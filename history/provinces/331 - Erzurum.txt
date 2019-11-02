@@ -1,7 +1,8 @@
 #331 - Erserum
 
-owner = AKK
-controller = AKK
+owner = RUM
+controller = RUM
+add_core = RUM
 add_core = AKK
 add_core = ERE
 add_core = QAR

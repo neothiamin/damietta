@@ -1,7 +1,7 @@
 #BT Balkans reoverhaul
 
-owner = BUL
-controller = BUL
+owner = DRJ #was BUL
+controller = DRJ #was BUL
 add_core = BUL
 add_core = DRJ
 culture = bulgarian			#Niki placed turkish, noting Sari Saltak, but I'm opting for a poorer province for this representation. And that is assuming it is even true, and not just folklore
@@ -31,38 +31,38 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1347.1.1 = {
-	owner = DRJ
-	controller = DRJ
-	add_core = DRJ
-	base_tax = 4
-	base_production = 4
-	base_manpower = 3
-}	#despotate of Dobruja, becomes the capital
-1387.1.1 = {
-	owner = WAL
-	controller = WAL
-	add_core = WAL
-}	#taken by Wallachia
-1397.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	base_tax = 2
-	base_production = 2
-	base_manpower = 1
-}	#falls to Turkey the first time, destroyed utterly
-#1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
-1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1406.1.1 = {
-	owner = WAL
-	controller = WAL
-}#to Walachia again
-1413.1.1 = { revolt = {} controller = TUR }
-1417.1.1 = {
-	owner = TUR
-	controller = TUR
-} #falls to Turkey
+#1347.1.1 = {
+#	owner = DRJ
+#	controller = DRJ
+#	add_core = DRJ
+#	base_tax = 4
+#	base_production = 4
+#	base_manpower = 3
+#}	#despotate of Dobruja, becomes the capital
+#1387.1.1 = {
+#	owner = WAL
+#	controller = WAL
+#	add_core = WAL
+#}	#taken by Wallachia
+#1397.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	base_tax = 2
+#	base_production = 2
+#	base_manpower = 1
+#}	#falls to Turkey the first time, destroyed utterly
+##1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
+#1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1406.1.1 = {
+#	owner = WAL
+#	controller = WAL
+#}#to Walachia again
+#1413.1.1 = { revolt = {} controller = TUR }
+#1417.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#} #falls to Turkey
 
 #2nd Shattering unused
 #2nd Performance Start Unused

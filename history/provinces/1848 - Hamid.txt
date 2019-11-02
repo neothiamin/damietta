@@ -1,8 +1,8 @@
 #1848 - Hamid
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = RUM #was TUR
+controller = RUM #was TUR
+add_core = RUM #was TUR
 add_core = GRM
 add_core = TKK
 culture = turkish

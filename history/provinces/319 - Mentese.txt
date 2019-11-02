@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }	#Mughla Basin. Dub's suggestion, works for me.
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = RUM #was TUR
+controller = RUM #was TUR
+add_core = RUM #was TUR
 add_core = MEN
 culture = turkish
 religion = sunni

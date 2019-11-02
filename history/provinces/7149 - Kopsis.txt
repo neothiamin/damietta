@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR			#KPS when I have time to add tags
-controller = TUR
-add_core = TUR
+owner = BUL			#KPS when I have time to add tags
+controller = BUL
+add_core = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Kopsis"
@@ -29,13 +29,13 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1300.1.1 = { owner = BUL controller = BUL add_core = BUL }	#Voysil and Radoslav defeated around this time, Kopsis reintegrated into Bulgaria
-1393.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	estate = estate_dhimmi
-}	#taken by Turkey, devastated
+#1300.1.1 = { owner = BUL controller = BUL add_core = BUL }	#Voysil and Radoslav defeated around this time, Kopsis reintegrated into Bulgaria
+#1393.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	estate = estate_dhimmi
+#}	#taken by Turkey, devastated
 
 #2nd Shattering unused
 #2nd Performance Start Unused

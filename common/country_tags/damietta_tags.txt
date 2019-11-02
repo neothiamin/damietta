@@ -8,3 +8,6 @@ CTR = "countries/CountyOfTripoli.txt"
 
 DMI = "countries/Damietta.txt"
 RHL = "countries/Rahulids.txt"
+
+#Balkans
+PRL = "countries/Prilep.txt"

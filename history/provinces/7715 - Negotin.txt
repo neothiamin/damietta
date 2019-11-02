@@ -1,8 +1,9 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BDN
+controller = BDN
+add_core = BDN
+add_core = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Negotin"
@@ -12,7 +13,7 @@ base_manpower = 2
 trade_goods = copper
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

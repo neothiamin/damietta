@@ -1,8 +1,8 @@
 #4396 - Bitlis and Hakkari
 
-owner = HSN
-controller = HSN
-add_core = HSN
+owner = QAR #was HSN
+controller = QAR #was HSN
+add_core = QAR #was HSN
 capital = "Siirt"			#Syriac version is Si'reth
 culture = syriac_culture
 religion = coptic

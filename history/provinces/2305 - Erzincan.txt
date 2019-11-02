@@ -1,7 +1,8 @@
 #2305 - Erzincan
 
-owner = AKK
-controller = AKK
+owner = RUM #was AKK
+controller = RUM #was AKK
+add_core = RUM
 add_core = AKK
 add_core = ERE
 culture = armenian			#Marco Polo, who wrote about his visit to Erzincan, said that the "people of the country are Armenians" and that Erzincan was the "noblest of cities" which contained the See of an Archbishop.

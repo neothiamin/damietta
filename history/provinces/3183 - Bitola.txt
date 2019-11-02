@@ -1,7 +1,7 @@
 #3183 - Bitola
 
-owner = TUR
-controller = TUR
+owner = PRL
+controller = PRL
 culture = bulgarian
 religion = orthodox
 capital = "Vitolia"			#Monastir in Ottoman Turkish
@@ -11,9 +11,9 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = TUR
+add_core = PRL
 fort_15th = yes
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 extra_cost = 8
 center_of_trade = 1

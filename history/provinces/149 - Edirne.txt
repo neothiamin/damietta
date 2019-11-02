@@ -1,7 +1,7 @@
 #149 - Edirne
 
-owner = TUR
-controller = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
 culture = greek
 religion = orthodox
 capital = "Edirne"
@@ -12,7 +12,7 @@ base_production = 6			#Population of circa 75,000 makes it larger than Constanti
 base_manpower = 5
 is_city = yes
 #fort_15th = yes #Fortress of Gallipoli
-add_core = TUR
+add_core = BYZ #was TUR
 
 extra_cost = 16
 center_of_trade = 2
@@ -27,9 +27,9 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
-1402.1.1 = { revolt = { type = pretender_rebels size = 1 name = "Süleyman's Faction" leader = "Süleyman Osmanoglu" } controller = REB } # Interregnum
-1410.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 name = "Mûsa's Faction" leader = "Mûsa Osmanoglu" } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+#1402.1.1 = { revolt = { type = pretender_rebels size = 1 name = "Süleyman's Faction" leader = "Süleyman Osmanoglu" } controller = REB } # Interregnum
+#1410.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 name = "Mûsa's Faction" leader = "Mûsa Osmanoglu" } controller = REB }
+#1413.1.1 = { revolt = {} controller = TUR }
 1459.1.1 = {
 	base_tax = 5
 	base_production = 5

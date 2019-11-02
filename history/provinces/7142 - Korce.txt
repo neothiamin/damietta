@@ -1,8 +1,9 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = PRL
+controller = PRL
+#add_core = TUR
+add_core = PRL
 add_core = ALB
 add_core = EPI
 culture = albanian

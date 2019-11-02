@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
 culture = greek
 religion = orthodox
 capital = "Kavala"
@@ -12,7 +12,7 @@ base_manpower = 1
 trade_goods = fish			#Found some mention of BC mines and silver mining, possibly under Ottomans as well but unclear. Going with fishing, as Kavalan fishermen were apparently famous throughout Greece
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

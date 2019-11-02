@@ -1,10 +1,10 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = TUR
-controller = TUR
-add_core = TUR
-culture = turkish
-religion = sunni
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
+culture = greek #was turkish
+religion = orthodox #was sunni
 capital = "Ayvalik"
 trade_goods = paper
 hre = no

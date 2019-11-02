@@ -3,9 +3,9 @@
 latent_trade_goods = {
 	coal
 }
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
 culture = greek
 religion = orthodox
 capital = "Drama"
@@ -15,7 +15,7 @@ base_manpower = 1
 trade_goods = paper			#Might be slightly anachronistic, but placing paper is very hard, so going with it where I can.
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

@@ -1,7 +1,8 @@
 #323 - Konya
 
-owner = KAR
-controller = KAR
+owner = RUM #was KAR
+controller = RUM #was KAR
+add_core = RUM
 add_core = KAR
 culture = turkish
 religion = sunni

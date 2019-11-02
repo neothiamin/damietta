@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
 culture = turkish
 religion = sunni
 capital = "Boli"			#early version of Bolu, if wiki can be trusted at all (it can't, but I don't feel like searching better sources atm)

@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-owner = TUR
-controller = TUR
+owner = BUL
+controller = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Sofia"
@@ -16,7 +16,7 @@ base_production = 4			#Ottoman records give circa 6,000 citizens in the early 16
 base_manpower = 3
 is_city = yes
 estate = estate_dhimmi
-add_core = TUR
+#add_core = TUR
 add_core = BUL
 fort_15th = yes
 
@@ -33,8 +33,8 @@ discovered_by = western
 extra_cost = 16
 center_of_trade = 2
 
-1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+#1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1413.1.1 = { revolt = {} controller = TUR }
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
 1556.1.1 = { unrest = 2 }
 1598.1.1 = { unrest = 6 } # Oppositions around Tarnovo

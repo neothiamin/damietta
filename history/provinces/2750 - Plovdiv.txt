@@ -33,19 +33,19 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1371.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	base_manpower = 3
-	estate = estate_dhimmi
-} #falls to Turkey, devastated
-1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1442.1.1= {
-	base_tax = 4
-	base_production = 4 
-	base_manpower = 2
-} #no longer the capital of Rumelia
+#1371.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	base_manpower = 3
+#	estate = estate_dhimmi
+#} #falls to Turkey, devastated
+#1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1442.1.1= {
+#	base_tax = 4
+#	base_production = 4 
+#	base_manpower = 2
+#} #no longer the capital of Rumelia
 
 #2nd Shattering unused
 #2nd Performance Start Unused
@@ -55,7 +55,7 @@ discovered_by = western
 	base_production = 5
 	base_manpower = 3
 } #slow recovery of the Balkans
-1413.1.1 = { revolt = {} controller = TUR }
+#1413.1.1 = { revolt = {} controller = TUR }
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
 1556.1.1 = { unrest = 2 }
 1598.1.1 = { unrest = 6 } # Oppositions around Tarnovo

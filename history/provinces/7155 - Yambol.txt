@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BUL
+controller = BUL
+#add_core = TUR
 add_core = BUL
 culture = bulgarian
 religion = orthodox
@@ -13,7 +13,7 @@ base_manpower = 1
 trade_goods = grain			#major agricultural region
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

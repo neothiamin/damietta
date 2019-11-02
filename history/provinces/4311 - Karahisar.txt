@@ -1,8 +1,8 @@
 #4311 - Karahisar
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = RUM #was TUR
+controller = RUM #was TUR
+add_core = RUM #was TUR
 add_core = GRM
 culture = turkish
 religion = sunni

@@ -1,7 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = BYZ
-controller = BYZ
+owner = BUL
+controller = BUL
+add_core = BUL
 add_core = BYZ
 culture = greek			#Per wiki 'The town was inhabited predominantly by Greeks up to the post-World War I population exchanges between Bulgaria and Greece.'. Normally I'm dubious about claims like this, but Greeks were definitely the dominant power throughout the region at Ottoman conquest, so I'm going with it.
 religion = orthodox
@@ -29,19 +30,19 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1344.1.1 = {
-	owner = BUL
-	controller = BUL
-	add_core = BUL
-} #taken by Bulgaria during BYZ civil war
-1372.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	base_tax = 1
-	base_production = 1
-	estate = estate_dhimmi
-}	#taken by Turkey, devastated
+#1344.1.1 = {
+#	owner = BUL
+#	controller = BUL
+#	add_core = BUL
+#} #taken by Bulgaria during BYZ civil war
+#1372.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	base_tax = 1
+#	base_production = 1
+#	estate = estate_dhimmi
+#}	#taken by Turkey, devastated
 
 #2nd Shattering unused
 #2nd Performance Start Unused

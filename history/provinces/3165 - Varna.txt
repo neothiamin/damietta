@@ -1,7 +1,8 @@
 #3165 - Varna
 
-owner = BUL
-controller = BUL
+owner = DRJ
+controller = DRJ
+add_core = DRJ
 add_core = BUL
 culture = bulgarian
 religion = orthodox
@@ -32,31 +33,31 @@ center_of_trade = 1
 #1st Shattering unused
 #1st Performance Start Unused
 
-1347.1.1 = {
-	owner = DRJ
-	controller = DRJ
-	add_core=DRJ
-} #despotate of Dobruja
-1389.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-} #falls to Turkey the first time
-1417.1.1 = {
-	owner = BYZ
-	controller = BYZ
-	remove_core = TUR
-	add_core = BYZ
-} #ceded to Byzantium
-1444.11.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	estate = estate_dhimmi
-	base_tax = 3
-	base_production = 3
-	base_manpower = 2
-} #falls to Turkey again, devastated
+#1347.1.1 = {
+#	owner = DRJ
+#	controller = DRJ
+#	add_core=DRJ
+#} #despotate of Dobruja
+#1389.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#} #falls to Turkey the first time
+#1417.1.1 = {
+#	owner = BYZ
+#	controller = BYZ
+#	remove_core = TUR
+#	add_core = BYZ
+#} #ceded to Byzantium
+#1444.11.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	estate = estate_dhimmi
+#	base_tax = 3
+#	base_production = 3
+#	base_manpower = 2
+#} #falls to Turkey again, devastated
 
 #2nd Shattering unused
 #2nd Performance Start Unused

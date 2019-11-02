@@ -1,8 +1,8 @@
 #2302 - Içel
 
-owner = KAR
-controller = KAR
-add_core = KAR
+owner = RUM #was KAR
+controller = RUM #was KAR
+add_core = RUM #was KAR
 add_core = CIL
 add_core = CYP			#King Leo V of Cilicia was a Lusignan, and this title of Cilicia went to Cyprus, as would have the land if not for Mamluk influence. Giving a core.
 culture = cilician

@@ -1,8 +1,9 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = DRJ #was TUR
+controller = DRJ #was TUR
+#add_core = TUR
+add_core = BUL
 add_core = WAL
 add_core = DRJ
 culture = bulgarian

@@ -1,11 +1,11 @@
 #316 - Izmit
 
-owner = TUR
-controller = TUR
-add_core = TUR
-culture = turkish
-religion = sunni
-capital = "Izmit"
+owner = BYZ #was TUR
+controller = BYZ #was TUR
+add_core = BYZ #was TUR
+culture = greek #was turkish
+religion = orthodox #was sunni
+capital = "Nikomedeia" #was "Izmit"
 trade_goods = cloth
 hre = no
 base_tax = 4

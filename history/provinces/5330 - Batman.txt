@@ -1,7 +1,8 @@
 #4395 - Hisn Kayfa
 
-owner = BTL
-controller = BTL
+owner = RUM
+controller = RUM
+add_core = RUM
 add_core = BTL
 capital = "Farqin"			#Kurdish name for Silvan
 culture = armenian			#Borderline between armenian, syriac, kurdish, turkish, or arab, but going with Armenian for now.

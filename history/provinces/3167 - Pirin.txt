@@ -4,8 +4,10 @@ latent_trade_goods = {
 	coal
 }
 
-owner = BYZ
-controller = BYZ
+owner = VBZ
+controller = VBZ
+add_core = VBZ
+add_core = BUL
 add_core = BYZ
 culture = bulgarian			#Clearly Christian in the early period per Ottoman documents, but not clear if the Christians were Greek, Bulgarian, or both. Either is quite plausible.
 religion = orthodox
@@ -33,30 +35,30 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1333.1.1 = {
-	owner = SER
-	controller = SER
-	add_core = SER
-}	#Hrelja takes it over in the name of Serbia
-1338.1.1 = { revolt = { type = noble_rebels size = 0 } controller = REB}	#Hrelja breaks off
-1342.1.1 = { controller = SER }	#Hrelja dies, Serbia takes over again
-1356.1.1 = {
-	owner = VBZ
-	controller = VBZ
-	add_core = VBZ
-} #fall of Serbian empire, goes to Dejanovic family (Velbazhd)
-1395.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	remove_core = SER
-	base_tax = 1
-	base_production = 1
-	base_manpower = 1
-	estate = estate_dhimmi
-} #Battle of Rovine, Dejanovic dies and Velbazhd falls to Turkey, loses wealth
-1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+#1333.1.1 = {
+#	owner = SER
+#	controller = SER
+#	add_core = SER
+#}	#Hrelja takes it over in the name of Serbia
+#1338.1.1 = { revolt = { type = noble_rebels size = 0 } controller = REB}	#Hrelja breaks off
+#1342.1.1 = { controller = SER }	#Hrelja dies, Serbia takes over again
+#1356.1.1 = {
+#	owner = VBZ
+#	controller = VBZ
+#	add_core = VBZ
+#} #fall of Serbian empire, goes to Dejanovic family (Velbazhd)
+#1395.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	remove_core = SER
+#	base_tax = 1
+#	base_production = 1
+#	base_manpower = 1
+#	estate = estate_dhimmi
+#} #Battle of Rovine, Dejanovic dies and Velbazhd falls to Turkey, loses wealth
+#1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1413.1.1 = { revolt = {} controller = TUR }
 
 #2nd Shattering unused
 #2nd Performance Start Unused

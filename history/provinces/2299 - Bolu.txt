@@ -1,8 +1,9 @@
 #2299 - Bolu
 
-owner = GZR
-controller = GZR
-add_core = GZR
+#
+owner = RUM #was GZR
+controller = RUM #was GZR
+add_core = RUM #was GZR
 culture = pontic_greek			#Relgion and culture difficult to determine here. Was clearly Greek and Orthodox until around 1210, when the Seljuks took it, but they stayed only for about 50 years. At this point, province under Genoa for 160 years.
 religion = orthodox
 capital = "Amastris"

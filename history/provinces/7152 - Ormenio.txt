@@ -31,20 +31,20 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1311.1.1 = {
-	owner = BUL
-	controller = BUL
-}#taken sometime during the rule of Theodore, putting it at half point
-1371.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-	capital = "Çirmen"
-	estate = estate_dhimmi
-} #falls to Turkey, but doesn't seem to have been devastated
-#1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
-1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+#1311.1.1 = {
+#	owner = BUL
+#	controller = BUL
+#}#taken sometime during the rule of Theodore, putting it at half point
+#1371.1.1 = {
+#	owner = TUR
+#	controller = TUR
+#	add_core = TUR
+#	capital = "Çirmen"
+#	estate = estate_dhimmi
+#} #falls to Turkey, but doesn't seem to have been devastated
+##1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
+#1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+#1413.1.1 = { revolt = {} controller = TUR }
 
 #2nd Shattering unused
 #2nd Performance Start Unused

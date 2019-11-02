@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = BYZ
+controller = BYZ
+add_core = BYZ
 culture = bulgarian
 religion = orthodox
 capital = "Vodena"
@@ -12,7 +12,7 @@ base_manpower = 2
 trade_goods = grain			#Later became a major industrial centre, but no clear information in the early period. Calling it grain due to rich Lower Vardar valley in the eastern part of the province.
 is_city = yes
 hre = no
-estate = estate_dhimmi
+#estate = estate_dhimmi
 
 discovered_by = KAZ
 discovered_by = CRI

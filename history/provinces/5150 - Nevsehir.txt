@@ -1,8 +1,8 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = KAR
-controller = KAR
-add_core = KAR
+owner = RUM #was KAR
+controller = RUM #was KAR
+add_core = RUM #was KAR
 add_core = CAP
 add_core = ERE
 culture = cappadocian

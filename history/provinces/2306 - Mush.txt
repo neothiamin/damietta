@@ -1,7 +1,8 @@
 #2306 - Mush
 
-owner = QAR
-controller = QAR
+owner = RUM
+controller = RUM
+add_core = RUM
 culture = armenian			#Probably? Best bet I could find. Wiki says -Predominantly Armenian and Arab before, Kurdish immigration combined with Armenian and Assyrian Genocide has shifted the ethnic balance. Kurdish people form the majority of the city centre today. Kurdish in vanilla tsk tsk
 religion = coptic
 capital = "Mus"
