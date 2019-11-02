@@ -5,3 +5,14 @@ primary_culture = damiettan
 religion = catholic
 technology_group = western
 capital = 5261	# Damietta
+
+1430.2.2 = {
+	monarch = {
+		birth_date = 1400.8.22
+		name = "Jaufré"
+		dynasty = "of Tamiathis"
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
