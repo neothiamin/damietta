@@ -47,7 +47,7 @@
  DMI_ideas_1_desc:0 "Immediately following the Fifth Crusade, our ports were flooded with merchants speaking a sing-songy tongue and gesturing with their hands while they speak. We're not entirely sure what they were trying to tell us, but we have leased land to them in our cities, bringing us closer to the markets of Italy and beyond."
  DMI_ideas_2_desc:0 "Much of the interior of our realm is desert, and the Nile's floods do us no favors when trying to build along the rivers and streams that pervade our nation. By harnessing the Nile's deposition of soil, however, we can expand into the sea rather than fear it."
  DMI_ideas_3_desc:0 "Our cause is rightous! Our orders come directly from the Lord in Heaven above! We are guided not by the words of men, but by His holy word! To battle!"
- DMI_ideas_4_desc:0 "When our nation was established, the title of [Root.Monarch.GetTitle] was made semi-elective, so that no one nation may exert too much control. This is foolish. Let us reform our governmental structure, for the good of us all."
+ DMI_ideas_4_desc:0 "When our nation was established, the title of Count of Tamiathis was made semi-elective, so that no one nation may exert too much control. This is foolish. Let us reform our governmental structure, for the good of us all."
  DMI_ideas_5_desc:0 "Alexandria, Damietta, Rosetta... the list of ancient and noble cities under our rule goes on and on and on. Truly, we are the heirs to the mysteries of Egypt!"
  DMI_ideas_6_desc:0 "We live by the sea's gifts. Its waters guide our ships, its fauna feeds our people. We were born to master the seas."
  DMI_ideas_7_desc:0 "When one thinks of religious societies, one normally conjures the image of a shadowy cabal meeting in catacombs or abandoned temples. Hogwash! Our societies are more like clubs, festive and jovial! Come one, come all, come to your local society hall!"
@@ -73,7 +73,7 @@
  voivode_ideas_7:0 "Legacy of Rome"
 
  voivode_ideas_1_desc:0 "For decades, our lands have been seen as secondary to those of the \"true\" Bulgaria. Our mission now should be one of reconquest and consolidation, not of outward expansion."
- voivode_ideas_2_desc:0 "Our ancestors, the Bolghars, were famed horsemen. Now, our soldiers are feared whether on foot or on horseback. On four legs or two, [Root.GetAdjective] soldiers strike fear into the hearts of our enemies."
+ voivode_ideas_2_desc:0 "Our ancestors, the Bolghars, were famed horsemen. Now, our soldiers are feared whether on foot or on horseback. On four legs or two, our soldiers strike fear into the hearts of our enemies."
  voivode_ideas_3_desc:0 "We learned very early on the pitfalls of centralized rule. Indeed, our own nation was born out of rebellion against a tyrannical ruler. We must delegate if we are to remain whole."
  voivode_ideas_4_desc:0 "Saint Cyril, Patron Saint of the Slavs, is famous for developing the Glagolitic script, which he used in his missions to the Balkans alongside Saint Methodius. Cyril is an example to us all, and a sign that the Faith knows no language."
  voivode_ideas_5_desc:0 "Old Church Slavonic, the script used by the clergy, has a long and storied history. Accordingly, it is nigh on impossible to learn. By reforming the language, we can ensure that more of our people are well-educated, for the good of the realm."
