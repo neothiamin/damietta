@@ -32,3 +32,14 @@ historical_rival = BYZ
 #	}
 #	add_ruler_personality = careful_personality			
 #}
+
+1424.2.1 = {
+	monarch = {
+		name = "Rostislav"
+		dynasty = "Shishman"
+		dip = 1
+		mil = 2
+		adm = 1
+		birth_date = 1400.5.1
+	}
+}
