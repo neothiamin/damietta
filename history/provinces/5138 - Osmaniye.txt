@@ -1,11 +1,11 @@
 # No previous file for Beyond Typus or Beyond the Pale Legacy province
 
-owner = RAM
-controller = RAM
-add_core = RAM
+owner = CIL #was RAM
+controller = CIL #was RAM
+#add_core = RAM
 add_core = CIL
-culture = turkish			#The Nur Mountains were settled by the Ulasli tribe of the Turkmens.
-religion = sunni
+culture = cilician #was turkish			#The Nur Mountains were settled by the Ulasli tribe of the Turkmens.
+religion = orthodox #was sunni
 capital = "Osmaniye"
 trade_goods = grain			#Good agriculture, why not
 hre = no

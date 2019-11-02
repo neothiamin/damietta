@@ -1,11 +1,11 @@
 #327 - Adana
 
-owner = RAM
-controller = RAM
-add_core = RAM
+owner = CIL #was RAM
+controller = CIL #was RAM
+#add_core = RAM
 add_core = CIL
-culture = turkish			#An Ottoman tax register from 1526 records 16 Turkish residential areas, but only one Armenian and none that were Greek, Jewish, Kurd or Arab.
-religion = sunni
+culture = cilician #was turkish			#An Ottoman tax register from 1526 records 16 Turkish residential areas, but only one Armenian and none that were Greek, Jewish, Kurd or Arab.
+religion = orthodox #was sunni
 capital = "Adana"
 trade_goods = grain			#coton was mostly later, I believe
 hre = no

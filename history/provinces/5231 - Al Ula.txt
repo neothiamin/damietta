@@ -1,8 +1,8 @@
 #New Province
 
-owner = MDA
-controller = MDA
-add_core = MDA
+owner = HED #was MDA
+controller = HED #was MDA
+add_core = HED #was MDA
 capital = "Al-`Ula"			#Also Dedan
 culture = hejazi_culture
 religion = sunni

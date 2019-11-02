@@ -1,0 +1,262 @@
+RHL_ideas = {
+
+	start = {
+		tolerance_own = 1
+		missionaries = 1
+	}
+
+	bonus = {
+		development_cost = -0.15
+	}
+
+	trigger = {
+		tag = RHL
+	
+	}
+
+	free = yes
+
+	#Irrigation Projects
+	RHL_ideas_1 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	#Learn From The Bedouins
+	RHL_ideas_2 = {
+		land_attrition = -0.15
+	}
+
+	#Desert Cavalry
+	RHL_ideas_3 = {
+		cavalry_power = 0.1
+	}
+
+	#Trade With The East
+	RHL_ideas_4 = {
+		trade_range_modifier = 0.2
+		trade_efficiency = 0.1
+	}
+
+	#Trade With The West
+	RHL_ideas_5 = {
+		tolerance_heathen = 1
+	}
+
+	#New Ideas of the Past
+	RHL_ideas_6 = {
+		global_institution_spread = 0.1
+	}
+
+	#Modernization
+	RHL_ideas_7 = {
+		administrative_efficiency = 0.05
+	}
+
+}
+
+DMI_ideas = {
+
+	start = {
+		diplomatic_reputation = 1
+		tolerance_heretic = 1
+	}
+
+	bonus = {
+		
+	}
+
+	trigger = {
+		tag = DMI
+	
+	}
+
+	free = yes
+
+	#Italian Quarters
+	DMI_ideas_1 = {
+		global_prov_trade_power_modifier = 0.2
+	}
+
+	#Coastal Reclamation
+	DMI_ideas_2 = {
+		development_cost = -0.1
+	}
+
+	#Holy Orders
+	DMI_ideas_3 = {
+		discipline = 0.05
+	}
+
+	#Governmental Reform
+	DMI_ideas_4 = {
+		legitimacy = 1
+		republican_tradition = 1
+		devotion = 1
+	}
+
+	#Heirs to Egypt
+	DMI_ideas_5 = {
+		prestige = 1
+	}
+
+	#Control the Seas
+	DMI_ideas_6 = {
+		naval_forcelimit_modifier = 0.25
+	}
+
+	#Religious Societies
+	DMI_ideas_7 = {		
+		global_unrest = -1
+	}
+
+}
+
+CTR_ideas = {
+
+	start = {
+		tolerance_own = 1
+		fort_maintenance_modifier = -0.2
+	}
+
+	bonus = {
+		defensiveness = 0.25
+	}
+
+	trigger = {
+		tag = CTR
+	
+	}
+
+	free = yes
+
+	#Runt of the Litter
+	CTR_ideas_1 = {
+		land_morale = 0.1
+	}
+
+	#Tripoli in the East
+	CTR_ideas_2 = {
+		prestige = 0.5
+		prestige_decay = -0.01
+	}
+
+	#Tripolitanian Lumber
+	CTR_ideas_3 = {
+		build_cost = -0.2
+	}
+
+	#Knowledge of Terrain
+	CTR_ideas_4 = {
+		hostile_attrition = 1
+	}
+
+	CTR_ideas_5 = {
+
+	}
+
+	CTR_ideas_6 = {
+
+	}
+
+	CTR_ideas_7 = {
+
+	}
+
+}
+
+jerusalem_ideas = {
+
+	start = {
+		tolerance_heathen = 1
+		global_missionary_strength = 0.02
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = KOJ
+		religion_group = christian
+	}
+
+	free = yes
+	
+	crown_of_thorns = {
+		prestige = 1
+		legitimacy = 1
+	}
+
+	latin_patriarch = {
+		papal_influence = 2
+	}
+
+	frontier_state = {
+		discipline = 0.05
+	}
+
+	land_of_the_heathen = {
+		missionaries = 1
+	}
+
+	crusader_aristocracy = {
+		leader_land_shock = 1
+	}
+
+	crusader_castles = {
+		defensiveness = 0.25
+	}
+
+	cosmopolitan_nobility = {
+		diplomatic_reputation = 2
+	}
+
+}
+
+MAM_ideas = {
+
+	start = {
+		trade_steering = 0.25
+		cavalry_power = 0.10
+	}
+	
+	bonus = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = MAM
+	}
+
+	free = yes
+	
+	red_sea_trade = {
+		global_trade_power = 0.05
+		trade_range_modifier = 0.10
+	}
+
+	monuments_to_greatness = {
+		prestige = 1
+	}
+
+	purchase_new_mamelukes = {
+		manpower_recovery_speed = 0.15
+	}
+
+	mam_army_reform = {
+		discipline = 0.05
+	}
+
+	reform_fellah_system = {
+		production_efficiency = 0.1
+	}
+
+	reformed_succession = {
+		stability_cost_modifier = -0.15
+	}
+
+	mam_monopoly_ports = {
+		trade_efficiency = 0.10
+	}
+
+}

@@ -1,7 +1,7 @@
 #383 - Tabouk
 
-owner = MDA
-controller = MDA
+owner = HED #was MDA
+controller = HED #was MDA
 culture = bedouin_arabic
 religion = sunni
 capital = "Duba"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2 
 base_manpower = 1 
 is_city = yes
-add_core = MDA
+add_core = HED #was MDA
 #fort_15th = yes
 
 discovered_by = muslim

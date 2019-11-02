@@ -1,0 +1,19 @@
+name = "Fifth Crusade"
+war_goal = {
+	type = cb_crusade
+	casus_belli = superiority_crusade
+}
+
+1217.1.1 = {
+	add_attacker = KOJ
+	add_attacker = CYP
+	add_attacker = CTR
+	add_defender = HSN
+}
+
+1220.8.15 = {
+	rem_attacker = KOJ
+	rem_attacker = CYP
+	rem_attacker = CTR
+	rem_defender = HSN
+}
