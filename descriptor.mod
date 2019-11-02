@@ -6,4 +6,5 @@ supported_version = "1.29.*"
 dependencies = {
 	"Beyond Typus (hopefully temp post 1.29 launcher)"
 }
+replace_path = "common/bookmarks"
 name="Damietta"
