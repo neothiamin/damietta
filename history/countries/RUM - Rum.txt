@@ -1,11 +1,12 @@
 government = monarchy
-add_government_reform = ottoman_government
+add_government_reform = iqta
 government_rank = 2
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
 capital = 329	# Sivas
 
+#Kaykhusraw II, who fought against the Mongols and won!
 1237.1.1 = {
 	monarch = {
 		name = "Kaykhusraw II"
@@ -14,5 +15,118 @@ capital = 329	# Sivas
 		adm = 3
 		mil = 6
 		birth_date = 1214.1.1
+	}
+}
+
+#Kaykhusraw II's son, Kayqubad, who ruled for all of eight years before being assasinated
+1262.3.12 = {
+	monarch = {
+		name = "Kayqubad II"
+		dynasty = "Seljuk"
+		dip = 0
+		mil = 1
+		adm = 2
+		birth_date = 1243.4.23
+	}
+}
+
+#Kayqubad II's brother, Ali I, who took over and ruled over a golden age
+1270.1.1 = {
+	monarch = {
+		name = "Ali I"
+		dynasty = "Seljuk"
+		dip = 5
+		mil = 4
+		adm = 6
+		birth_date = 1245.7.15
+	}
+}
+
+#Ishak I, who was also assassinated just two years into his reign
+1308.5.12 = {
+	monarch = {
+		name = "Ishak I"
+		dynasty = "Seljuk"
+		dip = 1
+		mil = 1
+		adm = 1
+		birth_date = 1271.4.16
+	}
+}
+
+#Queen Havva, Ishak I's wife. Insignificant except for the fact that she was a Sultana.
+1310.7.4 = {
+	monarch = {
+		name = "Havva I"
+		dynasty = "Nevsehirli"
+		dip = 5
+		mil = 1
+		adm = 3
+		female = yes
+		birth_date = 1282.9.29
+	}
+}
+
+#Sultan Consort Ali, total buffoon. Havva married him because she knew she needed an heir, and quick.
+1317.2.22 = {
+	queen = {
+		name = "Ali"
+		dynasty = "Othmanid"
+		adm = 1
+		dip = 1
+		mil = 0
+		female = no
+		birth_date = 1285.4.30
+		country_of_origin = RUM
+	}
+}
+
+#Ibrahim I, mighty king, expert diplomat, and skilled administrator.
+1354.7.5 = {
+	monarch = {
+		name = "Ibrahim I"
+		dynasty = "Seljuk"
+		dip = 5
+		mil = 6
+		adm = 6
+		birth_date = 1320.6.18
+	}
+}
+
+#Ibrahim II, not as much of a legend as his father, but did his father right by maintaining stability.
+1385.6.4 = {
+	monarch = {
+		name = "Ibrahim II"
+		dynasty = "Seljuk"
+		dip = 4
+		mil = 1
+		adm = 3
+		birth_date = 1355.7.27
+	}
+}
+
+#Ishak II, luckier than the first of his name because he is actually alive at game start, a whopping 28 years into his reign!
+1416.6.7 = {
+	monarch = {
+		name = "Ishak II"
+		dynasty = "Seljuk"
+		dip = 5
+		mil = 1
+		adm = 3
+		birth_date = 1387.6.23
+	}
+}
+
+#Ishak named his first son after the legendary Kaykhusraw. It remains to be seen if Kaykhusraw III will live up to his name.
+1439.9.20 = {
+	heir = {
+		name = "Kaykhusraw"
+		monarch_name = "Kaykhusraw III"
+		dynasty = "Seljuk"
+		dip = 3
+		mil = 3
+		adm = 4
+		birth_date = 1439.9.10
+		claim = 90
 	}
 }

@@ -1,7 +1,7 @@
 name = "Fifth Crusade"
 war_goal = {
-	type = cb_crusade
-	casus_belli = superiority_crusade
+	type = superiority_crusade
+	casus_belli = cb_crusade 
 }
 
 1217.1.1 = {

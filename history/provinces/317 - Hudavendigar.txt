@@ -23,6 +23,34 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
 
+#Pre-war development
+1312.1.1 = {
+	base_tax = 9
+	base_production = 11
+	base_manpower = 7
+}
+
+#Seljuk-Byzantine War of 1313-1320
+#City sacked by Seljuks
+1314.2.13 = {
+	owner = RUM
+	controller = RUM
+	add_core = RUM
+	base_tax = 4
+	base_production = 3
+	base_manpower = 3
+}
+
+#Byzantines take it back
+1320.7.8 = {
+	owner = BYZ
+	controller = BYZ
+	add_core = BYZ
+	remove_core = RUM
+	base_tax = 6
+	base_production = 6
+	base_manpower = 4
+}
 
 1481.6.1 = { revolt = { type = pretender_rebels size = 1.5 leader = "Jem Osmanoglu" } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes

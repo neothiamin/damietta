@@ -62,7 +62,7 @@ DMI_ideas = {
 	}
 
 	bonus = {
-		
+		global_prov_trade_power_modifier = 0.2
 	}
 
 	trigger = {
@@ -74,7 +74,7 @@ DMI_ideas = {
 
 	#Italian Quarters
 	DMI_ideas_1 = {
-		global_prov_trade_power_modifier = 0.2
+		trade_efficiency = 0.1
 	}
 
 	#Coastal Reclamation
@@ -150,16 +150,20 @@ CTR_ideas = {
 		hostile_attrition = 1
 	}
 
+	#Trade Networks
 	CTR_ideas_5 = {
-
+		trade_efficiency = 0.1
 	}
 
+	#Alliance Building
 	CTR_ideas_6 = {
-
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
 	}
 
+	#Standing Alone
 	CTR_ideas_7 = {
-
+		discipline = 0.05
 	}
 
 }
@@ -257,6 +261,68 @@ MAM_ideas = {
 
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
+	}
+
+}
+
+voivode_ideas = {
+
+	start = {
+		stability_cost_modifier = -0.1
+		tolerance_own = 1
+	}
+
+	bonus = {
+		land_morale = 0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = BDN
+			tag = DRJ
+			tag = PRL
+			tag = VBZ
+		}
+	}
+
+	free = yes
+
+	#Reconquest
+	voivode_ideas_1 = {
+		core_creation = -0.1
+	}
+
+	#On Four Legs or Two	
+	voivode_ideas_2 = {
+		infantry_power = 0.075
+		cavalry_power = 0.075
+	}
+
+	#Delegation
+	voivode_ideas_3 = {
+		global_unrest = -1
+	}
+
+	#For Saint Basil!
+	voivode_ideas_4 = {
+		global_missionary_strength = 0.02
+	}
+
+	#Literary Reform
+	voivode_ideas_5 = {
+		institution_spread_from_true_faith = 0.15
+		embracement_cost = -0.1
+	}
+
+	#Mountains and Valleys		
+	voivode_ideas_6 = {
+		development_cost = -0.1
+	}
+
+	#Legacy of Rome
+	voivode_ideas_7 = {
+		prestige = 1
+		prestige_decay = -0.01
 	}
 
 }

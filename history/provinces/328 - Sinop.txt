@@ -13,6 +13,44 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 
+#Owned by Trebizond, I think, following 4th Crusade
+1205.1.1 = {
+	owner = TRE
+	controller = TRE
+	add_core = TRE
+}
+
+#Kaykhusraw II goes on his tear, takes city.
+1239.1.1 = {
+	owner = RUM
+	controller = RUM
+	add_core = RUM
+	remove_core = TRE
+}
+
+#Seljuk-Byzantine War of 1313-1320
+1314.2.13 = {
+	owner = BYZ
+	controller = BYZ
+	add_core = BYZ
+}
+
+#Genoa captures during Seljuk-Byzantine War of 1313-1320
+1317.5.26 = {
+	owner = GEN
+	controller = GEN
+	add_core = GEN
+}
+
+#Seljuks take it back
+1320.7.8 = {
+	owner = RUM
+	controller = RUM
+	add_core = RUM
+	remove_core = BYZ
+	remove_core = GEN
+}
+
 extra_cost = 8
 center_of_trade = 1
 

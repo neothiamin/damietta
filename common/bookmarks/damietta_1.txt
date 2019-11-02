@@ -3,11 +3,11 @@ bookmark = {
 	desc = DAMIETTA_BM_DESC
 	date = 1444.11.11
 
-	country = RUM
 	country = KOJ
 	country = DMI
 	country = BYZ
-	country = BUL
+	country = BUL	
+	country = RUM
 	
-	center = 379
+	center = 151
 }

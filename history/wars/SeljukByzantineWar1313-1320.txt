@@ -1,0 +1,44 @@
+name = "Seljuk-Byzantine War (1313-1320)"
+
+war_goal = {
+	type = take_border
+	casus_belli = cb_conquest
+	province = 322
+}
+
+1313.6.5 = {
+	add_attacker = RUM
+	add_defender = BYZ
+}
+
+1316.4.4 = {
+	add_defender = CIL
+}
+
+1318.7.6 = {
+	battle = {
+		name = "Prusa"
+		location = 317
+		result = no
+		attacker = {
+			commander = "Seçuk" 
+			country = RUM
+			infantry = 12000
+			cavalry = 8000
+			losses = 80
+		}
+		defender = {
+			commander = "Alexi" 
+			country = BYZ
+			infantry = 7000
+			cavalry = 2000
+			losses = 15
+		}
+	}
+}
+
+1320.12.25 = {
+	rem_attacker = RUM
+	rem_defender = BYZ
+	rem_defender = CIL
+}
