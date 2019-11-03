@@ -4,7 +4,7 @@ add_government_reform = feudalism_reform
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 2746
+fixed_capital = 2746
 
 1410.2.1 = {
 	monarch = {

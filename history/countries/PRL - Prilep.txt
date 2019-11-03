@@ -4,7 +4,7 @@ add_government_reform = autocracy_reform
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 7146	# Prilep
+fixed_capital = 7146	# Prilep
 historical_rival = SER
 
 1421.2.1 = {
