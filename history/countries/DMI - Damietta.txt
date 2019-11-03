@@ -6,6 +6,10 @@ religion = catholic
 technology_group = western
 capital = 5261	# Damietta
 
+add_historical_friend = KOJ
+add_historical_friend = CTR
+add_historical_rival = RHL
+
 1430.2.2 = {
 	monarch = {
 		birth_date = 1400.8.22

@@ -5,6 +5,9 @@ primary_culture = jerusalemite
 religion = catholic
 technology_group = western
 capital = 379	# Jerusalem
+add_historical_friend = DMI
+add_historical_friend = CTR
+add_historical_rival = RHL
 
 1210.1.1 = {
 	monarch = {

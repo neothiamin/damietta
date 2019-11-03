@@ -5,6 +5,8 @@ primary_culture = tripolitain
 religion = catholic
 technology_group = western
 capital = 378	# Tripoli
+add_historical_friend = KOJ
+add_historical_friend = DMI
 
 1444.1.1 = {
 	monarch = {
