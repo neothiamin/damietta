@@ -60,15 +60,15 @@ crusader_cultures = {
 
 	}
 	dynasty_names = {
-		"de Garlique"
+		Auon Aotin Bourrete Canard Kalhif Dawu Houna Huded Ouina
 	}
 
 	male_names = {
-		Fronk
+		Ibrahim Abil Ismail Michel Pierre Marcel Cyril Bassem Simon Mikhael Adel
 	}
 
 	female_names = {
-		Fronka
+		Pascale Yara Cyrine Sana Yasmine Maryam Miriam Marie
 	}
 
 }
