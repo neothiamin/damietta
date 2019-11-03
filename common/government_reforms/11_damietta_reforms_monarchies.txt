@@ -1,19 +1,21 @@
 damietta_byzantine_reform_1 = {
-	icon = ""
-
-	monarchy = yes
-
+	icon = "king_2"
 	allow_convert = no
-
+	valid_for_nation_designer = no
+	valid_for_new_country = no
 	allow_normal_conversion = no
-
 	fixed_rank = 3
-
 	potential = {
 		tag = BYZ
-	}
-	
+	}	
 	legacy_equivalent = despotic_monarchy
 
+	start_territory_to_estates = 0.6
+
+	modifiers = {
+		merc_maintenance_modifier = -0.2
+		global_manpower_modifier = -0.1
+		trade_efficiency = -0.1
+	}
 
 }
