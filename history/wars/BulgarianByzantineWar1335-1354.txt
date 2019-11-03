@@ -1,0 +1,83 @@
+name = "Bulgarian-Byzantine War (1335-1354)"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 7152 #Ormenio
+}
+
+1335.1.1 = {
+	add_attacker = BUL
+	add_defender = BYZ
+}
+
+1335.3.1 = {
+	battle = {
+		name = "First Ormenio"
+		location = 7152
+		result = yes
+		attacker = {
+			commander = "Ivan" 
+			country = BUL
+			infantry = 10000
+			cavalry = 10000
+			losses = 35
+		}
+		defender = {
+			commander = "Doukas" 
+			country = BYZ
+			infantry = 7000
+			cavalry = 3500
+			losses = 70
+		}
+	}
+}
+
+1336.12.28 = {
+	battle = {
+		name = "Constantinople"
+		location = 151
+		result = no
+		attacker = {
+			commander = "Ivan" 
+			country = BUL
+			infantry = 15000
+			cavalry = 10000
+			losses = 65
+		}
+		defender = {
+			commander = "Ioannes" 
+			country = BYZ
+			infantry = 10000
+			cavalry = 6000
+			losses = 40
+		}
+	}
+}
+
+1344.6.12 = {
+	battle = {
+		name = "Second Ormenio"
+		location = 7152
+		result = no
+		attacker = {
+			commander = "Petr" 
+			country = BUL
+			infantry = 8000
+			cavalry = 3350
+			losses = 80
+		}
+		defender = {
+			commander = "Ioannes" 
+			country = BYZ
+			infantry = 10000
+			cavalry = 600
+			losses = 25
+		}
+	}
+}
+
+1354.1.1 = {
+	rem_attacker = BUL
+	rem_defender = BYZ
+}

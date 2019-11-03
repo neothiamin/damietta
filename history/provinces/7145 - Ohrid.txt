@@ -24,6 +24,20 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+#Serbian Empire
+1376.1.1 = {
+	owner = SER
+	controller = SER
+	add_core = SER
+}
+
+#Collapse of Serbian Empire
+1410.6.4 = {
+	owner = PRL
+	controller = PRL
+	add_core = PRL
+}
+
 
 #Province history completed by - Draiocht
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins

@@ -27,6 +27,20 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+#2nd Bulgarian Empire
+1276.1.1 = {
+	owner = BUL
+	controller = BUL
+	add_core = BUL
+}
+
+#Collapse of 2nd Bulgarian Empire
+1425.3.1 = {
+	owner = DRJ
+	controller = DRJ
+	add_core = DRJ
+}
+
 1481.6.1 = { unrest = 6 } # Civil war, Bayezid & Jem
 1482.7.26 = { unrest = 0 } # Jem escapes to Rhodes
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance

@@ -42,7 +42,7 @@ discovered_by = eastern
 #	controller = XXX
 #	remove_core = XXX
 #} #Return to proper mod added owners and cuts vanilla core, typically.
-1335.1.1 = {
+1335.3.1 = {
 	owner = MLO
 	controller = MLO
 	add_core = MLO

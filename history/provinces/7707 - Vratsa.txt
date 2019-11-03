@@ -25,6 +25,20 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+#2nd Bulgarian Empire
+1276.1.1 = {
+	owner = BUL
+	controller = BUL
+	add_core = BUL
+}
+
+#Collapse of 2nd Bulgarian Empire
+1425.3.1 = {
+	owner = BDN
+	controller = BDN
+	add_core = BDN
+}
+
 
 #Province history completed by - Draiocht
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins

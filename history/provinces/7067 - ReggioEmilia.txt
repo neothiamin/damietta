@@ -42,7 +42,7 @@ discovered_by = eastern
 	controller = PAP
 	add_core = PAP
 } # taken by the Pope
-1335.1.1 = {
+1335.3.1 = {
 	owner = RGO
 	controller = RGO
 	remove_core = PAP

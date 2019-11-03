@@ -3,7 +3,7 @@ name = "Seljuk-Byzantine War (1313-1320)"
 war_goal = {
 	type = take_border
 	casus_belli = cb_conquest
-	province = 322
+	province = 322 #Dorylaeon
 }
 
 1313.6.5 = {

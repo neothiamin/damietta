@@ -24,6 +24,20 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+#Second Bulgarian Empire Invades
+1335.1.1 = {
+	owner = BUL
+	add_core = BUL
+	controller = BUL
+}
+
+#Byzantines Take Land Back
+1354.1.1 = {
+	owner = BYZ
+	add_core = BYZ
+	controller = BYZ
+}
+
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance
 1556.1.1 = { unrest = 0 }
 1615.1.1 = { base_tax = 3

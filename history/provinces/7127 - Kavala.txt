@@ -24,6 +24,20 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+#Second Bulgarian Empire Invades
+1335.1.1 = {
+	owner = BUL
+	add_core = BUL
+	controller = BUL
+}
+
+#Byzantines Take Land Back
+1354.1.1 = {
+	owner = BYZ
+	add_core = BYZ
+	controller = BYZ
+}
+
 
 #Province history completed by - Draiocht
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins

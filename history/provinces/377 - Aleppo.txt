@@ -7,11 +7,11 @@ religion = sunni
 capital = "Halab"
 trade_goods = silk
 hre = no
-base_tax = 14
-base_production = 14
-base_manpower = 10
+base_tax = 5
+base_production = 5
+base_manpower = 3
 is_city = yes
-estate = estate_burghers
+#estate = estate_burghers
 add_core = SYR
 add_core = MAM
 fort_15th = yes
@@ -26,7 +26,7 @@ discovered_by = indian
 
 extra_cost = 10
 
-center_of_trade = 1
+#center_of_trade = 1
 
 1516.8.24 = {
 	owner = TUR

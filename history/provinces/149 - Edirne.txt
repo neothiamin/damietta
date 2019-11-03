@@ -27,6 +27,21 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+#Second Bulgarian Empire Invades
+1335.1.1 = {
+	owner = BUL
+	add_core = BUL
+	controller = BUL
+}
+
+#Byzantines Take Land Back
+1354.1.1 = {
+	owner = BYZ
+	add_core = BYZ
+	controller = BYZ
+	remove_core = BUL
+}
+
 #1402.1.1 = { revolt = { type = pretender_rebels size = 1 name = "Süleyman's Faction" leader = "Süleyman Osmanoglu" } controller = REB } # Interregnum
 #1410.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 name = "Mûsa's Faction" leader = "Mûsa Osmanoglu" } controller = REB }
 #1413.1.1 = { revolt = {} controller = TUR }
