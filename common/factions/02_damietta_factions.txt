@@ -1,0 +1,36 @@
+########################################
+# Crusader State Factions
+########################################
+
+damietta_zealot_faction = {
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		land_morale = 0.05
+		warscore_cost_vs_other_religion = -0.1
+		diplomatic_reputation = -2
+	}
+}
+
+damietta_pilgrim_faction = {
+	monarch_power = DIP
+	always = yes
+
+	modifier = {
+		global_unrest = -1
+		land_maintenance_modifier = 0.1
+		diplomatic_reputation = 1
+	}
+}
+
+damietta_clergymen_faction = {
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+		missionaries = 1
+		missionary_maintenance_cost = 0.25
+		tolerance_own = 2
+	}
+}

@@ -5,6 +5,7 @@ damietta_byzantine_reform_1 = {
 	valid_for_new_country = no
 	allow_normal_conversion = no
 	fixed_rank = 3
+	
 	potential = {
 		tag = BYZ
 	}	
@@ -18,4 +19,45 @@ damietta_byzantine_reform_1 = {
 		trade_efficiency = -0.1
 	}
 
+}
+
+damietta_crusader_generic_reform_1 = {
+	icon = "religious_leader"
+	allow_convert = no
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	valid_for_new_country = no
+	
+	has_devotion = yes
+
+	factions = {
+		damietta_clergymen_faction
+		damietta_pilgrim_faction
+		damietta_zealot_faction
+	}
+
+	potential = {
+		OR = {
+			tag = KOJ
+			tag = CTR
+			tag = DMI
+			AND = {
+				religion = catholic
+				OR = {
+					has_country_flag = damietta_was_established_as_crusader_state
+					has_country_flag = damietta_accepted_crusader_rule
+				}
+			}
+		}
+	}
+
+	legacy_equivalent = feudal_monarchy
+
+	start_territory_to_estates = 0.1
+
+	modifiers = {
+		discipline = 0.05
+		tolerance_heretic = -1
+		tolerance_heathen = -2
+	}
 }
