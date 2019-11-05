@@ -2,7 +2,7 @@
 
 owner = WAL #was TUR
 controller = WAL #was TUR
-culture = romanian		#Unclear if Bulgarian or Romanian majority.
+culture = bulgarian		#Unclear if Bulgarian or Romanian majority.
 religion = orthodox
 capital = "Tulcea"
 trade_goods = fish

@@ -127,6 +127,7 @@ capital = 329	# Sivas
 		mil = 3
 		adm = 4
 		birth_date = 1439.9.10
+		death_date = 1480.1.1
 		claim = 90
 	}
 }
