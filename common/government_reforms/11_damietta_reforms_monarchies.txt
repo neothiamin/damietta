@@ -21,8 +21,9 @@ damietta_byzantine_reform_1 = {
 
 }
 
-damietta_crusader_generic_reform_1 = {
-	icon = "religious_leader"
+#Militant Crusader State
+damietta_crusader_tier_1_reform_1 = {
+	icon = "soldiers"
 	allow_convert = no
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
@@ -57,7 +58,57 @@ damietta_crusader_generic_reform_1 = {
 
 	modifiers = {
 		discipline = 0.05
-		tolerance_heretic = -1
+		culture_conversion_cost = 0.5
 		tolerance_heathen = -2
 	}
+
+	#custom_attributes = {
+	#	damietta_is_crusader_state = yes
+	#}
 }
+
+#Theocratic Monarchy
+#damietta_crusader_tier_1_reform_2 = {
+#	icon = "clergyman"
+#	allow_convert = no
+#	allow_normal_conversion = yes
+#	valid_for_nation_designer = yes
+#	valid_for_new_country = no
+#	
+#	#has_devotion = yes
+#
+#	#factions = {
+#	#	damietta_clergymen_faction
+#	#	damietta_pilgrim_faction
+#	#	damietta_zealot_faction
+#	#}
+#
+#	potential = {
+#		OR = {
+#			tag = KOJ
+#			tag = CTR
+#			tag = DMI
+#			AND = {
+#				religion = catholic
+#				OR = {
+#					has_country_flag = damietta_was_established_as_crusader_state
+#					has_country_flag = damietta_accepted_crusader_rule
+#				}
+#			}
+#		}
+#	}	
+#
+#	legacy_equivalent = feudal_monarchy
+#
+#	start_territory_to_estates = 0.6
+#
+#	modifiers = {
+#		tolerance_own = 1
+#		tolerance_heathen = -1
+#	}
+#
+#	#custom_attributes = {
+#	#	damietta_is_crusader_state = yes
+#	#}
+#
+#}

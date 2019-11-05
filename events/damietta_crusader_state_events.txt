@@ -1,9 +1,8 @@
 ############################################
-# Events for Byzantium
+# Events for Crusader States
 #
 # by neothiamin
 ############################################
 
-namespace = damietta_byzantium
+namespace = damietta_crusader_states
 
-#

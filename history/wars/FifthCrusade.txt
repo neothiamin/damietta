@@ -6,14 +6,104 @@ war_goal = {
 
 1217.1.1 = {
 	add_attacker = KOJ
+	add_attacker = KNI
 	add_attacker = CYP
 	add_attacker = CTR
 	add_defender = HSN
+}
+
+1217.7.22 = {
+	battle = {
+		name = "First Jerusalem"
+		location = 379
+		result = yes
+		attacker = { 
+			commander = "Al-Adil I"
+			country = HSN
+			infantry = 10000 
+			cavalry = 7000
+			losses = 20
+		}
+		defender = { 
+			commander = "John of Brienne"
+			country = KOJ
+			infantry = 4000 
+			cavalry = 1500
+			losses = 70
+		}
+	}
+}
+
+1219.11.6 = {
+	battle = {
+		name = "Damietta"
+		location = 5261
+		result = yes
+		attacker = { 
+			commander = "John of Brienne"
+			country = KOJ
+			infantry = 10000 
+			cavalry = 3000
+			losses = 50
+		}
+		defender = { 
+			commander = "Al-Kamil"
+			country = HSN
+			infantry = 8000 
+			cavalry = 6000
+			losses = 70
+		}
+	}
+}
+
+1220.3.10 = {
+	battle = {
+		name = "Cairo"
+		location = 361
+		result = yes
+		attacker = { 
+			commander = "John of Brienne"
+			country = KOJ
+			infantry = 8000 
+			cavalry = 2000
+			losses = 15
+		}
+		defender = { 
+			commander = "Al-Muazzam Isa"
+			country = HSN
+			infantry = 5000 
+			cavalry = 1500
+			losses = 80
+		}
+	}
+}
+
+1220.6.10 = {
+	battle = {
+		name = "Second Jerusalem"
+		location = 379
+		result = yes
+		attacker = { 
+			commander = "Piere de Montagut"
+			country = KNI
+			infantry = 10000 
+			cavalry = 7000
+			losses = 15
+		}
+		defender = { 
+			commander = "Al-Ashraf Musa"
+			country = HSN
+			infantry = 8000 
+			cavalry = 5000
+			losses = 60
+		}
+	}
 }
 
 1220.8.15 = {
 	rem_attacker = KOJ
 	rem_attacker = CYP
 	rem_attacker = CTR
+	rem_attacker = KNI
 	rem_defender = HSN
 }

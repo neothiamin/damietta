@@ -41,6 +41,8 @@ monarchy = {
 				tanistry_reform
 				#From Damietta
 				damietta_byzantine_reform_1
+				damietta_crusader_tier_1_reform_1
+				#damietta_crusader_tier_1_reform_2
 			}
 		}
 		hereditary_vs_nobility = {

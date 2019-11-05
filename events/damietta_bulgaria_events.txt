@@ -1,5 +1,7 @@
 ############################################
 # Events for Bulgaria
+#
+# by neothiamin
 ############################################
 
 namespace = damietta_bulgaria
