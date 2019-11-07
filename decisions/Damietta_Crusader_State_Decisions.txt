@@ -1,0 +1,46 @@
+country_decisions = {
+
+	damietta_crusader_state_foreign_quarters = {		
+		potential = {
+			OR = {
+				tag = KOJ
+				tag = CTR
+				tag = DMI
+				tag = CYP
+			}
+			religion = catholic
+			culture_group = crusader_cultures
+			NOT = {
+				has_country_flag = damietta_crusader_states_foreign_quarters_enabled
+			}
+		}
+		allow = {
+			OR = {
+				tag = KOJ
+				tag = CTR
+				tag = DMI
+				tag = CYP
+			}
+			religion = catholic
+			culture_group = crusader_cultures
+			any_owned_province = {
+				has_port = yes
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					development = 16
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = damietta_crusader_states_foreign_quarters_will_be_enabled
+			set_country_flag = damietta_crusader_states_foreign_quarters_enabled
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.2
+				treasury = 500
+			}
+		}
+	}
+}

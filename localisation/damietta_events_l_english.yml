@@ -1,0 +1,22 @@
+﻿l_english:
+ #Italian States Events
+ damietta_italian_states.1.t:0 "Foreign Quarters in the Levant?"
+ damietta_italian_states.1.desc:0 "Mediterranean trade feeds and clothes all of Europe. From Stockholm to Sevilla, goods from the Mediterranean are vital in the lives of all people, from kings to cobblers. Now, we find ourselves with an interesting proposition which could greatly increase our wealth.\n\nRecently, the nation of [damietta_foreign_quarter_nation_target.GetName] has loosened local laws regarding foreign quarters, opening up auctions for the rights to establish such quarters in their cities. One city in particular, [damietta_foreign_quarter_province.GetName], seems particularly lucrative. Its coastal geography and established history as a trading hub make it a prime target for a [Root.GetAdjective] quarter. Shall we make our interest known?"
+ damietta_italian_states.1.a:0 "Petition [damietta_foreign_quarter_nation_target.GetName] for rights to establish a [Root.GetAdjective] quarter in [damietta_foreign_quarter_province.GetName]."
+ damietta_italian_states.1.b:0 "Not this time."
+
+ damietta_italian_states.2.t:0 "Foreign Quarter established in [From.GetName]!"
+ damietta_italian_states.2.desc:0 "Glorious news! We have been granted permission to establish our own quarter in [From.GetName]!"
+ damietta_italian_states.2.a:0 "Hurrah!"
+
+ #Crusader States
+ damietta_crusader_states.1.t:0 "[From.GetAdjective] Interest in Foreign Quarter"
+ damietta_crusader_states.1.desc:0 "My [Root.Owner.Monarch.GetTitle]! We have received a missive from [From.GetAdjective] merchantss describing that they are interested in establishing a foreign quarter in [Root.GetName]! In exchange for special priveleges, they will be allowed to utilize our port in [Root.GetName] for their own trade efforts, resulting in increased traffic for us. What say we?"
+ damietta_crusader_states.1.a:0 "Of course! This agreement is beneficial to us both."
+ damietta_crusader_states.1.b:0 "Politely decline their offer."
+
+ #Bulgaria
+ damietta_bulgaria.1.t:0 "Defense of Bulgaria"
+ damietta_bulgaria.1.desc:0 "War with the Byzantines is nothing new to us. We were famously beaten back by the Byzantine Empire in 1354, and many blame the Greeks in Constantinople for the collapse of our Empire. Now, though, every true Bulgarian must band together in defense of our native land!"
+ damietta_bulgaria.1.a:0 "Chaaarge!"
+

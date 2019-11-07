@@ -6,4 +6,62 @@
 
 namespace = damietta_bulgaria
 
-#
+#Defense of Bulgaria
+country_event = {
+	id = damietta_bulgaria.1
+	title = damietta_bulgaria.1.t
+	desc = damietta_bulgaria.1.desc
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		tag = BUL
+		defensive_war_with = BYZ
+		NOT = {
+			is_year = 1500
+		}
+		is_free_or_tributary_trigger = yes
+		BYZ = {
+			war_score_against = {
+				who = ROOT
+				value = 10
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = damietta_bulgaria_defenders
+			}
+			had_country_flag = {
+				flag = damietta_bulgaria_defenders
+				days = 7300
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		set_country_flag = damietta_bulgaria_defenders
+	}
+
+	#Chaaaaarge!
+	option = {
+		name = damietta_bulgaria.1.a
+		random_owned_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = {
+					has_siege = yes
+				}
+			}
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+	}
+}

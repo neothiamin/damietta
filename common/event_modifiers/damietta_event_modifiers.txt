@@ -1,0 +1,11 @@
+damietta_foreign_quarter_established = {
+	province_trade_power_modifier = 0.25
+	trade_goods_size_modifier = 0.1
+	local_tax_modifier = -0.5
+	local_autonomy = 0.2
+}
+
+damietta_benefiting_from_foreign_quarter = {
+	trade_efficiency = 0.05
+	trade_range_modifier = 0.1
+}

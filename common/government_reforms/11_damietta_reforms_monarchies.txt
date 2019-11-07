@@ -19,6 +19,10 @@ damietta_byzantine_reform_1 = {
 		trade_efficiency = -0.1
 	}
 
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
 }
 
 #Militant Crusader State
@@ -60,6 +64,10 @@ damietta_crusader_tier_1_reform_1 = {
 		discipline = 0.05
 		culture_conversion_cost = 0.5
 		tolerance_heathen = -2
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
 	}
 
 	#custom_attributes = {

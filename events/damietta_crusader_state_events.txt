@@ -6,3 +6,61 @@
 
 namespace = damietta_crusader_states
 
+#Foreign Quarter in [Root.GetName]
+#Part of the Foreign Quarter event chain that is enabled by a decision
+
+province_event = {
+	id = damietta_crusader_states.1
+	title = damietta_crusader_states.1.t
+	desc = damietta_crusader_states.1.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	#Accept.
+	option = {
+		name = damietta_crusader_states.1.a
+		owner = {			
+			add_treasury = 200
+		}
+		add_province_modifier = {
+			name = damietta_foreign_quarter_established
+			duration = -1
+		}
+		FROM = {
+			add_country_modifier = {
+				name = damietta_benefiting_from_foreign_quarter
+				duration = -1
+			}
+			add_treasury = -200
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 9
+				NOT = {
+					owner = {
+						monthly_income = 10
+					}
+				}
+			}
+		}
+	}
+
+	#Decline.
+	option = {
+		name = damietta_crusader_states.1.b
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+#New Ideas of Piety
+country_event = {
+	id = damietta_crusader_states.2
+	title = damietta_crusader_states.2.t
+	desc = damietta_crusader_states.2.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+}
