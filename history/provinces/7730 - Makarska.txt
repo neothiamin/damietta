@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = DSS
-controller = DSS
-add_core = DSS
+owner = VEN
+controller = VEN
+add_core = VEN
 culture = serbian
 religion = orthodox
 capital = "Makarska"

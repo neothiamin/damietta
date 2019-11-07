@@ -1,8 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = DSS
-controller = DSS
-add_core = DSS
+owner = BOS
+controller = BOS
+add_core = BOS
 culture = serbian
 religion = orthodox
 capital = "Foca"

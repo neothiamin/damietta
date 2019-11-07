@@ -1,7 +1,7 @@
 #3182 - BtP Province repurposed by Draiocht due to 1.19 changes
 
-owner = VEN
-controller = VEN
+owner = MON
+controller = MON
 culture = albanian
 religion = orthodox
 capital = "Shkodra"
@@ -13,7 +13,7 @@ base_manpower = 1
 #fort_15th = yes			#Moving this fort to Kotor
 is_city = yes
 add_core = ALB
-add_core = VEN
+add_core = MON
 
 extra_cost = 8
 center_of_trade = 1

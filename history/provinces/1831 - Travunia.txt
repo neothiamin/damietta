@@ -1,7 +1,7 @@
 #1831 - Travunia
 
-owner = DSS
-controller = DSS
+owner = MON
+controller = MON
 culture = serbian
 religion = orthodox
 capital = "Onogost"
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 1 
 is_city = yes
 estate = estate_church
-add_core = DSS
+add_core = MON
 
 discovered_by = KAZ
 discovered_by = CRI

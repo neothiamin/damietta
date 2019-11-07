@@ -6,10 +6,10 @@ add_core = SER
 culture = serbian
 religion = orthodox
 capital = "Ras"
-base_tax = 1
-base_production = 1
-base_manpower = 1
-trade_goods = livestock
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = cloth #was livestock
 is_city = yes
 hre = no
 
@@ -23,6 +23,7 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+center_of_trade = 1 #new
 
 #Province history completed by - Draiocht
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
