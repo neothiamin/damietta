@@ -1,0 +1,22 @@
+damietta_jizya_effective_here = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		NOT = {
+			religion = owner
+		}
+	}
+
+	local_tax_modifier = 0.2
+	min_local_autonomy = 25
+
+	on_activation = {
+	}
+
+	on_deactivation = {
+		remove_province_triggered_modifier = damietta_jizya_effective_here
+	}
+
+}

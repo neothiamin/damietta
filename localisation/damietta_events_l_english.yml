@@ -20,3 +20,14 @@
  damietta_bulgaria.1.desc:0 "War with the Byzantines is nothing new to us. We were famously beaten back by the Byzantine Empire in 1354, and many blame the Greeks in Constantinople for the collapse of our Empire. Now, though, every true Bulgarian must band together in defense of our native land!"
  damietta_bulgaria.1.a:0 "Chaaarge!"
 
+ #Capture of Crusader Cities
+ damietta_crusader_states.3.t:0 "Capture of [Root.GetName]!"
+ damietta_crusader_states.3.desc_damietta:0 "The city of Damietta, captured by the Crusaders in 616 AH, is once again under righteous control. Now, the fate of the Crusaders is in our hands... what is our verdict?"
+ damietta_crusader_states.3.desc_tripoli:0 "Tripoli, a famed Crusader stronghold and among the first cities captured by the heathen in their wars against the Faith, is once again in Muslim hands. Now, we must decide the fate of its inhabitants."
+ damietta_crusader_states.3.desc_jerusalem:0 "Jerusalem, a city whose holiness spreads through all Abrahamic religions, is again in Muslim hands! Though the holy sites in the city will of course be preserved, the inhabitants, many of whom are either Crusaders or their descendants, may not be so lucky. What is our decision?"
+ damietta_crusader_states.3.a:0 "Expel the Crusaders!"
+ damietta_crusader_states.3.b:0 "Pillage the city! Leave no heathen unscathed!"
+ damietta_crusader_states.3.c:0 "Institute a jizya for the non-Muslim inhabitants."
+ damietta_crusader_states.3.c.tt:0 "Jizya will be practiced in this province."
+ damietta_crusader_states.3.d:0 "Install our own local governors to oversee the locals."
+ 

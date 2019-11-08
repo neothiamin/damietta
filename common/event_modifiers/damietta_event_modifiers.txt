@@ -9,3 +9,18 @@ damietta_benefiting_from_foreign_quarter = {
 	trade_efficiency = 0.05
 	trade_range_modifier = 0.1
 }
+
+damietta_crusaders_expelled = {
+	local_unrest = 8
+}
+
+damietta_city_pillaged = {
+	local_unrest = 8
+	local_tax_modifier = -0.5
+	local_development_cost = 0.5
+}
+
+damietta_local_governor = {
+	local_unrest = -4
+	min_local_autonomy = 50
+}

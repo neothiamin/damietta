@@ -1,0 +1,11 @@
+v0.0.3:
+! First Steam Workshop release!
+
+
++ Added country history files for Montenegro and Bosnia
++ Added events for Muslim conquest of Tripoli, Damietta, and Jerusalem. These events fire once per game, so if Damietta is conquered by the Rahulids for example and then recaptured by Damietta and then re-recaptured by Rahulids, the event will not fire again. I hope that makes sense.
+
+* Moved province 5277 (Batn-el-Hajar) from the Dongola trade node to the Damietta node
+* Added historical friends for Montenegro, Bosnia, and Prilep
+
+- Removed Venice's guarantee of Albania

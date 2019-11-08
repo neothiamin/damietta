@@ -64,3 +64,116 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 
 }
+
+#Capture of [Root.GetName]
+province_event = {
+	id = damietta_crusader_states.3
+	title = damietta_crusader_states.3.t
+	desc = {
+		trigger = {
+			province_id = 5261 #Damietta
+		}
+		desc = damietta_crusader_states.3.desc_damietta
+	}
+	desc = {
+		trigger = {
+			province_id = 378 #Tripoli
+		}
+		desc = damietta_crusader_states.3.desc_tripoli
+	}
+	desc = {
+		trigger = {
+			province_id = 379 #Jerusalem
+		}
+		desc = damietta_crusader_states.3.desc_jerusalem
+	}
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	#Valid for Tripoli, Jerusalem, and Damietta
+	trigger = {
+		OR = {
+			province_id = 5261
+			province_id = 378
+			province_id = 379
+		}
+		owner = {
+			religion_group = muslim
+		}
+		NOT = {
+			has_province_flag = damietta_captured_city
+		}
+	}
+
+	#fire_only_once = yes
+
+	immediate = {
+		set_province_flag = damietta_captured_city
+	}
+
+	#Expel the Crusaders!
+	option = {
+		name = damietta_crusader_states.3.a
+		change_culture = owner
+		add_base_manpower = -1
+		add_base_tax = -1
+		add_base_production = -1
+		add_province_modifier = {
+			name = damietta_crusaders_expelled
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	#Pillage the city! Leave nothing standing!
+	option = {
+		name = damietta_crusader_states.3.b
+		add_base_manpower = -2
+		add_base_tax = -2
+		add_base_production = -2
+		add_devastation = 25
+		owner = {
+			add_years_of_income = 0.25
+		}
+		add_province_modifier = {
+			name = damietta_city_pillaged
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+
+	#Allow the inhabitants to practice their faith, in exchange for jizya.
+	option = {
+		name = damietta_crusader_states.3.c
+		add_province_triggered_modifier = damietta_jizya_effective_here
+		custom_tooltip = damietta_crusader_states.3.c.tt
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	#Install our own local governors to oversee the locals.
+	option = {
+		name = damietta_crusader_states.3.d
+		if = {
+			limit = {
+				has_estate = estate_dhimmi
+			}
+			set_estate = estate_dhimmi
+		}
+		else = {
+			add_province_modifier = {
+				name = damietta_local_governor
+				duration = 9125
+			}
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
