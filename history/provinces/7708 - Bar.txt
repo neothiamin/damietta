@@ -50,6 +50,20 @@ discovered_by = western
 
 #1291 - 1444
 
+#Serbian Empire
+1376.1.1 = {
+	owner = SER
+	controller = SER
+	add_core = SER
+}
+
+#Collapse of Serbian Empire
+1410.6.4 = {
+	owner = MON
+	controller = MON
+	add_core = MON
+}
+
 #1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 #	owner = XXX
 #	controller = XXX
@@ -72,3 +86,4 @@ discovered_by = western
 #} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 on
+

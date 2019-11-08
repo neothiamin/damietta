@@ -8,6 +8,9 @@ capital = 7146
 fixed_capital = 7146	# Prilep
 historical_rival = SER
 
+#add_historical_friend = BOS
+add_historical_friend = MON
+
 1421.2.1 = {
 	monarch = {
 		name = "Petr"

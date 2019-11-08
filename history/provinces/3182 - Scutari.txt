@@ -28,6 +28,20 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+#Serbian Empire
+1376.1.1 = {
+	owner = SER
+	controller = SER
+	add_core = SER
+}
+
+#Collapse of Serbian Empire
+1410.6.4 = {
+	owner = MON
+	controller = MON
+	add_core = MON
+}
+
 1479.10.1 = { owner = TUR controller = TUR add_core = TUR }	#In 1479 the city fell to the Ottomans and the defenders of the citadel emigrated to Venice, whereas many Albanians from the region retreated into the mountains.
 1501.10.1 = { owner = VEN controller = VEN }	#Was actually Lezhe that was retaken, but this coastal province approximates it better
 1507.10.1 = { owner = TUR controller = TUR }	#re-re-taken by the Turks

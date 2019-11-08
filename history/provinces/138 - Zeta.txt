@@ -25,6 +25,20 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+#Serbian Empire
+1376.1.1 = {
+	owner = SER
+	controller = SER
+	add_core = SER
+}
+
+#Collapse of Serbian Empire
+1410.6.4 = {
+	owner = MON
+	controller = MON
+	add_core = MON
+}
+
 #1421.1.1 = { owner = SER controller = SER add_core = SER } # Annexed to Serbia
 #1451.1.1 = { owner = MON controller = MON remove_core = SER }
 1478.1.1 = { add_core = TUR } # Conquered Zabljak, but never fully conquered Zeta
