@@ -13,6 +13,9 @@ base_manpower = 1
 #is_city = yes
 #add_core = MAM
 add_local_autonomy = 50
+native_size = 30
+native_ferocity = 5
+native_hostileness = 5
 
 
 discovered_by = western

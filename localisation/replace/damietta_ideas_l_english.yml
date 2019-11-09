@@ -2,3 +2,31 @@
  MON_ideas:0 "Zetan Ideas"
  MON_ideas_start:0 "Zetan Traditions"
  MON_ideas_bonus:0 "Zetan Ambitions"
+
+ #Bulgaria
+
+ bul_idea_1:0 "Legacy of Empire"
+ bul_idea_1_desc:0 "Few other nations can claim to have existed in imperial form at any point in their history. Even fewer can claim two distinct empires with their name. Though hard times may befall us, the legacy of the First and Second Bulgarian Empires pervades our people, and inspires us to fight for a Third."
+ bul_idea_3_desc:0 "We have seen time and time again the pitfalls of bickering nobility and internal feuds. No more! If we are to stand strong, we must stand as one."
+ bul_idea_5_desc:0 "The Bulgarian Orthodox Church is the first Orthodox Slavic autocephalous Church. Once the source of great pride and power it was degraded during the Byzantine conquest of Bulgaria and its decay continued during our internal struggles and fall from Imperial grace. Strong once again, the Bulgarian people will find the Bulgarian Church the chief pillar of their society once again. As it once was so shall it be again."
+ bul_idea_7:0 "Bulgarian Coronation"
+ bul_idea_7_desc:0 "The strength of the Bulgarian Orthodox Church is a powerful phenomenon. The power its patriarchs hold is conveyed unto the Tsar during each and every coronation. However, one key Christian figure is missing at each ceremony: the Patriarch of Constantinople. By ensuring his presence at coronation ceremonies, the Tsar's legitimacy is further solidified as coming from God."
+
+ #Albania
+ 
+ all_lands_under_skanderbeg:0 "All Lands Under Our Flag"
+ all_lands_under_skanderbeg_desc:0 "Though our geography is diverse, one cannot dispute that each and every nook and cranny in our realm flies the Albanian flag. By using this flag as a symbol of national pride, we can increase recruitment and field a larger army."
+
+ #Serbia
+ bastion_of_orthodoxy_desc:0 "Unlike some others, our commitment to the Orthodox tradition is unwavering. Greek-style churches are the norm in our lands, and icons of saints and apostles line their walls. The Serbian Orthodox Church is among the strongest in all Europe, and its long history inspires our people, reassuring them that despite whatever may come, the Church will live on."
+
+ #Mamluks
+ red_sea_trade:0 "Mediterranean Trade"
+ red_sea_trade_desc:0 "Silk and other goods from as far away as China pour through our markets and ports, finding their way to Europe. Through an aggressive system of fees and taxes on trade, as well as reminding foreigners of the importance of stable trade in the Levant, we can ensure that our mercantile presence is strong and ever-present."
+
+ mam_army_reform_desc:0 "Though our victory over the Ayyubids is far in the past, memories of the fall of the once-strongest power in the Levant at our hands remain. Nevertheless, some of our soldiers have grown too enamored with the past and have eschewed newer techniques and strategies. Let us remedy this."
+ reform_fellah_system:0 "Oases and Canals"
+ reform_fellah_system_desc:0 "The desert is unforgiving. Agriculture is nigh impossible, and herding is not stable enough to feed a nation. However, we have been granted one key blessing by Allah: plentiful oases and rivers. Through proper utilization, we can harness this fresh water for farming and stabilize the basis of our nation."
+ reformed_succession_desc:0 "The proud tradition of allowing the sons to fight it out for succession does lead to a bit of instability. Infidels in the west know a thing or two about this and know how to ensure that succession laws are clear, leading to greater stability. We will adopt some of these European traditions, and integrate them into existing succession laws."
+
+

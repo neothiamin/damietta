@@ -1,3 +1,8 @@
+v0.0.4:
+
+* Fixed various localization inconsistencies in national ideas. Thanks CouchCoach for the reports!
+* Added modifier descriptions to "Inhabitants Expelled", "Jizya", and "Local Governor"
+
 v0.0.3:
 ! First Steam Workshop release!
 

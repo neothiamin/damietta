@@ -10,4 +10,5 @@
  damietta_jizya_effective_here:0 "Jizya"
  desc_damietta_jizya_effective_here:0 "Due to this city's importance, the local inhabitants have been allowed to continue to practice their faith in exchange for an additional tax, or jizya."
  damietta_city_pillaged:0 "City Pillaged"
- damietta_local_governor:0 "A local [Owner.Culture] governor has been installed in this province to oversee day-to-day life."
+ damietta_local_governor:0 "Local Governor"
+ desc_damietta_local_governor:0 "A local governor has been installed in this province to oversee day-to-day life."

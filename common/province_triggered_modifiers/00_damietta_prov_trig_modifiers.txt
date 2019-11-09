@@ -1,6 +1,8 @@
 damietta_jizya_effective_here = {
 	potential = {
-		always = yes
+		owner = {
+			religion_group = muslim
+		}
 	}
 
 	trigger = {

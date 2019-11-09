@@ -13,6 +13,9 @@ base_manpower = 1
 #is_city = yes
 add_local_autonomy = 50
 #add_core = MAM
+native_size = 30
+native_ferocity = 5
+native_hostileness = 5
 
 
 
