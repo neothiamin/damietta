@@ -6,5 +6,8 @@
  damietta_benefiting_from_foreign_quarter:0 "Foreign Quarter Proceeds"
 
  damietta_crusaders_expelled:0 "Inhabitants Expelled"
+ desc_damietta_crusaders_expelled:0 "The previous inhabitants of this city have been expelled, resulting in lots of abandoned dwellings."
  damietta_jizya_effective_here:0 "Jizya"
+ desc_damietta_jizya_effective_here:0 "Due to this city's importance, the local inhabitants have been allowed to continue to practice their faith in exchange for an additional tax, or jizya."
  damietta_city_pillaged:0 "City Pillaged"
+ damietta_local_governor:0 "A local [Owner.Culture] governor has been installed in this province to oversee day-to-day life."

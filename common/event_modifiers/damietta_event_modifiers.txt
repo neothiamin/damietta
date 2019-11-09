@@ -12,6 +12,8 @@ damietta_benefiting_from_foreign_quarter = {
 
 damietta_crusaders_expelled = {
 	local_unrest = 8
+	local_tax_modifier = -0.25
+	local_development_cost = 0.25
 }
 
 damietta_city_pillaged = {
