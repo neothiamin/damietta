@@ -2,7 +2,7 @@
 
 #owner = MAM
 #controller = MAM
-culture = al_misr_arabic
+culture = libyan_berber_culture
 religion = sunni
 capital = "Darnah"
 trade_goods = livestock

@@ -12,3 +12,7 @@
  damietta_city_pillaged:0 "City Pillaged"
  damietta_local_governor:0 "Local Governor"
  desc_damietta_local_governor:0 "A local governor has been installed in this province to oversee day-to-day life."
+ damietta_rahulids_province_raided:0 "Province Raided"
+ desc_damietta_rahulids_province_raided:0 "This province was the site of a raid by nomads from the Western Desert."
+
+ damietta_rahulids_settlers_in_desert:0 "Desert Settlers"

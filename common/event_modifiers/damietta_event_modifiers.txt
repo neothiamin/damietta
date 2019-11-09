@@ -26,3 +26,12 @@ damietta_local_governor = {
 	local_unrest = -4
 	min_local_autonomy = 50
 }
+
+damietta_rahulids_province_raided = {
+	local_tax_modifier = -0.5
+	local_unrest = 6
+}
+
+damietta_rahulids_settlers_in_desert = {
+	local_colonial_growth = 90
+}

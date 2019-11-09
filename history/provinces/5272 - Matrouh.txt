@@ -4,7 +4,7 @@
 #controller = MAM
 #add_core = MAM
 capital = "Mersa"
-culture = al_misr_arabic
+culture = libyan_berber_culture
 religion = sunni
 trade_goods = fish
 hre = no

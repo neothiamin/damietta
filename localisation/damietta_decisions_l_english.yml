@@ -2,3 +2,7 @@
  damietta_crusader_state_foreign_quarters_title:0 "Open Bidding For Foreign Quarters"
  damietta_crusader_state_foreign_quarters_desc:0 "Rescind restrictions on foreign merchants in our cities."
  damietta_crusader_states_foreign_quarters_will_be_enabled:0 "Nations may inquire about opening foreign quarters in our cities."
+
+ damietta_rahulids_tame_the_desert_title:0 "Tame the Desert"
+ damietta_rahulids_tame_the_desert_desc:0 "Establish a settler bureau focused on taming the Western Desert."
+ damietta_rahulids_taming_desert.tt:0 "[Root.Culture.GetName] settlers will be sent to the desert to establish order."

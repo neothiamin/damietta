@@ -30,4 +30,14 @@
  damietta_crusader_states.3.c:0 "Institute a jizya for the non-Muslim inhabitants."
  damietta_crusader_states.3.c.tt:0 "Jizya will be practiced in this province."
  damietta_crusader_states.3.d:0 "Install our own local governors to oversee the locals."
+
+ #Rahulids
+ damietta_rahulids.1.t:0 "Raid in [Root.GetName]"
+ damietta_rahulids.1.desc:0 "Our relations with the nomads of Libya has for centuries been... spotty. While sparsely populated, the Libyan Desert is speckled with important oases such as the ones at Al-Fayyum and Bahariya. These oases are critical for trade and local government.\n\nNaturally, raids on settlements in or near the Libyan Desert are common. Nomadic peoples are drawn to the riches and luxuries found in cities along the Nile and at oases like moths to a flame. This time, the city of [Root.GetName] has fallen victim to one such raid. While there were few casualties, the local population has petitioned for something to be done."
+ damietta_rahulids.1.a:0 "Fine. Send a guard patrol to [Root.Capital.GetName] to calm the locals down."
+ damietta_rahulids.1.b:0 "Are we now listening to anyone who sends a petition? Even a bunch of desert-dwellers?"
+
+ damietta_rahulids.2.t:0 "Desert Colony Established"
+ damietta_rahulids.2.desc:0 "My [Root.Monarch.GetTitle],\n\nA colony of loyal settlers has been dispatched to a desert region in the west! May they find great success admist the sand."
+ damietta_rahulids.2.a:0 "Hurrah!"
  
