@@ -53,6 +53,10 @@ damietta_crusader_tier_1_reform_1 = {
 					has_country_flag = damietta_accepted_crusader_rule
 				}
 			}
+			AND = {
+				tag = EGY
+				has_country_flag = damietta_dmi_formed_egypt
+			}
 		}
 	}
 
@@ -62,7 +66,7 @@ damietta_crusader_tier_1_reform_1 = {
 
 	modifiers = {
 		discipline = 0.05
-		culture_conversion_cost = 0.5
+		culture_conversion_cost = 0.25
 		tolerance_heathen = -2
 	}
 

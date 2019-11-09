@@ -2,3 +2,7 @@ damietta_lake_manzala = {
 	province_trade_power_value = 5
 	picture = "estuary_icon"
 }
+
+damietta_fortress_of_tamiathis = {
+	local_defensiveness = 0.5
+}

@@ -15,6 +15,12 @@
  damietta_crusader_states.1.a:0 "Of course! This agreement is beneficial to us both."
  damietta_crusader_states.1.b:0 "Politely decline their offer."
 
+ damietta_crusader_states.4.t:0 "Capture of Cairo"
+ damietta_crusader_states.4.desc:0 "Hurrah! Hurrah! Hurrah!\n\nMy [Root.Monarch.GetName], we have fought against the heathen and captured the city of Cairo! What shall be the city's fate?"
+ damietta_crusader_states.4.a:0 "Sack the city!"
+ damietta_crusader_states.4.b:0 "Plunder its artifacts and bring them back to [Owner.Capital.GetName]"
+ damietta_crusader_states.4.c:0 "Move the Court to Cairo. It is time we live up to our right to rule Egypt."
+
  #Bulgaria
  damietta_bulgaria.1.t:0 "Defense of Bulgaria"
  damietta_bulgaria.1.desc:0 "War with the Byzantines is nothing new to us. We were famously beaten back by the Byzantine Empire in 1354, and many blame the Greeks in Constantinople for the collapse of our Empire. Now, though, every true Bulgarian must band together in defense of our native land!"

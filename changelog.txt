@@ -1,14 +1,18 @@
 v0.0.4:
 
-+ Added events and a decision that allows the Rahulids to tame the desert.
-+ Added decisions and events around the establishment of a new Bulgarian Empire. 
++ Added events and a decision that allows the Rahulids to tame the desert
++ Added decisions and events around the establishment of a new Bulgarian Empire
 + Added Rum cores on Ar-Ruha
 + Added Mamluk cores on Malayta, Marash, and 'Antep
++ Added "Fortress of Tamiathis" modifier for the province of Damietta
++ Added "Capture of Cairo" event for Damietta
++ Added ability to form Egypt for Damietta if it controls Cairo and has admin tech 12
 
-* Reinstated Rum cores in provinces 5130, 322, 4312, and 5168.
-* Fixed various localization inconsistencies in national ideas. Thanks CouchCoach for the reports!
+* Reinstated Rum cores in provinces 5130, 322, 4312, and 5168
+* Fixed various localization inconsistencies in national ideas Thanks CouchCoach for the reports!
 * Added modifier descriptions to "Inhabitants Expelled", "Jizya", and "Local Governor"
 * Slight change to Defense of Bulgaria event, now fires earlier
+* Tweaked Crusader Kingdom culture conversion cost malus
 
 v0.0.3:
 ! First Steam Workshop release!

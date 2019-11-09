@@ -3,7 +3,8 @@
 on_province_owner_change = {
 	events = {
 		japan.1
-		damietta_crusader_states.3 #Capture of [Root.GetName] (for important crusader cities
+		damietta_crusader_states.3 #Capture of [Root.GetName] (for important crusader cities)
+		damietta_crusader_states.4 #Capture of Cairo (for Damietta)
 	}
 
 	if = {

@@ -177,3 +177,73 @@ province_event = {
 		}
 	}
 }
+
+#Capture of Cairo
+province_event = {
+	id = damietta_crusader_states.4
+	title = damietta_crusader_states.4.t
+	desc = damietta_crusader_states.4.desc
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		province_id = 361
+		owner = {
+			tag = DMI
+			religion_group = christian
+		}
+		NOT = {
+			has_province_flag = damietta_dmi_captured_cairo
+		}
+	}
+
+	immediate = {
+		set_province_flag = damietta_dmi_captured_cairo
+	}
+
+	#Sack the city in God's name!
+	option = {
+		name = damietta_crusader_states.4.a
+		add_base_manpower = -1
+		add_base_tax = -1
+		add_base_production = -1
+		add_devastation = 10
+	}
+
+	#Pillage the old court and bring its artifacts back to [Owner.Capital.GetName].
+	option = {
+		name = damietta_crusader_states.4.b
+		add_base_manpower = -2
+		add_base_tax = -2
+		add_base_production = -2
+		add_devastation = 25
+		owner = {
+			capital_scope = {
+				add_base_manpower = 1
+				add_base_tax = 1
+				add_base_production = 1
+			}
+		}
+	}
+
+	#Make Cairo the new capital. It is time we live up to our right to rule Egypt.
+	option = {
+		name = damietta_crusader_states.4.c
+		owner = {
+			capital_scope = {
+				add_base_manpower = -2
+				add_base_tax = -2
+				add_base_production = -2
+			}			
+			set_capital = 361
+		}
+		361 = {
+			add_base_manpower = 1
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+}

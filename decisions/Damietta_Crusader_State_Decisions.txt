@@ -43,4 +43,36 @@ country_decisions = {
 			}
 		}
 	}
+
+	damietta_dmi_form_egypt = {
+		potential = {
+			tag = DMI
+			religion_group = christian
+		}
+
+		provinces_to_highlight = {
+			province_id = 361
+		}
+
+		allow = {
+			owns_core_province = 361
+			total_development = 250
+			adm_tech = 12
+		}
+
+		effect = {
+			change_tag = EGY
+			add_prestige = 25
+			egypt_region = {
+				add_permanent_claim = ROOT
+			}
+			cyrenaica_area = {
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = damietta_dmi_formed_egypt
+		}
+	}
 }
