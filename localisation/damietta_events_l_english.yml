@@ -20,6 +20,16 @@
  damietta_bulgaria.1.desc:0 "War with the Byzantines is nothing new to us. We were famously beaten back by the Byzantine Empire in 1354, and many blame the Greeks in Constantinople for the collapse of our Empire. Now, though, every true Bulgarian must band together in defense of our native land!"
  damietta_bulgaria.1.a:0 "Chaaarge!"
 
+ damietta_bulgaria.2.t:0 "Restoration of \"Empire\""
+ damietta_bulgaria.2.desc:0 "My [Root.Monarch.GetTitle]!\n\nWord has reached us that the Bulgaria in [BUL.Capital.GetName] has declared a new Bulgarian Empire! They have squashed dissent, and are preparing for a new march in honor of the new Empire. We have received a missive from the court in [BUL.Capital.GetName] with a very simple ultimatum: submit, or face war."
+ damietta_bulgaria.2.a:0 "Submit to the rightful Bulgarian Empire."
+ damietta_bulgaria.2.b:0 "We stand against false Empire, now as ever!"
+ damietta_bulgaria.3.t:0 "A New Capital?"
+ damietta_bulgaria.3.desc:0 "Hurrah!\n\nWith the declaration of the new Bulgarian Empire under our rule, a key question has been posed: where to hold court?"
+ damietta_bulgaria.3.a:0 "Set up court in the ancestral city of Tarnovo."
+ damietta_bulgaria.3.b:0 "Maintain the current location of the royal court."
+ damietta_bulgaria.3.c:0 "Begin preparations for court operations in Sofija."
+
  #Capture of Crusader Cities
  damietta_crusader_states.3.t:0 "Capture of [Root.GetName]!"
  damietta_crusader_states.3.desc_damietta:0 "The city of Damietta, captured by the Crusaders in 616 AH, is once again under righteous control. Now, the fate of the Crusaders is in our hands... what is our verdict?"

@@ -1,9 +1,11 @@
 v0.0.4:
 
 + Added events and a decision that allows the Rahulids to tame the desert.
++ Added decisions and events around the establishment of a new Bulgarian Empire. 
 
 * Fixed various localization inconsistencies in national ideas. Thanks CouchCoach for the reports!
 * Added modifier descriptions to "Inhabitants Expelled", "Jizya", and "Local Governor"
+* Slight change to Defense of Bulgaria event, now fires earlier
 
 v0.0.3:
 ! First Steam Workshop release!

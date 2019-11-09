@@ -6,3 +6,6 @@
  damietta_rahulids_tame_the_desert_title:0 "Tame the Desert"
  damietta_rahulids_tame_the_desert_desc:0 "Establish a settler bureau focused on taming the Western Desert."
  damietta_rahulids_taming_desert.tt:0 "[Root.Culture.GetName] settlers will be sent to the desert to establish order."
+
+ damietta_reform_bulgarian_empire_title:0 "Proclaim a New Bulgarian Empire"
+ damietta_reform_bulgarian_empire_desc:0 "The time has come. We have conquered the pretenders, and solidified our own rule as the one, true Bulgaria. Let us proclaim a new Tsardom, like those before us!"

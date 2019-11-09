@@ -56,3 +56,85 @@ province_event = {
 		cavalry = ROOT
 	}
 }
+
+#Restoration of Bulgarian Empire
+#Fired on Voivodes after Bulgaria restores Empire
+country_event = {
+	id = damietta_bulgaria.2
+	title = damietta_bulgaria.2.t
+	desc = damietta_bulgaria.2.desc
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	#Bend the knee.
+	option = {
+		name = damietta_bulgaria.2.a
+		BUL = {
+			vassalize = ROOT
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	#We stand against this pretender Tsar!
+	option = {
+		name = damietta_bulgaria.2.b
+		add_stability = -1
+		reverse_add_casus_belli = {
+			type = cb_vassalize_mission
+			target = BUL
+		}
+		ai_chance = {
+			factor = 67
+		}
+	}
+
+}
+
+#A New Capital?
+#Fires for a Voivode Bulgarian Empire
+country_event = {
+	id = damietta_bulgaria.3
+	title = damietta_bulgaria.3.t
+	desc = damietta_bulgaria.3.desc
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	#Establish court at the old capital of Tarnovo.
+	option = {
+		name = damietta_bulgaria.3.a
+		set_capital = 150
+		150 = {
+			add_base_manpower = 1
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+
+	#Maintain court operations at [Root.Capital.GetName].
+	option = {
+		name = damietta_bulgaria.3.b
+		capital_scope = {
+			add_base_manpower = 1
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+
+	#Establish court in the town of Sofija.
+	option = {
+		name = damietta_bulgaria.3.c
+		trigger = {
+			owns_core_province = 1765
+		}
+		set_capital = 1765
+		1765 = {
+			add_base_manpower = 1
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+}

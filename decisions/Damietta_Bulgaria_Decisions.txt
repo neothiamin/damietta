@@ -1,0 +1,105 @@
+country_decisions = {
+
+	damietta_reform_bulgarian_empire = {
+		potential = {
+			OR = {
+				tag = BUL
+				tag = PRL
+				tag = BDN
+				tag = VBZ
+				tag = DRJ
+			}
+			primary_culture = bulgarian
+			religion = orthodox
+			normal_or_historical_nations = yes
+			BUL = {
+				NOT = {
+					government_rank = 3
+				}
+			}
+		}
+
+		major = yes
+
+		allow = {			
+			calc_true_if = {
+				amount = 4
+				all_province = {
+					OR = {
+						province_id = 7154
+						province_id = 3165
+						province_id = 2746
+						province_id = 7704
+						province_id = 3167
+						province_id = 7146
+					}
+					owned_by = ROOT
+				}
+			}
+			if = {
+				limit = {
+					tag = BUL
+				}
+				owns_core_province = 7152
+				total_development = 150
+			}
+			if = {
+				limit = {
+					NOT = {
+						tag = BUL
+					}
+				}
+				NOT = {
+					exists = BUL
+				}
+				owns_core_province = 150
+				total_development = 100
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					tag = BUL
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = DRJ
+							tag = BDN
+							tag = VBZ
+							tag = PRL
+						}
+						is_free_or_tributary_trigger = yes
+					}
+					country_event = {
+						id = damietta_bulgaria.2
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						tag = BUL
+					}
+				}
+				country_event = {
+					id = damietta_bulgaria.3
+				}
+				change_tag = BUL
+			}
+			set_government_rank = 3
+			add_prestige = 25
+			every_province = {
+				limit = {
+					area = thrace_area
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				target = WAL
+			}
+		}
+	}
+}
