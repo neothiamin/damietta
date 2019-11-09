@@ -2,7 +2,10 @@ v0.0.4:
 
 + Added events and a decision that allows the Rahulids to tame the desert.
 + Added decisions and events around the establishment of a new Bulgarian Empire. 
++ Added Rum cores on Ar-Ruha
++ Added Mamluk cores on Malayta, Marash, and 'Antep
 
+* Reinstated Rum cores in provinces 5130, 322, 4312, and 5168.
 * Fixed various localization inconsistencies in national ideas. Thanks CouchCoach for the reports!
 * Added modifier descriptions to "Inhabitants Expelled", "Jizya", and "Local Governor"
 * Slight change to Defense of Bulgaria event, now fires earlier
@@ -12,7 +15,7 @@ v0.0.3:
 
 
 + Added country history files for Montenegro and Bosnia
-+ Added events for Muslim conquest of Tripoli, Damietta, and Jerusalem. These events fire once per game, so if Damietta is conquered by the Rahulids for example and then recaptured by Damietta and then re-recaptured by Rahulids, the event will not fire again. I hope that makes sense.
++ Added events for Muslim conquest of Tripoli, Damietta, and Jerusalem. These events fire once per game, so if Damietta is conquered by the Rahulids for example and then reconquered by Damietta and then re-reconquered by Rahulids, the event will not fire again. I hope that makes sense.
 
 * Moved province 5277 (Batn-el-Hajar) from the Dongola trade node to the Damietta node
 * Added historical friends for Montenegro, Bosnia, and Prilep

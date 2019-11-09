@@ -74,6 +74,7 @@ country_decisions = {
 					}
 					country_event = {
 						id = damietta_bulgaria.2
+						days = 15
 					}
 				}
 			}
@@ -85,6 +86,7 @@ country_decisions = {
 				}
 				country_event = {
 					id = damietta_bulgaria.3
+					days = 15
 				}
 				change_tag = BUL
 			}
