@@ -131,6 +131,7 @@ province_event = {
 	#Pillage the city! Leave nothing standing!
 	option = {
 		name = damietta_crusader_states.3.b
+		change_culture = owner
 		add_base_manpower = -2
 		add_base_tax = -2
 		add_base_production = -2

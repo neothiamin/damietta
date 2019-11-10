@@ -24,3 +24,5 @@ A few things to note:
 * This mod, as indicated at the top of the description, is nowhere near release! Bugs will exist! Changes are always being made! Nothing is sacred! This mod is not for the faint of heart. You have been waaaarned...
 
 If you're looking for a community outside Steam, we have a Discord server! Or, a server that this mod had channels for. We share it with many other mods. Come on by! https://discord.gg/BUT8ncB
+
+Thanks go out to UndeadWizard, Zephyrum, TeleBread, Pascal, Cinnamon, CouchCoach and many more kind people for their feedback and help with the mod!

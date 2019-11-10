@@ -20,13 +20,29 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			OR = {
-				province_id = 7154
-				province_id = 3165
-				province_id = 2746
-				province_id = 7704
-				province_id = 3167
-				province_id = 7146
+			if = {
+				limit = {
+					tag = BUL
+				}
+				OR = {
+					province_id = 7152
+					province_id = 7154
+					province_id = 3165
+					province_id = 2746
+					province_id = 7704
+					province_id = 3167
+					province_id = 7146
+				}
+			}
+			else = {
+				OR = {
+					province_id = 7154
+					province_id = 3165
+					province_id = 2746
+					province_id = 7704
+					province_id = 3167
+					province_id = 7146
+				}
 			}
 			NOT = {
 				owned_by = ROOT
@@ -116,6 +132,12 @@ country_decisions = {
 				type = cb_vassalize_mission
 				target = WAL
 			}
+		}
+
+		ai_importance = 500
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

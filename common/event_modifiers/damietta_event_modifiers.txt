@@ -2,7 +2,7 @@ damietta_foreign_quarter_established = {
 	province_trade_power_modifier = 0.25
 	trade_goods_size_modifier = 0.1
 	local_tax_modifier = -0.5
-	local_autonomy = 0.2
+	local_autonomy = 0.1
 }
 
 damietta_benefiting_from_foreign_quarter = {
@@ -13,12 +13,14 @@ damietta_benefiting_from_foreign_quarter = {
 damietta_crusaders_expelled = {
 	local_unrest = 8
 	local_tax_modifier = -0.25
+	province_trade_power_modifier = -0.25
 	local_development_cost = 0.25
 }
 
 damietta_city_pillaged = {
 	local_unrest = 8
 	local_tax_modifier = -0.5
+	province_trade_power_modifier = -0.5
 	local_development_cost = 0.5
 }
 

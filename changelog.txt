@@ -1,3 +1,10 @@
+v0.0.5:
+
+* Changed highlighted provinces in the "Proclaim a New Bulgarian Empire" decision
+* The "Pillage the city! Leave no heathen unscathed!" option of the "Capture of xyz" event now converts culture
+* Halved autonomy gain from Foreign Quarter
+* Added ai_importance and fixed up the ai_will_do blocks for decisions. Not sure how much of a difference it'll make, but we'll see.
+
 v0.0.4:
 
 + Added events and a decision that allows the Rahulids to tame the desert
