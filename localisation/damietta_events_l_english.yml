@@ -56,4 +56,38 @@
  damietta_rahulids.2.t:0 "Desert Colony Established"
  damietta_rahulids.2.desc:0 "My [Root.Monarch.GetTitle],\n\nA colony of loyal settlers has been dispatched to a desert region in the west! May they find great success admist the sand."
  damietta_rahulids.2.a:0 "Hurrah!"
+
+ #Renaissance
+ damietta_renaissance.1.t:0 "An Old Scholar"
+ damietta_renaissance.1.desc:0 "Soothsayers, mystics, seers; all throughout history, people have been claiming to possess knowledge of the unknown, or the location of a great treasure, or an elixir of everlasting life. Normally, people of this sort are not paid any mind by anyone but those with rocks for brains. Seldom though, does someone arrive in a royal court seeking patronage to seek out ancient texts...\n\nAn old man, clothed in grey, with long grey hair and a matted, knotted beard walks nearly silently down through the Royal Hall. He keeps his head down, and upon reaching [Root.Monarch.GetTitle] [Root.Monarch.GetName], he falls to his knees and begs.\n\n\"Please, good [Root.Monarch.GetTitle], hear my plea and grant me your grace. I come from the land of the Bulgars, from a town deep in the mountains. I have spent the last fifty years in search of the great mysteries of old Greece. From the Golden Horn to Mount Athos to the hills of the Peloponnese, and all lands in between, I have scoured old temples and libraries. I have dug through ruins, I have spent thrice my weight in gold on old manuscripts, I have sat in the courts of Emperors and petty kings alike, and my search has led me at last to you, and the lands of [Root.GetName].\n\nI know they exist, you see. The secrets of the ancient Greeks. Written by men with the minds of gods. Naught but whispers have made their way out of Greece, but I believe with your help I can bring them to you. Wealth, knowledge, strategy, all these and more may find their way to your realm, if you desire. All I need is time.\""
+ damietta_renaissance.1.a:0 "You speak the truth. I can feel it. Very well."
+ damietta_renaissance_patronage:0 "Extend our patronage to this scholar."
+ damietta_renaissance.1.b:0 "Guards! Remove this wretch from my court!"
+
+ damietta_renaissance.2.t:0 "Old Scholar Requests Funds"
+ damietta_renaissance.2.desc:0 "The old scholar we took has made another request of us.\n\nWhen asked of his progress, he informs us all is going well and his search is proving fruitful. At the end of the conversation, he interjects:\n\n\"Well, you see...\n\nA local scribe claims to own copies of translated works by old Greek philosophers. In Latin, no less! If I had the funds, I could purchase these works from him....\""
+ damietta_renaissance.2.a:0 "Very well."
+ damietta_renaissance_2_a.tt:0 "Grant a modest sum."
+ damietta_renaissance.2.b:0 "If you need gold, you will have to find it yourself."
+ damietta_renaissance_2_b.tt:0 "Deny his request for gold."
+ damietta_renaissance.2.c:0 "I am sure there is a more cost-effective way."
+ damietta_renaissance_2_c.tt:0 "Negotiate with the scribe for a lower price."
+
+ damietta_renaissance.3.t:0 "Old Scholar Requests Library"
+ damietta_renaissance.3.desc:0 "Once more, the scholar whom we have granted our patronage has made a request. Rather than gold, he desires an entirely new construction project: a library! Many have questioned the... practicality of such a building, given the rarity of literacy in our realm, but he insists that a library is paramount to his studies."
+ damietta_renaissance.3.a:0 "A library? Oh, fine."
+ damietta_renaissance_3_philosopher_gets_library:0 "Grant the scholar's wish."
+ damietta_renaissance.3.b:0 "For who? You're the only one in the keep who can read!"
+ damietta_renaissance.3.c:0 "A grand idea! We shall place it in the middle of town, for all to use!"
+
+ damietta_renaissance.4.t:0 "Scholar Requests Escort"
+ damietta_renaissance.4.desc:0 "The old scholar has again come to us with a request. Rather than gold for tomes or a library for... tomes, he requests a personal guard to escort him on an expedition to the heart of Greece itself: the great city of Athens. While not strictly necessary, the scholar has expressed an extreme desire to travel to Attica. He claims his research would benefit greatly from such a trip."
+ damietta_renaissance.4.a:0 "A field trip? Fine! You had better come back with an entire carriage full of old scrolls!"
+ damietta_renaissance.4.b:0 "A vacation, you mean. Our soldiers ought to be out fighting, not vacationing!"
+ damietta_renaissance.4.c:0 "Of course! You shall travel like a king!"
+
+ damietta_renaissance.5.t:0 "Eureka!"
+ damietta_renaissance.5.desc:0 "\"My [Owner.Monarch.GetTitle]! My [Owner.Monarch.GetTitle]!\" The words echo throughout the castle. \"My [Owner.Monarch.GetTitle]! I've done it! The tomes, the scrolls, the oral legends, I've deciphered them all! The secrets of Old Greece are finally mi- er, yours! Secrets of statecraft, warfare, philosophy, and more! Ripe for your use!\""
+ damietta_renaissance.5.a:0 "Hurrah!"
+ damietta_renaissance.5.b:0 "Spread these findings far and wide!"
  
