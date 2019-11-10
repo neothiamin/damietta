@@ -908,6 +908,7 @@ renaissance = {
 	
 	can_start = {
 		is_year = 1450
+		#is_year = 1470
 		custom_trigger_tooltip = {
 			tooltip = tooltip_bt_add_new_instituiton_details_a
 			OR = {
@@ -937,6 +938,12 @@ renaissance = {
 			}	#BTMiscAddonChange - Limits possibilities somewhat, new BT tags was causing it to hit in odd places sometimes
 			normal_or_historical_nations = no
 		}
+		#OR = {
+		#	custom_trigger_tooltip = {
+		#		tooltip = damietta_renaissance_is_patron_capital
+		#		has_province_flag = damietta_renaissance_patron_capital
+		#	}
+		#}
 	}
 	start_chance = 10		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
 	#BTMiscAddonNote - All else being equal and without player interference, likely possiblities to start Renaissance with the new limitations above are - Genoa, Milan, Parma, Verona, Venice, Bologna, Lucca, Romagna, Florence, or Siena.

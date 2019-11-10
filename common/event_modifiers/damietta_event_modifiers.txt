@@ -37,3 +37,11 @@ damietta_rahulids_province_raided = {
 damietta_rahulids_settlers_in_desert = {
 	local_colonial_growth = 90
 }
+
+damietta_renaissance_3_big_library_modifier = {
+	local_institution_spread = 0.5
+}
+
+damietta_big_guard_for_philo = {
+	prestige = 0.5
+}
