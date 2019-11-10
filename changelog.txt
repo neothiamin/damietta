@@ -1,5 +1,7 @@
 v0.0.5:
 
++ Added institutions file for future use
+
 * Changed highlighted provinces in the "Proclaim a New Bulgarian Empire" decision
 * The "Pillage the city! Leave no heathen unscathed!" option of the "Capture of xyz" event now converts culture
 * Halved autonomy gain from Foreign Quarter
