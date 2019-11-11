@@ -4,17 +4,19 @@ v0.0.5:
 + Added ruler for Cilicia (Undead)
 + Added previous rulers for Jerusalem (Undead)
 + Added "Sultanante Min Omar" government reform for the Rahulids
++ Added Ruler Modifier "Uthman's Tolerance" to Uthman Rahulid
 
 * Changed highlighted provinces in the "Proclaim a New Bulgarian Empire" decision
 * The "Pillage the city! Leave no heathen unscathed!" option of the "Capture of xyz" event now converts culture
 * Halved autonomy gain from Foreign Quarter
 * Added ai_importance and fixed up the ai_will_do blocks for decisions. Not sure how much of a difference it'll make, but we'll see.
 * New Cyprus ideas loc, courtesy of UndeadWizard
-* Made Rahulid Sultan Shia to reflect new lore
+* Made Rahulids Shia to reflect new lore
 * Made Mamluk Sultan younger
 * Made Rahulid a zealot and cruel
 * Made Mamluk sultan careful and craven
 * Bumped "Rhomaitokratia" merc maintenance modifer to -25% from -20%
+* Lowered MTTH for Rahulid Berber raid event
 
 v0.0.4:
 

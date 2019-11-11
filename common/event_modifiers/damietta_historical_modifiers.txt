@@ -6,3 +6,8 @@ damietta_lake_manzala = {
 damietta_fortress_of_tamiathis = {
 	local_defensiveness = 0.5
 }
+
+damietta_uthmans_tolerance = {
+	tolerance_heretic = 1
+	tolerance_own = -1
+}

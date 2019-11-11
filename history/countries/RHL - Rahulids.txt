@@ -6,6 +6,48 @@ religion = shiite
 technology_group = muslim
 capital = 361	#Cairo
 
+1248.6.6 = {
+	religion = sunni
+}
+
+1340.1.1 = {
+	monarch = {
+		name = "Mohammed \"the Lunatic\""
+		dynasty = "Rahulid"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1302.4.15
+		religion = shiite
+	}
+}
+
+1387.1.1 = {
+	religion = shiite
+}
+
+1389.2.5 = {
+	monarch = {
+		name = "Abdullah"
+		dynasty = "Rahulid"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1372.6.7
+	}
+}
+
+1405.4.15 = {
+	heir = {
+		name = "Uthman"
+		dynasty = "Rahulid"
+		adm = 6
+		dip = 1
+		mil = 3
+		birth_date = 1405.4.14
+	}
+}
+
 1423.10.7 = {
 	monarch = {
 		name = "Uthman"
@@ -13,9 +55,12 @@ capital = 361	#Cairo
 		adm = 6
 		dip = 1
 		mil = 3
-		birth_date = 1405.4.15
+		birth_date = 1405.4.14
 		religion = shiite
 	}
-	add_ruler_personality = zealot_personality
+	add_ruler_personality = tolerant_personality
 	add_ruler_personality = cruel_personality
+	add_ruler_modifier = {
+		name = damietta_uthmans_tolerance
+	}
 }
