@@ -3,7 +3,7 @@
 owner = RHL #was MAM
 controller = RHL #was MAM
 culture = al_misr_arabic
-religion = sunni
+religion = shiite
 capital = "Al Qahira"
 trade_goods = cloth
 hre = no

@@ -30,8 +30,11 @@ province_event = {
 		}
 		NOT = {
 			has_province_modifier = damietta_rahulids_province_raided
-			has_country_flag = damietta_rahulids_taming_desert
+			owner = {
+				has_country_flag = damietta_rahulids_taming_desert
+			}
 		}
+		is_city = yes
 	}
 
 	immediate = {
@@ -41,7 +44,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 45
+		months = 48
 	}
 
 	#Send a regiment
@@ -94,7 +97,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 30
 	}
 
 	#Hurrah!

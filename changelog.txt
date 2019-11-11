@@ -17,6 +17,8 @@ v0.0.5:
 * Made Mamluk sultan careful and craven
 * Bumped "Rhomaitokratia" merc maintenance modifer to -25% from -20%
 * Lowered MTTH for Rahulid Berber raid event
+* Lowered MTTH for "Settlers in the Desert" event
+* Added additional triggers to "Raid in Province]" event to improve usability
 
 v0.0.4:
 

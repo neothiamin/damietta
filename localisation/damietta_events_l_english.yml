@@ -57,6 +57,11 @@
  damietta_rahulids.2.desc:0 "My [Root.Monarch.GetTitle],\n\nA colony of loyal settlers has been dispatched to a desert region in the west! May they find great success admist the sand."
  damietta_rahulids.2.a:0 "Hurrah!"
 
+ 
+ damietta_rahulids.3.t:0 "Province Settled"
+ damietta_rahulids.3.desc:0 "My [Owner.Monarch.GetTitle]! Our efforts to tame the Libyan Desert have proven successful! The province of [Root.GetName] is now solidly under our control. Local farmers have begun work, and trade caravans are entering and leaving the town square regularly."
+ damietta_rahulids.4.a:0 "Hurrah!"
+
  #Renaissance
  damietta_renaissance.1.t:0 "An Old Scholar"
  damietta_renaissance.1.desc:0 "Soothsayers, mystics, seers; all throughout history, people have been claiming to possess knowledge of the unknown, or the location of a great treasure, or an elixir of everlasting life. Normally, people of this sort are not paid any mind by anyone but those with rocks for brains. Seldom though, does someone arrive in a royal court seeking patronage to seek out ancient texts...\n\nAn old man, clothed in grey, with long grey hair and a matted, knotted beard walks nearly silently down through the Royal Hall. He keeps his head down, and upon reaching [Root.Monarch.GetTitle] [Root.Monarch.GetName], he falls to his knees and begs.\n\n\"Please, good [Root.Monarch.GetTitle], hear my plea and grant me your grace. I come from the land of the Bulgars, from a town deep in the mountains. I have spent the last fifty years in search of the great mysteries of old Greece. From the Golden Horn to Mount Athos to the hills of the Peloponnese, and all lands in between, I have scoured old temples and libraries. I have dug through ruins, I have spent thrice my weight in gold on old manuscripts, I have sat in the courts of Emperors and petty kings alike, and my search has led me at last to you, and the lands of [Root.GetName].\n\nI know they exist, you see. The secrets of the ancient Greeks. Written by men with the minds of gods. Naught but whispers have made their way out of Greece, but I believe with your help I can bring them to you. Wealth, knowledge, strategy, all these and more may find their way to your realm, if you desire. All I need is time.\""
