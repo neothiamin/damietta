@@ -1,6 +1,7 @@
 damietta_byzantine_reform_1 = {
 	icon = "king_2"
 	allow_convert = no
+	lock_level_when_selected = yes
 	valid_for_nation_designer = no
 	valid_for_new_country = no
 	allow_normal_conversion = no
@@ -14,7 +15,7 @@ damietta_byzantine_reform_1 = {
 	start_territory_to_estates = 0.6
 
 	modifiers = {
-		merc_maintenance_modifier = -0.2
+		merc_maintenance_modifier = -0.25
 		global_manpower_modifier = -0.1
 		trade_efficiency = -0.1
 	}
@@ -31,9 +32,10 @@ damietta_crusader_tier_1_reform_1 = {
 	allow_convert = no
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
 	valid_for_new_country = no
 	
-	has_devotion = yes
+	#has_devotion = yes
 
 	factions = {
 		damietta_clergymen_faction
@@ -85,6 +87,7 @@ damietta_crusader_tier_1_reform_1 = {
 #	allow_convert = no
 #	allow_normal_conversion = yes
 #	valid_for_nation_designer = yes
+#	lock_level_when_selected = yes
 #	valid_for_new_country = no
 #	
 #	#has_devotion = yes
@@ -124,3 +127,33 @@ damietta_crusader_tier_1_reform_1 = {
 #	#}
 #
 #}
+
+damietta_rahulid_sultanate_1 = {
+	icon = "mamluk_government"
+	allow_convert = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	valid_for_new_country = no
+	allow_normal_conversion = no
+
+	potential = {
+		tag = RHL
+		religion_group = muslim
+	}
+
+	legacy_equivalent = iqta_legacy
+
+	start_territory_to_estates = 0.4
+
+	#maintain_dynasty = yes
+
+	modifiers = {
+		global_autonomy = 0.05		
+		max_states = 4
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		damietta_rahulid_sultanate_nobility = yes
+	}
+}

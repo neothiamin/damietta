@@ -5,9 +5,10 @@ religion = catholic					# Close ties with crusaders and relations with the pope
 technology_group = eastern
 capital = 5138						# Provinces encompassing Sis
 
-monarch = {
-		name = "Constantine"
-		monarch_name = "Constantine VI"
+1444.11.11 = {
+	monarch = {
+		name = "Constantine VI"
+		#monarch_name = "Constantine VI"
 		dynasty = "de Lusignan"
 		birth_date = 1398.4.26
 		adm = 4
@@ -21,4 +22,5 @@ monarch = {
 			manuever = 3
 			siege = 0 
 		}
+	}
 }

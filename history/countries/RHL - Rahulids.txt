@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = damietta_rahulid_sultanate_1
 
 primary_culture = al_misr_arabic
-religion = sunni
+religion = shiite
 technology_group = muslim
 capital = 361	#Cairo
 
@@ -14,5 +14,8 @@ capital = 361	#Cairo
 		dip = 1
 		mil = 3
 		birth_date = 1405.4.15
+		religion = shiite
 	}
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = cruel_personality
 }

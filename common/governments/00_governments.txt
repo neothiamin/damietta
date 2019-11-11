@@ -43,6 +43,7 @@ monarchy = {
 				damietta_byzantine_reform_1
 				damietta_crusader_tier_1_reform_1
 				#damietta_crusader_tier_1_reform_2
+				damietta_rahulid_sultanate_1
 			}
 		}
 		hereditary_vs_nobility = {

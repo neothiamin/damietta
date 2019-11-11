@@ -1,6 +1,10 @@
 ﻿l_english:
+
+ #Byzantium Reforms
  damietta_byzantine_reform_1:0 "Rhomaiokratia"
  damietta_byzantine_reform_1_desc:0 "A parallel to the term \"Frankokratia,\" this term describes the Byzantine Empire following its restoration. Though the Nicean court brought about the term \"Hellene\" to refer to the people of the Byzantine Empire, the revival of the Empire proper by the Palaiologoi spelled the end of the development of any \"Hellenic\" identity.\n\nThough one would think that such a restoration would spark a golden era for the Empire, many issues persisted from before the Fourth Crusade, and some new ones took hold. The Byzantine Army was still woefully small from the collapse of the theme system, leading the Empire to rely more and more on mercenaries, and the Empire was still plagued with poor finances, stemming partially from the prevalence of Italian merchants in Byzantine ports."
+
+ #Crusader Reforms
  damietta_crusader_tier_1_reform_1:0 "Crusader Kingdom"
  damietta_crusader_tier_1_reform_1_desc:0 "Ever since the end of the 11th Century, Europeans (predominantly those from Western Europe) have been aspiring to retake the Holy Land in the name of Christendom. These Crusades, marked by a sense of duty and fervor coupled with incredible belligerence and disdain for the lifes and cultures of native populations, saw various levels of success, from the successful First Crusade to the abject failure that was the Fourth Crusade to the mild but still significant Fifth Crusade.\n\nThis nation has taken the mantle of the Crusader cause, and seeks to establish solid Christian rule in the Levant and elsewhere."
  damietta_zealot_faction:0 "Zealots"
@@ -14,3 +18,8 @@
  damietta_clergymen_faction_influence:0 "Fervor"
  damietta_crusader_tier_1_reform_2:0 "Theocratic Monarchy"
  damietta_crusader_tier_1_reform_2_desc:0 "Theocratic monarchies draw influences from both pure theocracies and despotic realms. Seldom does anything happen without the King's permission, though the clergy always have the King's attention. In this nation, God rules; the King is just keeping the seat warm."
+
+ #Muslim Reforms
+ damietta_rahulid_sultanate_1:0 "Sultanate Min Omar"
+ damietta_rahulid_sultanate_1_desc:0 "Founded by Omar Rahul in 1248, the Rahulid Sultanate has developed a unique system of governance. With a historical power base in Cairo and little elsewhere, the Sultanate min Omar as it has come to be known utilizes a system similar to Iqta' systems practiced elsewhere, where the Sultan confers land onto subjects who in turn pay tax in the form of grain, coin, or another good depending on the landscape. One muqti may pay his tax in grain the farms located in his province, another in sugar from his own personal plantation along the Nile, another in coin that local traders make selling goods.\n\nThe difference lies in the nature of the muqtis and how they come to administer their land; while nominally appointed by the Sultan, often muqtis will govern the same land that their ancestors governed, whether it be their father, their uncle, or sometimes even their mother or grandmother. This leads to greater stability in the various provinces of the Sultanate, but also leads to greater landholder influence, which the Sultan must respect to remain in power."
+ mechanic_damietta_rahulid_sultanate_nobility_yes:0 "Utilizes a unique type of Iqta' system."
