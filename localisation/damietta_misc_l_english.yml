@@ -3,3 +3,13 @@
  DAMIETTA_BM_DESC:0 "Welcome to Damietta! At some point this bookmark will be filled with lots of nice lore and intrigue, but for now I just wanted to get rid of the raw localization keys. Enjoy!"
 
  damietta_renaissance_is_patron_capital:0 "Home of a Great Scholar"
+
+ damietta_byzantine_coup:0 "Konstantinos' Coup"
+ damietta_byzantine_coup_desc:0 "Dethrone the current Byzantine Emperor and place Konstantinos XI on the throne!"
+
+ DAMIETTA_BYZANTIUM_COUP:0 "War of Konstantinos XI"
+
+ damietta_install_konstantinos_po:0 "Install Konstantinos XI"
+ damietta_install_konstantinos_po_desc:0 "Konstantinos XI takes the throne."
+ CB_ALLOWED_damietta_install_konstantinos_po:0 "Coronation of Konstantinos XI"
+ PEACE_damietta_install_konstantinos_po:0 "Install Konstantinos XI"

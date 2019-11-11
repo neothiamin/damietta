@@ -96,4 +96,29 @@
  damietta_renaissance.5.desc:0 "\"My [Owner.Monarch.GetTitle]! My [Owner.Monarch.GetTitle]!\" The words echo throughout the castle. \"My [Owner.Monarch.GetTitle]! I've done it! The tomes, the scrolls, the oral legends, I've deciphered them all! The secrets of Old Greece are finally mi- er, yours! Secrets of statecraft, warfare, philosophy, and more! Ripe for your use!\""
  damietta_renaissance.5.a:0 "Hurrah!"
  damietta_renaissance.5.b:0 "Spread these findings far and wide!"
+
+ #Byzantium
+
+ damietta_byzantium.1.t:0 "Ambitions of Konstantinos"
+ damietta_byzantium.1.desc:0 "The romantic ideal of the warrior-king is as old as history itself. From the Epic of Gilgamesh to the Persian Emperors Xerxes and Darius to great Julius Caesar, countless kings and emperors have personally led their armies into battle - and won. Now, young Konstantinos has requested to enter formal military training, with the intention of becoming a great general. Our great Empire has no shortage of enemies, to be fair..."
+ damietta_byzantium.1.a:0 "Very well, young Konstantinos. Lead our troops into glorious battle!"
+ damietta_byzantium.1.b:0 "It's suicide! You shall remain in the Palace!"
+ damietta_konstantinos_mad:0 "Konstantinos is upset by this news."
+ damietta_konstantinos_understands:0 "Konstantinos understands."
+
+ damietta_byzantium.2.t:0 "Konstantinos Missing!"
+ damietta_byzantium.2.desc:0 "\"My liege! My liege! Grave news! Konstantinos is missing!\"\n\nThe news shakes the royal court to their cores. Heir to the Byzantine Empire... missing? How could it be?! No note was found, no signs of foul play, no broken windows... he's just gone!"
+ damietta_byzantium.2.a:0 "Egads!"
+
+ damietta_byzantium.3.t:0 "A Dubious Request"
+ damietta_byzantium.3.desc:0 "A young man enters the courtroom, clad in deep purple and bright gold. His name: Konstantinos, former heir apparent to the throne of the Byzantine Empire. His request? That we support him in a coup against his father.\n\nHe explains that his father is unjust, and his family unsupportive. \"They're weak,\" he says. \"They would rather lay about in their throne rooms than wage war against their enemies!\" He seems very passionate. Perhaps his passion could be funneled into action..."
+ damietta_byzantium.3.a:0 "Scandalous! We accept."
+ damietta_supporting_konstantinos_xi.tt:0 "We will support Konstantinos XI in his attempted coup."
+ damietta_byzantium.3.b:0 "And support a pretender? We would never stoop so low!"
+
+ damietta_byzantium.4.t:0 "Konstantinos' Coup"
+ damietta_byzantium.4.desc:0 "The time has come. The armies are ready, the knights mounted, and the people prepared to support us in our war. To Constantinople!"
+ damietta_byzantium.4.a:0 "To arms! Down with [BYZ.Monarch.GetName]!"
+ damietta_byzantium.5.desc:0 "On the horizon, armies bearing the [From.GetAdjective] standard march. At the front of the formation, a tall, armor-clad figure stands draped in purple and gold. Konstantinos.\n\nThe seers warned us of this. That young Konstantinos was not taken, but had fled in self-exile, and that he would one day return to Constantinople, not to talk, but to wage war. It seems they were right. His aim: to capture the throne for himself.\n\nThe time for negotiations is over. Now, we must fight."
+ damietta_byzantium.5.a:0 "Oh, Konstantinos, my own flesh and blood..."
  

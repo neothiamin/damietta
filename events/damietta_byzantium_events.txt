@@ -6,4 +6,230 @@
 
 namespace = damietta_byzantium
 
-#
+#Ambitions of Konstantinos XI
+#Explains young Konstantinos' desire to be a great warrior, taking the fight to the enemy on the front lines. Byzantium can either choose to let him become a general or tell him no, sparking a self-exile.
+country_event = {
+	id = damietta_byzantium.1
+	title = damietta_byzantium.1.t
+	desc = damietta_byzantium.1.desc
+	picture = HEIR_AND_FOREIGN_ADVISOR_eventPicture
+
+	trigger = {
+		tag = BYZ
+		has_heir_flag = damietta_konstantinos_xi
+		NOT = {
+			is_year = 1455
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+
+	#Very well, young one. You may lead our forces into victorious battle!
+	option = {
+		name = damietta_byzantium.1.a
+		ai_chance = {
+			factor = 25
+		}
+		define_heir_to_general = {
+			fire = 0
+			shock = 1
+			manuever = 1
+			siege = 0
+		}
+		set_country_flag = damietta_byz_konstantinos_xi_general
+	}
+
+	#That's suicide! You shall remain in the Royal Palace.
+	option = {
+		name = damietta_byzantium.1.b
+		ai_chance = {
+			factor = 75
+		}
+		add_prestige = -5
+		if = {
+			limit = {
+				ai = yes
+			}
+			random_list = {
+				20 = {
+					custom_tooltip = damietta_konstantinos_mad		
+					set_country_flag = damietta_byz_konstantinos_xi_mad
+				}
+				80 = {
+					custom_tooltip = damietta_konstantinos_understands
+				}
+			}
+		}
+		else = {
+			random_list = {
+				75 = {
+					custom_tooltip = damietta_konstantinos_mad		
+					set_country_flag = damietta_byz_konstantinos_xi_mad
+				}
+				25 = {
+					custom_tooltip = damietta_konstantinos_understands
+				}
+			}
+		}
+	}
+}
+
+#Disappearance of Heir!
+#Looks like Konstantinos got pretty mad and ran off! Uh oh!
+country_event = {
+	id = damietta_byzantium.2
+	title = damietta_byzantium.2.t
+	desc = damietta_byzantium.2.desc
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		had_country_flag = {
+			flag = damietta_byz_konstantinos_xi_mad
+			days = 730
+		}
+		has_heir_flag = damietta_konstantinos_xi
+		tag = BYZ
+	}
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	#Egads!
+	option = {
+		name = damietta_byzantium.2.a
+		add_legitimacy = -25
+		exile_heir_as = damietta_byzantium_konstantinos_in_exile
+		set_global_flag = damietta_byz_konstantinos_seeking_aid
+	}
+}
+
+#A Dubious Request
+#At this point, Konstantinos goes to the courts of rival nations seeking support for a coup.
+country_event = {
+	id = damietta_byzantium.3
+	title = damietta_byzantium.3.t
+	desc = damietta_byzantium.3.desc
+	picture = CONQUEST_eventPicture
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				region = anatolia_region
+				region = egypt_region
+				region = carpathia_region
+				region = balkan_region
+				region = italy_region
+				region = iberia_region
+			}
+		}
+		OR = {
+			BYZ = {
+				is_rival = ROOT
+			}
+			is_rival = BYZ
+			tag = VEN
+			tag = RUM
+		}
+		total_development = 100
+		has_global_flag = damietta_byz_konstantinos_seeking_aid
+		NOT = {
+			had_global_flag = {
+				flag = damietta_byz_konstantinos_seeking_aid
+				days = 3650
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	#How malicious! We accept.
+	option = {
+		name = damietta_byzantium.3.a
+		set_country_flag = damietta_supporting_konstantinos_xi
+		clr_global_flag = damietta_byz_konstantinos_seeking_aid
+		custom_tooltip = damietta_supporting_konstantinos_xi.tt
+	}
+
+	#Supporting a pretender? We would never stoop so low!
+	option = {
+		name = damietta_byzantium.3.b
+	}
+}
+
+#Konstantinos' Coup (for supporter)
+country_event = {
+	id = damietta_byzantium.4
+	title = damietta_byzantium.4.t
+	desc = damietta_byzantium.4.desc
+	picture = BYZ_CIVIL_WAR_eventPicture
+
+	trigger = {
+		has_country_flag = damietta_supporting_konstantinos_xi
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.8
+			BYZ = {
+				is_at_war = yes
+			}
+		}
+	}
+
+	#To arms! Down with [BYZ.Monarch.GetName]!
+	option = {
+		name = damietta_byzantium.4.a
+		declare_war_with_cb = {
+			casus_belli = damietta_byzantine_coup
+			who = BYZ
+		}
+		BYZ = {
+			country_event = {
+				id = damietta_byzantium.5
+			}
+		}
+		set_global_flag = damietta_byz_konstantinos_coup
+	}
+}
+
+#Konstantinos' Coup
+country_event = {
+	id = damietta_byzantium.5
+	title = damietta_byzantium.4.t
+	desc = damietta_byzantium.5.desc
+	picture = BYZ_CIVIL_WAR_eventPicture
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	#Oh Konstantinos, my own flesh and blood...
+	option = {
+		name = damietta_byzantium.5.a
+		add_stability = -1
+		tooltip = {
+			FROM = {
+				declare_war_with_cb = {
+					casus_belli = damietta_byzantine_coup
+					who = ROOT
+				}
+			}
+		}
+	}
+}

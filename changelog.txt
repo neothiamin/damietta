@@ -1,5 +1,7 @@
 v0.0.5:
 
++++ Added event chain centered around Konstantinos, heir apparent to the Byzantine Empire!
+
 + Added institutions file for future use
 + Added ruler for Cilicia (Undead)
 + Added previous rulers for Jerusalem (Undead)

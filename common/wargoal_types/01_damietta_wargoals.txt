@@ -1,0 +1,19 @@
+damietta_install_konstantinos = {
+
+	type = take_capital
+
+	attacker = {
+		peace_options = {
+			damietta_install_konstantinos_po
+			#po_revoke_cores
+			#po_gold
+			#po_concede_defeat
+		}
+	}	
+
+	badboy_factor = 0.25
+	prestige_factor = 3
+	peace_cost_factor = 1
+
+	war_name = DAMIETTA_BYZANTIUM_COUP
+}
