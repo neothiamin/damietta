@@ -4,3 +4,21 @@ primary_culture = cilician
 religion = catholic					# Close ties with crusaders and relations with the pope
 technology_group = eastern
 capital = 5138						# Provinces encompassing Sis
+
+monarch = {
+		name = "Constantine"
+		monarch_name = "Constantine VI"
+		dynasty = "de Lusignan"
+		birth_date = 1398.4.26
+		adm = 4
+		dip = 3
+		mil = 4
+		leader = {	
+			name = "Constantine  VI"             	
+			type = general
+			fire = 3
+			shock = 2	
+			manuever = 3
+			siege = 0 
+		}
+}

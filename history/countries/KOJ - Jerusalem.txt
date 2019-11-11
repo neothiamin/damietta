@@ -21,11 +21,127 @@ add_historical_rival = RHL
 	}
 }
 
+1225.3.22 = {
+	monarch= {
+		birth_date = 1212.3.25
+		death_date = 1260.5.28
+		name = "Isabella"
+		monarch_name = "Isabella II" #Marries Floris IV, born 1210, the son of a Dutch Crusader that helped win Damietta. 
+		dynasty = "of Brienne"
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1260.5.28 = {
+	monarch= {
+		birth_date = 1226.11.10
+		death_date = 1282.7.30
+		name = "William"
+		monarch_name = "William I"
+		dynasty = "of Holland"
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1282.7.30 = {
+	monarch = {
+		birth_date = 1252.10.15
+		death_date = 1302.8.12
+		name = "Floris"
+		monarch_name = "Floris I"
+		dynasty = "of Holland"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1302.8.12 = {
+	monarch = {
+		birth_date = 1280.9.5
+		death_date = 1322.10.25
+		name = "William"
+		monarch_name = "William II"
+		dynasty = "of Holland"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1322.10.25 = {
+	monarch = {
+		birth_date = 1310.10.20
+		death_date = 1334.4.23
+		name = "William
+		monarch = "William III"
+		dynasty = "of Holland"
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1334.4.23 = {
+	monarch = {
+		birth_date = 1323.3.16
+		death_date = 1360.2.15
+		name = "Floris"
+		monarch_name = "Floris II"
+		dynasty = "of Holland"
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1340.4.7 = {
+	monarch = {
+		birth_date = "1328.4.12
+		death_date = 1386.5.18
+		name = "Jean"
+		monarch_name = "Jean I"
+		dynasty = "Iqyrét"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1386.5.18 = {
+	monarch = {
+		birth_date = "1346.10.13
+		death_date = 1402.2.12
+		name = "Aldéric"
+		dynasty = "Iqyrét"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1402.6.15 ={
+	monarch ={
+		birth_date = 1360.2.12
+		death_date = 1414.12.25
+		name = "Michel"
+		dynasty = "Iqyrét"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
 1414.12.25 = {
 	monarch = {
 		birth_date = 1380.1.1
 		name = "Jean"
-		dynasty = "de la Galilée"
+		monarch_name = "Jean II"
+		dynasty = "Iqyrét"
 		adm = 0
 		dip = 1
 		mil = 4
