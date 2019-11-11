@@ -56,6 +56,7 @@
  damietta_rahulids.2.t:0 "Desert Colony Established"
  damietta_rahulids.2.desc:0 "My [Root.Monarch.GetTitle],\n\nA colony of loyal settlers has been dispatched to a desert region in the west! May they find great success admist the sand."
  damietta_rahulids.2.a:0 "Hurrah!"
+ damietta_rahulids.2.b:0 "Not this time."
 
  
  damietta_rahulids.3.t:0 "Province Settled"

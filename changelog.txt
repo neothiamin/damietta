@@ -5,6 +5,8 @@ v0.0.5:
 + Added previous rulers for Jerusalem (Undead)
 + Added "Sultanante Min Omar" government reform for the Rahulids
 + Added Ruler Modifier "Uthman's Tolerance" to Uthman Rahulid
++ Added option to "Settlers in the Desert" event that does not create a colony 
++ Added additional triggers to "Raid in [Province]" event to improve usability
 
 * Changed highlighted provinces in the "Proclaim a New Bulgarian Empire" decision
 * The "Pillage the city! Leave no heathen unscathed!" option of the "Capture of xyz" event now converts culture
@@ -18,7 +20,6 @@ v0.0.5:
 * Bumped "Rhomaitokratia" merc maintenance modifer to -25% from -20%
 * Lowered MTTH for Rahulid Berber raid event
 * Lowered MTTH for "Settlers in the Desert" event
-* Added additional triggers to "Raid in Province]" event to improve usability
 
 v0.0.4:
 

@@ -103,6 +103,15 @@ country_event = {
 	#Hurrah!
 	option = {
 		name = damietta_rahulids.2.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				NOT = {
+					monthly_income = 20
+				}
+			}
+		}
 		random_owned_province = {
 			limit = {
 				any_empty_neighbor_province = {
@@ -127,6 +136,14 @@ country_event = {
 					duration = 3650
 				}
 			}
+		}
+	}
+
+	#Not this time.
+	option = {
+		name = damietta_rahulids.2.b
+		ai_chance = {
+			factor = 20
 		}
 	}
 }
