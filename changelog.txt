@@ -1,11 +1,14 @@
 v0.0.5:
 
 + Added institutions file for future use
++ Added ruler for Cilicia (Undead)
++ Added previous rulers for Jerusalem (Undead)
 
 * Changed highlighted provinces in the "Proclaim a New Bulgarian Empire" decision
 * The "Pillage the city! Leave no heathen unscathed!" option of the "Capture of xyz" event now converts culture
 * Halved autonomy gain from Foreign Quarter
 * Added ai_importance and fixed up the ai_will_do blocks for decisions. Not sure how much of a difference it'll make, but we'll see.
+* New Cyprus ideas loc, courtesy of UndeadWizard
 
 v0.0.4:
 
