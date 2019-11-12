@@ -1,0 +1,69 @@
+############################################
+# Events for Rum
+#
+# by neothiamin
+############################################
+
+namespace = damietta_rum
+
+#Stability Cost Modifier Application
+country_event = {
+	id = damietta_rum.1
+	title = damietta_rum.1.t
+	desc = damietta_rum.1.desc
+	picture = OVEREXTENSION_eventPicture
+
+	trigger = {
+		has_government_attribute = damietta_rumi_sultanate_stability
+		OR = {
+			AND = {
+				stability = 1
+				NOT = {
+					has_country_modifier = damietta_rum_stability_modifier_1
+				}
+			}
+			AND = {
+				NOT = {
+					stability = 0
+				}
+				NOT = {
+					has_country_modifier = damietta_rum_stability_modifier_neg_1
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	hidden = yes
+
+	#Apply modifiers
+	option = {
+		remove_country_modifier = damietta_rum_stability_modifier_1
+		remove_country_modifier = damietta_rum_stability_modifier_neg_1
+		if = {
+			limit = {
+				stability = 1
+			}
+			add_country_modifier = {
+				name = damietta_rum_stability_modifier_1
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					stability = 0
+				}
+			}
+			add_country_modifier = {
+				name = damietta_rum_stability_modifier_neg_1
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+}

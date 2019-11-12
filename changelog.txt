@@ -1,6 +1,12 @@
 v0.0.6:
 
+! This update doesn't have much in it, I mostly needed to fix a bug with the Konstantinos XI events
+
++ Added unique Rumi government reform
+
+* Fixed Konstantinos XI event chain firing too much. My bad.
 * Changed the Reform Bulgarian Empire decision's requirements because apparently you can't change highlighted provinces based on the nation looking at the decision aahhhhh
+* Gave province 357 (Darnah) to Ifriqiya
 
 v0.0.5:
 

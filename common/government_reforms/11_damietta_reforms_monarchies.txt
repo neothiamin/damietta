@@ -1,3 +1,10 @@
+############################################
+#Byzantium
+############################################
+
+#Tier 1
+
+#Rhomaiokratia
 damietta_byzantine_reform_1 = {
 	icon = "king_2"
 	allow_convert = no
@@ -25,6 +32,12 @@ damietta_byzantine_reform_1 = {
 	}
 
 }
+
+############################################
+#Crusader States
+############################################
+
+#Tier 1
 
 #Militant Crusader State
 damietta_crusader_tier_1_reform_1 = {
@@ -128,6 +141,13 @@ damietta_crusader_tier_1_reform_1 = {
 #
 #}
 
+############################################
+#Rahulids
+############################################
+
+#Tier 1
+
+#Sultanate Min Omar
 damietta_rahulid_sultanate_1 = {
 	icon = "mamluk_government"
 	allow_convert = no
@@ -155,5 +175,45 @@ damietta_rahulid_sultanate_1 = {
 	custom_attributes = {
 		locked_government_type = yes
 		damietta_rahulid_sultanate_nobility = yes
+	}
+}
+
+############################################
+#Rum
+############################################
+
+#Tier 1
+
+#Rumi Sultanate
+damietta_rumi_sultanate_1 = {
+	icon = "ottoman_government"
+	allow_convert = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	valid_for_new_country = no
+	allow_normal_conversion = no
+
+	potential = {
+		tag = RUM
+	}
+
+	legacy_equivalent = iqta_legacy
+
+	start_territory_to_estates = 0.2
+
+	modifiers = {
+		diplomatic_upkeep = 1
+		state_maintenance_modifier = -0.2
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+
+	custom_attributes = {
+		damietta_rumi_sultanate_stability = yes
 	}
 }

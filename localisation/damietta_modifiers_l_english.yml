@@ -23,3 +23,10 @@
  damietta_renaissance_3_big_library_modifier:0 "Grand Library"
 
  damietta_uthmans_tolerance:0 "Uthman's Tolerance"
+
+ damietta_rum_stability_modifier_1:0 "Seljuk Stability"
+ #damietta_rum_stability_modifier_2:0 "Seljuk Stability"
+ #damietta_rum_stability_modifier_3:0 "Seljuk Stability"
+ damietta_rum_stability_modifier_neg_1:0 "Seljuk Stability"
+ #damietta_rum_stability_modifier_neg_2:0 "Seljuk Stability"
+ #damietta_rum_stability_modifier_neg_3:0 "Seljuk Stability"

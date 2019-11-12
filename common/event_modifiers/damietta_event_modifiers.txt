@@ -45,3 +45,12 @@ damietta_renaissance_3_big_library_modifier = {
 damietta_big_guard_for_philo = {
 	prestige = 0.5
 }
+
+#Rumi Stability Shit
+damietta_rum_stability_modifier_1 = {
+	stability_cost_modifier = 0.25
+}
+
+damietta_rum_stability_modifier_neg_1 = {
+	stability_cost_modifier = -0.25
+}

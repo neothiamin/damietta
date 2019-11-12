@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = damietta_rumi_sultanate_1
 government_rank = 2
 primary_culture = turkish
 religion = sunni
