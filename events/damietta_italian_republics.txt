@@ -6,6 +6,10 @@
 
 namespace = damietta_italian_states
 
+############################################
+#Foreign Quarters
+############################################
+
 #Foreign Quarters in the Levant?
 country_event = {
 	id = damietta_italian_states.1

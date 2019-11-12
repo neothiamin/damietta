@@ -6,6 +6,10 @@
 
 namespace = damietta_byzantium
 
+############################################
+# Konstantinos XI
+############################################
+
 #Ambitions of Konstantinos XI
 #Explains young Konstantinos' desire to be a great warrior, taking the fight to the enemy on the front lines. Byzantium can either choose to let him become a general or tell him no, sparking a self-exile.
 country_event = {

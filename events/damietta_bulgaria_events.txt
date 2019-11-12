@@ -6,6 +6,10 @@
 
 namespace = damietta_bulgaria
 
+############################################
+#Defense of Bulgaria
+############################################
+
 #Defense of Bulgaria
 province_event = {
 	id = damietta_bulgaria.1
@@ -56,6 +60,10 @@ province_event = {
 		cavalry = ROOT
 	}
 }
+
+############################################
+#New Bulgarian Empire
+############################################
 
 #Restoration of Bulgarian Empire
 #Fired on Voivodes after Bulgaria restores Empire

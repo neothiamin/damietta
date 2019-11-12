@@ -20,29 +20,15 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			if = {
-				limit = {
-					tag = BUL
-				}
-				OR = {
-					province_id = 7152
-					province_id = 7154
-					province_id = 3165
-					province_id = 2746
-					province_id = 7704
-					province_id = 3167
-					province_id = 7146
-				}
-			}
-			else = {
-				OR = {
-					province_id = 7154
-					province_id = 3165
-					province_id = 2746
-					province_id = 7704
-					province_id = 3167
-					province_id = 7146
-				}
+			OR = {
+				province_id = 7152
+				province_id = 7154
+				province_id = 3165
+				province_id = 2746
+				province_id = 7704
+				province_id = 3167
+				province_id = 7146
+				province_id = 150
 			}
 			NOT = {
 				owned_by = ROOT
@@ -53,15 +39,17 @@ country_decisions = {
 
 		allow = {			
 			calc_true_if = {
-				amount = 4
+				amount = 6
 				all_province = {
 					OR = {
+						province_id = 7152
 						province_id = 7154
 						province_id = 3165
 						province_id = 2746
 						province_id = 7704
 						province_id = 3167
 						province_id = 7146
+						province_id = 150
 					}
 					owned_by = ROOT
 				}
@@ -70,7 +58,7 @@ country_decisions = {
 				limit = {
 					tag = BUL
 				}
-				owns_core_province = 7152
+				#owns_core_province = 7152
 				total_development = 150
 			}
 			if = {
@@ -82,7 +70,7 @@ country_decisions = {
 				NOT = {
 					exists = BUL
 				}
-				owns_core_province = 150
+				#owns_core_province = 150
 				total_development = 100
 			}
 		}

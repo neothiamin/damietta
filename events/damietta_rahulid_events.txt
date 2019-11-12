@@ -6,6 +6,10 @@
 
 namespace = damietta_rahulids
 
+############################################
+#Taming the Desert
+############################################
+
 #Raid in [Root.GetName]
 
 province_event = {
@@ -147,3 +151,7 @@ country_event = {
 		}
 	}
 }
+
+############################################
+#Sultanate Min Omar Events
+############################################
