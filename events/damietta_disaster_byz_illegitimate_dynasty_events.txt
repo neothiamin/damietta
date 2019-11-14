@@ -14,9 +14,13 @@ country_event = {
 	id = damietta_disaster_byz_dynasty_crisis.1
 	title = damietta_disaster_byz_dynasty_crisis.1.t
 	desc = damietta_disaster_byz_dynasty_crisis.1.desc
-	picture = COUNTRY_COLLAPSE_eventPicture
+	picture = BYZ_CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes #disaster
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	major = yes
 
@@ -31,5 +35,5 @@ country_event = {
 	id = damietta_disaster_byz_dynasty_crisis.100
 	title = damietta_disaster_byz_dynasty_crisis.100.t
 	desc = damietta_disaster_byz_dynasty_crisis.100.desc
-	picture = COUNTRY_COLLAPSE_eventPicture
+	picture = BYZ_GOOD_WITH_MONARCH_eventPicture
 }

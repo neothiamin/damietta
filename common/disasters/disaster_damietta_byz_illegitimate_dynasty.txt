@@ -1,5 +1,6 @@
 damietta_byz_illegit_dynasty_disaster = {
 	potential = {
+		always = no
 		tag = BYZ
 	}
 
@@ -45,8 +46,13 @@ damietta_byz_illegit_dynasty_disaster = {
 	}
 
 	can_stop = {
-		NOT = {
-			war_score = -25
+		OR = {
+			AND = {
+				NOT = {
+					war_score = -25
+				}
+				is_at_war = yes
+			}
 		}
 	}
 

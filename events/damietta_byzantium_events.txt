@@ -314,7 +314,7 @@ country_event = {
 	#Select one of [Root.Monarch.GetName]'s brothers.
 	option = {
 		name = damietta_byzantium.6.a
-		add_heir_flag = damietta_byzantium_is_co_emperor
+		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 30
 		}
@@ -332,7 +332,7 @@ country_event = {
 	#Select a tried and true noble.
 	option = {
 		name = damietta_byzantium.6.b
-		add_heir_flag = damietta_byzantium_is_co_emperor
+		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 15
 		}
@@ -353,7 +353,7 @@ country_event = {
 	#Select a famed general.
 	option = {
 		name = damietta_byzantium.6.c
-		add_heir_flag = damietta_byzantium_is_co_emperor
+		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 10
 		}
@@ -377,7 +377,7 @@ country_event = {
 	#Select a dear friend.
 	option = {
 		name = damietta_byzantium.6.d
-		add_heir_flag = damietta_byzantium_is_co_emperor
+		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 5
 		}
