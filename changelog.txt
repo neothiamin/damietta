@@ -4,7 +4,7 @@ v0.1:
 + Added Serbian to Prilep's accepted cultures to reflect that Prilep was born out of the Serbian Empire
 + Added FES (Thessalonica)
 
-
+* Reworked some Epirote lore and country history
 * Nerf to province 379 (Jerusalem) dev: 30 -> 23
 * Nerf to province 1854 (Jaffa) dev: 22 -> 19
 * Nerf to province 358 (Alexandria) dev: 21 -> 16
