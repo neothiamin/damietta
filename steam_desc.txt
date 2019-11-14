@@ -21,7 +21,7 @@ Instructions for use:
 
 A few things to note:
 * This mod ABSOLUTELY REQUIRES Beyond Typus for 1.29! It will not function correctly, or possibly at all, without it!
-* This mod, as indicated at the top of the description, is nowhere near release! Bugs will exist! Changes are always being made! Nothing is sacred! This mod is not for the faint of heart. You have been waaaarned...
+* This mod, as indicated at the top of the description, is nowhere near complete! Bugs will exist! Changes are always being made! Nothing is sacred! This mod is not for the faint of heart. You have been waaaarned...
 
 If you're looking for a community outside Steam, we have a Discord server! Or, a server that this mod had channels for. We share it with many other mods. Come on by! https://discord.gg/BUT8ncB
 

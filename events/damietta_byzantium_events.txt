@@ -308,7 +308,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 180
+		months = 240
 	}
 
 	#Select one of [Root.Monarch.GetName]'s brothers.
