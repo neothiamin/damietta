@@ -5,9 +5,9 @@ bookmark = {
 
 	country = KOJ
 	country = DMI
-	country = BYZ
-	country = BUL	
-	country = RUM
+	country = RHL
+	country = MAM	
+	country = CTR
 	
-	center = 151
+	center = 379
 }

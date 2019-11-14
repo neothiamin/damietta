@@ -1,0 +1,13 @@
+alliance = {
+	first = KOJ
+	second = DMI
+	start_date = 1222.1.1
+	end_date = 2000.1.1
+}
+
+guarantee = {
+	first = KOJ
+	second = CTR
+	start_date = 1222.1.1
+	end_date = 2000.1.1
+}
