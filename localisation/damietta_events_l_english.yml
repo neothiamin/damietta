@@ -121,4 +121,12 @@
  damietta_byzantium.4.a:0 "To arms! Down with [BYZ.Monarch.GetName]!"
  damietta_byzantium.5.desc:0 "On the horizon, armies bearing the [From.GetAdjective] standard march. At the front of the formation, a tall, armor-clad figure stands draped in purple and gold. Konstantinos.\n\nThe seers warned us of this. That young Konstantinos was not taken, but had fled in self-exile, and that he would one day return to Constantinople, not to talk, but to wage war. It seems they were right. His aim: to capture the throne for himself.\n\nThe time for negotiations is over. Now, we must fight."
  damietta_byzantium.5.a:0 "Oh, Konstantinos, my own flesh and blood..."
+
+ damietta_byzantium.6.t:0 "Shaky Succession"
+ damietta_byzantium.6.desc:0 "Succession crises are as familiar to our people as the Greek language itself. In times of questionable succession, often emperors would name a co-emperor to rule alongside them. Co-emperors were often sons or other family members, but an emperor may name whoever they choose.\n\nWe find ourselves in one such situation, and many have suggested to us, perhaps with vested interests, that we name a co-emperor."
+ damietta_byzantium.6.a:0 "Nominate one of [Root.Monarch.GetName]'s brothers."
+ damietta_byzantium.6.b:0 "Nominate a popular noble."
+ damietta_byzantium.6.c:0 "Nominate a famed general."
+ damietta_byzantium.6.d:0 "Nominate a dear friend."
+ damietta_byzantium.6.e:0 "We are fine as is."
  

@@ -1,0 +1,35 @@
+############################################
+# Events for Byzantium's Legitimacy Crisis
+#
+# by neothiamin
+############################################
+
+namespace = damietta_disaster_byz_dynasty_crisis
+
+############################################
+# Start of Disaster
+############################################
+
+country_event = {
+	id = damietta_disaster_byz_dynasty_crisis.1
+	title = damietta_disaster_byz_dynasty_crisis.1.t
+	desc = damietta_disaster_byz_dynasty_crisis.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	is_triggered_only = yes #disaster
+
+	major = yes
+
+	#Destroy the dissidents! [Root.Monarch.Dynasty.GetName] rule must be preserved!
+}
+
+############################################
+# End of Disaster
+############################################
+
+country_event = {
+	id = damietta_disaster_byz_dynasty_crisis.100
+	title = damietta_disaster_byz_dynasty_crisis.100.t
+	desc = damietta_disaster_byz_dynasty_crisis.100.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+}

@@ -1,3 +1,16 @@
+v0.1:
+
++ Added Byzantine Co-Emperor event
+
+
+* Nerf to province 379 (Jerusalem) dev: 30 -> 23
+* Nerf to province 1854 (Jaffa) dev: 22 -> 19
+* Nerf to province 358 (Alexandria) dev: 21 -> 16
+* Buff to province 151 (Constantinople) dev: 31 -> 35
+* Nerf to province 4317 (Temenhor) dev: 24 -> 19 
+* Nerf to province 4316 (Sagsic) dev: 24 -> 19
+
+
 v0.0.6:
 
 ! This update doesn't have much in it, I mostly needed to fix a bug with the Konstantinos XI events

@@ -1,0 +1,61 @@
+damietta_byz_illegit_dynasty_disaster = {
+	potential = {
+		tag = BYZ
+	}
+
+	can_start = {
+		has_regency = no
+		custom_trigger_tooltip = {
+			tooltip = damietta_byz_illegitimate_dynasty.tt
+			NOT = {
+				has_country_flag = damietta_byz_legitimized_new_dynasty
+			}
+			NOT = {
+				dynasty = "Palaiologos"
+			}
+		}
+	}
+
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = {
+				legitimacy = 50
+			}
+		}
+		modifier = {
+			factor = 0.5
+			custom_trigger_tooltip = {
+				tooltip = damietta_byz_illegitimate_dynasty.tt
+				NOT = {
+					has_country_flag = damietta_byz_legitimized_new_dynasty
+				}
+				NOT = {
+					dynasty = "Palaiologos"
+				}
+			}
+		}
+	}
+
+	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = damietta_byz_new_dynasty_legitimized
+			has_country_flag = damietta_byz_legitimized_new_dynasty
+		}
+	}
+
+	can_stop = {
+		NOT = {
+			war_score = -25
+		}
+	}
+
+	modifier = {
+		global_unrest = 8
+		legitimacy = -1
+		prestige = -1
+	}
+
+	on_start = damietta_disaster_byz_dynasty_crisis.1
+	on_end = damietta_disaster_byz_dynasty_crisis.100
+}

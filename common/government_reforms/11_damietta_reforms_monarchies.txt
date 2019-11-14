@@ -29,6 +29,7 @@ damietta_byzantine_reform_1 = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		damietta_byzantium_co_emperors = yes
 	}
 
 }

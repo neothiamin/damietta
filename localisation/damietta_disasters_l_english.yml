@@ -1,0 +1,5 @@
+﻿l_english:
+ #Byzantium Disaster
+ damietta_byz_illegit_dynasty_disaster:0 "Dynastic Crisis"
+ damietta_byz_new_dynasty_legitimized:0 "The [Root.Monarch.Dynasty.GetName] dynasty has been legitimized." 
+ damietta_byz_illegitimate_dynasty.tt:0 "Dynasty is not seen as legitimate."

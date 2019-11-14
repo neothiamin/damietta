@@ -237,6 +237,15 @@ country_event = {
 			clr_country_flag = damietta_supporting_konstantinos_xi
 		}
 		add_stability = -1
+		random_owned_province = {
+			limit = {
+				development = 9
+			}
+			spawn_rebels = {
+				size = 2
+				type = noble_rebels
+			}
+		}
 		tooltip = {
 			FROM = {
 				declare_war_with_cb = {
@@ -244,6 +253,179 @@ country_event = {
 					who = ROOT
 				}
 			}
+		}
+	}
+}
+
+############################################
+# Co-Emperors
+############################################
+
+country_event = {
+	id = damietta_byzantium.6
+	title = damietta_byzantium.6.t
+	desc = damietta_byzantium.6.desc
+	picture = THREE_HEIRS_eventPicture
+
+	trigger = {
+		tag = BYZ
+		has_government_attribute = damietta_byzantium_co_emperors
+		OR = {
+			AND = {
+				has_heir = yes
+				NOT = {
+					heir_age = 14
+				}
+				ruler_age = 50
+			}
+			AND = {
+				has_heir = yes
+				NOT = {
+					heir_adm = 3
+				}
+				NOT = {
+					heir_dip = 3
+				}
+				NOT = {
+					heir_mil = 3
+				}
+			}
+			AND = {
+				has_heir = yes
+				NOT = {
+					heir_claim = 90
+				}
+			}
+			has_heir = no
+		}
+		NOT = {
+			has_ruler_flag = damietta_byzantium_co_emperor_event
+		}
+	}
+
+	immediate = {
+		set_ruler_flag = damietta_byzantium_co_emperor_event
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	#Select one of [Root.Monarch.GetName]'s brothers.
+	option = {
+		name = damietta_byzantium.6.a
+		add_heir_flag = damietta_byzantium_is_co_emperor
+		ai_chance = {
+			factor = 30
+		}
+		define_heir = {
+			dynasty = ROOT
+			age = 32
+			max_random_adm = 2
+			max_random_dip = 2
+			max_random_mil = 2
+			claim = 80
+		}
+		add_prestige = 5
+	}
+
+	#Select a tried and true noble.
+	option = {
+		name = damietta_byzantium.6.b
+		add_heir_flag = damietta_byzantium_is_co_emperor
+		ai_chance = {
+			factor = 15
+		}
+		define_heir = {
+			culture = ROOT
+			claim = 75
+			age = 40
+			max_random_adm = 2
+			dip = 4
+			max_random_mil = 3
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 15
+		}
+	}
+
+	#Select a famed general.
+	option = {
+		name = damietta_byzantium.6.c
+		add_heir_flag = damietta_byzantium_is_co_emperor
+		ai_chance = {
+			factor = 10
+		}
+		define_heir = {
+			culture = ROOT
+			claim = 60
+			mil = 4
+			max_random_dip = 2
+			max_random_adm = 3
+			age = 30
+		}
+		#add_mil_power = 50
+		hidden_effect = {
+			country_event = {
+				id = damietta_byzantium.7
+				days = 1
+			}
+		}
+	}
+
+	#Select a dear friend.
+	option = {
+		name = damietta_byzantium.6.d
+		add_heir_flag = damietta_byzantium_is_co_emperor
+		ai_chance = {
+			factor = 5
+		}
+		define_heir = {
+			culture = ROOT
+			claim = 65
+			adm = 4
+			max_random_dip = 3
+			max_random_mil = 2
+			age = 40
+		}
+		add_dip_power = 25
+	}
+
+	#Continue with the current plan.
+	option = {
+		name = damietta_byzantium.6.e
+		ai_chance = {
+			factor = 40
+		}
+		add_legitimacy = -10
+	}
+}
+
+#Converts heir to general
+country_event = {
+	id = damietta_byzantium.7
+	#title = damietta_byzantium.7.t
+	#desc = damietta_byzantium.7.desc
+	picture = THREE_HEIRS_eventPicture
+	
+	hidden = yes
+
+	is_triggered_only = yes
+
+
+	immediate = {
+		define_heir_to_general = {
+			fire = 1
+			shock = 3
+			manuever = 2
+			siege = 1
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
 		}
 	}
 }
