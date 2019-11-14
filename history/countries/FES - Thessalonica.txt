@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform #If the nation ever spawns in, will be changed via event
+government_rank = 1
+primary_culture = venetian #If the nation ever spawns in, will be changed via event
+religion = catholic #If the nation ever spawns in, will be changed via event
+technology_group = western
+capital = 148
+fixed_capital = 148

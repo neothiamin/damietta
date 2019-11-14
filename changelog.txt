@@ -1,6 +1,8 @@
 v0.1:
 
 + Added Byzantine Co-Emperor event
++ Added Serbian to Prilep's accepted cultures to reflect that Prilep was born out of the Serbian Empire
++ Added FES (Thessalonica)
 
 
 * Nerf to province 379 (Jerusalem) dev: 30 -> 23
