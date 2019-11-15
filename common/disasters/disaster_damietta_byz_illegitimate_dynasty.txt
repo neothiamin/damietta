@@ -63,4 +63,11 @@ damietta_byz_illegit_dynasty_disaster = {
 
 	on_start = damietta_disaster_byz_dynasty_crisis.1
 	on_end = damietta_disaster_byz_dynasty_crisis.100
+
+	on_monthly = {
+		random_events = {
+			100 = 0
+			
+		}
+	}
 }
