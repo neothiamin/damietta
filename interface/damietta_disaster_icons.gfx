@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_disaster_damietta_byz_illegit_dynasty_disaster"
-		texturefile = "gfx//interface//disasters//civil_war.dds"
+		texturefile = "gfx//interface//disasters//counts_feud.dds"
 		noOfFrames = 3
 		loadType = "INGAME"
 	}

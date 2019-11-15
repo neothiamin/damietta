@@ -1,6 +1,5 @@
 damietta_byz_illegit_dynasty_disaster = {
 	potential = {
-		always = no
 		tag = BYZ
 	}
 

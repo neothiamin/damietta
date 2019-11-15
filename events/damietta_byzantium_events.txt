@@ -281,13 +281,13 @@ country_event = {
 			AND = {
 				has_heir = yes
 				NOT = {
-					heir_adm = 3
+					heir_adm = 2
 				}
 				NOT = {
-					heir_dip = 3
+					heir_dip = 2
 				}
 				NOT = {
-					heir_mil = 3
+					heir_mil = 2
 				}
 			}
 			AND = {
