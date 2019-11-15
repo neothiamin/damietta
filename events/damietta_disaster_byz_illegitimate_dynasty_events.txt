@@ -24,7 +24,46 @@ country_event = {
 
 	major = yes
 
+	immediate = {
+		random_owned_province = {
+			save_global_event_target_as = damietta_byzantium_dynastic_crisis_home
+		}
+		define_exiled_ruler = {
+			exiled_as = damietta_disaster_byz_dynastic_crisis_contender_1@ROOT
+			religion = orthodox
+			culture = greek
+			min_age = 50
+		}
+		define_exiled_ruler = {
+			exiled_as = damietta_disaster_byz_dynastic_crisis_contender_2@ROOT
+			religion = catholic
+			culture = greek
+			min_age = 30
+			max_age = 50
+		}
+		define_exiled_ruler = {
+			exiled_as = damietta_disaster_byz_dynastic_crisis_contender_3@ROOT
+			religion = orthodox
+			culture = bulgarian
+			min_age = 20
+			max_age = 35
+		}
+	}
+
 	#Destroy the dissidents! [Root.Monarch.Dynasty.GetName] rule must be preserved!
+	option = {
+		name = damietta_disaster_byz_dynasty_crisis.1.a
+		event_target:damietta_byzantium_dynastic_crisis_home = {
+			set_province_flag = damieeta_byz_dynastic_crisis_stronghold
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				win = yes
+				unrest = 6
+				leader = damietta_disaster_byz_dynastic_crisis_contender_1
+			}
+		}
+	}
 }
 
 ############################################
