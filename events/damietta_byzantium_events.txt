@@ -316,7 +316,7 @@ country_event = {
 		name = damietta_byzantium.6.a
 		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
-			factor = 30
+			factor = 50
 		}
 		define_heir = {
 			dynasty = ROOT
@@ -334,7 +334,7 @@ country_event = {
 		name = damietta_byzantium.6.b
 		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
-			factor = 15
+			factor = 10
 		}
 		define_heir = {
 			culture = ROOT
@@ -396,7 +396,7 @@ country_event = {
 	option = {
 		name = damietta_byzantium.6.e
 		ai_chance = {
-			factor = 40
+			factor = 25
 		}
 		add_legitimacy = -10
 	}

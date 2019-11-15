@@ -1,0 +1,22 @@
+﻿l_english:
+ #Byz Dynastic Crisis Palaiologos
+ byzantine_dynastic_crisis_palai_rebels_demand_desc:0 "The rebels demand that a Palaiologan claimant be put on the throne of the Byzantine Empire."
+ byzantine_dynastic_crisis_palai_rebels_name:0 "Palaiologan Pretenders"
+ byzantine_dynastic_crisis_palai_rebels_title:0 "Pretenders"
+ byzantine_dynastic_crisis_palai_rebels_desc:0 "These rebels oppose the current dynasty, and support a member of the Palaiologan dynasty. They will fight to the death for the one they see as the \"true\" [Root.Monarch.GetTitle]."
+ byzantine_dynastic_crisis_palai_rebels_army:0 "Old Guard"
+ byzantine_dynastic_crisis_palai_rebels_demand:0 "Install a Palaiologan Emperor"
+ #Byz Dynastic Crisis Popular General
+ byzantine_dynastic_crisis_newcomer_rebels_demand_desc:0 "The rebels demand that their leader, a popular retired general, be placed on the throne."
+ byzantine_dynastic_crisis_newcomer_rebels_name:0 "Populist Pretenders"
+ byzantine_dynastic_crisis_newcomer_rebels_title:0 "Pretenders"
+ byzantine_dynastic_crisis_newcomer_rebels_desc:0 "These rebels support a popular claimant to the Byzantine throne. They are poorly trained and equipped, but are numerous and passionate."
+ byzantine_dynastic_crisis_newcomer_rebels_army:0 "Populist Army"
+ byzantine_dynastic_crisis_newcomer_rebels_demand:0 "Install a Popular General"
+ #Byz Dynastic Crisis Latinophile
+ byzantine_dynastic_crisis_latin_rebels_demand_desc:0 "The rebels demand that a Catholic Latinophile be placed on the throne."
+ byzantine_dynastic_crisis_latin_rebels_name:0 "Latinophile Pretenders"
+ byzantine_dynastic_crisis_latin_rebels_title:0 "Pretenders"
+ byzantine_dynastic_crisis_latin_rebels_desc:0 "These rebels support a Catholic Latinophile. They believe the future of Byzantium lies with the West, and if successful will pursue efforts to Latinize the nation."
+ byzantine_dynastic_crisis_latin_rebels_army:0 "Latinophile Army"
+ byzantine_dynastic_crisis_latin_rebels_demand:0 "Install a Catholic Emperor"

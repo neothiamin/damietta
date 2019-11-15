@@ -54,3 +54,8 @@ damietta_rum_stability_modifier_1 = {
 damietta_rum_stability_modifier_neg_1 = {
 	stability_cost_modifier = -0.25
 }
+
+#Byzantine Dynastic Crisis Rebel Stronghold
+damietta_byz_dynastic_crisis_stronghold_modifier = {
+	local_autonomy = 0.25
+}
