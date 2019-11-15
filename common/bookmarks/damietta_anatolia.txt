@@ -1,0 +1,12 @@
+bookmark = {
+	name = DAMIETTA_ANATOLIA_BM
+	desc = DAMIETTA_ANATOLIA_BM_DESC
+	date = 1444.11.11
+
+	country = RUM
+	easy_country = RUM
+	country = CIL
+	country = TRE
+	
+	center = 326
+}

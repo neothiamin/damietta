@@ -3,6 +3,9 @@ v0.1:
 + Added Byzantine Co-Emperor event
 + Added Serbian to Prilep's accepted cultures to reflect that Prilep was born out of the Serbian Empire
 + Added FES (Thessalonica)
++ Added start screen text for Damietta
++ Edited bookmark text to actually explain the lore of the mod
++ Damietta and Jeruaslem are now allies at game start and the KoJ now guarantees Tripoli
 
 * Reworked some Epirote lore and country history
 * Nerf to province 379 (Jerusalem) dev: 30 -> 23

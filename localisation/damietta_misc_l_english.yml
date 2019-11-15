@@ -1,9 +1,21 @@
 ﻿l_english:
+ #Bookmarks
+ #Levant
  DAMIETTA_BM:0 "The Levant"
  DAMIETTA_BM_DESC:0 "Over two hundred and twenty years have passed since the Ayyubid defeat at Damascus by the forces of the Fifth Crusade. Empires have risen and fallen, but Latin rule in the Levant and Egypt has persisted. From Tripoli to Damietta Frankish kingdoms dominate the land and the sea.\nOpposition is fierce, though; in the deserts of Syria lies the Mamluk Sultanate of Damascus, and in Cairo the Rahulid Sultanate rules, ever eager to retake the Delta. Will Damietta push south to Cairo and unite Egypt? Or will the Rahulid sultanate retake the coast? Will Jerusalem wage war against the Mamluks and seize Damascus? Or will calls to prayer echo over Jerusalem once more? Only time will tell..."
 
+ #Anatolia
+ DAMIETTA_ANATOLIA_BM:0 "Anatolia"
+ DAMIETTA_ANATOLIA_BM_DESC:0 "Dominated by the mighty and unshakeable Seljuk Sultanate of Rum, Anatolia is politically monotonous. Culturally and religiously, though, Anatolia is as diverse as ever. The Sultanate of Rum rules over many vastly different groups of people, from its first-class Turkic citizens to Cappadocians and Armenians, who have preserved their ways of life despite the Sultanate's best efforts. The Sultanate faces potential threats from its neighbors, too. The Pontic Greeks in Trebizond have always has a close relationship with Byzantium, and a Crusader-aligned Kingdom of Cilicia in the south could spell trouble. Can the Sultanate maintain its dominance? Or will new states fill the void left by its collapse?"
+
+ #Balkans
+ DAMIETTA_BALKANS_BM:0 "The Balkans"
+ DAMIETTA_BALKANS_BM_DESC:0 "Thirty years ago, the Balkan Peninsula was dominated by three Empires - the Serbian, the Bulgarian, and the Byzantine. Now, only one remains united. Following the collapse of the Serbian Empire in 1410 and then the Bulgarian Empire in 1425, the Balkan Peninsula became (and remains) a patchwork of petty duchies and principalities. Vidin, Karvuna, Prilep, Epirus; all these states and more were born from the collapse of empires. The Byzantines, however, have weathered the decentralization storm, and have remained in one piece - for now. They aspire to take the lands lost by the Empires of the past en route to strengthening their own, but they face problems of their own. Will the Empires of old be resurrected? Will the Balkans fall under Greek rule once more? Will Byzantium be able to stand strong in the face of internal and external conflicts?"
+
+ #Institutions
  damietta_renaissance_is_patron_capital:0 "Home of a Great Scholar"
 
+ #Casus Belli, wargoals, and peace options
  damietta_byzantine_coup:0 "Konstantinos' Coup"
  damietta_byzantine_coup_desc:0 "Dethrone the current Byzantine Emperor and place Konstantinos XI on the throne!"
 

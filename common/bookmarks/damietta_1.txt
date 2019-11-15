@@ -6,6 +6,9 @@ bookmark = {
 	country = KOJ
 	country = DMI
 	country = RHL
+	easy_country = KOJ
+	easy_country = DMI
+	easy_country = RHL
 	country = MAM	
 	country = CTR
 	

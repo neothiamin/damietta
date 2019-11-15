@@ -1,0 +1,15 @@
+bookmark = {
+	name = DAMIETTA_BALKANS_BM
+	desc = DAMIETTA_BALKANS_BM_DESC
+	date = 1444.11.11
+
+	country = BYZ
+	easy_country = BYZ
+	country = BUL
+	country = SER
+	country = ALB	
+	country = WAL
+	country = EPI
+	
+	center = 7120
+}
