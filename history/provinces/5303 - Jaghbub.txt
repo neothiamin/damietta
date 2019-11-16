@@ -8,9 +8,13 @@ hre = no
 base_tax = 1 
 base_production = 1 
 base_manpower = 1 
-native_size = 30
-native_ferocity = 5
-native_hostileness = 5
+#native_size = 30
+#native_ferocity = 5
+#native_hostileness = 5
+add_core = BSM
+controller = BSM
+owner = BSM
+is_city = yes
 
 discovered_by = muslim
 discovered_by = ottoman

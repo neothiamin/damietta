@@ -1,0 +1,45 @@
+damietta_byzantine_civil_war_disaster = {
+	potential = {
+		always = no
+		tag = BYZ
+	}
+
+	progress = {
+		modifier = {
+			factor = 1	
+		}
+		modifier = {
+
+		}
+	}
+	
+	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = damietta_byzantine_civil_war_disaster_end.tt
+		}
+	}
+
+	can_start = {
+		has_any_disaster = no
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = damietta_byzantine_civil_war_disaster_start_we.tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_byzantine_civil_war_disaster_start_war.tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_byzantine_civil_war_disaster_start_dynasty.tt
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = damietta_byzantine_civil_war_disaster_start_other.tt
+			#}
+		}
+	}
+
+	can_stop = {
+		has_any_disaster = yes
+	}
+
+	on_start = damietta_byz_civil_war_dis.1
+}

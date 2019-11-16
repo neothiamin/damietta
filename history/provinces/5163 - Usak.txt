@@ -32,7 +32,7 @@ discovered_by = nomad_group
 	owner = RUM
 	controller = RUM
 	add_core = RUM
-	remove_core = BYZ
+	#remove_core = BYZ
 }
 
 #copied from 2297 for now

@@ -2,7 +2,7 @@
 
 owner = KOJ #Was MAM
 controller = KOJ #Was MAM
-culture = jerusalemite #Was al_suryah_arabic
+culture = al_suryah_arabic
 religion = catholic #Was sunni
 capital = "Haifa"
 trade_goods = fish

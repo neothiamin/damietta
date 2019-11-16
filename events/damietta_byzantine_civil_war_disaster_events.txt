@@ -1,0 +1,28 @@
+############################################
+# Events for Byzantium's Civil War Disaster
+#
+# by neothiamin
+############################################
+
+namespace = damietta_byz_civil_war_dis
+
+############################################
+# Start of Disaster
+############################################
+
+country_event = {
+	id = damietta_byz_civil_war_dis.1
+	title = damietta_byz_civil_war_dis.1.t
+	desc = damietta_byz_civil_war_dis.1.desc
+	picture = BYZ_CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = damietta_byz_civil_war_dis.1.a
+	}
+}

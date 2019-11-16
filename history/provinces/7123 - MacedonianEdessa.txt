@@ -53,6 +53,9 @@ discovered_by = western
 	controller = BYZ
 	remove_core = SER
 }
+1410.6.4 = {
+	add_core = PRL
+}
 
 
 #Province history completed by - Draiocht

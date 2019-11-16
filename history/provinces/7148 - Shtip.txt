@@ -13,6 +13,7 @@ base_production = 3
 base_manpower = 2
 trade_goods = grain
 is_city = yes
+add_core = PRL
 hre = no
 
 discovered_by = KAZ

@@ -12,6 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 #add_core = TUR
+add_core = PRL
 add_core = SER
 fort_15th = yes
 #estate = estate_dhimmi

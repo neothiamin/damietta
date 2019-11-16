@@ -1,0 +1,27 @@
+#Disrespected Pope
+damietta_byz_disrespect_pope = {
+	opinion = -50
+}
+
+#Aided Byzantium
+damietta_pap_aided_byz = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+#Gave Aid
+damietta_pap_aided_byz_2 = {
+	opinion = 100
+	yearly_decay = 5
+}
+
+#Betrayed Faith
+damietta_byz_betrayed_faith = {
+	opinion = -50
+}
+
+#Saw the Light
+damietta_byz_converted_to_cath = {
+	opinion = 50
+	yearly_decay = 5
+}

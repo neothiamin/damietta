@@ -3,6 +3,7 @@
 owner = VEN
 controller = VEN
 add_core = VEN
+add_core = EPI
 culture = greek
 religion = orthodox
 capital = "Buthroton"

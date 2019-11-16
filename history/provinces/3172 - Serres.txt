@@ -38,6 +38,12 @@ discovered_by = western
 	controller = BYZ
 }
 
+1425.3.1 = {
+	owner = VBZ
+	controller = VBZ
+	add_core = VBZ
+}
+
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance
 1556.1.1 = { unrest = 0 }
 1615.1.1 = { base_tax = 3

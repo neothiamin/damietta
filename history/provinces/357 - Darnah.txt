@@ -2,7 +2,7 @@
 
 owner = TUN
 controller = TUN
-culture = libyan_berber_culture
+culture = tunisian
 religion = sunni
 capital = "Darnah"
 trade_goods = livestock

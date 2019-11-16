@@ -2819,7 +2819,6 @@ NPL_ideas = {
 KNI_ideas = {
 	start = {
 		discipline = 0.05
-		#may_perform_slave_raid = yes lol really
 		global_manpower_modifier = 0.1
 	}
 	
@@ -2828,7 +2827,7 @@ KNI_ideas = {
 	}
 	
 	trigger = {
-        	tag = KNI
+        tag = KNI
     }
 	free = yes        #will be added at load.
 	

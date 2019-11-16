@@ -1,0 +1,272 @@
+############################################
+# Events for Byzantine Conversion
+#
+# by neothiamin
+############################################
+
+namespace = damietta_byz_conv
+
+############################################
+# Weak Byzantium
+############################################
+
+#Protection from the West? (For Byz)
+country_event = {
+	id = damietta_byz_conv.1
+	title = damietta_byz_conv.1.t
+	desc = damietta_byz_conv.1.desc
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	trigger = {
+		tag = BYZ
+		OR = {
+			AND = {
+				war_with = RUM
+				NOT = {
+					war_score_against = {
+						who = RUM
+						value = -25
+					}
+				}
+			}
+			NOT = {
+				total_development = 300
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.7
+			NOT = {
+				total_development = 200
+			}
+		}
+	}
+
+	#Send a delegation to the Pope.
+	option = {
+		name = damietta_byz_conv.1.a
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 5
+				OR = {
+					NOT = {
+						total_development = 200
+					}
+					NOT = {
+						war_score_against = {
+							who = RUM
+							value = -40
+						}
+					}
+				}
+			}
+		}
+		PAP = {
+			country_event = {
+				id = damietta_byz_conv.2
+				days = 15
+			}
+		}
+	}
+
+	#That's blasphemy! We need no help from the West, especially not the Pope!
+	option = {
+		name = damietta_byz_conv.1.b
+		ai_chance = {
+			factor = 55
+		}
+		add_opinion = {
+			who = PAP
+			modifier = damietta_byz_disrespect_pope
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = damietta_byz_disrespect_pope
+		}
+		add_prestige = 10
+		set_country_flag = damietta_byz_disrepected_pope
+	}
+
+	#It is surely something to consider.
+	option = {
+		name = damietta_byz_conv.1.c
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = PAP
+					value = 50
+				}
+			}
+		}
+		set_country_flag = damietta_byz_considering_conv
+	}
+}
+
+#Delegation from [BYZ.Capital.GetName]
+country_event = {
+	id = damietta_byz_conv.2
+	title = damietta_byz_conv.2.t
+	desc = damietta_byz_conv.2.desc
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+	#Grant them aid.
+	#option = {
+	#	name = damietta_byz_conv.2.a
+	#	ai_chance = {
+	#		factor = 25
+	#		modifier = {
+	#			factor = 0.2
+	#			NOT = {
+	#				treasury = 100
+	#			}
+	#		}
+	#	}
+	#	add_treasury = -100
+	#	BYZ = {
+	#		add_treasury = 100
+	#	}
+	#	custom_tooltip = damietta_byz_conv.2.a.tt
+	#	hidden_effect = {
+	#		every_known_country = {
+	#			limit = {
+	#				religion = catholic
+	#				NOT = {
+	#					has_opinion = {
+	#						who = BYZ
+	#						value = 10
+	#					}
+	#				}
+	#			}
+	#			add_opinion = {
+	#				who = PAP
+	#				modifier = damietta_pap_aided_byz
+	#			}
+	#		}
+	#	}
+	#}
+
+	#Offer a deal: their conversion in exchange for our aid.
+	option = {
+		name = damietta_byz_conv.2.b
+		ai_chance = {
+			factor = 65
+			#modifier = {
+			#	factor = 3
+			#	BYZ = {
+			#		war_with = RUM
+			#		NOT = {
+			#			war_score_against = {
+			#				who = RUM
+			#				value = -40
+			#			}
+			#		}
+			#	}
+			#}
+		}
+		BYZ = {
+			country_event = {
+				id = damietta_byz_conv.4
+				days = 15
+			}
+		}
+	}
+
+	#They are on their own.
+	option = {
+		name = damietta_byz_conv.2.c
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#Aid from Pope
+#country_event = {
+#	id = damietta_byz_conv.3
+#	title = damietta_byz_conv.3.t
+#	desc = damietta_byz_conv.3.desc
+#	picture = RELIGIOUS_CONVERSION_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	#Hurrah!
+#	option = {
+#		name = damietta_byz_conv.3.a
+#		add_opinion = {
+#			who = PAP
+#			modifier = damietta_pap_aided_byz_2
+#		}
+#	}
+#}
+
+#Into the Fold
+country_event = {
+	id = damietta_byz_conv.4
+	title = damietta_byz_conv.4.t
+	desc = damietta_byz_conv.4.desc
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+	#We are saved!
+	option = {
+		name = damietta_byz_conv.4.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 10
+				war_with = RUM
+				NOT = {
+					war_score_against = {
+						who = RUM
+						value = -40
+					}
+				}
+			}
+		}
+		set_ruler_religion = catholic
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			set_heir_religion = catholic
+		}
+		change_religion = catholic
+		every_known_country = {
+			limit = {
+				religion = orthodox
+			}
+			add_opinion = {
+				who = BYZ
+				modifier = damietta_byz_betrayed_faith
+			}
+		}
+		every_known_country = {
+			limit = {
+				religion = catholic
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = damietta_byz_converted_to_cath
+			}
+		}
+	}
+
+	#Deny.
+	#option = {
+	#	name = damietta_byz_conv.4.b
+	#	ai_chance = {
+	#		factor = 75
+	#	}
+	#}
+}

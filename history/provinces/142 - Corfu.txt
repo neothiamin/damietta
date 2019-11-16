@@ -2,6 +2,7 @@
 
 owner = CEP
 controller = CEP
+add_core = EPI
 culture = greek
 religion = orthodox
 capital = "Corfu"

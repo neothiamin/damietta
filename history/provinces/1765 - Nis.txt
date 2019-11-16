@@ -19,6 +19,8 @@ estate = estate_dhimmi
 #add_core = TUR
 add_core = BUL
 fort_15th = yes
+add_core = BDN
+add_core = VBZ
 
 discovered_by = KAZ
 discovered_by = CRI

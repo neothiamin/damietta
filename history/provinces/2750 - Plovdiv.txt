@@ -13,6 +13,7 @@ base_production = 5
 base_manpower = 4
 is_city = yes
 fort_15th = yes
+add_core = VBZ
 
 extra_cost = 8
 center_of_trade = 1
