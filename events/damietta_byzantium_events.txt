@@ -429,3 +429,36 @@ country_event = {
 		}
 	}
 }
+
+#removes coup CB
+country_event = {
+	id = damietta_byzantium.8
+	#title = damietta_byzantium.8.t
+	#desc = damietta_byzantium.8.desc
+	picture = THREE_HEIRS_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		#has_country_flag = damietta_supporting_konstantinos_xi
+		truce_with = BYZ
+		has_casus_belli = {
+			type = damietta_byzantine_coup
+			target = BYZ
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		remove_casus_belli = {
+			type = damietta_byzantine_coup
+			target = BYZ
+		}
+	}
+
+	option = {
+	}
+}
