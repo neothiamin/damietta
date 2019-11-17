@@ -31,3 +31,9 @@ damietta_byz_refused_to_return_land_modifier = {
 	opinion = -75
 	yearly_decay = 3
 }
+
+#Betrayed Crusader Cause
+damietta_betrayed_byz_crusader_cause = {
+	opinion = -50
+	yearly_decay = 10
+}

@@ -27,6 +27,9 @@ country_event = {
 	#If the Pope wants the land, he can come take it himself!
 	option = {
 		name = damietta_byz_crusade.1.a
+		ai_chance = {
+			factor = 65
+		}
 		set_country_flag = damietta_byz_refused_to_return_land
 		reverse_add_opinion = {
 			who = PAP
@@ -37,6 +40,9 @@ country_event = {
 	#Ah, very well. The land is poor anyways.
 	option = {
 		name = damietta_byz_crusade.1.b
+		ai_chance = {
+			factor = 35
+		}
 		every_owned_province = {
 			limit = {
 				religion = catholic
@@ -68,7 +74,59 @@ country_event = {
 	id = damietta_byz_crusade.2
 	title = damietta_byz_crusade.2.t
 	desc = damietta_byz_crusade.2.desc
-	picture = POPE_PREACHING_eventPicture
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#Pledge our support against the Greeks.
+	option = {
+		name = damietta_byz_crusade.2.a
+		set_country_flag = damietta_supporting_byzantine_crusade
+		custom_tooltip = damietta_supporting_byzantine_crusade.tt
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = BYZ
+						value = -25
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					has_opinion = {
+						who = BYZ
+						value = -75
+					}
+				}
+			}
+		}
+	}
+
+	#We'll sit this one out.
+	option = {
+		name = damietta_byz_crusade.2.b
+		custom_tooltip = damietta_betrayed_byz_crusader_cause.tt
+		reverse_add_opinion = {
+			who = PAP
+			modifier = damietta_betrayed_byz_crusader_cause
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				NOT = {
+					army_strength = {
+						who = BYZ
+						value = 0.3
+					}
+				}
+			}
+		}
+	}
 }
 
 #A Catholic Crusade (for Byz)
@@ -76,5 +134,5 @@ country_event = {
 	id = damietta_byz_crusade.3
 	title = damietta_byz_crusade.3.t
 	desc = damietta_byz_crusade.3.desc
-	picture = POPE_PREACHING_eventPicture
+	picture = DISCIPLINED_SOLDIERS_eventPicture
 }

@@ -230,6 +230,9 @@ province_event = {
 		add_base_tax = -1
 		add_base_production = -1
 		add_devastation = 10
+		ai_chance = {
+			factor = 20
+		}
 	}
 
 	#Pillage the old court and bring its artifacts back to [Owner.Capital.GetName].
@@ -245,6 +248,9 @@ province_event = {
 				add_base_tax = 1
 				add_base_production = 1
 			}
+		}
+		ai_chance = {
+			factor = 20
 		}
 	}
 
@@ -263,6 +269,9 @@ province_event = {
 			add_base_manpower = 1
 			add_base_tax = 1
 			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 60
 		}
 	}
 }
