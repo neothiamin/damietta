@@ -14,6 +14,7 @@ trade_goods = grain			#major agricultural region
 is_city = yes
 hre = no
 #estate = estate_dhimmi
+add_core = DRJ
 
 discovered_by = KAZ
 discovered_by = CRI

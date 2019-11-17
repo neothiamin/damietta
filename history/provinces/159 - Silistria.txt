@@ -13,6 +13,7 @@ base_manpower = 3 # one of the most important Bulgarian cities
 is_city = yes
 add_core = BUL
 fort_15th = yes
+add_core = DRJ
 
 discovered_by = KAZ
 discovered_by = CRI

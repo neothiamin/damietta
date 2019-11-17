@@ -25,3 +25,13 @@
  damietta_install_konstantinos_po_desc:0 "Konstantinos XI takes the throne."
  CB_ALLOWED_damietta_install_konstantinos_po:0 "Coronation of Konstantinos XI"
  PEACE_damietta_install_konstantinos_po:0 "Install Konstantinos XI"
+
+ damietta_byzantine_crusade:0 "Byzantine Crusade"
+ damietta_byzantine_crusade_desc:0 "Smite the Greek heretics!"
+
+ DAMIETTA_BYZANTINE_CRUSADE_NAME:0 "$ORDER$$FIRST$ Byzantine Crusade"
+
+ damietta_establish_latin_states:0 "Establish Latin States"
+ damietta_establish_latin_states_desc:0 "Latin States are established in Byzantine territory."
+ CB_ALLOWED_damietta_establish_latin_states:0 "Establishment of Latin States"
+ PEACE_damietta_establish_latin_states:0 "Establish Latin States"

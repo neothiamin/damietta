@@ -1,0 +1,10 @@
+damietta_pp_byz_installed_foreign_ruler = {
+	power = 50
+	yearly_decay = 1
+	max = 50
+}
+damietta_pp_byzantine_crusade = {
+	power = 15
+	yearly_decay = 0.5
+	max = 50
+}

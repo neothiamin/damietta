@@ -14,6 +14,7 @@ trade_goods = wine			#Nikicaga suggested a NE bulgarian province has wine, and t
 is_city = yes
 hre = no
 estate = estate_dhimmi
+add_core = DRJ
 
 discovered_by = KAZ
 discovered_by = CRI

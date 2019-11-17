@@ -17,3 +17,20 @@ damietta_install_konstantinos = {
 
 	war_name = DAMIETTA_BYZANTIUM_COUP
 }
+
+damietta_byzantine_crusade_goal = {
+
+	type = superiority
+
+	attacker = {
+		peace_options = { 
+			damietta_establish_latin_states
+		}
+	}
+
+	badboy_factor = 1.5
+	prestige_factor = 2
+	peace_cost_factor = 1.5
+
+	war_name = DAMIETTA_BYZANTINE_CRUSADE_NAME
+}

@@ -14,6 +14,7 @@ is_city = yes
 #add_core = TUR
 add_core = BUL
 estate = estate_dhimmi
+add_core = BDN
 
 discovered_by = KAZ
 discovered_by = CRI

@@ -12,6 +12,7 @@ base_manpower = 1	#moderately important in middle ages, but many cities. Still h
 trade_goods = bt_trade_good_fruit			#Fruit. Famous for peaches
 is_city = yes
 hre = no
+add_core = DRJ
 
 discovered_by = KAZ
 discovered_by = CRI

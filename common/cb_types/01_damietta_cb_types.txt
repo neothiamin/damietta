@@ -21,3 +21,26 @@ damietta_byzantine_coup = {
 
 	war_goal = damietta_install_konstantinos
 }
+
+damietta_byzantine_crusade = {
+
+	prerequisites = {
+		religion = catholic
+		FROM = {
+			tag = BYZ
+			religion = orthodox
+		}
+	}
+
+	allowed_provinces = {
+		region = balkan_region
+	}
+	
+	war_goal = damietta_byzantine_crusade_goal
+
+	attacker_disabled_po = {
+		po_change_religion
+		po_become_vassal
+		po_demand_provinces
+	}
+}
