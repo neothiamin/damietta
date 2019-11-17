@@ -4,5 +4,5 @@ government_rank = 1
 primary_culture = venetian #If the nation ever spawns in, will be changed via event
 religion = catholic #If the nation ever spawns in, will be changed via event
 technology_group = western
-capital = 148
+capital = 148 #Thessalonica
 fixed_capital = 148

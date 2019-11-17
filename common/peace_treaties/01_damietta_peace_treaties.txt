@@ -78,7 +78,15 @@ damietta_establish_latin_states = {
 		always = yes
 	}
 
+	is_visible = { # Defaults to equivalent of "always = yes"
+		always = yes
+	}
+
 	effect = {
-		
+		BYZ = {
+			country_event = {
+				id = damietta_byz_crusade.4
+			}
+		}
 	}
 }

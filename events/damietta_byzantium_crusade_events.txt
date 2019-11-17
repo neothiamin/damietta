@@ -135,4 +135,50 @@ country_event = {
 	title = damietta_byz_crusade.3.t
 	desc = damietta_byz_crusade.3.desc
 	picture = DISCIPLINED_SOLDIERS_eventPicture
+
+	is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			PAP = {
+				declare_war_with_cb = {
+					casus_belli = damietta_byzantine_crusade
+					who = BYZ
+				}
+			}
+		}
+	}
+
+	#We will win this!
+	option = {
+		name = damietta_byz_crusade.3.a
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = PAP
+						has_country_flag = damietta_supporting_byzantine_crusade
+					}
+				}
+				form_coalition_against = BYZ
+			}
+		}
+	}
+}
+
+#Latin States Once More
+country_event = {
+	id = damietta_byz_crusade.4
+	title = damietta_byz_crusade.4.t
+	desc = damietta_byz_crusade.4.desc
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	#It seems we have no choice...
+	option = {
+		name = damietta_byz_crusade.4.a
+		custom_tooltip = damietta_byz_latin_states_established.tt
+		damietta_byz_latin_states_effect = yes
+	}
 }

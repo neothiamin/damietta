@@ -158,9 +158,18 @@
  damietta_byz_crusade.1.b:0 "The land is not worth a conflict."
 
  damietta_byz_crusade.2.t:0 "Call to Crusade"
- damietta_byz_crusade.2.desc:0 "REPLACE_ME"
+ damietta_byz_crusade.2.desc:0 "For centuries, relations between the See and the Emperor in Constantinople have been... shaky. From petty squabbles to all-out war, the church in Rome and the throne in Constantinople have always found a way to get under each other's skin. Now, though, it seems tensions have escalated.\n\nThe Pope is calling for a Crusade against the Greeks, and has asked for our help in this effort. The goal is simple: establish Catholic realms in land held by the Greek Empire. Such a goal is lofty, but if achieved it would bolster the faith greatly."
  damietta_byz_crusade.2.a:0 "Pledge our support to the Pope."
  damietta_supporting_byzantine_crusade.tt:0 "Will be called to war against Byzantium."
  damietta_byz_crusade.2.b:0 "We will sit this one out."
- damietta_betrayed_byz_crusader_cause.tt:0 "Pope will remember our betrayal."
+ damietta_betrayed_byz_crusader_cause.tt:0 "The Pope will remember our betrayal."
+
+ damietta_byz_crusade.3.t:0 "Catholic Crusade Called!"
+ damietta_byz_crusade.3.desc:0 "My [Root.Monarch.GetTitle]!\n\nIt would appear that the threats levied against us by the Church in Rome were not hollow, but indeed were full of substance. Catholic nations from around Europe have banded together in support of the Pope's call for a crusade! War is upon us..."
+ damietta_byz_crusade.3.a:0 "We will win this! The might of the Roman Empire stands with us!"
+
+ damietta_byz_crusade.4.t:0 "Catholics Victorious"
+ damietta_byz_crusade.4.desc:0 "My [Root.Monarch.GetTitle]...\n\nThe Catholic heretics are victorious. Our people are weary, and demands for peace have been sent to us."
+ damietta_byz_crusade.4.a:0 "It seems we have no choice but to submit..."
+ damietta_byz_latin_states_established.tt:0 "Various Latin states will be established in our lands."
  

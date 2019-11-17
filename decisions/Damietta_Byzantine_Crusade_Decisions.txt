@@ -10,6 +10,9 @@ country_decisions = {
 				has_country_flag = damietta_byz_refused_to_return_land
 			}
 			exists = BYZ
+			NOT = {
+				has_global_flag = damietta_byz_crusade_caths_win
+			}
 		}
 
 		allow = {
@@ -26,6 +29,7 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = damietta_pap_crusade_call.tt
+			set_global_flag = damietta_pap_called_for_crusade
 			hidden_effect = {
 				every_known_country = {
 					limit = {
@@ -82,6 +86,16 @@ country_decisions = {
 				religion = orthodox
 			}
 			exists = BYZ
+			BYZ = {
+				num_of_owned_provinces_with = {
+					value = 1
+					religion = catholic
+					NOT = {
+						is_core = BYZ
+					}
+					continent = europe
+				}
+			}
 		}
 
 		allow = {
@@ -135,5 +149,48 @@ country_decisions = {
 				}
 			}
 		}
+	}
+
+	damietta_pap_start_crusade = {
+		potential = {
+			tag = PAP
+			has_global_flag = damietta_pap_called_for_crusade
+		}
+
+		allow = {
+			BYZ = {
+				religion = orthodox
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_enough_nations_accepted_crusade_offer
+				calc_true_if = {
+					amount = 4
+					all_country = {
+						has_country_flag = damietta_supporting_byzantine_crusade
+					}
+				}
+			}
+		}
+
+		effect = {
+			clr_global_flag = damietta_pap_called_for_crusade
+			every_country = {
+				limit = {
+					has_country_flag = damietta_supporting_byzantine_crusade
+				}
+				form_coalition_against = BYZ
+			}
+			form_coalition_against = BYZ
+			hidden_effect = {
+				BYZ = {
+					country_event = {
+						id = damietta_byz_crusade.3
+						days = 1
+					}
+				}
+			}
+		}
+
+
 	}
 }

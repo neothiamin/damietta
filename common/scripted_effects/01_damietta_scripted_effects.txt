@@ -1,0 +1,92 @@
+damietta_byz_latin_states_effect = {
+	hidden_effect = {		
+		set_global_flag = damietta_byz_crusade_caths_win		
+		add_prestige = -25
+		morea_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			add_core = ACH
+			cede_province = ACH
+			remove_core = BYZ
+		}
+		ACH = {
+			change_religion = catholic
+			change_primary_culture = umbrian
+		}
+		if = {
+			limit = {
+				7112 = {
+					country_or_non_sovereign_subject_holds = BYZ
+				}
+			}
+			7112 = {				
+				cede_province = VEN
+				add_core = VEN
+			}
+		}
+		if = {
+			limit = {
+				7134 = {
+					country_or_non_sovereign_subject_holds = BYZ
+				}
+			}
+			7134 = {				
+				cede_province = VEN
+				add_core = VEN
+			}
+		}
+		western_aegean_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			cede_province = ATH
+			add_core = ATH
+			remove_core = BYZ
+			ATH = {
+				grant_independence = yes
+				change_religion = catholic
+			}
+		}
+		aegean_archipelago_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			cede_province = NAX
+			add_core = NAX
+			remove_core = BYZ
+			NAX = {
+				grant_independence = yes
+				change_religion = catholic
+			}
+		}
+		every_province = {
+			limit = {
+				OR = {
+					province_id = 148
+					province_id = 7122
+					province_id = 7120
+					province_id = 3172
+					province_id = 7123
+					province_id = 7124
+					area = thessaly_area
+				}
+				country_or_non_sovereign_subject_holds = BYZ
+			}
+			cede_province = FES
+			add_core = FES
+		}
+		FES = {
+			change_religion = catholic
+		}
+		macedonia_area = {
+			add_core = FES
+		}
+		eastern_macedonia_area = {
+			add_core = FES
+		}
+		add_truce_with = FES
+		add_truce_with = ACH
+		add_truce_with = ATH
+	}
+}

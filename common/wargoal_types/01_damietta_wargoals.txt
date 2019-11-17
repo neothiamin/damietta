@@ -25,6 +25,7 @@ damietta_byzantine_crusade_goal = {
 	attacker = {
 		peace_options = { 
 			damietta_establish_latin_states
+			po_change_religion
 		}
 	}
 
