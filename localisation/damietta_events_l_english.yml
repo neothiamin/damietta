@@ -150,4 +150,10 @@
  damietta_byz_conv.4.t:0 "Into the Fold"
  damietta_byz_conv.4.desc:0 "The Pope has accepted our offer of conversion. This will no doubt please the Catholic monarchs of the West, and will surely lead our nation down a more prosperous path."
  damietta_byz_conv.4.a:0 "We are saved!"
+
+ #Byzantine Crusade
+ damietta_byz_crusade.1.t:0 "Papal Demands"
+ damietta_byz_crusade.1.desc:0 "It would seem that the Pope in Rome does not appreciate our just conquest of heretic land. Typical of a Catholic, Pope [PAP.Monarch.GetName] has issued a \"demand\" to us: return the land back to its former owners, or face \"righteous retribution.\" The threats are surely hollow; what power does a mere bishop hold over a mighty Empire such as ours?"
+ damietta_byz_crusade.1.a:0 "If \"His Holiness\" wants the land so bad, he can come get it himself!"
+ damietta_byz_crusade.1.b:0 "The land is not worth a conflict."
  

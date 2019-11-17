@@ -1,0 +1,80 @@
+############################################
+# Events for Byzantine Crusades
+#
+# by neothiamin
+############################################
+
+namespace = damietta_byz_crusade
+
+#Demand from the Pope (for Byz, triggered by decision)
+country_event = {
+	id = damietta_byz_crusade.1
+	title = damietta_byz_crusade.1.t
+	desc = damietta_byz_crusade.1.desc
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BYZ
+		religion = orthodox
+	}
+
+	immediate = {
+		
+	}
+
+	#If the Pope wants the land, he can come take it himself!
+	option = {
+		name = damietta_byz_crusade.1.a
+		set_country_flag = damietta_byz_refused_to_return_land
+		reverse_add_opinion = {
+			who = PAP
+			modifier = damietta_byz_refused_to_return_land_modifier
+		}
+	}
+
+	#Ah, very well. The land is poor anyways.
+	option = {
+		name = damietta_byz_crusade.1.b
+		every_owned_province = {
+			limit = {
+				religion = catholic
+				OR = {
+					NOT = {
+						is_core = ROOT
+					}
+					has_construction = core
+				}
+				continent = europe
+			}
+			cede_province = previous_owner
+			if = {
+				limit = {
+					is_claim = ROOT
+				}
+				remove_claim = ROOT
+			}
+		}
+		add_country_modifier = {
+			name = damietta_byz_caved_to_papal_pressure
+			duration = 5475
+		}
+	}
+}
+
+#Call to Crusade (for other Catholic nations, triggered by decision)
+country_event = {
+	id = damietta_byz_crusade.2
+	title = damietta_byz_crusade.2.t
+	desc = damietta_byz_crusade.2.desc
+	picture = POPE_PREACHING_eventPicture
+}
+
+#A Catholic Crusade (for Byz)
+country_event = {
+	id = damietta_byz_crusade.3
+	title = damietta_byz_crusade.3.t
+	desc = damietta_byz_crusade.3.desc
+	picture = POPE_PREACHING_eventPicture
+}

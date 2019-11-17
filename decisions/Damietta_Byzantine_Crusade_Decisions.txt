@@ -1,0 +1,139 @@
+country_decisions = {
+
+	damietta_pap_call_for_crusade_against_byz = {
+
+		potential = {
+			tag = PAP
+			religion = catholic
+			BYZ = {
+				religion = orthodox
+				has_country_flag = damietta_byz_refused_to_return_land
+			}
+			exists = BYZ
+		}
+
+		allow = {
+			BYZ = {
+				religion = orthodox
+			}
+			NOT = {
+				reverse_has_opinion = {
+					who = BYZ
+					value = -25
+				}
+			}
+
+		}
+		effect = {
+			custom_tooltip = damietta_pap_crusade_call.tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						religion = catholic
+						OR = {
+							AND = {
+								capital_scope = {
+									continent = europe
+								}
+								total_development = 200
+							}
+							AND = {
+								NOT = {
+									capital_scope = {
+										continent = europe
+									}
+								}								
+								total_development = 100
+							}
+							
+						}
+					}
+					country_event = {
+						id = damietta_byz_crusade.2
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = BYZ
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 0
+				BYZ = {
+					total_development = 500
+				}
+			}
+		}
+	}
+
+	damietta_pap_demand_byz_return_land = {
+
+		potential = {
+			tag = PAP
+			religion = catholic
+			BYZ = {
+				religion = orthodox
+			}
+			exists = BYZ
+		}
+
+		allow = {
+			BYZ = {
+				num_of_owned_provinces_with = {
+					value = 4
+					religion = catholic
+					NOT = {
+						is_core = BYZ
+					}
+					continent = europe
+				}
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_pap_not_demanded_land_recently.tt
+				OR = {
+					NOT = {
+						has_country_flag = damietta_pap_demanded_byz_return_land
+					}
+					had_country_flag = {
+						flag = damietta_pap_demanded_byz_return_land
+						days = 3650
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = damietta_pap_demanded_byz_return_land
+			BYZ = {
+				country_event = {
+					id = damietta_byz_crusade.1
+					days = 5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = BYZ
+					value = 50
+				}
+			}
+		}
+	}
+}

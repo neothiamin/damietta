@@ -25,3 +25,9 @@ damietta_byz_converted_to_cath = {
 	opinion = 50
 	yearly_decay = 5
 }
+
+#Refused to Return Land
+damietta_byz_refused_to_return_land_modifier = {
+	opinion = -75
+	yearly_decay = 3
+}

@@ -59,3 +59,10 @@ damietta_rum_stability_modifier_neg_1 = {
 damietta_byz_dynastic_crisis_stronghold_modifier = {
 	local_autonomy = 0.25
 }
+
+#Caved to Papal Pressure
+damietta_byz_caved_to_papal_pressure = {
+	global_unrest = 2
+	prestige = -0.5
+	legitimacy = -1
+}
