@@ -40,4 +40,6 @@
 
  damietta_constantinople_sacked:0 "City Looted"
 
+ damietta_pope_denied_crusade_request:0 "Denied Request for Crusade"
+ damietta_ruler_ignored_papal_will:0 "Ignored Papal Will"
 

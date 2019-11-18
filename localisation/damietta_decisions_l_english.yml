@@ -29,3 +29,8 @@
  damietta_pap_start_crusade_title:0 "Begin Byzantine Crusade"
  damietta_pap_start_crusade_desc:0 "The time has come to declare war in the name of the Faith against the Greek heretics. In His name, we will fight against the Byzantine Empire, and re-establish Catholic rule in Graecia once more!"
  damietta_enough_nations_accepted_crusade_offer:0 "§Y3§! or more nations have accepted our call to crusade."
+
+ #Byzhater Decisions
+ damietta_request_permission_for_byz_crusade_title:0 "Request Permission for Byzantine Crusade"
+ damietta_request_permission_for_byz_crusade_desc:0 "Ask the Pope for permission to launch a Crusade against the heretical Greeks."
+ damietta_ruler_has_not_called_for_byz_crusade.tt:0 "Ruler has not called for a Byzantine Crusade already"
