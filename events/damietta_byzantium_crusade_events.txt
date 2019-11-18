@@ -159,6 +159,9 @@ country_event = {
 						tag = PAP
 						has_country_flag = damietta_supporting_byzantine_crusade
 					}
+					NOT = {
+						is_in_coalition = yes
+					}
 				}
 				form_coalition_against = BYZ
 			}

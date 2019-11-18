@@ -20,8 +20,12 @@
  #Papal Decisions
  damietta_pap_call_for_crusade_against_byz_title:0 "Call for Crusade against Byzantium"
  damietta_pap_call_for_crusade_against_byz_desc:0 "The Greeks in the East have rejected all efforts for peaceful negotiation. The only method left is the sword. Let us call for a Crusade against the \"Romans,\" so that they may see the will and might of God before them!"
- damietta_pap_crusade_call.tt:0 "Foment Support for a Byzantine Crusade"
+ damietta_pap_crusade_call.tt:0 "We will begin cultivating support for a crusade against the Byzantine Empire."
 
  damietta_pap_demand_byz_return_land_title:0 "Demand Return of Conquered Land"
  damietta_pap_demand_byz_return_land_desc:0 "The Greeks have conquered land from good Catholics. If we let this stand without challenge, their campaign of unjust conquest will only continue. Let us demand they return the land they have so unjustly stolen."
  damietta_pap_not_demanded_land_recently.tt:0 "Has not made this demand in the past 10 years"
+
+ damietta_pap_start_crusade_title:0 "Begin Byzantine Crusade"
+ damietta_pap_start_crusade_desc:0 "The time has come to declare war in the name of the Faith against the Greek heretics. In His name, we will fight against the Byzantine Empire, and re-establish Catholic rule in Graecia once more!"
+ damietta_enough_nations_accepted_crusade_offer:0 "§Y3§! or more nations have accepted our call to crusade."
