@@ -308,7 +308,7 @@ country_event = {
 					continent = europe
 				}
 			}
-			add_opinion_modifier = {
+			add_opinion = {
 				who = ROOT
 				modifier = damietta_ruler_ignored_papal_will
 			}
