@@ -130,6 +130,11 @@
  damietta_byzantium.6.d:0 "Nominate a dear friend."
  damietta_byzantium.6.e:0 "We are fine as is."
 
+ damietta_byzantium.9.t:0 "Sack of Constantinople, [GetYear]"
+ damietta_byzantium.9.desc:0 "The \"mighty\" walls of Constantinople are no match for [Root.GetAdjective] soldiers. With our might and raw firepower, the battlements and guard towers crumpled like paper. With the city now under our control, a decision must be made regarding the vast riches within."
+ damietta_byzantium.9.a:0 "Burn the city to the ground!"
+ damietta_byzantium.9.b:0 "Leave the buildings standing, but bring anything valuable back to [Root.Capital.GetName]."
+
  #Byzantine Dynastic Crisis
  damietta_disaster_byz_dynasty_crisis.1.t:0 "Dynastic Crisis"
  damietta_disaster_byz_dynasty_crisis.1.desc:0 "REPLACE_ME"

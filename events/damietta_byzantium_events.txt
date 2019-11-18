@@ -462,3 +462,68 @@ country_event = {
 	option = {
 	}
 }
+
+############################################
+# Siege of Constantinople
+############################################
+
+country_event = {
+	id = damietta_byzantium.9
+	title = damietta_byzantium.9.t
+	desc = damietta_byzantium.9.desc
+	picture = VILLAGE_BURNING_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			religion = BYZ
+		}
+		FROM = {
+			province_id = 151
+			owner = {
+				tag = BYZ
+				religion = orthodox
+			}
+		}		
+	}
+
+	#Burn it down!
+	option = {
+		name = damietta_byzantium.9.a
+		151 = {
+			add_base_manpower = -3
+			add_base_tax = -3
+			add_base_production = -3	
+			add_loot_from_rich_province_general_effect = {
+				LOOTER = ROOT
+			}			
+			add_province_modifier = {
+				name = damietta_constantinople_sacked
+				duration = 9125
+			}
+		}
+	}
+
+	#Leave most of the buildings standing, but pillage the churches and palaces.
+	option = {
+		name = damietta_byzantium.9.b
+		151 = {
+			add_base_manpower = -2
+			add_base_tax = -2
+			add_base_production =-2
+			add_devastation = 25
+			add_province_modifier = {
+				name = damietta_constantinople_sacked
+				duration = 3650
+			}
+		}
+		capital_scope = {
+			add_base_manpower = 1
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+}

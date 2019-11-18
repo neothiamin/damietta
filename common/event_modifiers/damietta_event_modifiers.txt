@@ -66,3 +66,11 @@ damietta_byz_caved_to_papal_pressure = {
 	prestige = -0.5
 	legitimacy = -1
 }
+
+#Constantinople Sacked
+damietta_constantinople_sacked = {
+	local_unrest = 8
+	local_tax_modifier = -0.5
+	province_trade_power_modifier = -0.5
+	local_development_cost = 0.75
+}

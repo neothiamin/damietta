@@ -17,3 +17,17 @@ on_province_owner_change = {
 		}
 	}
 }
+
+# country
+# root = winning country, from = location
+on_siege_won_country = {
+	events = {
+		tyw_events.14 # Fall of Prague in Religious War
+		flavor_oir.5 # Oirats capture Beijing
+	}
+	random_events = {
+		10 = army_professionalism_events.1 #City Sacked
+		100 = 0
+		50 = damietta_byzantium.9
+	}
+}
