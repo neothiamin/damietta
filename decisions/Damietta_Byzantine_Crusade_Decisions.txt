@@ -1,5 +1,9 @@
 country_decisions = {
 
+	############################################
+	# Papal Crusade
+	############################################
+
 	damietta_pap_call_for_crusade_against_byz = {
 
 		potential = {
@@ -192,6 +196,56 @@ country_decisions = {
 						id = damietta_byz_crusade.3
 						days = 1
 					}
+				}
+			}
+		}
+	}
+
+	############################################
+	# byz_hater1204 events (For a Catholic monarch who HATES Byzantium)
+	############################################
+
+	damietta_request_permission_for_byz_crusade = {
+		potential = {
+			#religion = catholic
+			capital_scope = {
+				OR = {
+					region = italy_region
+					region = iberia_region
+					region = france_region
+					region = south_german_region
+				}
+			}
+		}
+
+		allow = {
+			religion = catholic
+			total_development = 150
+			if = {
+				limit = {
+					ai = yes
+				}
+				NOT = {
+					has_opinion = {
+						who = BYZ
+						value = -25
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_ruler_has_not_called_for_byz_crusade.tt
+				NOT = {
+					has_ruler_flag = damietta_ruler_hates_byz
+				}
+			}
+		}
+
+		effect = {
+			#custom_tooltip = damietta_ruler_hates_byz.tt
+			#set_ruler_flag = damietta_ruler_hates_byz
+			PAP = {
+				country_event = {
+					id = damietta_byz_crusade.5
 				}
 			}
 		}

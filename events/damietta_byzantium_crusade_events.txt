@@ -185,3 +185,143 @@ country_event = {
 		damietta_byz_latin_states_effect = yes
 	}
 }
+
+#Request for Crusade from [From.Monarch.GetName] of [From.GetName] (For Pope)
+country_event = {
+	id = damietta_byz_crusade.5
+	title = damietta_byz_crusade.5.t
+	desc = damietta_byz_crusade.5.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#Allow [From.Monarch.GetHerHim] to prepare for war.
+	option = {
+		name = damietta_byz_crusade.5.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 4
+				NOT = {
+					has_opinion = {
+						who = BYZ
+						value = -25
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 75
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = damietta_byz_crusade.6
+				days = 30
+			}
+		}
+	}
+
+	#Deny [From.Monarch.GetHerHis] request.
+	option = {
+		name = damietta_byz_crusade.5.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 25
+					}
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = damietta_pope_denied_crusade_request
+		}
+		FROM = {
+			country_event = {
+				id = damietta_byz_crusade.7
+			}
+		}
+	}
+}
+
+#Pope Grants Request for Crusade
+country_event = {
+	id = damietta_byz_crusade.6
+	title = damietta_byz_crusade.6.t
+	desc = damietta_byz_crusade.6.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+
+	#Hurrah! We will march to [BYZ.Capital.GetName]!
+	option = {
+		name = damietta_byz_crusade.6.a
+		add_casus_belli = {
+			type = damietta_byzantine_crusade
+			target = BYZ
+			months = 24
+		}
+	}
+}
+
+#Pope denies Request for Crusade
+country_event = {
+	id = damietta_byz_crusade.7
+	title = damietta_byz_crusade.7.t
+	desc = damietta_byz_crusade.7.desc
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	#Nothing can stop our will!
+	option = {
+		name = damietta_byz_crusade.7.a
+		ai_chance = {
+			factor = 20
+		}
+		add_prestige = 5
+		add_papal_influence = -20
+		#PAP = {
+		#	add_opinion = {
+		#		who = ROOT
+		#		modifier = damietta_ruler_ignored_papal_will
+		#	}
+		#}
+		add_casus_belli = {
+			type = damietta_byzantine_crusade
+			target = BYZ
+			months = 12
+		}
+		every_known_country = {
+			limit = {
+				religion = catholic
+				capital_scope = {
+					continent = europe
+				}
+			}
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = damietta_ruler_ignored_papal_will
+			}
+		}
+	}
+
+	#Shelve the idea for now.
+	option = {
+		name = damietta_byz_crusade.7.b
+		ai_chance = {
+			factor = 80
+		}
+		add_prestige = -5
+		add_papal_influence = 10
+	}
+}

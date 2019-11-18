@@ -37,3 +37,15 @@ damietta_betrayed_byz_crusader_cause = {
 	opinion = -50
 	yearly_decay = 10
 }
+
+#Crusade Request Denial
+damietta_pope_denied_crusade_request = {
+	opinion = -25
+	yearly_decay = 5
+}
+
+#Ignored Papal Authority
+damietta_ruler_ignored_papal_will = {
+	opinion = -50
+	yearly_decay = 5
+}

@@ -172,4 +172,18 @@
  damietta_byz_crusade.4.desc:0 "My [Root.Monarch.GetTitle]...\n\nThe Catholic heretics are victorious. Our people are weary, and demands for peace have been sent to us."
  damietta_byz_crusade.4.a:0 "It seems we have no choice but to submit..."
  damietta_byz_latin_states_established.tt:0 "Various Latin states will be established in our lands."
+
+ damietta_byz_crusade.5.t:0 "[From.Monarch.GetName]'s Crusader Desire"
+ damietta_byz_crusade.5.desc:0 "Many Catholic monarchs throughout history have dedicated significant parts of their lives to combatting the Orthodox heresy in the East. One notable example is Charles of Anjou, who spent decades petitioning Popes to call a Crusade against the Byzantine Empire. Ultimately, Charles' will won out, and he launched a war against the Byzantines in 1280 which ended in resounding defeat.\n\nNow, there is another Catholic monarch with similar desires for war. [From.Monarch.GetName] of [From.GetName] has sent us a letter detailing the myriad causes for holy war against the Greeks. Though obviously fueled by either potent zeal or lunacy, the benefits to the Catholic world at large could prove to be great."
+ damietta_byz_crusade.5.a:0 "Give [From.Monarch.GetHerHim] the go-ahead."
+ damietta_byz_crusade.5.b:0 "Diplomacy would surely be more effective, don't you think?"
+
+ damietta_byz_crusade.6.t:0 "Pope Grants Request for Crusade"
+ damietta_byz_crusade.6.desc:0 "Hurrah!\n\nThe Pope, seeing the righteous arguments we have posited to him, has granted us his blessing in our war against the Byzantine Empire! We must capitalize on this quickly."
+ damietta_byz_crusade.6.a:0 "To [BYZ.Capital.GetName]! Our armies will march in valiant unison!"
+
+ damietta_byz_crusade.7.t:0 "Pope Denies Request for Crusade"
+ damietta_byz_crusade.7.desc:0 "Blast!\n\nThe Pope, too caught up in theological technicalities, has denied our request for permission to wage war against the Greeks. Defying his will would surely upset our brothers in faith."
+ damietta_byz_crusade.7.a:0 "Our cause is just! Nothing and no one will stop us!"
+ damietta_byz_crusade.7.b:0 "Shelve the idea for now."
  
