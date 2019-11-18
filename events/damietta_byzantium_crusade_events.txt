@@ -152,6 +152,9 @@ country_event = {
 	#We will win this!
 	option = {
 		name = damietta_byz_crusade.3.a
+		BYZ = {
+			set_country_flag = damietta_byz_target_of_crusade
+		}
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -220,7 +223,7 @@ country_event = {
 		FROM = {
 			country_event = {
 				id = damietta_byz_crusade.6
-				days = 30
+				days = 15
 			}
 		}
 	}
@@ -270,6 +273,9 @@ country_event = {
 			target = BYZ
 			months = 24
 		}
+		BYZ = {
+			set_country_flag = damietta_byz_target_of_crusade
+		}
 	}
 }
 
@@ -288,7 +294,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		add_prestige = 5
+		add_prestige = -25
 		add_papal_influence = -20
 		#PAP = {
 		#	add_opinion = {
@@ -301,7 +307,10 @@ country_event = {
 			target = BYZ
 			months = 12
 		}
-		every_known_country = {
+		BYZ = {
+			set_country_flag = damietta_byz_target_of_crusade
+		}
+		every_neighbor_country = {
 			limit = {
 				religion = catholic
 				capital_scope = {
@@ -321,7 +330,7 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		add_prestige = -5
+		add_prestige = 5
 		add_papal_influence = 10
 	}
 }

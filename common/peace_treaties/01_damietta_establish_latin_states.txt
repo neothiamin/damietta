@@ -1,8 +1,11 @@
-damietta_install_konstantinos_po = {
 
-	power_projection = damietta_pp_byz_installed_foreign_ruler #New. 50 power, 1 decay/yr
-	prestige_base = 0.6
-	ae_base = 0.6
+
+damietta_establish_latin_states_po = {
+
+	power_projection = damietta_pp_byzantine_crusade #New. 15 power, stacks to 50, 0.5 decay/yr
+
+	prestige_base = 0.5
+	ae_base = 0.5
 
 	warscore_cost = {
 		# Which of the giver's provinces' war score costs are included and by how much. All entries default to 0. Any combination of entries can be used. Try negative values at your own risk.
@@ -15,32 +18,8 @@ damietta_install_konstantinos_po = {
 		cancelled_subject = 0.0 # This one should not be relevant here since Giver can't be a cancelled subject. Including anyway for completeness
 		concede_colonial_region = 0.0 # Ditto
 	}
+
 	requires_is_allowed = yes
-
-	effect = {
-		clr_global_flag = damietta_byz_konstantinos_coup
-		BYZ = {
-			set_heir = damietta_byzantium_konstantinos_in_exile
-			kill_ruler = yes
-			#country_event = {
-			#	id = damietta_byzantium.6
-			#}
-		}
-	}
-
-	is_visible = { # Defaults to equivalent of "always = yes"
-		has_country_flag = damietta_supporting_konstantinos_xi
-		war_with = BYZ
-		has_global_flag = damietta_byz_konstantinos_coup
-	}
-
-	is_allowed = { # Defaults to equivalent of "always = yes"
-		always = yes
-	}
-
-	warscore_cap = 75
-
-	category = 6
 
 	ai_weight = {
 		export_to_variable = {
@@ -49,6 +28,24 @@ damietta_install_konstantinos_po = {
 		}
 		limit = {
 			always = yes
+		}
+	}
+
+	category = 6
+
+	is_allowed = {
+		always = yes
+	}
+
+	is_visible = { # Defaults to equivalent of "always = yes"
+		religion = catholic
+	}
+
+	effect = {
+		BYZ = {
+			country_event = {
+				id = damietta_byz_crusade.4
+			}
 		}
 	}
 }

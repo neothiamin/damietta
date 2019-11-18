@@ -21,6 +21,9 @@
 
  DAMIETTA_BYZANTIUM_COUP:0 "War of Konstantinos XI"
 
+ damietta_install_konstantinos:0 "Take Capital"
+ damietta_install_konstantinos_desc:0 "Take Capital"
+
  damietta_install_konstantinos_po:0 "Install Konstantinos XI"
  damietta_install_konstantinos_po_desc:0 "Konstantinos XI takes the throne."
  CB_ALLOWED_damietta_install_konstantinos_po:0 "Coronation of Konstantinos XI"
@@ -31,7 +34,10 @@
 
  DAMIETTA_BYZANTINE_CRUSADE_NAME:0 "Byzantine Crusade"
 
- damietta_establish_latin_states:0 "Establish Latin States"
- damietta_establish_latin_states_desc:0 "Latin States are established in Byzantine territory."
- CB_ALLOWED_damietta_establish_latin_states:0 "Establishment of Latin States"
- PEACE_damietta_establish_latin_states:0 "Establish Latin States"
+ damietta_byzantine_crusade_goal:0 "Establish Catholic Superiority"
+ damietta_byzantine_crusade_goal_desc:0 "Win enough battles against the heretics."
+
+ damietta_establish_latin_states_po:0 "Establish Latin States"
+ damietta_establish_latin_states_po_desc:0 "Latin States are established in Byzantine territory."
+ CB_ALLOWED_damietta_establish_latin_states_po:0 "Establishment of Latin States"
+ PEACE_damietta_establish_latin_states_po:0 "Establish Latin States"

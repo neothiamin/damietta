@@ -24,6 +24,8 @@ damietta_byzantine_coup = {
 
 damietta_byzantine_crusade = {
 
+	is_triggered_only = yes
+
 	#prerequisites = {
 	#	religion = catholic
 	#	FROM = {

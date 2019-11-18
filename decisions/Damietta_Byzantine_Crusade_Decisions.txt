@@ -213,14 +213,15 @@ country_decisions = {
 					region = italy_region
 					region = iberia_region
 					region = france_region
-					region = south_german_region
+					#region = south_german_region
 				}
 			}
+			is_free_or_tributary_trigger = yes
 		}
 
 		allow = {
 			religion = catholic
-			total_development = 150
+			total_development = 350
 			if = {
 				limit = {
 					ai = yes
@@ -228,24 +229,59 @@ country_decisions = {
 				NOT = {
 					has_opinion = {
 						who = BYZ
-						value = -25
+						value = -100
 					}
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = damietta_ruler_has_not_called_for_byz_crusade.tt
-				NOT = {
-					has_ruler_flag = damietta_ruler_hates_byz
+				OR = {
+					NOT = {
+						has_country_flag = damietta_ruler_hates_byz
+					}
+					had_country_flag = {
+						flag = damietta_ruler_hates_byz
+						days = 9125
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_byz_not_lost_crusade_recently.tt
+				OR = {
+					NOT = {
+						BYZ = {
+							has_country_flag = damietta_byz_target_of_crusade
+						}
+					}
+					BYZ = {
+						had_country_flag = {
+							flag = damietta_byz_target_of_crusade
+							days = 9125
+						}
+					}
 				}
 			}
 		}
 
 		effect = {
-			#custom_tooltip = damietta_ruler_hates_byz.tt
-			#set_ruler_flag = damietta_ruler_hates_byz
-			PAP = {
-				country_event = {
-					id = damietta_byz_crusade.5
+			custom_tooltip = damietta_ruler_hates_byz.tt
+			set_country_flag = damietta_ruler_hates_byz
+			hidden_effect = {
+				PAP = {
+					country_event = {
+						id = damietta_byz_crusade.5
+						days = 15
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					total_development = 600
 				}
 			}
 		}
