@@ -38,7 +38,11 @@ damietta_establish_latin_states_po = {
 	}
 
 	is_visible = { # Defaults to equivalent of "always = yes"
-		religion = catholic
+		war_with = BYZ
+		has_casus_belli = {
+			type = damietta_byzantine_crusade
+			target = BYZ
+		}
 	}
 
 	effect = {

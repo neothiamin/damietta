@@ -74,3 +74,21 @@ damietta_constantinople_sacked = {
 	province_trade_power_modifier = -0.5
 	local_development_cost = 0.75
 }
+
+#Familial Mufti
+damietta_rhl_appointed_relative_mufti = {
+	local_unrest = -2
+	local_production_efficiency = 0.1
+	local_autonomy = 0.03
+}
+
+#Loyal Mufti
+damietta_rhl_loyal_mufti = {
+	local_unrest = 4
+	local_autonomy = -0.03
+}
+
+#Foreign Mufti
+damietta_rhl_foreign_mufti = {
+	local_manpower_modifier = 0.05
+}

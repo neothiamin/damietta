@@ -442,12 +442,19 @@ defined_text = {
 	}
 	#Country Specific:
 
-	#Damietta - Levant
+	#Damietta - Near East
 
 	text = { #Damietta
 		localisation_key = string_start_dmi
 		trigger = {
 			tag = DMI
+		}
+	}
+
+	text = { #Rahulids
+		localisation_key = string_start_rhl
+		trigger = {
+			tag = RHL
 		}
 	}
 	

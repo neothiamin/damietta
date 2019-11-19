@@ -31,3 +31,55 @@ on_siege_won_country = {
 		50 = damietta_byzantium.9
 	}
 }
+
+on_startup = {
+	#Apparently, the below vanilla code below must be included in the on_startup of any mod added on_action file, else problems arise with CoC content.... absolutely bizarre, but what can one do? Better safe than sorry.
+	events = {
+		muslim_school_events.20 #Pick School
+		damietta_rahulids.4
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+	#Apparently, the above vanilla code above must be included in the on_startup of any mod added on_action file, else problems arise with CoC content.... absolutely bizarre, but what can one do? Better safe than sorry.
+	#New for better addon support
+	if = {
+		limit = { NOT = { has_global_flag = beyond_typus_mod_enabled } }
+		set_global_flag = beyond_typus_mod_enabled
+	}
+	if = {
+		limit = { started_in = 1459.1.1 }
+		set_global_flag = constantinople_restored
+		TUR = { set_country_flag = relocated_capital_constantinople }
+	}	#Preventing exploits relating to Contaninople's growth.
+	if = {
+		limit = {
+			started_in = 1495.1.1
+			NOT = { started_in = 1648.1.1 }
+		}
+		clr_global_flag = italy_out_of_HRE
+	}	#BT calls the Peace of Westphalia then end of the Italian HRE, not 1495, so delaying the global flag here without having to mess with the HAB history file for now.
+    if = {
+        limit = {
+            has_dlc = "Golden Century"
+            NOT = { has_global_flag = bt_initialized }
+        }
+        GOT = {
+            change_government = republic
+            add_government_reform = pirate_republic_reform
+        }
+        set_global_flag = bt_initialized
+    } #BT Gotland's pirate republic.
+}
+
+on_bi_yearly_pulse_4 = {
+	random_events = {		
+		40 = 0
+		10 = damietta_rahulids.3
+	}
+}

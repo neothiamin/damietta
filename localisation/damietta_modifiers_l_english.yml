@@ -43,3 +43,7 @@
  damietta_pope_denied_crusade_request:0 "Denied Request for Crusade"
  damietta_ruler_ignored_papal_will:0 "Ignored Papal Will"
 
+ damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"
+ damietta_rhl_loyal_mufti:0 "Loyal Muqti"
+ damietta_rhl_foreign_mufti:0 "Foreign Muqti"
+

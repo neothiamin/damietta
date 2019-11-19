@@ -3,6 +3,8 @@ v0.1:
 + Added Byzantine Co-Emperor event
 + Added Thessalonica (FES)
 + Added start screen text for Damietta
++ Added start screen text for Rahulids
++ Added Muqti event for Rahulids (so now the "unique type of Iqta' system" actually means something heahehehe)
 + Added events for a Catholic Crusade against an expansionist Byzantium
 
 * Cleaned up the Foreign Quarter event for Crusader States

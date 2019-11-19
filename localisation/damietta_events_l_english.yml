@@ -59,9 +59,19 @@
  damietta_rahulids.2.b:0 "Not this time."
 
  
- damietta_rahulids.3.t:0 "Province Settled"
- damietta_rahulids.3.desc:0 "My [Owner.Monarch.GetTitle]! Our efforts to tame the Libyan Desert have proven successful! The province of [Root.GetName] is now solidly under our control. Local farmers have begun work, and trade caravans are entering and leaving the town square regularly."
- damietta_rahulids.4.a:0 "Hurrah!"
+ #damietta_rahulids.3.t:0 "Province Settled"
+ #damietta_rahulids.3.desc:0 "My [Owner.Monarch.GetTitle]! Our efforts to tame the Libyan Desert have proven successful! The province of [Root.GetName] is now solidly under our #control. Local farmers have begun work, and trade caravans are entering and leaving the town square regularly."
+ #damietta_rahulids.4.a:0 "Hurrah!"
+
+ damietta_rahulids.3.t:0 "New Muqti in [damietta_event_rhl_3_target.GetAreaName]"
+ damietta_rahulids.3.desc:0 "In Iqta' systems, a realm is divided into local governates called \"Iqta',\" and these Iqta' are governed by people called Muqti. Early on in our Sultanate's history, the first Sultan Omar Rahul decided to institute a non-official policy of hereditary rule among Muqti. This meant that one family grew increasingly powerful in their Iqta' and began to wield more and more power, taking power away from the Sultan.\n\nThe fact remains, though, that the position of Muqti is not hereditary, and can be revoked at any time. Now, the Muqti in one of the Iqta', [damietta_event_rhl_3_target.GetAreaName], has passed away, and a new Muqti must be chosen."
+ damietta_rahulids.3.a:0 "Appoint a relative of the old Muqti."
+ damietta_rahulids.3.b:0 "Appoint a Muqti more supportive of our desires."
+ damietta_rahulids.3.c:0 "Appoint a relative of a Muqti of a neighboring Iqta'."
+
+ damietta_rahulids.4.a:0 "You shouldn't be able to see this!"
+
+ damietta_rhl_mufti_power_in_area:0 "Local Muqti Family Power"
 
  #Renaissance
  damietta_renaissance.1.t:0 "An Old Scholar"
