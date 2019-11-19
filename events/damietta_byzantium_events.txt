@@ -318,6 +318,9 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+		hidden_effect = {
+			exile_heir_as = damietta_byzantium_heir_co_emperor
+		}
 		define_heir = {
 			dynasty = ROOT
 			age = 32
@@ -335,6 +338,9 @@ country_event = {
 		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 10
+		}
+		hidden_effect = {
+			exile_heir_as = damietta_byzantium_heir_co_emperor
 		}
 		define_heir = {
 			culture = ROOT
@@ -356,6 +362,9 @@ country_event = {
 		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 10
+		}
+		hidden_effect = {
+			exile_heir_as = damietta_byzantium_heir_co_emperor
 		}
 		define_heir = {
 			culture = ROOT
@@ -380,6 +389,9 @@ country_event = {
 		set_heir_flag = damietta_byzantium_is_co_emperor
 		ai_chance = {
 			factor = 5
+		}
+		hidden_effect = {
+			exile_heir_as = damietta_byzantium_heir_co_emperor
 		}
 		define_heir = {
 			culture = ROOT

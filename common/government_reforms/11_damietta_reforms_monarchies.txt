@@ -23,7 +23,7 @@ damietta_byzantine_reform_1 = {
 
 	modifiers = {
 		merc_maintenance_modifier = -0.25
-		global_manpower_modifier = -0.1
+		land_forcelimit_modifier = -0.25
 		trade_efficiency = -0.1
 	}
 

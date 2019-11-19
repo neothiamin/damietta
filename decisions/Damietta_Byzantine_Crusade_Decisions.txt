@@ -216,6 +216,9 @@ country_decisions = {
 					#region = south_german_region
 				}
 			}
+			NOT = {
+				tag = PAP
+			}
 			is_free_or_tributary_trigger = yes
 		}
 
