@@ -84,7 +84,7 @@ country_event = {
 		set_country_flag = damietta_supporting_byzantine_crusade
 		custom_tooltip = damietta_supporting_byzantine_crusade.tt
 		ai_chance = {
-			factor = 40
+			factor = 10
 			modifier = {
 				factor = 2
 				NOT = {
@@ -115,7 +115,7 @@ country_event = {
 			modifier = damietta_betrayed_byz_crusader_cause
 		}
 		ai_chance = {
-			factor = 60
+			factor = 90
 			modifier = {
 				factor = 2
 				NOT = {
@@ -142,7 +142,7 @@ country_event = {
 		hidden_effect = {
 			PAP = {
 				declare_war_with_cb = {
-					casus_belli = damietta_byzantine_crusade
+					casus_belli = damietta_byzantine_crusade_coalition
 					who = BYZ
 				}
 			}
@@ -292,7 +292,7 @@ country_event = {
 	option = {
 		name = damietta_byz_crusade.7.a
 		ai_chance = {
-			factor = 20
+			factor = 10
 		}
 		add_prestige = -25
 		add_papal_influence = -20
@@ -328,7 +328,7 @@ country_event = {
 	option = {
 		name = damietta_byz_crusade.7.b
 		ai_chance = {
-			factor = 80
+			factor = 90
 		}
 		add_prestige = 5
 		add_papal_influence = 10

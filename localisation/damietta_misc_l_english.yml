@@ -32,6 +32,9 @@
  damietta_byzantine_crusade:0 "Byzantine Crusade"
  damietta_byzantine_crusade_desc:0 "Smite the Greek heretics!"
 
+ damietta_byzantine_crusade_coalition:0 "Byzantine Crusade"
+ damietta_byzantine_crusade_coalition_desc:0 "Smite the Greek heretics!"
+
  DAMIETTA_BYZANTINE_CRUSADE_NAME:0 "Byzantine Crusade"
 
  damietta_byzantine_crusade_goal:0 "Establish Catholic Superiority"

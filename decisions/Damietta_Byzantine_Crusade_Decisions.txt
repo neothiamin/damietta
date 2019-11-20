@@ -16,6 +16,7 @@ country_decisions = {
 			exists = BYZ
 			NOT = {
 				has_global_flag = damietta_byz_crusade_caths_win
+				has_global_flag = damietta_pap_called_for_crusade
 			}
 		}
 
@@ -24,15 +25,12 @@ country_decisions = {
 				religion = orthodox
 				total_development = 450
 			}
-			#OR = {
-			#	NOT = {
-			#		reverse_has_opinion = {
-			#			who = BYZ
-			#			value = -75
-			#		}
-			#	}
-			#}
-
+			NOT = {
+				reverse_has_opinion = {
+					who = BYZ
+					value = -50
+				}
+			}
 		}
 		effect = {
 			custom_tooltip = damietta_pap_crusade_call.tt
@@ -44,19 +42,19 @@ country_decisions = {
 						OR = {
 							AND = {
 								capital_scope = {
-									continent = europe
+									region = italy_region
 								}
-								total_development = 200
+								total_development = 150
 							}
 							AND = {
-								NOT = {
+								OR = {
 									capital_scope = {
-										continent = europe
+										region = france_region
+										region = iberia_region
 									}
-								}								
-								total_development = 100
+								}
+								total_development = 250
 							}
-							
 						}
 					}
 					country_event = {
@@ -163,6 +161,11 @@ country_decisions = {
 		potential = {
 			tag = PAP
 			has_global_flag = damietta_pap_called_for_crusade
+			NOT = {
+				BYZ = {
+					has_country_flag = damietta_byz_target_of_crusade
+				}
+			}
 		}
 
 		allow = {
@@ -181,13 +184,14 @@ country_decisions = {
 		}
 
 		effect = {
-			clr_global_flag = damietta_pap_called_for_crusade
+			#clr_global_flag = damietta_pap_called_for_crusade
 			set_country_flag = damietta_byzantine_crusade_called
 			every_country = {
 				limit = {
 					has_country_flag = damietta_supporting_byzantine_crusade
 				}
 				form_coalition_against = BYZ
+				clr_country_flag = damietta_supporting_byzantine_crusade
 			}
 			form_coalition_against = BYZ
 			hidden_effect = {

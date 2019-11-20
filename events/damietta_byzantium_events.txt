@@ -293,7 +293,7 @@ country_event = {
 			AND = {
 				has_heir = yes
 				NOT = {
-					heir_claim = 90
+					heir_claim = 75
 				}
 			}
 			has_heir = no

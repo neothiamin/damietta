@@ -45,3 +45,29 @@ damietta_byzantine_crusade = {
 		po_demand_provinces
 	}
 }
+
+damietta_byzantine_crusade_coalition = {
+
+	coalition = yes
+
+	is_triggered_only = yes
+
+	#prerequisites = {
+	#	religion = catholic
+	#	FROM = {
+	#		tag = BYZ
+	#		religion = orthodox
+	#	}
+	#}
+
+	#allowed_provinces = {
+	#	region = balkan_region
+	#}
+	
+	war_goal = damietta_byzantine_crusade_goal
+
+	attacker_disabled_po = {
+		po_become_vassal
+		po_demand_provinces
+	}
+}

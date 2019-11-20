@@ -23,12 +23,12 @@ on_province_owner_change = {
 on_siege_won_country = {
 	events = {
 		tyw_events.14 # Fall of Prague in Religious War
-		flavor_oir.5 # Oirats capture Beijing
+		flavor_oir.5 # Oirats capture Beijing		
+		damietta_byzantium.9 # Siege of Constantinople
 	}
 	random_events = {
 		10 = army_professionalism_events.1 #City Sacked
 		100 = 0
-		50 = damietta_byzantium.9
 	}
 }
 
@@ -36,7 +36,7 @@ on_startup = {
 	#Apparently, the below vanilla code below must be included in the on_startup of any mod added on_action file, else problems arise with CoC content.... absolutely bizarre, but what can one do? Better safe than sorry.
 	events = {
 		muslim_school_events.20 #Pick School
-		damietta_rahulids.4
+		#damietta_rahulids.4
 	}
 	if = {
 		limit = {
