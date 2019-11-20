@@ -92,3 +92,23 @@ damietta_rhl_loyal_mufti = {
 damietta_rhl_foreign_mufti = {
 	local_manpower_modifier = 0.05
 }
+
+#Euboea Fort
+damietta_ven_euboea_fort = {
+	local_defensiveness = 0.25
+}
+
+#Negroponte Fort
+damietta_ven_euboea_fort_2 = {
+	local_defensiveness = 0.5
+}
+
+#Wooden Wall (Venice)
+damietta_ven_wooden_wall = {
+	naval_forcelimit_modifier = 0.1
+}
+
+#Genoese Trade (Byz)
+damietta_byz_genoese_trade = {
+	trade_efficiency = 0.05
+}

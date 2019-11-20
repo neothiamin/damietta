@@ -1,10 +1,14 @@
 ﻿l_english:
+ #Natural Landmarks
  damietta_lake_manzala:0 "Lake Manzala"
  desc_damietta_lake_manzala:0 "Lake Manzala is a shallow lake located near the mouth of the Nile, not even 25 kilometers from Damietta."
 
+ #Foreign Quarters
  damietta_foreign_quarter_established:0 "Foreign Quarter"
  damietta_benefiting_from_foreign_quarter:0 "Foreign Quarter Proceeds"
+ DAMIETTA_FOREIGN_QUARTER_MODIFIER:0 "Foreign Quarter"
 
+ #Captures of various cities
  damietta_crusaders_expelled:0 "Inhabitants Expelled"
  desc_damietta_crusaders_expelled:0 "The previous inhabitants of this city have been expelled, resulting in lots of abandoned dwellings."
  damietta_jizya_effective_here:0 "Jizya"
@@ -12,38 +16,46 @@
  damietta_city_pillaged:0 "City Pillaged"
  damietta_local_governor:0 "Local Governor"
  desc_damietta_local_governor:0 "A local governor has been installed in this province to oversee day-to-day life."
+
+ #Rahulids Taming the Desert
  damietta_rahulids_province_raided:0 "Province Raided"
  desc_damietta_rahulids_province_raided:0 "This province was the site of a raid by nomads from the Western Desert."
-
  damietta_rahulids_settlers_in_desert:0 "Desert Settlers"
 
+ #Buildings
  damietta_fortress_of_tamiathis:0 "Fortress of Tamiathis"
  desc_damietta_fortress_of_tamiathis:0 "The Fortress of Tamiathis, home to the Damietta royal court, was built following the capture of the city in 1220. Initially situated on the west bank of the Nile, away from the city itself, the Fortress now sits on an island as a result of the Nile's shifting course."
- 
+
+ damietta_ven_euboea_fort:0 "Augmented Fortifications"
+ damietta_ven_euboea_fort_2:0 "Castello di Negroponte"
+ desc_damietta_ven_euboea_fort_2:0 "This province is the location of a Venetian fortress named the \"Castello di Negroponte.\" Built to withstand assault and barrage from Byzantine ships and artillery, at the time of its construction it was considered state-of-the-art."
+
+ #Misc 
  damietta_renaissance_3_big_library_modifier:0 "Grand Library"
-
- damietta_uthmans_tolerance:0 "Uthman's Tolerance"
-
  damietta_rum_stability_modifier_1:0 "Seljuk Stability"
  #damietta_rum_stability_modifier_2:0 "Seljuk Stability"
  #damietta_rum_stability_modifier_3:0 "Seljuk Stability"
  damietta_rum_stability_modifier_neg_1:0 "Seljuk Stability"
  #damietta_rum_stability_modifier_neg_2:0 "Seljuk Stability"
  #damietta_rum_stability_modifier_neg_3:0 "Seljuk Stability"
+ damietta_constantinople_sacked:0 "City Looted"
+ damietta_ven_wooden_wall:0 "Wooden Wall"
+ desc_damietta_ven_wooden_wall:0 "We rely on our fleet, pride of Venice, to protect our possessions in the Aegean."
+ DAMIETTA_GEN_CONSTANTINOPLE_TRADE:0 "Byzantine Trade Network"
 
- DAMIETTA_FOREIGN_QUARTER_MODIFIER:0 "Foreign Quarter"
+ #Ruler Modifiers
+ damietta_uthmans_tolerance:0 "Uthman's Tolerance"
 
+ #Opinions
  damietta_byz_caved_to_papal_pressure:0 "Caved to Papal Pressure"
  damietta_byz_refused_to_return_land_modifier:0 "Refused Land Return Request"
-
  damietta_betrayed_byz_crusader_cause:0 "Betrayed Crusader Cause"
-
- damietta_constantinople_sacked:0 "City Looted"
-
  damietta_pope_denied_crusade_request:0 "Denied Request for Crusade"
  damietta_ruler_ignored_papal_will:0 "Ignored Papal Will"
+ damietta_byz_gen_no_alliance:0 "Rebuffed Alliance"
+ damietta_byz_gen_alliance:0 "Byzanto-Genoese Alliance"
 
+ #Rahulids Muqti
  damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"
  damietta_rhl_loyal_mufti:0 "Loyal Muqti"
  damietta_rhl_foreign_mufti:0 "Foreign Muqti"
-

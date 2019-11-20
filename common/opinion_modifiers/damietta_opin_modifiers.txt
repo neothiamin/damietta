@@ -49,3 +49,8 @@ damietta_ruler_ignored_papal_will = {
 	opinion = -50
 	yearly_decay = 5
 }
+
+#Trade Agreement
+damietta_byz_gen_trade = {
+	opinion = 25
+}

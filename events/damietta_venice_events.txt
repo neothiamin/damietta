@@ -6,6 +6,125 @@
 
 namespace = damietta_ven
 
-############################################
-#Byz Diplomacy
-############################################
+#Fortification of Euboea
+#The basis for this event is that Euboea, given its position in the central of the Byzantium-dominated Aegean, is pivotal for Venetian influence in the Aegean and beyond. Fortifying the island makes a lot of sense.
+country_event = {
+	id = damietta_ven.1
+	title = damietta_ven.1.t
+	desc = damietta_ven.1.desc
+	picture = FORT_eventPicture
+
+	trigger = {
+		tag = VEN
+		any_owned_province = {
+			OR = {
+				province_id = 3003
+				province_id = 7109
+				province_id = 7110
+			}
+		}		
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		years = 30
+	}
+
+	#Construct additional fortifications.
+	option = {
+		ai_chance = {
+			factor = 50
+		}
+		name = damietta_ven.1.a
+		trigger = {
+			any_owned_province = {
+				OR = {
+					province_id = 3003
+					province_id = 7109
+					province_id = 7110
+				}
+				fort_level = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					province_id = 3003
+					province_id = 7109
+					province_id = 7110
+				}
+				fort_level = 1
+			}
+			add_province_modifier = {
+				name = damietta_ven_euboea_fort
+				duration = -1
+			}
+		}
+	}
+
+	#Construct a fort in Negroponte.
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = damietta_ven.1.b
+		trigger = {
+			3003 = {
+				owned_by = ROOT
+			}
+			NOT = {
+				any_owned_province = {
+					OR = {
+						province_id = 3003
+						province_id = 7109
+						province_id = 7110
+					}
+					fort_level = 1
+				}
+			}
+		}
+		3003 = {
+			add_building_construction = {
+				building = fort_15th
+				speed = 0.5
+				cost = 0.5
+			}
+			add_permanent_province_modifier = {
+				name = damietta_ven_euboea_fort_2
+				duration = -1
+			}
+		}
+	}
+
+	#Our fleet shall be our wooden wall!
+	option = {
+		ai_chance = {
+			factor = 20
+		}
+		name = damietta_ven.1.c
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 3003
+					province_id = 7109
+					province_id = 7110
+				}
+			}
+			add_unrest = 4
+		}
+		add_country_modifier = {
+			name = damietta_ven_wooden_wall
+			duration = 3650
+		}
+	}
+
+	#The existing infrastructure is satisfactory.
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = damietta_ven.1.d
+		add_prestige = -5
+	}
+}

@@ -9,3 +9,134 @@ namespace = damietta_gen
 ############################################
 #Byz Diplomacy
 ############################################
+
+#Trade Agreement with Byzantium
+country_event = {
+	id = damietta_gen.1
+	title = damietta_gen.1.t
+	desc = damietta_gen.1.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GEN
+		BYZ = {
+			has_opinion = {
+				who = ROOT
+				value = 75
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	#A grand idea!
+	option = {
+		ai_chance = {
+			factor = 50
+		}
+		name = damietta_gen.1.a
+		BYZ = {
+			country_event = {
+				id = damietta_gen.2
+				days = 5
+			}
+		}
+	}
+
+	#I'm not so sure...
+	option = {
+		ai_chance = {
+			factor = 50
+		}
+		name = damietta_gen.1.b
+	}
+}
+
+#Genoese Trade Agreement
+country_event = {
+	id = damietta_gen.2
+	title = damietta_gen.2.t
+	desc = damietta_gen.2.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	#Accept.
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = damietta_gen.2.a
+		add_opinion = {
+			who = GEN
+			modifier = damietta_byz_gen_trade
+		}
+		reverse_add_opinion = {
+			who = GEN
+			modifier = damietta_byz_gen_trade
+		}
+		add_country_modifier = {
+			name = damietta_byz_genoese_trade
+			duration = 3650
+		}
+		1320 = {
+			add_trade_modifier = {
+				who = GEN
+				key = DAMIETTA_GEN_CONSTANTINOPLE_TRADE
+				duration = 7300
+				power = 25
+			}
+		}
+		GEN = {
+			country_event = {
+				id = damietta_gen.3
+				days = 5
+			}
+		}
+	}
+
+	#Our trade is our own.
+	option = {
+		ai_chance = {
+			factor = 70
+		}
+		name = damietta_gen.2.b
+		add_prestige = 5
+	}
+}
+
+country_event = {	
+	id = damietta_gen.3
+	title = damietta_gen.3.t
+	desc = damietta_gen.3.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	#Hurrah!
+	option = {
+		name = damietta_gen.3.a
+		tooltip = {
+			1320 = {
+				add_trade_modifier = {
+					who = ROOT
+					key = DAMIETTA_GEN_CONSTANTINOPLE_TRADE
+					duration = 7300
+					power = 25
+				}
+			}
+			add_opinion = {
+				who = GEN
+				modifier = damietta_byz_gen_trade
+			}
+			reverse_add_opinion = {
+				who = GEN
+				modifier = damietta_byz_gen_trade
+			}
+		}
+	}
+}

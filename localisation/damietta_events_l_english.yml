@@ -201,4 +201,27 @@
  damietta_byz_crusade.7.desc:0 "Blast!\n\nThe Pope, too caught up in theological technicalities, has denied our request for permission to wage war against the Greeks. Defying his will would surely upset our brothers in faith."
  damietta_byz_crusade.7.a:0 "Our cause is just! Nothing and no one will stop us!"
  damietta_byz_crusade.7.b:0 "Shelve the idea for now."
+
+ #Venice
+ damietta_ven.1.t:0 "Fortifications in Euboea"
+ damietta_ven.1.desc:0 "The island of Euboea came under our control in the mid-13th century, and has served as an integral part of our Mediterranean commercial network ever since. However, its central location in the Aegean makes it a ripe target for enemies. Some inhabitants of the island have issued complaints to the [Root.Monarch.GetTitle] asking for additional fortifications on the island."
+ damietta_ven.1.a:0 "Construct additional fortifications on the island."
+ damietta_ven.1.b:0 "Build a flagship fort in Negroponte, to protect the whole island."
+ damietta_ven.1.c:0 "We have no need for forts! We will protect the island with our wooden wall!"
+ damietta_ven.1.d:0 "The existing infrastructure is satisfactory."
+
+ #Genoa
+ damietta_gen.1.t:0 "Byzantine Trade"
+ damietta_gen.1.desc:0 "REPLACE_ME"
+ damietta_gen.1.a:0 "A grand idea!"
+ damietta_gen.1.b:0 "We do not need them to get rich."
+
+ damietta_gen.2.t:0 "Genoese Trade"
+ damietta_gen.2.desc:0 "REPLACE_ME"
+ damietta_gen.2.a:0 "Accept."
+ damietta_gen.2.b:0 "Why should they profit from our trade?"
+
+ damietta_gen.3.t:0 "Byzantium Agrees!"
+ damietta_gen.3.desc:0 "REPLACE_ME"
+ damietta_gen.3.a:0 "Hurrah!"
  
