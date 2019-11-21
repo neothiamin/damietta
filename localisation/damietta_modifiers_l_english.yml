@@ -54,6 +54,10 @@
  damietta_ruler_ignored_papal_will:0 "Ignored Papal Will"
  damietta_byz_gen_no_alliance:0 "Rebuffed Alliance"
  damietta_byz_gen_alliance:0 "Byzanto-Genoese Alliance"
+ damietta_byz_gen_trade:0 "Trade Agreement"
+ damietta_byz_genoese_trade:0 "Genoese Trade Influence"
+ damietta_byz_betrayed_faith:0 "Betrayed Orthodoxy"
+ damietta_byz_converted_to_cath:0 "Accepted Papal Supremacy"
 
  #Rahulids Muqti
  damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"

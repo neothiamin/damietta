@@ -240,6 +240,14 @@ country_decisions = {
 					}
 				}
 			}
+			else = {
+				NOT = {
+					has_opinion = {
+						who = BYZ
+						value = -50
+					}
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = damietta_ruler_has_not_called_for_byz_crusade.tt
 				OR = {
@@ -263,7 +271,7 @@ country_decisions = {
 					BYZ = {
 						had_country_flag = {
 							flag = damietta_byz_target_of_crusade
-							days = 9125
+							days = 5475
 						}
 					}
 				}

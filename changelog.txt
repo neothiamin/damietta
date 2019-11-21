@@ -6,6 +6,8 @@ v0.1:
 + Added start screen text for Rahulids
 + Added Muqti event for Rahulids (so now the "unique type of Iqta' system" actually means something heahehehe)
 + Added events for a Catholic Crusade against an expansionist Byzantium
++ Added events for Genoa for Byzantine-Genoese trade relations
++ Added an event for Venice to fortify Euboea
 
 * Changed Rhomaiokratia's -10% manpower to -25% land forcelimit
 * Cleaned up the Foreign Quarter event for Crusader States

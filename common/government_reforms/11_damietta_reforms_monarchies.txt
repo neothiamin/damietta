@@ -16,6 +16,7 @@ damietta_byzantine_reform_1 = {
 	
 	potential = {
 		tag = BYZ
+		religion = orthodox
 	}	
 	legacy_equivalent = despotic_monarchy
 
@@ -30,6 +31,104 @@ damietta_byzantine_reform_1 = {
 	custom_attributes = {
 		locked_government_type = yes
 		damietta_byzantium_co_emperors = yes
+	}
+
+}
+
+damietta_byzantine_cath_peace = {
+	icon = "religious_leader"
+	allow_convert = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	valid_for_new_country = no
+	allow_normal_conversion = no
+	fixed_rank = 2
+
+	potential = {
+		tag = BYZ
+		religion = catholic
+		has_country_flag = damietta_byz_converted_catholic
+	}
+
+	modifiers = {
+		papal_influence = 1
+		tolerance_own = 1
+	}
+
+	custom_attributes = {		
+		locked_government_type = yes
+	}
+
+}
+
+damietta_byzantine_cath_war = {
+	icon = "religious_leader"
+	allow_convert = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	valid_for_new_country = no
+	allow_normal_conversion = no
+	fixed_rank = 2
+
+	potential = {
+		tag = BYZ
+		religion = catholic
+		has_global_flag = damietta_byz_crusade_caths_win
+	}
+
+	modifiers = {
+		papal_influence = 1
+		global_heretic_missionary_strength = 0.02
+	}
+
+	custom_attributes = {		
+		locked_government_type = yes
+	}
+
+}
+
+#Tier 2
+
+damietta_byz_reform_pronoia = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+
+	potential = {
+		tag = BYZ
+		#religion = orthodox
+	}
+
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		development_cost = -0.05
+	}
+
+	custom_attributes = {
+		#damietta_byz_pronoia_events = yes
+	}
+
+}
+
+damietta_byz_reform_themata = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+
+	potential = {
+		tag = BYZ
+		#religion = orthodox
+	}
+
+	modifiers = {
+		yearly_army_professionalism = 0.1
+		global_tax_modifier = 0.1		
+	}
+
+	custom_attributes = {
+		#damietta_byz_theme_events = yes
 	}
 
 }

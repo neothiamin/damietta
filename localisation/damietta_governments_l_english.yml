@@ -5,6 +5,16 @@
  damietta_byzantine_reform_1_desc:0 "A parallel to the term \"Frankokratia,\" this term describes the Byzantine Empire following its restoration. Though the Nicean court brought about the term \"Hellene\" to refer to the people of the Byzantine Empire, the revival of the Empire proper by the Palaiologoi spelled the end of the development of any \"Hellenic\" identity.\n\nThough one would think that such a restoration would spark a golden era for the Empire, many issues persisted from before the Fourth Crusade, and some new ones took hold. The Byzantine Army was still woefully small from the collapse of the theme system, leading the Empire to rely more and more on mercenaries, and the Empire was still plagued with poor finances, stemming partially from the prevalence of Italian merchants in Byzantine ports."
  mechanic_damietta_byzantium_co_emperors_yes:0 "Allows for the selection of co-emperors."
 
+ damietta_byz_reform_pronoia:0 "Pronoiar Governance"
+ damietta_byz_reform_pronoia_desc:0 "A \"pronoia\" was a grant that allowed its grantee certain rights, such as the rights to tax money or a share of the land's inhabitants' income, on the land defined in the pronoia. The grantee, called a \"pronoiar,\" is granted land by the Emperor and that land is returned to the Emperor upon the pronoiar's death. Often, there would exist in the same geographical regions multiple pronoiai and multiple pronoiars, which occasionally resulted in conflict among the pronoiars. The system, however, is very effective in fielding soldiers for the army and ensuring the growth of the cities, towns, and villages defined by each pronoia."
+ damietta_byz_reform_themata:0 "Revived Themata"
+ damietta_byz_reform_themata_desc:0 "The Theme system fell out of use during the reign of Manuel I Komnenos and saw its ultimate eradication after the Fourth Crusade. By reviving this system of hybrid politico-military governance, we can field a more professional army and extract higher taxes from our populace."
+
+ damietta_byzantine_cath_peace:0 "Union of the Churches"
+ damietta_byzantine_cath_peace_desc:0 "We have united the churches of East and West, and now practice the Catholic tradition."
+ damietta_byzantine_cath_war:0 "Union of the Churches"
+ damietta_byzantine_cath_war_desc:0 "We have united the churches of East and West, and now practice the Catholic tradition."
+
  #Crusader Reforms
  damietta_crusader_tier_1_reform_1:0 "Crusader Kingdom"
  damietta_crusader_tier_1_reform_1_desc:0 "Ever since the end of the 11th Century, Europeans (predominantly those from Western Europe) have been aspiring to retake the Holy Land in the name of Christendom. These Crusades, marked by a sense of duty and fervor coupled with incredible belligerence and disdain for the lifes and cultures of native populations, saw various levels of success, from the successful First Crusade to the abject failure that was the Fourth Crusade to the mild but still significant Fifth Crusade.\n\nThis nation has taken the mantle of the Crusader cause, and seeks to establish solid Christian rule in the Levant and elsewhere."
