@@ -36,7 +36,7 @@ country_event = {
 	#A grand idea!
 	option = {
 		ai_chance = {
-			factor = 50
+			factor = 80
 		}
 		name = damietta_gen.1.a
 		BYZ = {
@@ -50,7 +50,7 @@ country_event = {
 	#I'm not so sure...
 	option = {
 		ai_chance = {
-			factor = 50
+			factor = 20
 		}
 		name = damietta_gen.1.b
 	}

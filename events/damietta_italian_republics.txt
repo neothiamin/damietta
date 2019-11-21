@@ -130,12 +130,27 @@ country_event = {
 	#Hurrah!
 	option = {
 		name = damietta_italian_states.2.a
-		tooltip = {
-			add_country_modifier = {
-				name = damietta_benefiting_from_foreign_quarter
+		add_country_modifier = {
+			name = damietta_benefiting_from_foreign_quarter
+			duration = -1
+		}
+		add_treasury = -200
+		FROM = {
+			add_province_modifier = {
+				name = damietta_foreign_quarter_established
 				duration = -1
 			}
-			add_treasury = -200
+			owner = {
+				add_treasury = 200				
+				home_trade_node_effect_scope = {
+					add_trade_modifier = {
+						who = ROOT
+						key = DAMIETTA_FOREIGN_QUARTER_MODIFIER
+						duration = 9125
+						power = 25
+					}
+				}
+			}
 		}
 	}
 }

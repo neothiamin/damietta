@@ -244,6 +244,9 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = damietta_byz_converted_catholic		
+		remove_government_reform = damietta_byzantine_reform_1
+		add_government_reform = damietta_byzantine_cath_peace
 		set_ruler_religion = catholic
 		if = {
 			limit = {

@@ -24,29 +24,11 @@ province_event = {
 	#Accept.
 	option = {
 		name = damietta_crusader_states.1.a
-		owner = {			
-			add_treasury = 200
-		}
-		add_province_modifier = {
-			name = damietta_foreign_quarter_established
-			duration = -1
-		}
-		owner = {
-			home_trade_node_effect_scope = {
-				add_trade_modifier = {
-					who = FROM
-					key = DAMIETTA_FOREIGN_QUARTER_MODIFIER
-					duration = 9125
-					power = 25
-				}
-			}
-		}
 		FROM = {
-			add_country_modifier = {
-				name = damietta_benefiting_from_foreign_quarter
-				duration = -1
+			country_event = {
+				id = damietta_italian_states.2
+				days = 15
 			}
-			add_treasury = -200
 		}
 		ai_chance = {
 			factor = 25
