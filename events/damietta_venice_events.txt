@@ -29,6 +29,19 @@ country_event = {
 
 	mean_time_to_happen = {
 		years = 30
+		modifier = {
+			factor = 0.8
+			is_year = 1475
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				has_opinion = {
+					who = BYZ
+					value = 0
+				}
+			}
+		}
 	}
 
 	#Construct additional fortifications.
