@@ -112,3 +112,8 @@ damietta_ven_wooden_wall = {
 damietta_byz_genoese_trade = {
 	trade_efficiency = 0.05
 }
+
+#Byzantine Trade Network
+damietta_ser_byzantine_trade = {
+	trade_efficiency = 0.1
+}

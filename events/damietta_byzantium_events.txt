@@ -541,3 +541,352 @@ country_event = {
 		}
 	}
 }
+
+############################################
+# Diplomacy with Serbia
+############################################
+
+#Serbian Vassalage
+
+country_event = {
+	id = damietta_byzantium.10
+	title = damietta_byzantium.10.t
+	desc = damietta_byzantium.10.desc
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ
+		has_opinion = {
+			who = SER
+			value = 75
+		}
+		reverse_has_opinion = {
+			who = SER
+			value = 75
+		}
+		SER = {
+			NOT = {
+				total_development = 75
+			}
+		}
+	}
+
+	#Extend our protection to Serbia.
+	option = {
+		name = damietta_byzantium.10.a
+		ai_chance = {
+			factor = 65
+		}
+		SER = {
+			country_event = {
+				id = damietta_byzantium.11
+			}
+		}
+	}
+
+	#We have no interest in their sovereignty.
+	option = {
+		name = damietta_byzantium.10.b
+		ai_chance = {
+			factor = 35
+		}
+		add_prestige = 10
+	}
+}
+
+#Byzantine Protection
+
+country_event = {	
+	id = damietta_byzantium.11
+	title = damietta_byzantium.11.t
+	desc = damietta_byzantium.11.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#Swear fealty to the [BYZ.Monarch.GetName] in [BYZ.Capital.GetName].
+	option = {
+		name = damietta_byzantium.11.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 5
+				calc_true_if = {
+					amount = 3
+					all_neighbor_country = {
+						total_development = SER
+						NOT = {
+							has_opinion = {
+								who = SER
+								value = 0
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				has_opinion = {
+					who = BYZ
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 0.05
+				ruler_has_personality = fierce_negotiator_personality
+			}
+		}
+		tooltip = {
+			BYZ = {
+				create_vassal = SER
+			}
+		}
+		BYZ = {
+			country_event = {
+				id = damietta_byzantium.12
+				days = 5
+			}
+		}
+		add_prestige = -10
+	}
+
+	#Serbia will stand independent and strong, now as ever!
+	option = {
+		name = damietta_byzantium.11.b
+		ai_chance = {
+			factor = 60
+		}
+		add_prestige = 15
+		add_legitimacy = 15
+	}
+
+	#Well, what's in it for us?
+	option = {
+		name = damietta_byzantium.11.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			OR = {
+				dip = 4
+				ruler_has_personality = fierce_negotiator_personality
+			}
+		}
+		highlight = yes
+		BYZ = {
+			country_event = {
+				id = damietta_byzantium.13
+				days = 10
+			}
+		}
+	}
+}
+
+#Serbian Fealty (Byzantium 1)
+
+country_event = {	
+	id = damietta_byzantium.12
+	title = damietta_byzantium.12.t
+	desc = damietta_byzantium.12.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#The White Eagle is free no more.
+	option = {
+		name = damietta_byzantium.12.a
+		ai_chance = {
+			factor = 100
+		}
+		create_vassal = SER
+		add_prestige = 10
+	}
+}
+
+#Serbian Fealty (Byzantium 2)
+country_event = {	
+	id = damietta_byzantium.13
+	title = damietta_byzantium.13.t
+	desc = damietta_byzantium.13.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#Pay them a lump sum in exchange for fealty.
+	option = {
+		name = damietta_byzantium.13.a
+		ai_chance = {
+			factor = 25
+		}
+		custom_tooltip = damietta_byz_may_lose_200_gold
+		SER = {
+			country_event = {
+				id = damietta_byzantium.14
+				days = 5
+			}
+		}
+	}
+
+	#Grant them access to our trade network in exchange for fealty.
+	option = {
+		name = damietta_byzantium.13.b
+		ai_chance = {
+			factor = 25
+		}
+		SER = {
+			country_event = {
+				id = damietta_byzantium.15
+				days = 5
+			}
+		}
+	}
+
+	#They are in no position to negotiate.
+	option = {
+		name = damietta_byzantium.13.c
+		ai_chance = {
+			factor = 50
+		}
+		SER = {
+			country_event = {
+				id = damietta_byzantium.16
+				days = 5
+			}
+		}
+	}
+}
+
+#Byzantine Fealty (Gold)
+country_event = {		
+	id = damietta_byzantium.14
+	title = damietta_byzantium.14.t
+	desc = damietta_byzantium.14.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	#Splendid! Swear fealty to Byzantium.
+	option = {
+		name = damietta_byzantium.14.a
+		tooltip = {
+			BYZ = {
+				create_vassal = SER
+			}
+		}
+		add_treasury = 200
+		BYZ = {
+			add_treasury = -200
+		}
+		hidden_effect = {
+			BYZ = {
+				country_event = {
+					id = damietta_byzantium.12
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+#Byzantine Fealty (Trade)
+country_event = {		
+	id = damietta_byzantium.15
+	title = damietta_byzantium.14.t
+	desc = damietta_byzantium.15.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#Splendid! Swear fealty to Byzantium.
+	option = {
+		name = damietta_byzantium.14.a
+		tooltip = {
+			BYZ = {
+				create_vassal = SER
+			}
+		}
+		hidden_effect = {
+			BYZ = {
+				country_event = {
+					id = damietta_byzantium.12
+					days = 5
+				}
+			}
+		}
+		add_country_modifier = {
+			name = damietta_ser_byzantine_trade
+			duration = 3650
+		}
+	}
+}
+
+#Byzantine Fealty (Rebuffed)
+country_event = {		
+	id = damietta_byzantium.16
+	title = damietta_byzantium.16.t
+	desc = damietta_byzantium.16.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	#Very well. No deal, no fealty.
+	option = {
+		name = damietta_byzantium.16.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	#We need their protection. Swear fealty anyways.
+	option = {
+		name = damietta_byzantium.16.b
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -10
+		tooltip = {
+			BYZ = {
+				create_vassal = SER
+			}
+		}
+		BYZ = {
+			country_event = {
+				id = damietta_byzantium.12
+				days = 5
+			}
+		}
+	}
+}
+
+############################################
+# Diplomacy with Wallachia
+############################################
+
+#Anti-Bulgarian Pact
+
+#country_event = {
+#	id = damietta_byzantium.100
+#	title = damietta_byzantium.100.t
+#	desc = damietta_byzantium.100.desc
+#	picture = DIPLOMACY_eventPicture
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = BYZ
+#		has_opinion = {
+#			who = WAL
+#			value = 125
+#		}
+#		reverse_has_opinion = {
+#			who = WAL
+#			value = 125
+#		}
+#	}
+#}

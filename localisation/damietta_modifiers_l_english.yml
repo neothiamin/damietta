@@ -63,3 +63,6 @@
  damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"
  damietta_rhl_loyal_mufti:0 "Loyal Muqti"
  damietta_rhl_foreign_mufti:0 "Foreign Muqti"
+
+ #Byzantine Serbia Vassal
+ damietta_ser_byzantine_trade:0 "Byzantine Trade Contacts"

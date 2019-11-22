@@ -145,6 +145,39 @@
  damietta_byzantium.9.a:0 "Burn the city to the ground!"
  damietta_byzantium.9.b:0 "Leave the buildings standing, but bring anything valuable back to [Root.Capital.GetName]."
 
+ damietta_byzantium.10.t:0 "Serbian Vassalage"
+ damietta_byzantium.10.desc:0 "The Serbian state has long been a thorn in our side. Their \"Empire\" made countless intrusions into our land during our wars with the Bulgarians and Muslims, and the impact of their rule still can be felt in the regions of Makedonia and Thessalia. However, now they are weak; their neighbors have whittled them down to a shadow of their former selves, and it is our prerogative to bring them under our wing."
+ damietta_byzantium.10.a:0 "Send an envoy offering our protection."
+ damietta_byzantium.10.b:0 "We have no concern for their well-being."
+
+ damietta_byzantium.11.t:0 "Byzantine Protection"
+ damietta_byzantium.11.desc:0 "The Byzantine [BYZ.Monarch.GetName] in [BYZ.Capital.GetName] has extended to us an \"invitation\" to become a part of their vast network of subjects. At any other point, this would be a slap in the face: why should we willingly submit ourselves to foreign rule? This time, however, the circumstances make the offer somewhat more palatable."
+ damietta_byzantium.11.a:0 "Their offer is gracious. We accept."
+ damietta_byzantium.11.b:0 "Politely decline."
+ damietta_byzantium.11.c:0 "What's in it for us?"
+
+ damietta_byzantium.12.t:0 "Serbian Fealty"
+ damietta_byzantium.12.desc:0 "The Serbian [SER.Monarch.GetName] has seen the error of their ways, and has submitted to our rule."
+ damietta_byzantium.12.a:0 "The White Eagle flies no more."
+
+ damietta_byzantium.13.t:0 "Serbian Fealty"
+ damietta_byzantium.13.desc:0 "What an odd situation the Serbs have put us in now...\n\nMy [Root.Monarch.GetName], erm, we have received a response from the Serbs in [SER.Capital.GetName]. Rather than a rejection or acceptance of our offer, they wish to strike a deal. They demand some sort of payment if they are to become our vassal. Peculiar, indeed...."
+ damietta_byzantium.13.a:0 "Offer a lump sum. A gift, of sorts."
+ damietta_byz_may_lose_200_gold:0 "Will lose 200 ducats if they accept."
+ damietta_byzantium.13.b:0 "Allow them access to our mercantile network."
+ damietta_byzantium.13.c:0 "They are in no position to negotiate."
+
+ damietta_byzantium.14.t:0 "Byzantine Offer"
+ damietta_byzantium.14.desc:0 "The Byzantines have agreed to pay a lump sum of gold in exchange for our vassalage. Though this may seem like a bittersweet moment, the diplomatic tact of [Root.Monarch.GetName] has once again proven itself useful."
+ damietta_byzantium.14.a:0 "Splendid! Bend the knee."
+
+ damietta_byzantium.15.desc:0 "The Byzantines have agreed to allow us exclusive access to their trade network in exchange for our vassalage. Though this may seem like a bittersweet moment, the diplomatic tact of [Root.Monarch.GetName] has once again proven itself useful."
+
+ damietta_byzantium.16.t:0 "Byzantine Counteroffer"
+ damietta_byzantium.16.desc:0 "My [Root.Monarch.GetTitle]! The Greeks have utterly rejected our negotiations, and have cancelled all efforts at peaceful subjugation."
+ damietta_byzantium.16.a:0 "They knew the terms! We are better off this way."
+ damietta_byzantium.16.b:0 "We need their protection! Apologize, and swear our fealty."
+
  #Byzantine Dynastic Crisis
  damietta_disaster_byz_dynasty_crisis.1.t:0 "Dynastic Crisis"
  damietta_disaster_byz_dynasty_crisis.1.desc:0 "REPLACE_ME"
@@ -212,16 +245,16 @@
 
  #Genoa
  damietta_gen.1.t:0 "Byzantine Trade"
- damietta_gen.1.desc:0 "REPLACE_ME"
+ damietta_gen.1.desc:0 "Byzantine ports and marketplaces dot the Aegean and beyond. After the Fourth Crusade, the Greeks in Constantinople have gotten skittish around Italian merchants. However, through clever wordplay and slight exaggeration, we might coerce them into agreeing to a trade deal that is mututally beneficial."
  damietta_gen.1.a:0 "A grand idea!"
  damietta_gen.1.b:0 "We do not need them to get rich."
 
  damietta_gen.2.t:0 "Genoese Trade"
- damietta_gen.2.desc:0 "REPLACE_ME"
+ damietta_gen.2.desc:0 "The Genoese have offered us a mutual trade agreement. In exchange for access to our ports, they will prioritize trading in Byzantine marketplaces."
  damietta_gen.2.a:0 "Accept."
  damietta_gen.2.b:0 "Why should they profit from our trade?"
 
  damietta_gen.3.t:0 "Byzantium Agrees!"
- damietta_gen.3.desc:0 "REPLACE_ME"
+ damietta_gen.3.desc:0 "Byzantium has agreed to our offer of a trade deal!"
  damietta_gen.3.a:0 "Hurrah!"
  
