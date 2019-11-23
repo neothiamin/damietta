@@ -23,12 +23,36 @@ country_decisions = {
 		allow = {
 			BYZ = {
 				religion = orthodox
-				total_development = 450
+				total_development = 400
 			}
-			NOT = {
-				reverse_has_opinion = {
-					who = BYZ
-					value = -50
+			#NOT = {
+			#	reverse_has_opinion = {
+			#		who = BYZ
+			#		value = -25
+			#	}
+			#}
+			custom_trigger_tooltip = {
+				tooltip = damietta_catholic_european_nation_hates_byz_or_is_threatened.tt
+				any_known_country = {
+					NOT = {
+						tag = PAP
+					}
+					religion = catholic
+					capital_scope = {
+						continent = europe
+					}
+					OR = {
+						NOT = {
+							has_opinion = {
+								who = BYZ
+								value = -100
+							}
+						}					
+						ai_attitude = {
+							who = BYZ
+							attitude = attitude_threatened
+						}
+					}
 				}
 			}
 		}
@@ -66,17 +90,19 @@ country_decisions = {
 
 		ai_will_do = {
 			factor = 1
+			#modifier = {
+			#	factor = 0
+			#	has_opinion = {
+			#		who = BYZ
+			#		value = 25
+			#	}
+			#}
 			modifier = {
 				factor = 0
-				has_opinion = {
-					who = BYZ
-					value = 25
-				}
-			}
-			modifier = {
-				factor = 0
-				BYZ = {
-					total_development = 500
+				NOT = {
+					BYZ = {
+						total_development = 500
+					}
 				}
 			}
 		}

@@ -8,7 +8,9 @@ v0.1:
 + Added events for a Catholic Crusade against an expansionist Byzantium
 + Added events for Genoa for Byzantine-Genoese trade relations
 + Added an event for Venice to fortify Euboea
++ Added events regarding Byzantine vassalization of Serbia
 
+* Rahulids more likely to tame the desert now
 * Changed Rhomaiokratia's -10% manpower to -25% land forcelimit
 * Cleaned up the Foreign Quarter event for Crusader States
 * Added Serbian to Prilep's accepted cultures to reflect that Prilep was born out of the Serbian Empire

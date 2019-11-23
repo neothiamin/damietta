@@ -7,6 +7,7 @@ technology_group = eastern
 historical_rival = RUM
 capital = 151 # Constantinople
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = GEN
 
 1272.1.1 = {
 	religion = catholic
