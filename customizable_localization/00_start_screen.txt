@@ -458,12 +458,12 @@ defined_text = {
 		}
 	}
 
-	#text = { #Jerusalem
-	#	localisation_key = string_start_koj
-	#	trigger = {
-	#		tag = KOJ
-	#	}
-	#}
+	text = { #Jerusalem
+		localisation_key = string_start_koj
+		trigger = {
+			tag = KOJ
+		}
+	}
 
 	#Damietta - Byzantium
 

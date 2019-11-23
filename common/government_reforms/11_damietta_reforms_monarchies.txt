@@ -147,7 +147,7 @@ damietta_byz_reform_keep_bureaucracy = {
 	modifiers = {
 		max_states = 5
 		core_creation = -0.1
-		yearly_corruption = 1
+		yearly_corruption = 0.5
 	}
 }
 
