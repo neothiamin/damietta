@@ -573,6 +573,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 60
+	}
+
 	#Extend our protection to Serbia.
 	option = {
 		name = damietta_byzantium.10.a
@@ -644,7 +648,7 @@ country_event = {
 		}
 		tooltip = {
 			BYZ = {
-				create_vassal = SER
+				vassalize = SER
 			}
 		}
 		BYZ = {
@@ -704,7 +708,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		create_vassal = SER
+		vassalize = SER
 		add_prestige = 10
 	}
 }
@@ -776,7 +780,7 @@ country_event = {
 		name = damietta_byzantium.14.a
 		tooltip = {
 			BYZ = {
-				create_vassal = SER
+				vassalize = SER
 			}
 		}
 		add_treasury = 200
@@ -808,7 +812,7 @@ country_event = {
 		name = damietta_byzantium.14.a
 		tooltip = {
 			BYZ = {
-				create_vassal = SER
+				vassalize = SER
 			}
 		}
 		hidden_effect = {
@@ -852,7 +856,7 @@ country_event = {
 		add_prestige = -10
 		tooltip = {
 			BYZ = {
-				create_vassal = SER
+				vassalize = SER
 			}
 		}
 		BYZ = {

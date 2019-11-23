@@ -20,6 +20,8 @@ country_decisions = {
 			}
 		}
 
+		major = yes
+
 		allow = {
 			BYZ = {
 				religion = orthodox
@@ -74,8 +76,12 @@ country_decisions = {
 								OR = {
 									capital_scope = {
 										region = france_region
+									}
+									capital_scope = {
 										region = iberia_region
 									}
+									tag = HUN
+									tag = HAB
 								}
 								total_development = 250
 							}
@@ -101,11 +107,13 @@ country_decisions = {
 				factor = 0
 				NOT = {
 					BYZ = {
-						total_development = 500
+						total_development = 450
 					}
 				}
 			}
 		}
+
+		ai_importance = 100
 	}
 
 	damietta_pap_demand_byz_return_land = {
@@ -231,6 +239,17 @@ country_decisions = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+
+		ai_importance = 200
 	}
 
 	############################################
@@ -330,5 +349,7 @@ country_decisions = {
 				}
 			}
 		}
+		
+		ai_importance = 50
 	}
 }

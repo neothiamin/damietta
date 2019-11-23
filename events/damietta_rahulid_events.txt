@@ -112,7 +112,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					monthly_income = 8
+					monthly_income = 6
 				}
 			}
 		}
@@ -304,6 +304,7 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		always = no
 		tag = RHL
 		has_government_attribute = damietta_rahulid_sultanate_nobility
 	}

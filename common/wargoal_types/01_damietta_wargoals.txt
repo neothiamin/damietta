@@ -27,7 +27,7 @@ damietta_byzantine_crusade_goal = {
 			damietta_establish_latin_states_po
 			po_change_religion
 		}
-		badboy_factor = 1.5
+		badboy_factor = 1
 		prestige_factor = 2
 		peace_cost_factor = 1
 	}

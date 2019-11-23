@@ -1,6 +1,6 @@
 v0.1:
 
-+++ Added events for a Catholic Crusade against a Byzantium
++++ Added events for a Catholic Crusade against Byzantium
 
 + Added new Byzantine government reforms
 + Added Byzantine Co-Emperor event

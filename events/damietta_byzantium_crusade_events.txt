@@ -84,7 +84,15 @@ country_event = {
 		set_country_flag = damietta_supporting_byzantine_crusade
 		custom_tooltip = damietta_supporting_byzantine_crusade.tt
 		ai_chance = {
-			factor = 10
+			factor = 20
+			modifier = {
+				factor = 2
+				OR = {
+					tag = VEN
+					tag = GEN
+					tag = HUN
+				}
+			}
 			modifier = {
 				factor = 2
 				NOT = {
@@ -115,7 +123,7 @@ country_event = {
 			modifier = damietta_betrayed_byz_crusader_cause
 		}
 		ai_chance = {
-			factor = 90
+			factor = 80
 			modifier = {
 				factor = 2
 				NOT = {
