@@ -72,6 +72,10 @@ monarchy = {
 				sidhi_recruitment
 				mansabdari_reform
 				council_of_the_indies_reform
+				#Damietta
+				damietta_byz_reform_keep_bureaucracy
+				damietta_byz_reform_cut_bureaucracy
+				damietta_byz_reform_diverse_bureaucracy
 			}
 		}
 		growth_of_administration = {

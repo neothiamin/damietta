@@ -1,15 +1,22 @@
 v0.1:
 
++++ Added events for a Catholic Crusade against a Byzantium
+
++ Added new Byzantine government reforms
 + Added Byzantine Co-Emperor event
 + Added Thessalonica (FES)
 + Added start screen text for Damietta
 + Added start screen text for Rahulids
++ Added start screen text for Byzantium
++ Added start screen text for Rum
 + Added Muqti event for Rahulids (so now the "unique type of Iqta' system" actually means something heahehehe)
-+ Added events for a Catholic Crusade against an expansionist Byzantium
 + Added events for Genoa for Byzantine-Genoese trade relations
 + Added an event for Venice to fortify Euboea
 + Added events regarding Byzantine vassalization of Serbia
 
+* Removed Byzantine cores on La Sola and Phthiotis
+* Moved province 5172 to Constantinople node instead of Aegean (funny story, the province was actually listed in TWO trade nodes, it's just that Aegean was after Constantinople in the file so it overwrote Constantinople. Silly silly)
+* Made the generic Europe start screen text make more sense for the Damietta timeline
 * Rahulids more likely to tame the desert now
 * Changed Rhomaiokratia's -10% manpower to -25% land forcelimit
 * Cleaned up the Foreign Quarter event for Crusader States

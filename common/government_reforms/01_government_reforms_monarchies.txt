@@ -1005,6 +1005,11 @@ enforce_privileges_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.15
 	}
+	potential = {
+		NOT = {
+			tag = BYZ
+		}
+	}
 }
 
 quash_noble_power_reform = {
@@ -1012,6 +1017,11 @@ quash_noble_power_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_tax_modifier = 0.1
+	}
+	potential = {
+		NOT = {
+			tag = BYZ
+		}
 	}
 }
 
@@ -1116,6 +1126,11 @@ centralize_reform = {
 	modifiers = {
 		global_autonomy = -0.05
 	}
+	#potential = {
+	#	NOT = {
+	#		tag = BYZ
+	#	}
+	#}
 }
 
 decentralize_reform = {
@@ -1124,6 +1139,11 @@ decentralize_reform = {
 	modifiers = {
 		num_accepted_cultures = 2
 	}
+	#potential = {
+	#	NOT = {
+	#		tag = BYZ
+	#	}
+	#}
 }
 
 sidhi_recruitment = {

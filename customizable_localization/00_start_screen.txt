@@ -457,6 +457,32 @@ defined_text = {
 			tag = RHL
 		}
 	}
+
+	#text = { #Jerusalem
+	#	localisation_key = string_start_koj
+	#	trigger = {
+	#		tag = KOJ
+	#	}
+	#}
+
+	#Damietta - Byzantium
+
+	text = { #Byzantium
+		localisation_key = string_start_byz
+		trigger = {
+			tag = BYZ
+		}
+	}
+
+	#Damietta - Anatolia
+
+	text = { #Rum
+		localisation_key = string_start_rum
+		trigger = {
+			tag = RUM
+		}
+	}
+	
 	
 	#Africa
 	text = { # Maghreb
