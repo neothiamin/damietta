@@ -1126,11 +1126,11 @@ centralize_reform = {
 	modifiers = {
 		global_autonomy = -0.05
 	}
-	#potential = {
-	#	NOT = {
-	#		tag = BYZ
-	#	}
-	#}
+	potential = {
+		NOT = {
+			tag = BYZ
+		}
+	}
 }
 
 decentralize_reform = {
@@ -1139,11 +1139,11 @@ decentralize_reform = {
 	modifiers = {
 		num_accepted_cultures = 2
 	}
-	#potential = {
-	#	NOT = {
-	#		tag = BYZ
-	#	}
-	#}
+	potential = {
+		NOT = {
+			tag = BYZ
+		}
+	}
 }
 
 sidhi_recruitment = {
