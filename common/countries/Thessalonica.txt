@@ -103,7 +103,7 @@ monarch_names = {
 
 leader_names = {
 	Adorno "Arborio Mella" Balbi Bracelli Brignole Buonaparte "di Busca"
-	Campi "di Campofregoso" "del Carreto" Cattaneo Ceb√° Centurione Chiavari Clavarezza Cybo
+	Campi "di Campofregoso" "del Carreto" Cattaneo Ceb· Centurione Chiavari Clavarezza Cybo
 	"Doria di Melfi" Doria-Landi Durazzo "de Ferrari" "di Fornari" "de Franchi"
 	Garbarino Gattilusio Gentile Giustiniani "Grimaldi di Busca" "di Grimaldi"
 	Imperiale Invrea Lercari Lomelli Longo "de Mari" Negrone "da Novi" Odoni

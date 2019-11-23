@@ -9,6 +9,7 @@ v0.1:
 + Added start screen text for Rahulids
 + Added start screen text for Byzantium
 + Added start screen text for Rum
++ Added start screen text for Jerusalem
 + Added Muqti event for Rahulids (so now the "unique type of Iqta' system" actually means something heahehehe)
 + Added events for Genoa for Byzantine-Genoese trade relations
 + Added an event for Venice to fortify Euboea

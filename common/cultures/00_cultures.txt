@@ -6858,8 +6858,8 @@ malay = {
                         "Raja Sebayak" "Merah Silu" "Raja Sendi" "Raja Kalilong"
 		}
 		female_names = {
-			"Amritpal" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nufutea Orama Poe Pear Poehina Poenui Poerava Puaiti 
-			Puatea Puaura Rafihau Rafimere Rafinui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			"Amritpal" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi  Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
 			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
 			Vaite "Vaitiare"
 		}
