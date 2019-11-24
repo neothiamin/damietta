@@ -1028,7 +1028,7 @@ renaissance = {
 		#	normal_or_historical_nations = no
 		#}
 	}
-	start_chance = 3		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits. #Damietta - changed to 3. Still have to work this out and see how it feels.
+	start_chance = 5		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits. #Damietta - changed to 3. Still have to work this out and see how it feels.
 	#BTMiscAddonNote - All else being equal and without player interference, likely possiblities to start Renaissance with the new limitations above are - Genoa, Milan, Parma, Verona, Venice, Bologna, Lucca, Romagna, Florence, or Siena.
 	#BTMiscAddonNote - Piedmont, Cremona, Treviso, Mantua, or Ferrara also possible with a minimal dev increase from 1444 start.
 	
@@ -1079,6 +1079,227 @@ renaissance = {
 		###Start of Damietta spread modifiers
 		#########################################################################
 
+		#For Italian 8+ dev provinces
+		modifier = {
+			factor = 0.6
+			scale = yes
+			force_potential = yes
+			potential = {
+				region = italy_region
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_italian_prov_12_dev.tt
+				region = italy_region
+				development = 8
+			}
+		}
+
+		#For West Med coastal 12+ dev provinces owned by Christians
+		modifier = {
+			factor = 0.30 #50% of Italian 8-dev modifier
+			scale = yes
+			force_potential = yes
+			potential = {
+				has_port = yes
+				OR = {
+					area = valencia_area
+					area = catalonia_area
+					area = murcia_area
+					area = languedoc_area
+					area = west_languedoc_area
+					area = provence_area					
+					area = lower_andalucia_area
+					area = upper_andalucia_area
+					#region = italy_region
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_west_med_coastal_16_dev_prov.tt
+				owner = {
+					religion_group = christian
+				}
+				development = 12
+			}
+		}
+
+		#For East Med coastal 14+ dev provinces (Catholic version)
+		modifier = {
+			factor = 0.15 #25% of Italian 8-dev modifier
+			scale = yes
+			force_potential = yes
+			potential = {
+				has_port = yes
+				OR = {					
+					area = croatia_area
+					area = east_adriatic_coast_area
+					area = albania_area
+					area = montenegro_area
+					area = northern_greece_area 				#Epirus
+					area = macedonia_area 						#West Macedonia
+					area = morea_area 							#Peloponnese
+					area = thrace_area
+					area = western_aegean_area					#Hellas
+					area = eastern_macedonia_area
+					area = northern_epirus_area					#Ionian Islands
+					area = aetolia_area
+					area = thessaly_area
+					area = eastern_mediterrenean_islands_area	#Crete
+					area = aegean_archipelago_area				#Aegean Islands (Rhodes, Naxos, etc.)
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_east_med_cath_coastal_18_dev_prov.tt
+				owner = {
+					religion = catholic
+				}
+				development = 14
+			}
+		}
+
+		#For East Med coastal 14+ dev provinces (Orthodox version)
+		modifier = {
+			factor = 0.12 #20% of Italian 8-dev modifier
+			scale = yes
+			force_potential = yes
+			potential = {
+				has_port = yes
+				OR = {					
+					area = croatia_area
+					area = east_adriatic_coast_area
+					area = albania_area
+					area = montenegro_area
+					area = northern_greece_area 				#Epirus
+					area = macedonia_area 						#West Macedonia
+					area = morea_area 							#Peloponnese
+					area = thrace_area
+					area = western_aegean_area					#Hellas
+					area = eastern_macedonia_area
+					area = northern_epirus_area					#Ionian Islands
+					area = aetolia_area
+					area = thessaly_area
+					area = eastern_mediterrenean_islands_area	#Crete
+					area = aegean_archipelago_area				#Aegean Islands (Rhodes, Naxos, etc.)
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_east_med_ortho_coastal_18_dev_prov.tt
+				owner = {
+					religion = orthodox
+				}
+				development = 14
+			}
+		}
+
+		#For Christian states in the Levant that are friendly with an Italian nation that has embraced the Renaissance
+		modifier = {
+			factor = 0.09 #15% of Italian 8-dev modifier
+			scale = yes
+			force_potential = yes
+			potential = {
+				OR = {
+					area = cyprus_area
+					area = tripoli_area
+					area = palestine_area
+					area = aleppo_area
+					area = syrian_desert_area
+					area = delta_area
+				}
+				owner = {
+					OR = {
+						religion = catholic
+						religion = orthodox
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_levant_christian_friendly_with_italian.tt
+				owner = {
+					any_known_country = {
+						OR = {
+							capital_scope = {
+								region = italy_region
+							}
+							culture_group = latin
+						}
+						has_institution = renaissance
+						has_opinion = {
+							who = PREV
+							value = 75
+						}
+					}
+				}
+			}
+		}
+
+		#For French Atlantic provinces with more than 14 development
+		modifier = {
+			factor = 0.36 #60% of Italian 8-dev modifier
+			scale = yes
+			force_potential = yes
+			potential = {
+				region = france_region
+				NOT = {					
+					area = languedoc_area
+					area = west_languedoc_area
+					area = provence_area	
+				}
+				has_port = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_french_atlantic_14_dev.tt
+				development = 14
+			}
+		}
+
+		#For French non-coastal provinces with more than 16 development
+		modifier = {
+			factor = 0.36 #60% of Italian 8-dev modifier
+			scale = yes
+			force_potential = yes
+			potential = {
+				has_port = no
+				region = france_region
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_french_non_coastal_16_dev.tt
+				development = 16
+			}
+		}
+
+		#For Iberian Atlantic provinces with more than 16 development
+		modifier = {
+			factor = 0.30
+			scale = yes
+			force_potential = yes
+			potential = {
+				region = iberia_region
+				has_port = yes
+				NOT = {
+					area = valencia_area
+					area = catalonia_area
+					area = murcia_area
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_iberian_atlantic_16_dev.tt
+				development = 16
+			}
+		}
+
+		#For Iberian non-coastal provinces with more than 18 development
+		modifier = {
+			factor = 0.30
+			scale = yes
+			force_potential = yes
+			potential = {
+				region = iberia_region
+				has_port = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_iberian_non_coastal_18_dev.tt
+				development = 18
+			}
+		}
 
 		#########################################################################
 		###Start of BT Tech group specific spread modifiers - renaissance
@@ -1644,95 +1865,106 @@ renaissance = {
 				development = 8
 			}
 		}
-		modifier = {
-			factor = 0.8			#BTMiscAddonChange from 0.5. This was the centre of the Renaissance, should be much faster. Also note the pan Italy bonus hits too, bringing regional bonus to 2.0, plus another 1.0 at least from dev, then scaled. By around 1460, pretty much all of Italy should have the renaissance
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				OR = {
-					area = venetia_area
-					area = verona_area
-					area = tuscany_area
-					area = east_tuscany_area
-					area = south_tuscany_area
-					#area = lombardy_area
-					#area = piedmont_area
-					#area = liguria_area
-					#area = emilia_romagna_area
-					#area = emilia_area
-					#area = upper_emilia_area
-					#area = montferrat_area
-					#area = east_lombardy_area
-					#area = lunigiana_area
-					#area = north_marche_area
-				}	#BTMiscAddonChange - Tuscany and Venetia only changed to most of Northern Italy. - And now back to Venetia and Tuscany areas only. Reoverhaul added a level of detail that makes it work, I think
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_flanders_tuscany_venetia
-				OR = {
-					area = venetia_area
-					area = verona_area
-					area = tuscany_area
-					area = east_tuscany_area
-					area = south_tuscany_area
-					#area = lombardy_area
-					#area = piedmont_area
-					#area = liguria_area
-					#area = emilia_romagna_area
-					#area = emilia_area
-					#area = upper_emilia_area
-					#area = montferrat_area
-					#area = east_lombardy_area
-					#area = lunigiana_area
-					#area = north_marche_area
-				}	#BTMiscAddonChange - Tuscany and Venetia only changed to most of Northern Italy. - And now back to Venetia and Tuscany areas only. Reoverhaul added a level of detail that makes it work, I think
-			}
-		}
+
+		#MODIFIER REMOVED
+
+
+		#modifier = {
+		#	factor = 0.8			#BTMiscAddonChange from 0.5. This was the centre of the Renaissance, should be much faster. Also note the pan Italy bonus hits too, bringing regional bonus to 2.0, plus another 1.0 at least from dev, then scaled. By around 1460, pretty much all of Italy should have the renaissance
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = {
+		#		OR = {
+		#			area = venetia_area
+		#			area = verona_area
+		#			area = tuscany_area
+		#			area = east_tuscany_area
+		#			area = south_tuscany_area
+		#			#area = lombardy_area
+		#			#area = piedmont_area
+		#			#area = liguria_area
+		#			#area = emilia_romagna_area
+		#			#area = emilia_area
+		#			#area = upper_emilia_area
+		#			#area = montferrat_area
+		#			#area = east_lombardy_area
+		#			#area = lunigiana_area
+		#			#area = north_marche_area
+		#		}	#BTMiscAddonChange - Tuscany and Venetia only changed to most of Northern Italy. - And now back to Venetia and Tuscany areas only. Reoverhaul added a level of detail that makes it work, I think
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_flanders_tuscany_venetia
+		#		OR = {
+		#			area = venetia_area
+		#			area = verona_area
+		#			area = tuscany_area
+		#			area = east_tuscany_area
+		#			area = south_tuscany_area
+		#			#area = lombardy_area
+		#			#area = piedmont_area
+		#			#area = liguria_area
+		#			#area = emilia_romagna_area
+		#			#area = emilia_area
+		#			#area = upper_emilia_area
+		#			#area = montferrat_area
+		#			#area = east_lombardy_area
+		#			#area = lunigiana_area
+		#			#area = north_marche_area
+		#		}	#BTMiscAddonChange - Tuscany and Venetia only changed to most of Northern Italy. - And now back to Venetia and Tuscany areas only. Reoverhaul added a level of detail that makes it work, I think
+		#	}
+		#}
 		#######################################################################
 		###BT New Misc Modifiers - Regional Spreads - renaissance. Splitting and expanding the vanilla flanders, tuscany, venetia spread bonus, and also including and superseeding the italian capital bonus above.
 		#######################################################################
-		modifier = {
-			factor = 0.4			#Formerly only affected capitals, now hits all of Italy. Will speed up spread greatly in the region.
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				region = italy_region
-				NOT = {
-					OR = {
-						area = sicily_area
-						area = corsica_sardinia_area
-						area = sardinia_area
-						area = cagliari_area
-						area = demone_area
-						area = noto_area
-					}
-				}			#BTMiscAddOn note, blocking Sicily and Sardinia/Corsica to prevent spread to North Africa and Aragon too quickly. Also not horrible, neither was poor, but outside of perhaps Palermo, niether was as advanced as the rest of Italy at this point, either. Stronger Sicily and Sardinia came later, I believe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_all_italian_renaissance
-				region = italy_region
-				NOT = {
-					OR = {
-						area = sicily_area
-						area = corsica_sardinia_area
-						area = sardinia_area
-						area = cagliari_area
-						area = demone_area
-						area = noto_area
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { area = flanders_area }
-			custom_trigger_tooltip = {
-				tooltip = tooltip_flanders_renaissance
-				area = flanders_area
-			}
-		}
+
+		#MODIFIER REMOVED
+
+		#modifier = {
+		#	factor = 0.4			#Formerly only affected capitals, now hits all of Italy. Will speed up spread greatly in the region.
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = {
+		#		region = italy_region
+		#		NOT = {
+		#			OR = {
+		#				area = sicily_area
+		#				area = corsica_sardinia_area
+		#				area = sardinia_area
+		#				area = cagliari_area
+		#				area = demone_area
+		#				area = noto_area
+		#			}
+		#		}			#BTMiscAddOn note, blocking Sicily and Sardinia/Corsica to prevent spread to North Africa and Aragon too quickly. Also not horrible, neither was poor, but outside of perhaps Palermo, niether was as advanced as the rest of Italy at this point, either. Stronger Sicily and Sardinia came later, I believe
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_all_italian_renaissance
+		#		region = italy_region
+		#		NOT = {
+		#			OR = {
+		#				area = sicily_area
+		#				area = corsica_sardinia_area
+		#				area = sardinia_area
+		#				area = cagliari_area
+		#				area = demone_area
+		#				area = noto_area
+		#			}
+		#		}
+		#	}
+		#}
+
+		#MODIFIER REMOVED
+
+
+		#modifier = {
+		#	factor = 0.3
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = { area = flanders_area }
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_flanders_renaissance
+		#		area = flanders_area
+		#	}
+		#}
 		#######################################################################
 		###End of BT New Misc Modifiers
 		#######################################################################
