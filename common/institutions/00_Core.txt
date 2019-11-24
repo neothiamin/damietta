@@ -773,6 +773,20 @@ feudalism = {
 # Flows from italy
 #######################################
 
+#I have a lot to say about the Renaissance in Damietta.
+
+#1. The Renaissance in Damietta, I think, would happen anywhere from 5 to 20 years later than in the base game (not to mention that saying the Renaissance just all of a sudden started
+#in 1450 is silly and historically incorrect) and that the "spread" of the Renaissance would be a lot slower. A big part of the spread of the Greek classics was the exodus of 
+#Byzantine scholars from the Byzantine Empire following the various intrusions by the Ottoman Empire. Of course, in Damietta, the Ottoman Empire does not exist, and the mod's analog,
+#the Sultanate of Rum, is very different with its approach to the Byzantines than the Ottoman Empire was in OTL. The Ottomans sort of focused on the weakened Byzantine Empire, to the
+#point that the Empire had not even consolidated Anatolia by the time Constantinople fell. Now, there are other ways for Byzantium to face pressure that would cause its scholars
+#to flee the empire, such as a Catholic Crusade or the (not yet implemented) Byzantine Civil War. These potential events will, of course, factor in to the spawning and spread of 
+#the Renaissance.
+
+#On the spread of the Renaissance, I just think that it spread tooooooo fast. Once it gets a foothold in Flanders, it spreads to the rest of the Low Countries and an independent
+#Flanders will almost definitely do knowledge sharing with France, giving all of France the institution. From France it goes to Burgundy, from the Low Countries it goes to Northern
+#Germany, from Venice it goes to Austria, and then bing bang boom it's all over. This is bad. I don't like it. Meh.
+
 renaissance = {
 	penalty = 0.5
 
@@ -784,13 +798,13 @@ renaissance = {
 	trade_company_efficiency = 0.0
 
 
-	historical_start_date = 1450.1.1
+	historical_start_date = 1455.1.1 	#Damietta change - From 1450.1.1. I honestly don't know how much this makes a difference, but for justification, see the big spiel above.
 	historical_start_province = 116 # Florence
 
 	history = {
 		OR = {
 			AND = {
-				is_year = 1450
+				is_year = 1457			#Just altering the history to mirror the new start date. Again, now sure how much this matters.
 				OR = {
 					area = venetia_area
 					area = lombardy_area
@@ -803,7 +817,7 @@ renaissance = {
 			}
 			
 			AND = {
-				is_year = 1455
+				is_year = 1459
 				OR = {
 					region = italy_region
 					region = low_countries_region
@@ -811,7 +825,7 @@ renaissance = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			
 			AND = {
-				is_year = 1460
+				is_year = 1470
 				OR = {
 					region = south_german_region
 					region = north_german_region
@@ -822,7 +836,7 @@ renaissance = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			
 			AND = {
-				is_year = 1465
+				is_year = 1475
 				OR = {
 					region = scandinavia_region
 					region = ireland_area
@@ -832,7 +846,7 @@ renaissance = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			
 			AND = {
-				is_year = 1470
+				is_year = 1480
 				OR = {
 					region = balkan_region
 					region = carpathia_region
@@ -842,7 +856,7 @@ renaissance = {
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 			
 			AND = {
-				is_year = 1475
+				is_year = 1485
 				continent = europe
 				NOT = { owner = { technology_group = nomad_group } }
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
@@ -907,45 +921,114 @@ renaissance = {
 	}
 	
 	can_start = {
-		is_year = 1450
-		#is_year = 1470
-		custom_trigger_tooltip = {
-			tooltip = tooltip_bt_add_new_instituiton_details_a
-			OR = {
-				area = venetia_area
-				area = lombardy_area
-				area = piedmont_area
-				area = tuscany_area
-				area = liguria_area
-				area = emilia_romagna_area
-				area = emilia_area
-			}	#BTMiscAddonChange - Limits possibilities somewhat from #region = italy_region and #NOT = { province_id = 126 } and #is_island = no
-		}
-		#is_state = yes			#BTMiscAddonRemoved - So a province can't accomplish anything or have any good ideas if the owner doesn't consider it 'a state' =p.
 		OR = {
-			development = 24	#BTMiscAddonChange - Limits possibilities somewhat, new BT tags was causing it to hit in odd places sometimes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_aj
-				OR = {
-					province_has_center_of_trade_of_level = 3
-					province_has_center_of_trade_of_level = 2
+			#Prosperous Northern Italy gets first dibs
+			AND = {
+				is_year = 1453
+				custom_trigger_tooltip = {
+					tooltip = damietta_renaissance_northern_italy.tt
+					OR = {
+						AND = {
+							OR = {							
+								#Prosperous Areas in Northern Italy
+								area = venetia_area
+								area = lombardy_area
+								area = piedmont_area
+								area = liguria_area
+								area = emilia_area
+								area = friuli_area
+								area = east_lombardy_area
+								area = north_piedmont_area
+								area = south_piedmont_area
+								area = upper_emilia_area
+								area = emilia_romagna_area
+							}
+							OR = {
+								development = 30					
+								has_building = university
+							}
+						}
+						#Prosperous Provinces in Northern Italy
+						province_id = 104 #Milan - incredibly rich and cosmopolitan city
+						province_id = 112 #Venice - hub of the vast Venetian trade network
+						province_id = 101 #Genoa - hub of the slightly less vast Genoese trade network
+						province_id = 105 #University of Parma
+						province_id = 3041 #University of Bologna
+						province_id = 103 #Torino - Because Savoy needs some love
+					}
 				}
-			}			#BTMiscAddonNote - this is needed to prevent a flat or random province start (I'm not even sure if that option does anything...) from not being able to spawn renaissance and kind of breaking the game.
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_b
-				is_capital = yes
-				development = 20
-			}	#BTMiscAddonChange - Limits possibilities somewhat, new BT tags was causing it to hit in odd places sometimes
-			normal_or_historical_nations = no
+			}
+			#Other parts of Italy can get it later
+			AND = {
+				is_year = 1455
+				custom_trigger_tooltip = {
+					tooltip = damietta_renaissance_southern_italy.tt				
+					region = italy_region
+					NOT = {
+						#Northern Italy
+						area = venetia_area
+						area = lombardy_area
+						area = piedmont_area
+						area = liguria_area
+						area = emilia_area
+						area = friuli_area
+						area = east_lombardy_area
+						area = north_piedmont_area
+						area = south_piedmont_area
+						area = upper_emilia_area
+						area = emilia_romagna_area
+					}
+				}
+				development = 25
+			}
 		}
-		#OR = {
+
+		#### BT stuff below
+		#if = {
+		#	limit = {
+		#		OR = {
+		#			area = venetia_area
+		#			area = lombardy_area
+		#			area = piedmont_area
+		#			area = tuscany_area
+		#			area = liguria_area
+		#			area = emilia_romagna_area
+		#			area = emilia_area
+		#		}
+		#	}
+		#	is_year = 1455				#Damietta change - From 1450. This ensures the institution WILL NOT spawn before 1455.
 		#	custom_trigger_tooltip = {
-		#		tooltip = damietta_renaissance_is_patron_capital
-		#		has_province_flag = damietta_renaissance_patron_capital
+		#		tooltip = tooltip_bt_add_new_instituiton_details_a
+		#		OR = {
+		#			area = venetia_area
+		#			area = lombardy_area
+		#			area = piedmont_area
+		#			area = tuscany_area
+		#			area = liguria_area
+		#			area = emilia_romagna_area
+		#			area = emilia_area
+		#		}	#BTMiscAddonChange - Limits possibilities somewhat from #region = italy_region and #NOT = { province_id = 126 } and #is_island = no
 		#	}
 		#}
+		#is_state = yes			#BTMiscAddonRemoved - So a province can't accomplish anything or have any good ideas if the owner doesn't consider it 'a state' =p.
+		#OR = {
+		#	development = 24	#BTMiscAddonChange - Limits possibilities somewhat, new BT tags was causing it to hit in odd places sometimes
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_aj
+		#		OR = {
+		#			province_has_center_of_trade_of_level = 3
+		#			province_has_center_of_trade_of_level = 2
+		#		}
+		#	}			#BTMiscAddonNote - this is needed to prevent a flat or random province start (I'm not even sure if that option does anything...) from not being able to spawn renaissance and kind of breaking the game.
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_b
+		#		is_capital = yes
+		#		development = 20
+		#	}	#BTMiscAddonChange - Limits possibilities somewhat, new BT tags was causing it to hit in odd places sometimes
+		#	normal_or_historical_nations = no
+		#}
 	}
-	start_chance = 10		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
+	start_chance = 3		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits. #Damietta - changed to 3. Still have to work this out and see how it feels.
 	#BTMiscAddonNote - All else being equal and without player interference, likely possiblities to start Renaissance with the new limitations above are - Genoa, Milan, Parma, Verona, Venice, Bologna, Lucca, Romagna, Florence, or Siena.
 	#BTMiscAddonNote - Piedmont, Cremona, Treviso, Mantua, or Ferrara also possible with a minimal dev increase from 1444 start.
 	
@@ -991,6 +1074,12 @@ renaissance = {
 		#		}
 		#	}
 		#}
+		
+		#########################################################################
+		###Start of Damietta spread modifiers
+		#########################################################################
+
+
 		#########################################################################
 		###Start of BT Tech group specific spread modifiers - renaissance
 		#########################################################################

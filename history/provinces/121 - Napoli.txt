@@ -25,6 +25,10 @@ extra_cost = 15
 
 center_of_trade = 1
 
+1224.1.1 = {
+	add_building = university
+}
+
 #Province history completed by - Draiocht (dev changes) & Chairman_Meow (JP) (everything else)
 #1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
 	#Fantasy/alt-history tags/situations for gameplay & multiplayer balance in SE. If you need me to make a new tag, let me know. Please do not alter the above line with date & #ed comment in any way.
