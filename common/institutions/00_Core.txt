@@ -1028,7 +1028,7 @@ renaissance = {
 		#	normal_or_historical_nations = no
 		#}
 	}
-	start_chance = 5		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits. #Damietta - changed to 3. Still have to work this out and see how it feels.
+	start_chance = 2		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits. #Damietta - changed to 5. Still have to work this out and see how it feels.
 	#BTMiscAddonNote - All else being equal and without player interference, likely possiblities to start Renaissance with the new limitations above are - Genoa, Milan, Parma, Verona, Venice, Bologna, Lucca, Romagna, Florence, or Siena.
 	#BTMiscAddonNote - Piedmont, Cremona, Treviso, Mantua, or Ferrara also possible with a minimal dev increase from 1444 start.
 	
@@ -1308,7 +1308,7 @@ renaissance = {
 		###BT Western Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate.
 		#########################################################################
 		modifier = {
-			factor = 0.6
+			factor = 0.4 #was 0.6
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = western } }
@@ -1318,7 +1318,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2 #was 0.3
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1337,7 +1337,7 @@ renaissance = {
 		###BT Eastern Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.95 based on original tech group's 20 percent penalty (i.e. 83 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.57
+			factor = 0.38 #was 0.57
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = eastern } }
@@ -1347,7 +1347,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.28
+			factor = 0.19 #was 0.28
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1366,7 +1366,7 @@ renaissance = {
 		###BT Ottoman Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.90 based on original tech group's 25 percent penalty (i.e. 80 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.54
+			factor = 0.36 #was 0.54
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = ottoman } }
@@ -1376,7 +1376,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.27
+			factor = 0.17 #was 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1395,7 +1395,7 @@ renaissance = {
 		###BT Muslim Tech Spreads - dev doubled adjusted Vanilla speed x 1.67, more provinces means slower spread, speeding up to compensate. Then x 0.80 based on original tech group's 40 percent penalty (i.e. 71 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.48
+			factor = 0.32 #was 0.32
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = muslim } }
@@ -1405,7 +1405,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.24
+			factor = 0.16 #was 0.24
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1424,7 +1424,7 @@ renaissance = {
 		###BT Indian Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.27
+			factor = 0.18 #was 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = indian } }
@@ -1434,7 +1434,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.09 #was 0.13
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1453,7 +1453,7 @@ renaissance = {
 		###BT East African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.75 based on original tech group's 50 percent penalty (i.e. 67 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.27
+			factor = 0.17 #was 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = east_african } }
@@ -1463,7 +1463,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.13
+			factor = 0.08 #was 0.13
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1482,7 +1482,7 @@ renaissance = {
 		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.25
+			factor = 0.15 #was 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = chinese } }
@@ -1492,7 +1492,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.12
+			factor = 0.7 #was 0.12
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1511,7 +1511,7 @@ renaissance = {
 		###BT Sub Saharan Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.25
+			factor = 0.15 #was 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = sub_saharan } }
@@ -1521,7 +1521,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.12
+			factor = 0.6 #was 0.12
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1540,7 +1540,7 @@ renaissance = {
 		###BT Central African Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 65 percent penalty (i.e. 61 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.25
+			factor = 0.15 #was 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = central_african } }
@@ -1550,7 +1550,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.12
+			factor = 0.06 #was 0.12
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1569,7 +1569,7 @@ renaissance = {
 		###BT Nomad Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.65 based on original tech group's 75 percent penalty (i.e. 57 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.23
+			factor = 0.14 #was 0.23
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = nomad_group } }
@@ -1579,7 +1579,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.11
+			factor = 0.05 #was 0.11
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1598,7 +1598,7 @@ renaissance = {
 		###BT High American Tech Spreads - dev doubled adjusted Vanilla speed x 1.67. More provinces means slower spread, speeding up to compensate. Not all regions have new provinces yet, but this tech group was never meant to be 'balanced' anyway
 		#########################################################################
 		modifier = {
-			factor = 0.6
+			factor = 0.4 #was 0.6
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = high_american } }
@@ -1608,7 +1608,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.2 #was 0.3
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1627,7 +1627,7 @@ renaissance = {
 		###BT Central American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.18
+			factor = 0.12 #was 0.18
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = mesoamerican } }
@@ -1637,7 +1637,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.09
+			factor = 0.06 #was 0.09
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1656,7 +1656,7 @@ renaissance = {
 		###BT Andean Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.50 based on original tech group's 150 percent penalty (i.e. 40 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.18
+			factor = 0.12 #was 0.18
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = andean } }
@@ -1666,7 +1666,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.09
+			factor = 0.06 #was 0.06
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1685,7 +1685,7 @@ renaissance = {
 		###BT North American Tech Spreads - dev doubled adjusted Vanilla speed x 1.33. Only half overhauled, so only half the bonus. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.2
+			factor = 0.11 #was 0.2
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = north_american } }
@@ -1695,7 +1695,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.04 #was 0.1
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1714,7 +1714,7 @@ renaissance = {
 		###BT South American Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.40 based on original tech group's 250 percent penalty (i.e. 29 percent of normal speed)
 		#########################################################################
 		modifier = {
-			factor = 0.15
+			factor = 0.10 #was 0.15
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { owner = { technology_group = south_american } }
@@ -1724,7 +1724,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.04 #was 0.07
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
