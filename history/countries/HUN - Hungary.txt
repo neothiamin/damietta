@@ -1,0 +1,47 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = romanian
+religion = catholic
+technology_group = eastern
+capital = 153 # Buda
+historical_friend = HAB
+historical_rival = TUR
+
+1387.3.31 = {
+	monarch = {
+		name = "Sigismund I"
+		dynasty = "von Luxemburg"
+		birth_date = 1368.2.14	
+		adm = 4
+		dip = 3
+		mil = 3
+		culture = franconian
+	}
+}
+
+1437.12.9 = {
+	monarch = {
+		name = "Elizabeth I"
+		dynasty = "von Luxemburg"
+		birth_date = 1409.10.7
+		adm = 2
+		dip = 0
+		mil = 1
+		female = yes
+	}
+}
+
+1440.2.23 = {
+	heir = {
+		name = "Laszlo"
+		monarch_name = "Laszlo V"
+		dynasty = "von Luxemburg"
+		mil = 3
+		dip = 2
+		adm = 0
+		birth_date = 1440.2.22
+		death_date = 1480.1.1
+	}
+}
