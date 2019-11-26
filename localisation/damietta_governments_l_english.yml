@@ -54,3 +54,7 @@
  damietta_rumi_sultanate_1:0 "Rûmi Sultanate"
  damietta_rumi_sultanate_1_desc:0 "Taking inspiration from the old Persian satrapies, traditional Turkic diplomatic delegation techniques, and the Byzantine \"theme\" system of military organization, the Rûmi Sultanate is unparalleled in its ability to sustain internal and external attacks. Through its eclectic style of governance, Rûm has been able to find strength from within while being able to exert power without, and has thus maintained its dominant position throughout the Mediterranean, Levant, and Mesopotamia for over four hundred years.\n\nThere is a saying among the Turkic population in Rûm: \"Rum is a mighty river; stable yet fierce, gentle yet powerful, with the power to give life and the power to take it away.\""
  mechanic_damietta_rumi_sultanate_stability_yes:0 "Increased stability cost when stability is higher than 0, lower stability cost when stability is less than 0."
+
+ #Hungary
+ PRINCESS_CONSORT:0 "Princess-Consort"
+ GRAND_PRINCESS_CONSORT:0 "Grand Princess-Consort"

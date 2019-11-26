@@ -2,46 +2,128 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = hungarian
 add_accepted_culture = slovak
-add_accepted_culture = romanian
 religion = catholic
 technology_group = eastern
 capital = 153 # Buda
-historical_friend = HAB
-historical_rival = TUR
+historical_rival = BUL
 
-1387.3.31 = {
+1290.1.1 = {
 	monarch = {
-		name = "Sigismund I"
-		dynasty = "von Luxemburg"
-		birth_date = 1368.2.14	
-		adm = 4
+		name = "Andrew V"
+		dynasty = "Árpad"
+		dip = 3
+		mil = 6
+		adm = 2
+	}
+}
+
+1334.3.15 = {
+	monarch = {
+		name = "Aurel I"
+		dynasty = "Aureli"
+		mil = 4
+		adm = 0
+		dip = 1
+		culture = romanian
+		religion = orthodox
+		birth_date = 1302.3.4
+	}
+	heir = {
+		name = "Marius"
+		monarch_name = "Marius I"
+		dynasty = "Aureli"
+		birth_date = 1318.2.2
+		dip = 5
+		mil = 2
+		adm = 6
+	}
+}
+
+1359.8.5 = {
+	monarch = {
+		name = "Marius I"
+		dynasty = "Aureli"
+		birth_date = 1318.2.2
+		dip = 5
+		mil = 2
+		adm = 6
+	}
+}
+
+1371.4.4 = {
+	heir = {
+		name = "Laura"
+		monarch_name = "Laura I"
+		dynasty = "Aureli"
+		dip = 2
+		adm = 5
+		mil = 3
+		female = yes
+		birth_date = 1371.4.2
+	}
+}
+
+1391.10.4 = {
+	monarch = {
+		name = "Laura I"
+		dynasty = "Aureli"
+		dip = 2
+		adm = 5
+		mil = 3
+		female = yes
+		birth_date = 1371.4.2
+	}
+	queen = {
+		country_of_origin = HUN
+		name = "Lukacs"
+		dynasty = "Karol"
+		birth_date = 1368.12.22
+		adm = 3
 		dip = 3
 		mil = 3
-		culture = franconian
 	}
 }
 
-1437.12.9 = {
-	monarch = {
-		name = "Elizabeth I"
-		dynasty = "von Luxemburg"
-		birth_date = 1409.10.7
-		adm = 2
-		dip = 0
-		mil = 1
-		female = yes
-	}
-}
-
-1440.2.23 = {
+1408.1.2 = {
 	heir = {
-		name = "Laszlo"
-		monarch_name = "Laszlo V"
-		dynasty = "von Luxemburg"
+		name = "Tamás"
+		monarch_name = "Tamás I"
+		dynasty = "Aureli"
+		birth_date = 1408.1.1
+		adm = 5
+		dip = 6
+		mil = 1
+	}
+}
+
+1418.1.1 = {
+	monarch = {
+		name = "Lukacs I"
+		dynasty = "Karol"
+		birth_date = 1368.12.22
+		adm = 3
+		dip = 3
 		mil = 3
-		dip = 2
-		adm = 0
-		birth_date = 1440.2.22
-		death_date = 1480.1.1
+		regent = yes
+	}
+}
+
+1426.5.3 = {
+	monarch = {
+		name = "Tamás I"
+		dynasty = "Aureli"
+		birth_date = 1408.1.1
+		adm = 5
+		dip = 6
+		mil = 1
+	}
+	heir = {
+		name = "Tomi"
+		monarch_name = "Tomi I"
+		dynasty = "Aureli"
+		birth_date = 1408.1.1
+		adm = 3
+		dip = 1
+		mil = 6
 	}
 }

@@ -1204,6 +1204,7 @@ renaissance = {
 					area = aleppo_area
 					area = syrian_desert_area
 					area = delta_area
+					area = cukurova_area
 				}
 				owner = {
 					OR = {
@@ -1304,6 +1305,44 @@ renaissance = {
 				development = 18
 			}
 		}
+
+		#Renaissance ideas would spread in commercial areas
+		modifier = {
+			factor = 0.1
+			scale = yes
+			force_potential = yes
+			potential = {			
+				province_has_center_of_trade_of_level = 1
+				OR = {
+					continent = europe
+					region = anatolia_region
+				}				
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_renaissance_prov_has_level_2_cot.tt				
+				NOT = {
+					province_has_center_of_trade_of_level = 3
+				}
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+
+		#modifier = {
+		#	factor = 0.12
+		#	#scale = yes
+		#	force_potential = yes
+		#	potential = {
+		#		province_has_center_of_trade_of_level = 1
+		#		OR = {
+		#			continent = europe
+		#			region = anatolia_region
+		#		}
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = damietta_renaissance_prov_has_level_3_cot.tt				
+		#		province_has_center_of_trade_of_level = 3
+		#	}
+		#}
 
 		#########################################################################
 		###Start of BT Tech group specific spread modifiers - renaissance
@@ -1973,7 +2012,7 @@ renaissance = {
 		###End of BT New Misc Modifiers
 		#######################################################################
 		modifier = {
-			factor = 0.3			#Reduced by 80 percent from original 5.0, renaissance ideals meant very little on the wild frontier, and it was contributing to overly fast tech spread in native tags
+			factor = 0.4			#Reduced by 80 percent from original 5.0, renaissance ideals meant very little on the wild frontier, and it was contributing to overly fast tech spread in native tags
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1994,7 +2033,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.2			#Reduced by 50 percent from original 2.0, once embraced the tag doesn't care, and this will slow tech growth to fringes.
+			factor = 0.3			#Reduced by 50 percent from original 2.0, once embraced the tag doesn't care, and this will slow tech growth to fringes.
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -2009,7 +2048,7 @@ renaissance = {
 		}
 		#New slower spread bonus for owned provinces not connected to the capital by land
 		modifier = {
-			factor = 0.15
+			factor = 0.2
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {

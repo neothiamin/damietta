@@ -10,3 +10,5 @@
  damietta_renaissance_french_non_coastal_16_dev.tt:0 "Is a non-coastal province in the §YFrance§! region with more than §Y16§! development"
  damietta_renaissance_iberian_atlantic_16_dev.tt:0 "Is a coastal province in the §YIberia§! region with more than §Y16§! development"
  damietta_renaissance_iberian_non_coastal_18_dev.tt:0 "Is a non-coastal province in the §YIberia§! region with more than §Y18§! development"
+ damietta_renaissance_prov_has_level_2_cot.tt:0 "Province has a §YCenter of Trade§! of level §Y2§! of greater"
+ damietta_renaissance_prov_has_level_3_cot.tt:0 "Province has a §YCenter of Trade§! of level §Y3§!"
