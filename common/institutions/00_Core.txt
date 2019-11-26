@@ -1081,7 +1081,7 @@ renaissance = {
 
 		#For Italian 8+ dev provinces
 		modifier = {
-			factor = 0.6
+			factor = 0.4
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1096,7 +1096,7 @@ renaissance = {
 
 		#For West Med coastal 12+ dev provinces owned by Christians
 		modifier = {
-			factor = 0.30 #50% of Italian 8-dev modifier
+			factor = 0.20 #50% of Italian 8-dev modifier
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1110,6 +1110,7 @@ renaissance = {
 					area = provence_area					
 					area = lower_andalucia_area
 					area = upper_andalucia_area
+					area = baleares_area
 					#region = italy_region
 				}
 			}
@@ -1124,7 +1125,7 @@ renaissance = {
 
 		#For East Med coastal 14+ dev provinces (Catholic version)
 		modifier = {
-			factor = 0.15 #25% of Italian 8-dev modifier
+			factor = 0.10 #25% of Italian 8-dev modifier
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1158,7 +1159,7 @@ renaissance = {
 
 		#For East Med coastal 14+ dev provinces (Orthodox version)
 		modifier = {
-			factor = 0.12 #20% of Italian 8-dev modifier
+			factor = 0.08 #20% of Italian 8-dev modifier
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1192,7 +1193,7 @@ renaissance = {
 
 		#For Christian states in the Levant that are friendly with an Italian nation that has embraced the Renaissance
 		modifier = {
-			factor = 0.09 #15% of Italian 8-dev modifier
+			factor = 0.06 #15% of Italian 8-dev modifier
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1233,7 +1234,7 @@ renaissance = {
 
 		#For French Atlantic provinces with more than 14 development
 		modifier = {
-			factor = 0.36 #60% of Italian 8-dev modifier
+			factor = 0.24 #60% of Italian 8-dev modifier
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1253,7 +1254,7 @@ renaissance = {
 
 		#For French non-coastal provinces with more than 16 development
 		modifier = {
-			factor = 0.36 #60% of Italian 8-dev modifier
+			factor = 0.24 #60% of Italian 8-dev modifier
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1268,7 +1269,7 @@ renaissance = {
 
 		#For Iberian Atlantic provinces with more than 16 development
 		modifier = {
-			factor = 0.30
+			factor = 0.2
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1277,7 +1278,10 @@ renaissance = {
 				NOT = {
 					area = valencia_area
 					area = catalonia_area
-					area = murcia_area
+					area = murcia_area								
+					area = lower_andalucia_area
+					area = upper_andalucia_area
+					area = baleares_area
 				}
 			}
 			custom_trigger_tooltip = {
@@ -1288,7 +1292,7 @@ renaissance = {
 
 		#For Iberian non-coastal provinces with more than 18 development
 		modifier = {
-			factor = 0.30
+			factor = 0.20
 			scale = yes
 			force_potential = yes
 			potential = {
@@ -1754,20 +1758,20 @@ renaissance = {
 		#		culture_group = latin
 		#	}
 		#}			#BT changes this spread is superseeded by the new regional spreads below, search 'BT New Misc Modifiers - Regional Spreads - renaissance'
-		modifier = {
-			factor = 0.06			#BT changed from original 0.05 because generally much lower average dev in provinces in BT, so far fewer provinces getting this and less scaling causing it to go even slower
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { technology_group = western }
-				continent = europe
-			}			#BTAddOn Change, now only western tech get the full bonus, whereas previously is was all of Europe which was boosting Nomadic groups too much. Note this could slow spread in a game with no western tech countries
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_aq
-				owner = { technology_group = western }
-				development = 16
-			}
-		}
+		#modifier = {
+		#	factor = 0.06			#BT changed from original 0.05 because generally much lower average dev in provinces in BT, so far fewer provinces getting this and less scaling causing it to go even slower
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = {
+		#		owner = { technology_group = western }
+		#		continent = europe
+		#	}			#BTAddOn Change, now only western tech get the full bonus, whereas previously is was all of Europe which was boosting Nomadic groups too much. Note this could slow spread in a game with no western tech countries
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_aq
+		#		owner = { technology_group = western }
+		#		development = 16
+		#	}
+		#}
 		modifier = {
 			factor = 0.06			#BT changed from original 0.05 because generally much lower average dev in provinces in BT, so far fewer provinces getting this and less scaling causing it to go even slower
 			scale = yes
@@ -1786,20 +1790,20 @@ renaissance = {
 		###BT New Misc Modifiers
 		#######################################################################
 		#Weaker eastern tech bonus, same as western tech but half strength. Between the two they cover all of the previous continent equals europe except the far western end of the Steppes, the Balkans, and Granada.... perfect, except perhaps need to add a spread bonus to Granada's NI
-		modifier = {
-			factor = 0.03
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { technology_group = eastern }
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_aq
-				owner = { technology_group = eastern }
-				development = 16
-			}
-		}
+		#modifier = {
+		#	factor = 0.03
+		#	scale = yes
+		#	force_potential = yes	# Hide the this modifier when potential is false
+		#	potential = {
+		#		owner = { technology_group = eastern }
+		#		continent = europe
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_aq
+		#		owner = { technology_group = eastern }
+		#		development = 16
+		#	}
+		#}
 		modifier = {
 			factor = 0.03
 			scale = yes
@@ -1969,7 +1973,7 @@ renaissance = {
 		###End of BT New Misc Modifiers
 		#######################################################################
 		modifier = {
-			factor = 0.6			#Reduced by 80 percent from original 5.0, renaissance ideals meant very little on the wild frontier, and it was contributing to overly fast tech spread in native tags
+			factor = 0.3			#Reduced by 80 percent from original 5.0, renaissance ideals meant very little on the wild frontier, and it was contributing to overly fast tech spread in native tags
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -1990,7 +1994,7 @@ renaissance = {
 			}
 		}
 		modifier = {
-			factor = 0.6			#Reduced by 50 percent from original 2.0, once embraced the tag doesn't care, and this will slow tech growth to fringes.
+			factor = 0.2			#Reduced by 50 percent from original 2.0, once embraced the tag doesn't care, and this will slow tech growth to fringes.
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
@@ -2005,7 +2009,7 @@ renaissance = {
 		}
 		#New slower spread bonus for owned provinces not connected to the capital by land
 		modifier = {
-			factor = 0.2
+			factor = 0.15
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
