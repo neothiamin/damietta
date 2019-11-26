@@ -1,0 +1,7 @@
+#Hungary will do anything to prevent the resurgence of Bulgaria
+guarantee = {
+	first = HUN
+	second = BDN
+	start_date = 1425.6.4
+	end_date = 1455.1.1
+}

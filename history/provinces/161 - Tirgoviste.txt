@@ -2,7 +2,7 @@
 
 owner = WAL
 controller = WAL 
-culture = saxon
+culture = romanian #was saxon
 religion = catholic
 capital = "Tîrgoviste"
 trade_goods = cloth

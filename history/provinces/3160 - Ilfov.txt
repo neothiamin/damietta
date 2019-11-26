@@ -2,8 +2,8 @@
 
 owner = WAL
 controller = WAL 
-culture = romanian
-religion = orthodox
+culture = saxon #was romanian orthodox
+religion = catholic
 capital = "Bucharest"
 trade_goods = bt_trade_good_beer
 hre = no

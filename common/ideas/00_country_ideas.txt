@@ -941,7 +941,7 @@ SCO_Ideas = {
 
 HUN_ideas = {
 	start = {
-		cavalry_power = 0.20
+		diplomatic_reputation = 1
 		recover_army_morale_speed = 0.05
 	}
 	

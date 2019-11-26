@@ -47,6 +47,7 @@ monarchy = {
 				damietta_rumi_sultanate_1
 				damietta_byzantine_cath_peace
 				damietta_byzantine_cath_war
+				damietta_hungarian_principality
 			}
 		}
 		hereditary_vs_nobility = {

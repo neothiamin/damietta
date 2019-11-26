@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = romanian
+#add_accepted_culture = saxon			#Transylvanian Saxons, evidently invited by Wallachian princes to settle Tirgoviste and Campulung after the areas were devastated by the Golden Horde in the 13th century, by all indications got along amiably with the Vlachs.
+religion = orthodox
+technology_group = eastern
+capital = 161 # Tirgoviste, was 7752
+
+1420.1.1 = {
+	monarch = {
+		name = "Károly III"
+		dynasty = "Árpad"
+		mil = 3
+		adm = 1
+		dip = 2
+		birth_date = 1399.2.1
+		culture = hungarian
+	}
+}

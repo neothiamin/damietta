@@ -1,7 +1,8 @@
 # Severin
 
-owner = WAL
-controller = WAL  
+owner = HUN
+controller = HUN  
+add_core = HUN
 culture = romanian
 religion = orthodox
 capital = "Severin"

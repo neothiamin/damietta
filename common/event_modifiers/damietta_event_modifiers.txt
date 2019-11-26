@@ -117,3 +117,9 @@ damietta_byz_genoese_trade = {
 damietta_ser_byzantine_trade = {
 	trade_efficiency = 0.1
 }
+
+#Serbian Banate
+hungary_serbian_banate = {
+	cavalry_power = 0.1
+	land_forcelimit_modifier = 0.25
+}

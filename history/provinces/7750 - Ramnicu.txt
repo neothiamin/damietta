@@ -1,7 +1,8 @@
 #BT Balkans reoverhaul
 
-owner = WAL
-controller = WAL
+owner = HUN
+controller = HUN
+add_core = HUN
 add_core = WAL
 culture = romanian
 religion = orthodox

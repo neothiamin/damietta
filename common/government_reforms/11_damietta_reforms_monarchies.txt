@@ -370,3 +370,31 @@ damietta_rumi_sultanate_1 = {
 		damietta_rumi_sultanate_stability = yes
 	}
 }
+
+############################################
+#Hungarian Principality
+############################################
+
+#Tier 1
+
+damietta_hungarian_principality = {
+	icon = "nobleman"
+	allow_convert = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	valid_for_new_country = no
+	allow_normal_conversion = no
+
+	potential = {
+		tag = HUN
+	}
+
+	legacy_equivalent = feudal_monarchy
+
+	start_territory_to_estates = 0.6
+
+	modifiers = {
+		global_unrest = -2
+		cavalry_cost = -0.1
+	}
+}

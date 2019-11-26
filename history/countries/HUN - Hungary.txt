@@ -1,7 +1,7 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = damietta_hungarian_principality #feudalism_reform
 primary_culture = hungarian
-add_accepted_culture = slovak
+add_accepted_culture = romanian
 religion = catholic
 technology_group = eastern
 capital = 153 # Buda
@@ -41,7 +41,7 @@ historical_rival = BUL
 
 1359.8.5 = {
 	monarch = {
-		name = "Marius I"
+		name = "Marius \"the Fair\""
 		dynasty = "Aureli"
 		birth_date = 1318.2.2
 		dip = 5

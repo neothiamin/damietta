@@ -1,0 +1,255 @@
+hun_balkans_group = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+	}
+	has_country_shield = yes
+
+	hun_vanquish_vlachs = {
+		icon = mission_impaled_soldies
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = wallachia_area
+				area = oltenia_area
+				area = upper_muntenia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			wallachia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oltenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_muntenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 5
+			3160 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+				if = {
+					limit = {
+						NOT = {
+							province_has_center_of_trade_of_level = 2
+						}
+					}
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+	}
+
+	hun_tame_the_lions = {
+		icon = mission_monarch_in_throne_room
+		required_missions = {
+			hun_vanquish_vlachs
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = danubian_plain_area
+				area = vidin_area
+				area = lower_danube_area
+				province_id = 1765
+				province_id = 7705
+				province_id = 7704
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			danubian_plain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vidin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_danube_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1765 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			7705 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			7704 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					150 = {
+						owned_by = ROOT
+					}
+				}
+				add_prestige = 10
+				country_event = {
+					id = damietta_hun.1 #Remnants of Bulgaria
+				}
+			}
+			else = {
+				add_prestige = 25
+			}
+		}
+	}
+
+	hun_bosnia = {
+		icon = mission_have_two_subjects
+		position = 4
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bosnia_area
+				province_id = 7727
+				province_id = 1828
+				province_id = 7723
+				province_id = 139
+				province_id = 7721
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = hun_bosnia_mission_trigger.tt				
+				bosnia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				7727 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				1828 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				7723 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				139 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				7721 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			add_prestige = 5
+			syrmia_area = {
+				add_permanent_claim = ROOT
+			}
+			serbia_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hun_overwhelm_eagle = {
+		icon = mission_crusade_for_varna
+		required_missions = {
+			hun_bosnia
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = syrmia_area
+				area = serbia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					SER = {
+						exists = yes
+						is_subject_of = ROOT
+					}
+				}
+				add_prestige = 10
+				SER = {
+					add_country_modifier = {
+						name = hungary_serbian_banate
+						duration = 9125
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						serbia_area = {
+							owned_by = ROOT
+						}
+					}
+				}
+				serbia_area = {
+					limit = {
+						owned_by = ROOT
+					}
+					cede_province = SER
+				}
+				vassalize = SER
+				add_prestige = 10
+				SER = {
+					add_country_modifier = {
+						name = hungary_serbian_banate
+						duration = 9125
+					}
+				}
+			}
+			else = {
+				add_prestige = 25
+			}
+		}
+	}
+	
+}
+
+hun_internal_group = {
+	slot = 3	
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+	}
+	has_country_shield = yes
+}
+
+hun_east_group = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+	}
+	has_country_shield = yes
+}
