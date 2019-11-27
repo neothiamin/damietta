@@ -1314,9 +1314,12 @@ renaissance = {
 			potential = {			
 				province_has_center_of_trade_of_level = 1
 				OR = {
-					continent = europe
-					region = anatolia_region
-				}				
+					superregion = europe_superregion
+					region = balkan_region
+					region = poland_region
+					region = carpathia_region
+					region = baltic_region
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = damietta_renaissance_prov_has_level_2_cot.tt				

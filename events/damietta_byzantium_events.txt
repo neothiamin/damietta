@@ -894,3 +894,91 @@ country_event = {
 #		}
 #	}
 #}
+
+############################################
+# Diversified Bureaucracy Great Minds
+############################################
+
+country_event = {
+	id = damietta_byzantium.17
+	title = damietta_byzantium.17.t
+	desc = damietta_byzantium.17.desc
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes #pulse
+
+	trigger = {
+		tag = BYZ
+		has_government_attribute = damietta_byz_advisors
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				has_owner_accepted_culture = yes
+				NOT = {
+					culture = owner
+				}
+			}
+			save_event_target_as = damietta_byz_17_target_a
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_accepted_culture = yes
+				NOT = {
+					culture = owner
+				}
+			}
+			save_event_target_as = damietta_byz_17_target_b
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_accepted_culture = yes
+				NOT = {
+					culture = owner
+				}
+			}
+			save_event_target_as = damietta_byz_17_target_c
+		}
+	}
+
+	#The great scientist!
+
+	option = {
+		name = damietta_byzantium.17.a		
+		define_advisor = {
+			type = natural_scientist
+			skill = 3
+			discount = yes			
+			culture = event_target:damietta_byz_17_target_a
+			religion = ROOT
+		}
+	}
+
+	#The great diplomat!
+
+	option = {
+		name = damietta_byzantium.17.b	
+		define_advisor = {
+			type = diplomat
+			skill = 3
+			discount = yes			
+			culture = event_target:damietta_byz_17_target_b
+			religion = ROOT
+		}
+	}
+
+	#The great tactician!
+
+	option = {
+		name = damietta_byzantium.17.c
+		define_advisor = {
+			type = army_organiser
+			skill = 3
+			discount = yes
+			culture = event_target:damietta_byz_17_target_c
+			religion = ROOT
+		}
+	}
+}
+

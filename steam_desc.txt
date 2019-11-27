@@ -1,4 +1,4 @@
-!! WARNING! ALPHA MOD! !!
+!! WARNING! MOD IN DEVELOPMENT! !!
 
 Hi, I'm neothiamin, and this is Damietta!
 
@@ -21,7 +21,7 @@ Instructions for use:
 
 A few things to note:
 * This mod ABSOLUTELY REQUIRES Beyond Typus for 1.29! It will not function correctly, or possibly at all, without it!
-* This mod, as indicated at the top of the description, is nowhere near complete! Bugs will exist! Changes are always being made! Nothing is sacred! This mod is not for the faint of heart. You have been waaaarned...
+* This mod, as indicated at the top of the description, is still in development. There will be bugs, and features may phase into and out of existence. I try to test everything before I publish a release, but I can't catch everything. You have been warned!
 
 If you're looking for a community outside Steam, we have a Discord server! Link here: https://discord.gg/52kCwQd
 

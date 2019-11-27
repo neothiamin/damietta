@@ -81,5 +81,6 @@ on_bi_yearly_pulse_4 = {
 	random_events = {		
 		20 = 0
 		10 = damietta_rahulids.3
+		5 = damietta_byzantium.17
 	}
 }
