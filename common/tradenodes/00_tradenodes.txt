@@ -383,7 +383,7 @@ mexico={
 african_great_lakes={
 	location=1649
 	color={
-		57 168 220 
+		148 30 70 
 	}
 	inland=yes
 	outgoing={
@@ -1341,6 +1341,9 @@ antioch={
 astrakhan={
 	location=464
 	inland=yes
+	color = {
+		55 92 56
+	}
 	outgoing={
 		name="kazan"
 		path={
@@ -1853,7 +1856,7 @@ kiev={
 novgorod={
 	location=33
 	color={
-		97 126 37 
+		30 156 14 
 	}
 	outgoing={
 		name="baltic_sea"
@@ -2032,7 +2035,7 @@ ragusa={
 danzig_trade={
 	location=43
 	color={
-		40 39 34 
+		9 64 77 
 	}
 	outgoing={
 		name="lubeck"
@@ -2059,7 +2062,7 @@ danzig_trade={
 baltic_sea={
 	location=1
 	color={
-		8 82 165 
+		134 147 219 
 	}
 	outgoing={
 		name="lubeck"
@@ -2140,7 +2143,7 @@ porto_trade={
 sevilla={
 	location=224
 	color={
-		204 221 107 
+		248 255 48 
 	}
 	outgoing={
 		name="barcelona"
@@ -2312,7 +2315,7 @@ irish_sea={
 north_sea={
 	location=1975
 	color={
-		117 165 188 
+		201 255 247 
 	}
 	outgoing={
 		name="lubeck"
@@ -2375,7 +2378,7 @@ lubeck={
 saxony={
 	location=59
 	color={
-		36 182 69 
+		66 66 66 
 	}
 	inland=yes
 	outgoing={
@@ -2476,7 +2479,7 @@ rheinland={
 koeln_trade={
 	location=85
 	color={
-		105 72 41 
+		255 193 59 
 	}
 	outgoing={
 		name="champagne"
@@ -2530,7 +2533,7 @@ rouen_trade={
 champagne={
 	location=183
 	color={
-		193 26 14 
+		66 93 245 
 	}
 	inland=yes
 	outgoing={
@@ -2549,7 +2552,7 @@ champagne={
 english_channel={
 	location=1269
 	color={
-		220 138 57 
+		207 68 68 
 	}
 	members={
 		235 236 237 238 1860 1269 4370 3028 4371 4372 4376 87 88 89 7966 7968 7969 7965 7966 7973 7974 91 1743 7976 7977 8018 8014 90 1865 3064 3065 8015 8020 8021 92 1744 8019 3061 95 96 97 4383 7975 7954 8112 
