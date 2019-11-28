@@ -54,3 +54,9 @@ damietta_ruler_ignored_papal_will = {
 damietta_byz_gen_trade = {
 	opinion = 25
 }
+
+#Abandoned Us
+damietta_ven_abandoned_candia = {
+	opinion = -100
+	yearly_decay = 5
+}

@@ -218,6 +218,23 @@
  damietta_ven.1.c:0 "We have no need for forts! We will protect the island with our wooden wall!"
  damietta_ven.1.d:0 "The existing infrastructure is satisfactory."
 
+ damietta_ven.2.t:0 "[Root.damietta_crete_rebel_leader.GetName]'s Revolt"
+ damietta_ven.2.desc:0 "Though our overlords, Venice, are benevolent rulers and our vassalage under them has surely brought about great commercial benefits. Some, though, especially our native Greek population, think otherwise.\n\nA local peasant, [Root.damietta_crete_rebel_leader.GetName] has taken up arms against us, leading a popular revolt for the independence of Crete from Venetian rule. Their forces are strong and passionate. We might not be able to win this..."
+ damietta_ven.2.a:0 "Egads..."
+ damietta_ven.2.b:0 "Yes! Down with Latin rule! Long live Crete!"
+
+ damietta_ven.3.t:0 "Cretan Revolt"
+ damietta_ven.3.desc.a:0 "My [Root.Monarch.GetTitle]!\n\nGrave news from the island of Crete. The governor of Candia, our former vassal state, has taken up arms against us! The Cretans have engaged in total popular revolt against us, and will not back down!"
+ damietta_ven.3.desc.b:0 "My [Root.Monarch.GetTitle]!\n\nGrave news from the island of Crete. The local populace has taken up arms against our vassal state, Candia. We must do something!"
+ damietta_ven.3.a:0 "Stop them!"
+ damietta_ven.3.b:0 "Let them go."
+ damietta_ven.3.c:0 "They are on their own."
+
+ damietta_ven.4.t:0 "Revolt in Crete"
+ damietta_ven.4.desc:0 "My [Root.Monarch.GetName]...\n\nStrange times are about in the lands of Crete. The local populace, with the support of the former Venetian-backed governor, have declared independence from the Venetians. Normally we would not intervene in foreign affairs, but Crete's central position in the Aegean and Mediterranean has strong implications for us, if its rulers were amicable to our Empire."
+ damietta_ven.4.a:0 "Intervene!"
+ damietta_ven.4.b:0 "No matter to us."
+
  #Genoa
  damietta_gen.1.t:0 "Byzantine Trade"
  damietta_gen.1.desc:0 "Byzantine ports and marketplaces dot the Aegean and beyond. After the Fourth Crusade, the Greeks in Constantinople have gotten skittish around Italian merchants. However, through clever wordplay and slight exaggeration, we might coerce them into agreeing to a trade deal that is mututally beneficial."

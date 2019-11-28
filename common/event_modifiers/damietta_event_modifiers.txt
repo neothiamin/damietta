@@ -123,3 +123,9 @@ hungary_serbian_banate = {
 	cavalry_power = 0.1
 	land_forcelimit_modifier = 0.25
 }
+
+#Independence War
+damietta_crete_independence = {
+	discipline = 0.05
+	land_morale = 0.1
+}

@@ -141,3 +141,188 @@ country_event = {
 		add_prestige = -5
 	}
 }
+
+############################################
+# Revolts in Crete
+############################################
+
+#For Candia
+country_event = {
+	id = damietta_ven.2
+	title = damietta_ven.2.t
+	desc = damietta_ven.2.desc
+	picture = REVOLT_eventPicture
+
+	trigger = {
+		tag = CDA
+		is_subject_of = VEN
+		NOT = {
+			is_year = 1460
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.75
+			NOT = {
+				has_opinion = {
+					who = VEN
+					value = 150
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_saved_name = {
+			key = damietta_crete_rebel_leader
+			type = advisor
+		}
+	}
+
+	after = {
+		VEN = {
+			country_event = {
+				id = damietta_ven.3
+				days = 3
+			}
+		}
+	}
+
+	#Beat back the pretenders!
+	option = {
+		name = damietta_ven.2.a
+		random_owned_province = {
+			limit = {
+				NOT = {
+					is_capital = yes
+				}
+			}
+			spawn_rebels = {
+				size = 2
+				type = nationalist_rebels
+				leader = damietta_crete_rebel_leader
+			}
+		}
+	}
+
+	#The Venetians are tyrants!
+	option = {
+		name = damietta_ven.2.b
+		change_tag = CRE
+		add_stability = -1
+		declare_war_with_cb = {
+			casus_belli = cb_independence_war
+			who = VEN
+		}
+		add_country_modifier = {
+			name = damietta_crete_independence
+			duration = 3650
+		}
+		define_general = {
+			shock = 3
+			fire = 1
+			manuever = 2
+			siege = 1
+			name = damietta_crete_rebel_leader
+		}
+	}
+}
+
+#For Venice
+country_event = {	
+	id = damietta_ven.3
+	title = damietta_ven.3.t
+	desc = {
+		trigger = {
+			FROM = {
+				is_subject = no
+			}
+		}
+		desc = damietta_ven.3.desc.a
+	}
+	desc = {
+		trigger = {
+			FROM = {
+				tag = CDA
+			}
+		}
+		desc = damietta_ven.3.desc.b
+	}
+	picture = REVOLT_eventPicture
+
+	is_triggered_only = yes
+
+	#Stop them!
+	option = {
+		name = damietta_ven.3.a
+		if = {
+			limit = {
+				FROM = {
+					tag = CRE
+				}
+			}
+			BYZ = {
+				country_event = {
+					id = damietta_ven.4
+					days = 7
+				}
+			}
+		}
+	}
+
+	#Let them go...
+	option = {
+		name = damietta_ven.3.b
+		trigger = {
+			FROM = {
+				tag = CRE
+			}
+		}
+		CRE = {
+			white_peace = VEN				
+			grant_independence = yes
+		}
+		add_prestige = -10
+	}
+
+	#They are on their own.
+	option = {
+		name = damietta_ven.3.c
+		trigger = {
+			FROM = {
+				tag = CDA
+			}
+		}
+		add_prestige = -10
+		reverse_add_opinion = {
+			who = FROM
+			modifier = damietta_ven_abandoned_candia
+		}
+	}
+}
+
+#For Byzantium - Cretan Revolt
+country_event = {	
+	id = damietta_ven.4
+	title = damietta_ven.4.t
+	desc = damietta_ven.4.desc
+	picture = REVOLT_eventPicture
+
+	is_triggered_only = yes
+
+	#Intervene.
+	option = {
+		name = damietta_ven.4.a
+		create_alliance = CRE
+	}
+
+	#It does not matter to us.
+	option = {
+		name = damietta_ven.4.b
+		add_prestige = 3
+	}
+}

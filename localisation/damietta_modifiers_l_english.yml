@@ -58,6 +58,7 @@
  damietta_byz_genoese_trade:0 "Genoese Trade Influence"
  damietta_byz_betrayed_faith:0 "Betrayed Orthodoxy"
  damietta_byz_converted_to_cath:0 "Accepted Papal Supremacy"
+ damietta_ven_abandoned_candia:0 "Abandoned Us"
 
  #Rahulids Muqti
  damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"
@@ -69,3 +70,6 @@
 
  #Hungarian Missions
  hungary_serbian_banate:0 "Banate of Serbia"
+
+ #Cretan Revolt
+ damietta_crete_independence:0 "Independence War"
