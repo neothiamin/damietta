@@ -35,7 +35,7 @@ damietta_rahulids_province_raided = {
 }
 
 damietta_rahulids_settlers_in_desert = {
-	local_colonial_growth = 90
+	local_colonial_growth = 200
 }
 
 damietta_renaissance_3_big_library_modifier = {
