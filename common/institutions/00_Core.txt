@@ -2132,7 +2132,7 @@ new_world_i = {
 	trade_company_efficiency = 0.0
 
 
-	historical_start_date = 1500.1.1
+	historical_start_date = 1490.1.1
 	historical_start_province = 224 #Sevilla
 
 	history = {
