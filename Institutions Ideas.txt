@@ -1,0 +1,17 @@
+==================================
+Renaissance Ideas v2
+==================================
+
+(From 00_Core.txt):
+
+=====
+I have a lot to say about the Renaissance in Damietta.
+
+1. The Renaissance in Damietta, I think, would happen anywhere from 5 to 20 years later than in the base game (not to mention that saying the Renaissance just all of a sudden started in 1450 is silly and historically incorrect) and that the "spread" of the Renaissance would be a lot slower. A big part of the spread of the Greek classics was the exodus of Byzantine scholars from the Byzantine Empire following the various intrusions by the Ottoman Empire. Of course, in Damietta, the Ottoman Empire does not exist, and the mod's analog, the Sultanate of Rum, is very different with its approach to the Byzantines than the Ottoman Empire was in OTL. The Ottomans sort of focused on the weakened Byzantine Empire, to the point that the Empire had not even consolidated Anatolia by the time Constantinople fell. Now, there are other ways for Byzantium to face pressure that would cause its scholars to flee the empire, such as a Catholic Crusade or the (not yet implemented) Byzantine Civil War. These potential events will, of course, factor in to the spawning and spread of the Renaissance.
+
+On the spread of the Renaissance, I just think that it spread tooooooo fast. Once it gets a foothold in Flanders, it spreads to the rest of the Low Countries and an independent Flanders will almost definitely do knowledge sharing with France, giving all of France the institution. From France it goes to Burgundy, from the Low Countries it goes to Northern Germany, from Venice it goes to Austria, and then bing bang boom it's all over. This is bad. I don't like it. Meh.
+=====
+
+==================================
+Colonialism Ideas
+==================================
