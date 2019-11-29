@@ -2280,7 +2280,14 @@ new_world_i = {
 	}
 	
 	can_start = {
-		is_year = 1500
+		is_year = 1470
+		if = {
+			limit = {
+				NOT = {
+					is_year = 1480
+				}
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = tooltip_bt_add_new_instituiton_details_c			#BTcleaner UI
 			OR = {
@@ -2289,24 +2296,25 @@ new_world_i = {
 				continent = africa
 			}
 		}
-		OR = {
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_d			#BTcleaner UI
-				has_port = yes
-				OR = {
-					province_has_center_of_trade_of_level = 3			#This enables Dublin, Lothian, Bergen, London, Antwerp, Lisbon, and Sevilla as possibilities (or Tangiers, Valencia, or Barcelona, with plausible conquests in the first 60y). Note overlap with dev possibilities
-					province_has_center_of_trade_of_level = 3			#just to be thorough
-					development = 24			#BTAddOn change from 12. Want to limit it to actually plausible provinces. Most likely candidates London, Bordeaux, Porto, Sevilla (or Lisbon with one dev increase). Main provinces cut by this increase include Nantes, or potentially Picardie, Norfolk, Dublin, Minho, Granada, Ypres, Bruges, Gent, Breda, Rouen, Evreux, Caen, Kent, Lothian, Rennes, Navarra, Vizacaya, La Coruna, or Coimbra (with minor development or plausible conquest)
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_ak			#BTcleaner UI
-				AND = {
-					is_capital = yes
-					has_port = yes
-				}
-			}
-		}			#Moved requirements around a bit. Now candidate must -either- a rich port or capital. This opens up Paris and Toledo/Madrid/Castilla, as well as a plethora of alt history possibilities. The logic here being an administration didn't neccessary have to have a castle with a beach view in order to order the discovery and colonisation of the new world....
+		has_port = yes
+		#OR = {
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_d			#BTcleaner UI
+		#		has_port = yes
+		#		OR = {
+		#			province_has_center_of_trade_of_level = 3			#This enables Dublin, Lothian, Bergen, London, Antwerp, Lisbon, and Sevilla as possibilities (or Tangiers, Valencia, or Barcelona, with plausible conquests in the first 60y). Note overlap with dev possibilities
+		#			province_has_center_of_trade_of_level = 3			#just to be thorough
+		#			development = 24			#BTAddOn change from 12. Want to limit it to actually plausible provinces. Most likely candidates London, Bordeaux, Porto, Sevilla (or Lisbon with one dev increase). Main provinces cut by this increase include Nantes, or potentially Picardie, Norfolk, Dublin, Minho, Granada, Ypres, Bruges, Gent, Breda, Rouen, Evreux, Caen, Kent, Lothian, Rennes, Navarra, Vizacaya, La Coruna, or Coimbra (with minor development or plausible conquest)
+		#		}
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_ak			#BTcleaner UI
+		#		AND = {
+		#			is_capital = yes
+		#			has_port = yes
+		#		}
+		#	}
+		#}			#Moved requirements around a bit. Now candidate must -either- a rich port or capital. This opens up Paris and Toledo/Madrid/Castilla, as well as a plethora of alt history possibilities. The logic here being an administration didn't neccessary have to have a castle with a beach view in order to order the discovery and colonisation of the new world....
 		#is_island = no			#BTAddOn removed. Moot point, as there are no candidates who fit this. Should someone build up the Azores to 24 dev or move their cap there, then why not allow it. Institution will still spread across one sea province.
 		#is_state = yes			#BTAddOn removed. A silly requirement. If it is a major colonial port, but the government for whatever reason hasn't made it a state, it is still a major colonial port.
 		custom_trigger_tooltip = {
