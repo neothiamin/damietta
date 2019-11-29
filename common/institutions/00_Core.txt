@@ -1090,7 +1090,7 @@ renaissance = {
 			custom_trigger_tooltip = {
 				tooltip = damietta_renaissance_italian_prov_12_dev.tt
 				region = italy_region
-				development = 8
+				development = 12
 			}
 		}
 

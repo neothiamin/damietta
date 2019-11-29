@@ -1,7 +1,7 @@
 ﻿l_english:
  damietta_renaissance_northern_italy.tt:0 "Either:\n         - is §YMilan§!\n         - is §YVenice§!\n         - is §YGenoa§!\n         - is §YBologna§!\n         - is §YParma§!\n         - is §YTorino§!\n         - is another province in §YNorthern Italy§! with either development higher than §Y30§! or a §Yuniversity§!"
  damietta_renaissance_southern_italy.tt:0 "Is in §YSouthern Italy§!"
- damietta_renaissance_italian_prov_12_dev.tt:0 "Is in the §YItaly§! region and has §Y8§! or more development"
+ damietta_renaissance_italian_prov_12_dev.tt:0 "Is in the §YItaly§! region and has §Y12§! or more development"
  damietta_renaissance_west_med_coastal_16_dev_prov.tt:0 "Is a §YWestern Mediterranean§! §YChristian§!-owned coastal province with §Y12§! or more development"
  damietta_renaissance_east_med_cath_coastal_18_dev_prov.tt:0 "Is an §YEastern Mediterranean§! coastal province with §Y14§! or more development owned by a §YCatholic§! nation"
  damietta_renaissance_east_med_ortho_coastal_18_dev_prov.tt:0 "Is an §YEastern Mediterranean§! coastal province with §Y14§! or more development owned by an §YOrthodox§! nation"
