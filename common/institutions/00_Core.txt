@@ -788,7 +788,7 @@ feudalism = {
 #Germany, from Venice it goes to Austria, and then bing bang boom it's all over. This is bad. I don't like it. Meh.
 
 renaissance = {
-	penalty = 0.5
+	penalty = 0.3 #from 0.5
 
 	bonus = {
 		technology_cost = -0.05			#BTAddOn changed from development cost, which is now moved to manufacturing, because I say so =p I like the early tech boost to Europe here and also think tech fits better historically/logically than dev, which should be more an industrialisation thing.

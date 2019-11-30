@@ -7,6 +7,11 @@ v0.2:
 + Added Hungarian missions
 + New colors for some culture groups and regions
 + New Hungarian government reform
++ Added Cretan revolt
+
+* Removed Byzantine cores on Stenimachos and Marsa
+* Buffed Rahulid settler modifier
+
 
 - Removed Aragonese guarantee of Hum because, uh, Hum doesn't exist
 
