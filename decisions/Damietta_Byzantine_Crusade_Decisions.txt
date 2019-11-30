@@ -345,7 +345,11 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				NOT = {
-					total_development = 600
+					tag = VEN
+					tag = GEN
+					tag = HUN
+					tag = NAP
+					tag = ARA
 				}
 			}
 		}
