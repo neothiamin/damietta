@@ -80,7 +80,9 @@ on_startup = {
 on_bi_yearly_pulse_4 = {
 	random_events = {		
 		20 = 0
-		10 = damietta_rahulids.3
-		5 = damietta_byzantium.17
+		10 = damietta_rahulids.3	#New Muqti
+		5 = damietta_byzantium.17	#Great Minds
+		25 = damietta_col_i.3		#Exploratory Bureau (Colonialism event)
+		
 	}
 }

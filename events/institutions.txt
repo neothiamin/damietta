@@ -69,7 +69,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		set_global_flag = renaissance_enabled
+		set_global_flag = damietta_renaissance_enabled
 		hidden_effect = {
 			every_country = {
 				limit = {

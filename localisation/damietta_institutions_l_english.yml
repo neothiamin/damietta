@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Renaissance
  damietta_renaissance_northern_italy.tt:0 "Either:\n         - is §YMilan§!\n         - is §YVenice§!\n         - is §YGenoa§!\n         - is §YBologna§!\n         - is §YParma§!\n         - is §YTorino§!\n         - is another province in §YNorthern Italy§! with either development higher than §Y30§! or a §Yuniversity§!"
  damietta_renaissance_southern_italy.tt:0 "Is in §YSouthern Italy§!"
  damietta_renaissance_italian_prov_12_dev.tt:0 "Is in the §YItaly§! region and has §Y12§! or more development"
@@ -12,3 +13,9 @@
  damietta_renaissance_iberian_non_coastal_18_dev.tt:0 "Is a non-coastal province in the §YIberia§! region with more than §Y18§! development"
  damietta_renaissance_prov_has_level_2_cot.tt:0 "Province has a §YCenter of Trade§! of level §Y2§! of greater"
  damietta_renaissance_prov_has_level_3_cot.tt:0 "Province has a §YCenter of Trade§! of level §Y3§!"
+
+ #Colonialism
+ damietta_owner_has_100_colonial_interest.tt:0 "[Root.Owner.GetName] has §YColonial Interest§! of at least §Y100§! - currently §Y[Root.Owner.damietta_colonial_interest_var.GetValue]§!"
+ damietta_is_1500_and_no_nation_has_100_colonial_interest.tt:0 "Is after §Y1500§! and no nation has §YColonial Interest§! above §Y100§!"
+ damietta_colonial_interest_var:0 "Colonial Interest"
+ damietta_colonial_race_will_start.tt:0 "Other nations may compete with us to reach the East first."

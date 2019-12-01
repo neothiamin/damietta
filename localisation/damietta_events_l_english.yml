@@ -73,7 +73,27 @@
 
  damietta_rhl_mufti_power_in_area:0 "Local Muqti Family Power"
 
- #Renaissance
+ #Colonialism
+ damietta_col_i.1.t:0 "Whispers of Riches"
+ damietta_col_i.1.desc:0 "The lands of the East are, even in [GetYear], a mystery to many in Europe. The Travels of Marco Polo, the rumors and hearsay spread during the Mongol invasions, the goods that travel along the Silk Road from China and India, and the luxurious spices that grant incredible flavor and help preserve food - all these and more come from the East. After the Fifth Crusade, the establishment of the County of Tamiathis and the resurrection of the Kingdom of Jerusalem did wonders for Europe, and made knowledge and goods more easily available across the continent.\n\nHowever, land travel is still slow and merchants must still pay tolls when traveling through ports and marketplaces, and by the time goods like ivory, spices, and silk reach the shores of the Mediterranean, their prices have been inflated to an exorbinant level and their supply is short.\n\nTo remedy this, some have proposed the facilitation of a maritime trade network to reach Eastern markets. A few scholars even believe that a shorter route to the riches East may be traveled by sailing to the West, across the Oceanus Atlanticus. Wherever the path may lie, the pursuit of a more direct path to the Riches of the East may be in our best interest."
+ damietta_col_i.1.a:0 "We should pursue this endeavor."
+ damietta_col_i.1.b:0 "Preposterous! Next you're going to tell me the Earth revolves around the Sun!"
+
+ damietta_col_i.2.t:0 "Riches of the East"
+ damietta_col_i.2.desc:0 "REPLACE_ME"
+ damietta_col_i.2.a:0 "Not if we get there first!"
+ damietta_col_i.2.b:0 "Ha! What fools..."
+
+ damietta_col_i.3.t:0 "Exploratory Bureau"
+ damietta_col_i.3.desc:0 "REPLACE_ME"
+ damietta_col_i.3.a:0 "Establish the Bureau as a Royal endeavor."
+ damietta_col_i.3.b:0 "Establish the Bureau as a National endeavor."
+ damietta_col_i.3.c:0 "Grant rights to the Bureau to our merchants. Their mercantile know-how will ensure success."
+ damietta_col_i.3.d:0 "Grant rights to the Bureau to the Church. God's Will shall lead us."
+ damietta_col_i.3.e:0 "Grant rights to the Bureau to a group of loyal nobles. Their ability to govern will surely aid us."
+ damietta_col_i.3.f:0 "We have greater priorities at home."
+ damietta_this_event_will_not_happen_again.tt:0 "This event will not happen again."
+ DAMIETTA_COLONIAL_BUREAU:0 "Exploratory Bureau Rights"
  
 
  #Byzantium

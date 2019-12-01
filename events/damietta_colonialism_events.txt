@@ -1,0 +1,621 @@
+############################################
+# Events for Colonialism
+#
+# by neothiamin
+############################################
+
+namespace = damietta_col_i
+
+############################################
+# Whispers of Riches
+############################################
+
+country_event = {
+	id = damietta_col_i.1
+	title = damietta_col_i.1.t
+	desc = damietta_col_i.1.desc
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		#So the event doesn't happen more than once for the same nation or happen more than once if a nation accepts
+		NOT = {
+			has_country_flag = damietta_heard_whispers_of_riches
+			has_global_flag = damietta_any_nation_has_heard_whispers
+		}
+		#I was going to make it be, like, 90 months, but I decided five years (60 months) was enough and made the MTTH kind of long
+		had_global_flag = {
+			flag = damietta_renaissance_enabled
+			days = 1825
+		}
+		#I don't know why the Ireland REGION is called "ireland_AREA" but that's a BT thing and I don't wanna mess with it
+		capital_scope = {
+			OR = {
+				region = france_region
+				region = iberia_region
+				region = italy_region
+				region = british_isles_region
+				region = scandinavia_region
+				region = low_countries_region
+				region = ireland_area
+			}
+		}
+		is_subject = no #Sorry, Naples, Iberian-wedding-Aragon, subject-Portugal, uhhh others too
+		OR = {
+			#For perspective, some of the nations in 1444 that would fit these criteria are Venice, Castile, England, France, Portugal, and Naples (if it were independent). Nations juuuust on the brink include Sweden at 202 and Flanders at 176
+			AND = {
+				total_development = 225
+				num_of_ports = 5
+			}
+			#Primary colonial candidates get special treatment. "Oh neo why are Brittany and Norway and Scotland now considered primary candidates" shhhhhh shut
+			#Man I should document my code more often! Writing little jokes that no one will see so that I don't go insane is fun!
+			AND = {
+				total_development = 150
+				OR = {
+					tag = CAS
+					tag = FRA
+					tag = POR
+					tag = ENG
+					tag = SCO
+					tag = BRI
+					tag = NOR
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+		#Again, primary colonial candidates get special treatment.
+		modifier = {
+			factor = 0.75
+			OR = {
+				tag = CAS
+				tag = POR
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {				
+				tag = ENG
+				tag = SCO
+				tag = FRA
+			}
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tag = BRI
+				tag = NOR
+			}
+		}
+	}
+
+	#I wish I could make it so that it's only major if a nation chooses to pursue but I guess other nations knowing about Castile or France or whoever deciding not to be a colonial frontrunner could be useful
+	major = yes
+
+	#To prevent double-dipping
+	immediate = {
+		set_country_flag = damietta_heard_whispers_of_riches
+	}
+
+	#Pursue.
+	option = {
+		name = damietta_col_i.1.a
+		ai_chance = {
+			factor = 25
+			#The more nations that decide NOT to pursue, the more often the AI WILL pursue.
+			modifier = {
+				factor = 2
+				calc_true_if = {
+					amount = 3
+					all_country = {
+						has_country_flag = damietta_heard_whispers_of_riches
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				calc_true_if = {
+					amount = 5
+					all_country = {
+						has_country_flag = damietta_heard_whispers_of_riches
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				calc_true_if = {
+					amount = 7
+					all_country = {
+						has_country_flag = damietta_heard_whispers_of_riches
+					}
+				}
+			}
+		}
+		#Used for triggers
+		set_global_flag = damietta_any_nation_has_heard_whispers
+		#Used for special events
+		set_country_flag = damietta_primary_colonial_nation
+		#"Other nations may compete with us to reach the East first."
+		custom_tooltip = damietta_colonial_race_will_start.tt
+		#For future event localization`
+		hidden_effect = {			
+			save_global_event_target_as = damietta_primary_colonial_nation_target
+		}
+		#THIS IS THE BIG THING! This variable, if it reaches 100 for any nation, will make that nation's provinces able to spawn colonialism! It's localized as "Colonial Interest".
+		set_variable = {
+			which = damietta_colonial_interest_var
+			value = 20
+		}
+	}
+
+	#Ignore.
+	option = {
+		name = damietta_col_i.1.b
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 5
+				#A nation with low income should focus on internal matters first.
+				NOT = {
+					monthly_income = 8
+				}
+			}
+		}
+		#WOW LOSER
+		add_prestige = -5
+	}
+}
+
+#Riches of the East
+country_event = {	
+	id = damietta_col_i.2
+	title = damietta_col_i.2.t
+	desc = damietta_col_i.2.desc
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		#So that the event only fires if.. you know... another nation is pursuing the riches
+		has_global_flag = damietta_any_nation_has_heard_whispers
+		#But not if this nation is the nation pursuing the riches!
+		NOT = {
+			has_country_flag = damietta_primary_colonial_nation
+			has_country_flag = damietta_riches_of_the_east_happened
+		}
+		#I decided to go for the general Western Europe superregion rather than specific regions like in the first event because the first event excluded nations like Pommerania, Lubeck, Mecklenburg, and others that might be fun to have as colonizers
+		capital_scope = {
+			superregion = europe_superregion
+		}
+		is_subject = no #Sorry, Naples, Iberian-wedding-Aragon, subject-Portugal, uhhh others too
+		#As development goes up, nations need fewer and fewer ports
+		OR = {
+			#The Cispommerania area in 1444 has like 64 dev and is made of 7 coastal provinces 
+			AND = {
+				total_development = 100
+				num_of_ports = 12
+			}
+			#For reference, the "Netherlands" area (which should be called Holland cuz it's literally just Holland) is six coastal provinces, and if Holland conquers Flanders (which has 4 coastal provinces) then boom they're at 10 already. Also they would have like probably 250 dev since flanders is T H I C C in dev. Like for real, 1444 and FLA has ONE HUNDRED AND SEVENTY-SIX DEV! And that's not including 21-dev Tournai! Like wow! Rich bois
+			AND = {
+				total_development = 150
+				num_of_ports = 10
+			}
+			#This is when it gets a little wild. A single area with 3 coastal provinces is really common, like Poitou, West Languedoc, Catalonia, Rome, and so many more, so a nation could get seven ports with 200 dev fairly easily
+			AND = {
+				total_development = 200
+				num_of_ports = 7
+			}
+			#I honestly might remove this since a 300-dev 5-port nation could be like Bohemia or Austria potentially
+			AND = {
+				total_development = 300
+				num_of_ports = 5
+			}
+			#Will probably remove this or make it 1 port
+			AND = {
+				total_development = 500
+				num_of_ports = 3
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 18 #A year and a half
+	}
+
+	#So every nation can know who is and is not pursuing R I C H E S
+	major = yes
+
+	immediate = {
+		set_country_flag = damietta_riches_of_the_east_happened
+	}
+	
+	#Not if we beat them to it!
+	option = {
+		name = damietta_col_i.2.a
+		ai_chance = {
+			factor = 40
+			#Something something special treatment
+			modifier = {
+				factor = 5
+				OR = {
+					tag = CAS
+					tag = FRA
+					tag = POR
+					tag = ENG
+					tag = SCO
+					tag = BRI
+					tag = NOR
+				}
+			}
+		}
+		#The variable is back! But this time it starts at 10. There is a decision that a nation can take that gives them a value of 5, too.
+		set_variable = {
+			which = damietta_colonial_interest_var
+			value = 10
+		}
+	}
+
+	#A foolish endeavor! We have greater priorities.
+	option = {
+		name = damietta_col_i.2.b
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+############################################
+# Colonial Interest Events
+############################################
+
+#Exploratory Bureau
+country_event = {
+	id = damietta_col_i.3
+	title = damietta_col_i.3.t
+	desc = damietta_col_i.3.desc
+	picture = COLONIZATION_eventPicture
+
+	#Only available for nations with interest of 5 or more
+	trigger = {
+		check_variable = {
+			which = damietta_colonial_interest_var
+			value = 5
+		}
+		#You only get one shot, do not miss your chance to blow
+		#This opportunity comes once in a lifetime (yoo) you better LOSE YOURSELF
+		#sorry
+		NOT = {
+			has_country_flag = damietta_explo_bureau_happened
+		}
+	}
+
+	is_triggered_only = yes #Pulse - uses "on_bi_yearly_pulse_4"
+
+	immediate = {
+		set_country_flag = damietta_explo_bureau_happened
+	}
+
+	#Establish the Bureau as a royal department.
+	#For monarchies
+	option = {
+		name = damietta_col_i.3.a
+		trigger = {
+			government = monarchy
+		}
+		ai_chance = {
+			factor = 25
+			#Nations with uninfluential estates will not delegate to them.
+			#(also how is "uninfluential" a word it sounds so... wrong. the "un-in" just like bleh)
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+					estate_influence = {
+						estate = estate_church
+						influence = 50
+					}
+					estate_influence = {
+						estate = estate_nobles
+						influence = 50
+					}
+				}
+			}
+		}
+		#Fairly big jump since the Bureau is a state department
+		change_variable = {
+			which = damietta_colonial_interest_var
+			value = 20
+		}
+		#Pisses off estates
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
+	}
+	
+	#Establish the Bureau as a national department.
+	#For republics
+	option = {
+		name = damietta_col_i.3.b
+		trigger = {
+			government = republic
+		}
+		ai_chance = {
+			factor = 25
+			#Nations with uninfluential estates will not delegate to them.
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+					estate_influence = {
+						estate = estate_church
+						influence = 50
+					}
+					estate_influence = {
+						estate = estate_nobles
+						influence = 50
+					}
+				}
+			}
+		}
+		#Fairly big jump since the Bureau is a state department
+		change_variable = {
+			which = damietta_colonial_interest_var
+			value = 20
+		}
+		#Pisses off estates
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
+	}
+
+	#Delegate exploratory efforts to the merchants of the realm.
+	option = {
+		name = damietta_col_i.3.c
+		trigger = {
+			OR = {
+				has_faction = mr_traders
+				has_estate = estate_burghers
+			}
+		}
+		ai_chance = {
+			factor = 15
+			#Similarly, nations with influential estates are more likely to delegate to those estates.
+			modifier = {
+				factor = 2
+				estate_influence = {
+					estate = estate_burghers
+					influence = 70
+				}
+			}
+			#For merchant republics that don't have estates
+			modifier = {
+				factor = 2
+				if = {
+					limit = {
+						has_faction = mr_traders
+					}
+					faction_in_power = mr_traders
+				}
+			}
+		}
+		#Smaller jump since the Bureau isn't under direct control
+		change_variable = {
+			which = damietta_colonial_interest_var
+			value = 10
+		}
+		#Burgher or Trader faction loves this decision. More money for them!
+		if = {
+			limit = {
+				has_faction = mr_traders
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 15
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_burghers
+				desc = DAMIETTA_COLONIAL_BUREAU
+				influence = 15
+				duration = 9125
+			}
+		}
+	}
+
+	#Grant rights to the Church.
+	option = {
+		name = damietta_col_i.3.d
+		trigger = {
+			has_estate = estate_church
+		}
+		ai_chance = {
+			factor = 15
+			#Nations with influential estates are more likely to delegate to those estates.
+			modifier = {
+				factor = 2
+				estate_influence = {
+					estate = estate_church
+					influence = 70
+				}
+			}
+		}
+		#Smaller jump since the Bureau isn't under direct control
+		change_variable = {
+			which = damietta_colonial_interest_var
+			value = 10
+		}
+		#Of course the clergy want to spread the Good News!
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = DAMIETTA_COLONIAL_BUREAU
+				influence = 15
+				duration = 9125
+			}
+		}
+	}
+
+	#The nobles of the Realm should handle the pursuit of new land.
+	option = {
+		name = damietta_col_i.3.e
+		trigger = {
+			OR = {
+				has_faction = mr_aristocrats				
+				has_estate = estate_nobles
+			}
+		}
+		ai_chance = {
+			factor = 15
+			#Nations with influential estates are more likely to delegate to those estates.
+			modifier = {
+				factor = 2
+				estate_influence = {
+					estate = estate_nobles
+					influence = 70
+				}
+			}
+			#For merchant republics that don't have estates
+			modifier = {
+				factor = 2
+				if = {
+					limit = {
+						has_faction = mr_aristocrats
+					}
+					faction_in_power = mr_aristocrats
+				}
+			}
+		}
+		#Smaller jump since the Bureau isn't under direct control
+		change_variable = {
+			which = damietta_colonial_interest_var
+			value = 10
+		}
+		#Aristocrats/Nobles get more power! It's a win-win!
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = DAMIETTA_COLONIAL_BUREAU
+				influence = 15
+				duration = 9125
+			}
+		}
+		if = {
+			limit = {
+				has_faction = mr_aristocrats
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 15
+			}
+		}
+	}
+
+	#Do not establish an exploratory bureau.
+	option = {
+		name = damietta_col_i.3.f
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 50
+				#If you broke, you gotta worry about yourself first
+				#Should also remedy nations that decided to pursue/compete but can't handle the colonist cost
+				NOT = {
+					monthly_income = 2
+				}
+			}			
+			#So that nations that take the decision to get into the colonial game are a little less likely to wreck their own chances
+			#If both modifiers apply, the weight is still, like, 63, which is fairly high, so this 1/4 reduction in odds can't totally save a nation
+			modifier = {
+				factor = 0.25
+				NOT = {
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 6
+					}
+				}
+			}
+		}
+		custom_tooltip = damietta_this_event_will_not_happen_again.tt
+		#Not having a Bureau would really hurt anyone's chances of being a colonial power
+		#If a nation takes the decision and only has 5 "Colonial Interest" then doing this basically toasts their chances
+		subtract_variable = {
+			which = damietta_colonial_interest_var
+			value = 5
+		}
+	}
+}

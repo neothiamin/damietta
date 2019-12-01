@@ -2281,22 +2281,43 @@ new_world_i = {
 	
 	can_start = {
 		is_year = 1470
-		if = {
-			limit = {
+		development = 20
+		has_port = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = damietta_owner_has_100_colonial_interest.tt
+				owner = {
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_is_1500_and_no_nation_has_100_colonial_interest.tt
+				is_year = 1500
 				NOT = {
-					is_year = 1480
+					any_country = {
+						check_variable = {
+							which = damietta_colonial_interest_var
+							value = 100
+						}
+					}
 				}
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = tooltip_bt_add_new_instituiton_details_c			#BTcleaner UI
-			OR = {
-				continent = europe
-				continent = asia
-				continent = africa
-			}
-		}
-		has_port = yes
+
+		#BT stuff below
+
+		#is_year = 1500
+		#custom_trigger_tooltip = {
+		#	tooltip = tooltip_bt_add_new_instituiton_details_c			#BTcleaner UI
+		#	OR = {
+		#		continent = europe
+		#		continent = asia
+		#		continent = africa
+		#	}
+		#}
 		#OR = {
 		#	custom_trigger_tooltip = {
 		#		tooltip = tooltip_bt_add_new_instituiton_details_d			#BTcleaner UI
@@ -2315,23 +2336,26 @@ new_world_i = {
 		#		}
 		#	}
 		#}			#Moved requirements around a bit. Now candidate must -either- a rich port or capital. This opens up Paris and Toledo/Madrid/Castilla, as well as a plethora of alt history possibilities. The logic here being an administration didn't neccessary have to have a castle with a beach view in order to order the discovery and colonisation of the new world....
+		#custom_trigger_tooltip = {
+		#	tooltip = tooltip_bt_add_new_instituiton_details_al			#BTcleaner UI
+		#	is_in_capital_area = yes			#BTAddOn note. Don't like this because it blocks a few good alt history options, but leaving it because it also blocks some bad ones
+		#}
+		#owner = {
+		#	has_idea = quest_for_the_new_world
+		#	custom_trigger_tooltip = {
+		#		tooltip = tooltip_bt_add_new_instituiton_details_e			#BTcleaner UI
+		#		OR = {
+		#			north_america = { has_discovered = PREV }
+		#			south_america = { has_discovered = PREV }
+		#			new_world = { has_discovered = PREV }
+		#		}
+		#	}
+		#}
+
+		#These are things that Draiocht decided to scrap. 
+
 		#is_island = no			#BTAddOn removed. Moot point, as there are no candidates who fit this. Should someone build up the Azores to 24 dev or move their cap there, then why not allow it. Institution will still spread across one sea province.
 		#is_state = yes			#BTAddOn removed. A silly requirement. If it is a major colonial port, but the government for whatever reason hasn't made it a state, it is still a major colonial port.
-		custom_trigger_tooltip = {
-			tooltip = tooltip_bt_add_new_instituiton_details_al			#BTcleaner UI
-			is_in_capital_area = yes			#BTAddOn note. Don't like this because it blocks a few good alt history options, but leaving it because it also blocks some bad ones
-		}
-		owner = {
-			has_idea = quest_for_the_new_world
-			custom_trigger_tooltip = {
-				tooltip = tooltip_bt_add_new_instituiton_details_e			#BTcleaner UI
-				OR = {
-					north_america = { has_discovered = PREV }
-					south_america = { has_discovered = PREV }
-					new_world = { has_discovered = PREV }
-				}
-			}
-		}
 		#Ill fated idea I was toying around with, disabling for now, too many things could go wrong.
 		#owner = {
 		#	OR = {
@@ -2360,7 +2384,7 @@ new_world_i = {
 		#	}
 		#}
 	}
-	start_chance = 25		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
+	start_chance = 20		#in 100 for when a province can_start			#BTAddOn changed from 5 - just improving the chances for the institution to hit promptly. If for whatever reason only a couple are eligible, it can be 20 years before it hits.
 	
 	#BTAddOn Notes
 	#With all changes considered, most likely candidates are Sevilla, Lisbon, Porto, whatever is the Spanish capital, London, Dublin, Bordeaux, Porto, Lothian, Paris, Bergen, or Antwerp when owned by a country with at least one provinces in the New World (making the first 3 Iberian options the most likely)

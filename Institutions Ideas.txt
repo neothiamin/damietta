@@ -20,7 +20,7 @@ Whispers of Riches
 
 About 90 months after the spawn of the Renaissance, a European nation that either
 
-- has 300 dev and has at least 3 ports
+- has 250 dev and has at least 5 ports
 - OR is a 150+ dev CAS, FRA, ENG, POR, SCO, or BRI
 
 will get an event called "Whispers of Riches" which details, well, whispers of the riches of the East. The flavor text will mention the Silk Road, spices, Marco Polo's travels, and other stuff. This event allows them to either 
