@@ -16,6 +16,20 @@ On the spread of the Renaissance, I just think that it spread tooooooo fast. Onc
 Colonialism Ideas
 ==================================
 
-Idea 1: Whispers of Riches
+Whispers of Riches
 
-About 90 months after the spawn of the Renaissance, 
+About 90 months after the spawn of the Renaissance, a European nation that either
+
+- has 300 dev and has at least 3 ports
+- OR is a 150+ dev CAS, FRA, ENG, POR, SCO, or BRI
+
+will get an event called "Whispers of Riches" which details, well, whispers of the riches of the East. The flavor text will mention the Silk Road, spices, Marco Polo's travels, and other stuff. This event allows them to either 
+
+1) pursue the riches or
+2) ignore the rumors, upon which another nation can get the event according to the criteria above
+
+If a nation pursues the riches, then no other nation can get that event. Instead they get a different event where they can engage in competition.
+
+When the event fires, the nation that first pursues the riches gets an internal variable that represents colonial interest. This is integral for the spawning of the institution in a prompt manner (i.e. before 1500). Colonialism will only spawn pre-1500 in a nation with a colonial interest variable of 100 or more. The nation that pursues the riches automatically gets 20 progress. Nations that engage in competition also get the variable, but they start at 10. Other nations can found bureaus of their own via decision, but they only get 5 progress. 
+
+Pursuing the riches or engaging in compeition lead to more events, where the nation can send expeditions (10), send merchants to Africa or the East (5), hire cartographers (5), and other things.
