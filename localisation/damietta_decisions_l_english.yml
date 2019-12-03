@@ -37,3 +37,10 @@
  damietta_ruler_has_not_called_for_byz_crusade.tt:0 "Nation has not called for a Byzantine Crusade in the past §Y25 years.§!"
  damietta_byz_not_lost_crusade_recently.tt:0 "Byzantium has not been the target of a crusade in the last §Y15 years.§!"
  damietta_ruler_hates_byz.tt:0 "Pope will consider our request."
+
+ #Hungary Decisions
+ damietta_hun_ostsiedlung_decision_title:0 "Promote Ostsiedlung"
+ damietta_hun_ostsiedlung_decision_desc:0 "Ostsiedlung was the mass migration of Germanic peoples from the lands of the Holy Roman Empire to parts of Eastern and Central Europe. Many nations, such as Brandenburg, Pommerania, and the Teutonic and Livonian Orders began as regions settled through Ostsiedlung. In many parts of Europe, conflicts between native peoples and Germanic settlers were common, and occasionally resulted in rebellion or all-out war. However, promoting the settlement of Saxons in parts of our Kingdom that are poorer, such as Transylvania or Banat, would both promote the growth and enrichment of these areas and would improve our relations with the Holy Roman Empire."
+ damietta_hun_any_province_in_kingdom_of_hungary_is_saxon:0 "Any province in the §YKingdom of Hungary§! is §YSaxon§! culture."
+ damietta_saxons_will_begin_settling_in_our_lands:0 "§YSaxons§! will begin settling in our lands."
+ damietta_every_saxon_kingdom_of_hungary_province_grows:0 "Every §YSaxon§! province owned by us grows."

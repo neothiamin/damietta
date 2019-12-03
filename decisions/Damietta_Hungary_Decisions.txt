@@ -1,0 +1,103 @@
+country_decisions = {
+	#Promote Ostsiedlung
+	#Ostsiedlung is the German term for the migration and settlement of ethnic Germans in various parts of the "east," such as Pommerania, Brandenburg, and most importantly for this decision, the Kingdom of Hungary and the lands of Wallachia. This decision allows Hungary to promote the settlement of Germans in their land, resulting in the conversion of some of Hungary's provinces to Saxon over time and the granting of a modifier that reduces development cost and increases local tax. 
+	damietta_hun_ostsiedlung_decision = {
+		potential = {
+			tag = HUN
+			custom_trigger_tooltip = {
+				tooltip = damietta_hun_any_province_in_kingdom_of_hungary_is_saxon #"Any province in the Kingdom of Hungary hass Saxon culture"
+				any_owned_province = {
+					OR = {
+						area = banat_area
+						area = southern_transylvania_area
+						area = transylvania_area
+						area = transdanubia_area
+						area = alfold_area
+						area = slovakia_area
+						area = carpathian_ruthenia_area
+					}
+					culture = saxon
+				}
+			}
+			NOT = {
+				has_country_flag = damietta_hun_ostsiedlung_promoted
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = banat_area
+				area = southern_transylvania_area
+				area = transylvania_area
+				area = transdanubia_area
+				area = alfold_area
+				area = slovakia_area
+				area = carpathian_ruthenia_area
+			}
+			owned_by = HUN
+		}
+		allow = {
+			dip_power = 100
+			stability = 1
+			custom_trigger_tooltip = {
+				tooltip = damietta_hun_any_province_in_kingdom_of_hungary_is_saxon #"Any province in the Kingdom of Hungary hass Saxon culture"
+				#In 1444 these provinces are Maros (158), Orsava (7745), and Caransebes (7746) 
+				any_owned_province = {
+					OR = {
+						area = banat_area
+						area = southern_transylvania_area
+						area = transylvania_area
+						area = transdanubia_area
+						area = alfold_area
+						area = slovakia_area
+						area = carpathian_ruthenia_area
+					}
+					culture = saxon
+				}
+			}
+			emperor = {
+				has_opinion = {
+					who = HUN
+					value = 75
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -100
+			add_stability = -1
+			custom_tooltip = damietta_saxons_will_begin_settling_in_our_lands
+			custom_tooltip = damietta_every_saxon_kingdom_of_hungary_province_grows
+			emperor = {
+				add_opinion = {
+					who = HUN
+					modifier = damietta_ostsiedlung_opinion
+				}
+				reverse_add_opinion = {
+					who = HUN
+					modifier = damietta_ostsiedlung_opinion
+				}
+			}
+			hidden_effect = {
+				set_country_flag = damietta_hun_ostsiedlung_promoted
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = banat_area
+							area = southern_transylvania_area
+							area = transylvania_area
+							area = transdanubia_area
+							area = alfold_area
+							area = slovakia_area
+							area = carpathian_ruthenia_area
+						}
+						culture = saxon
+					}
+					add_base_tax = 1
+					add_province_triggered_modifier = damietta_hun_ostsiedlung_modifier
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

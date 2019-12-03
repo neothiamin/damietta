@@ -60,3 +60,8 @@ damietta_ven_abandoned_candia = {
 	opinion = -100
 	yearly_decay = 5
 }
+
+#Ostsiedlung
+damietta_ostsiedlung_opinion = {
+	opinion = 25
+}

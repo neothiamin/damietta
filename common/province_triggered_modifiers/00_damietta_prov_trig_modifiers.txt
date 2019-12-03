@@ -22,3 +22,29 @@ damietta_jizya_effective_here = {
 	}
 
 }
+
+damietta_hun_ostsiedlung_modifier = {
+	potential = {
+		owned_by = HUN
+		owner = {
+			NOT = {
+				culture_group = germanic
+			}
+		}
+	}
+
+	trigger = {
+		culture = saxon
+	}
+
+	local_tax_modifier = 0.25
+	local_development_cost = -0.1
+	local_autonomy = 0.05
+	
+	on_activation = {
+	}
+
+	on_deactivation = {
+		remove_province_triggered_modifier = damietta_hun_ostsiedlung_modifier
+	}
+}

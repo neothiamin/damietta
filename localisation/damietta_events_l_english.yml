@@ -99,7 +99,7 @@
  #Byzantium
 
  damietta_byzantium.1.t:0 "Ambitions of Konstantinos"
- damietta_byzantium.1.desc:0 "The romantic ideal of the warrior-king is as old as history itself. From the Epic of Gilgamesh to the Persian Emperors Xerxes and Darius to great Julius Caesar, countless kings and emperors have personally led their armies into battle - and won. Now, young Konstantinos has requested to enter formal military training, with the intention of becoming a great general. Our great Empire has no shortage of enemies, to be fair..."
+ damietta_byzantium.1.desc:0 "The romantic ideal of the warrior-king is as old as history itself. From the Epic of Gilgamesh to the Persian Emperors Xerxes and Darius to the great Julius Caesar, countless kings and emperors have personally led their armies into battle - and won. Now, young Konstantinos has requested to enter formal military training, with the intention of becoming a great general. Our great Empire has no shortage of enemies, to be fair..."
  damietta_byzantium.1.a:0 "Very well, young Konstantinos. Lead our troops into glorious battle!"
  damietta_byzantium.1.b:0 "It's suicide! You shall remain in the Palace!"
  damietta_konstantinos_mad:0 "Konstantinos is upset by this news."
@@ -174,9 +174,9 @@
  damietta_byzantium.17.c:0 "The great organizer!"
 
  #Byzantine Dynastic Crisis
- damietta_disaster_byz_dynasty_crisis.1.t:0 "Dynastic Crisis"
- damietta_disaster_byz_dynasty_crisis.1.desc:0 "REPLACE_ME"
- damietta_disaster_byz_dynasty_crisis.1.a:0 "REPLACE_ME"
+ #damietta_disaster_byz_dynasty_crisis.1.t:0 "Dynastic Crisis"
+ #damietta_disaster_byz_dynasty_crisis.1.desc:0 "REPLACE_ME"
+ #damietta_disaster_byz_dynasty_crisis.1.a:0 "REPLACE_ME"
 
  #Byzantine Conversion
  damietta_byz_conv.1.t:0 "Protection from the West?"

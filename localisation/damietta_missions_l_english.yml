@@ -1,5 +1,8 @@
 ﻿l_english:
- hun_vanquish_vlachs_title:0 "Vanquich the Vlachs"
+ #Hungary
+
+ #Balkan Group
+ hun_vanquish_vlachs_title:0 "Vanquish the Vlachs"
  hun_vanquish_vlachs_desc:0 "Ever since the appointment of Andrew V's son, Károly, as Voivode of Wallachia by the Bulgarians in 1333, the Wallachians have been a thorn in our side. Their raids ravage our lands and they coerce Saxons and Cumans to migrate to their lands rather than settle in ours. We must subjugate the Vlachs for our and their own good."
  hun_tame_the_lions_title:0 "Tame the Lions"
  hun_tame_the_lions_desc:0 "The Bulgarian empires of old may be gone, but Bulgaria itself still poses a threat to us. Though we granted our protection to the Voivode of Vidin after the fall of the Second Bulgarian Empire, further steps must be taken to secure our lands from the Bulgarian menace."
@@ -8,3 +11,9 @@
  hun_bosnia_mission_trigger.tt:0 "Own or have a subject own the lands of the former §YBanate§! of §YBosnia§!"
  hun_overwhelm_eagle_title:0 "Overwhelm the Eagle"
  hun_overwhelm_eagle_desc:0 "Serbia is but a shadow of its former self. Their Empire, though not as grand or strong as the Bulgarians', was fierce and fearless. This is no longer the case. In the days of old, Serbia maintained its independence through diplomacy. Now, the time for diplomacy is over. We must conquer Serbia and establish a new Banate!"
+
+ #Internal Group
+ hun_ostsiedlung_mission_title:0 "Ostsiedlung"
+ hun_ostsiedlung_mission_desc:0 "The migration of Saxons to the east, known as \"Ostsiedlung,\" is a contentious phenomenon among our populace. Some, such as the traders and craftsmen, wholeheartedly welcome Saxons into their towns and cities, while others, especially farmers and nobles, loathe the Germans, seeing them as a pest. It is time that we take a stand on the settlement of Saxons in our land."
+ damietta_hun_has_promoted_ostsiedlung:0 "Has taken the decision §Y\"Promote Ostsiedlung\"§!"
+ damietta_no_koh_provinces_are_saxon:0 "No owned provinces in the §YKingdom of Hungary§! are §YSaxon§!"

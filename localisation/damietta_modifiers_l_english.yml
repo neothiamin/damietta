@@ -59,6 +59,7 @@
  damietta_byz_betrayed_faith:0 "Betrayed Orthodoxy"
  damietta_byz_converted_to_cath:0 "Accepted Papal Supremacy"
  damietta_ven_abandoned_candia:0 "Abandoned Us"
+ damietta_ostsiedlung_opinion:0 "Promoted Ostsiedlung"
 
  #Rahulids Muqti
  damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"
@@ -73,3 +74,7 @@
 
  #Cretan Revolt
  damietta_crete_independence:0 "Independence War"
+
+ #Hungary Ostsiedlung
+ damietta_hun_ostsiedlung_modifier:0 "Saxon Settlers"
+ desc_damietta_hun_ostsiedlung_modifier:0 "This province is the target of large-scale Saxon immigration as a result of Ostsiedlung, the migration of Germanic peoples to eastern parts of Europe."

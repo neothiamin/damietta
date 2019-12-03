@@ -3,8 +3,8 @@
 owner = HUN
 controller = HUN
 add_core = HUN
-culture = romanian
-religion = orthodox
+culture = saxon #was romanian
+religion = catholic #orthodox
 capital = "Orsova"
 base_tax = 2 
 base_production = 2 

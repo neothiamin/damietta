@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "mission_ostsiedlung"
+		textureFile = "gfx//interface//damietta_missions//ostsiedlung.dds"
+	}
+}
