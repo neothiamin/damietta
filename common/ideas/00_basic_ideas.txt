@@ -590,17 +590,17 @@ exploration_ideas = {
 		#}
 
 		#Damietta modifiers
-		modifier = {
-			factor = 0
-			damietta_primary_colonizer_trigger = yes
-			NOT = {
-				check_variable = {
-					which = damietta_colonial_interest_var
-					value = 5
-				}
-				adm_tech = 7
-			}
-		}
+		#modifier = {
+		#	factor = 0
+		#	damietta_primary_colonizer_trigger = yes
+		#	NOT = {
+		#		check_variable = {
+		#			which = damietta_colonial_interest_var
+		#			value = 5
+		#		}
+		#		adm_tech = 7
+		#	}
+		#}
 
 		#BTAddOn New Modifiers below
 		#Few Notes from Draiocht -

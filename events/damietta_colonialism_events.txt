@@ -288,10 +288,14 @@ country_event = {
 		}
 	}
 
-	is_triggered_only = yes #Pulse - uses "on_bi_yearly_pulse_4"
+	#is_triggered_only = yes #Pulse - uses "on_bi_yearly_pulse_4"
 
 	immediate = {
 		set_country_flag = damietta_explo_bureau_happened
+	}
+
+	mean_time_to_happen = {
+		months = 60
 	}
 
 	#Establish the Bureau as a royal department.

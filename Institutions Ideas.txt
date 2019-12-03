@@ -32,4 +32,16 @@ If a nation pursues the riches, then no other nation can get that event. Instead
 
 When the event fires, the nation that first pursues the riches gets an internal variable that represents colonial interest. This is integral for the spawning of the institution in a prompt manner (i.e. before 1500). Colonialism will only spawn pre-1500 in a nation with a colonial interest variable of 100 or more. The nation that pursues the riches automatically gets 20 progress. Nations that engage in competition also get the variable, but they start at 10. Other nations can found bureaus of their own via decision, but they only get 5 progress. 
 
+Further Event Ideas
+
+ONE-TIME
+
+1. Exploratory Bureau (10-15) - DONE
+2. Cartographers' School (15)
+
+REPEATABLE
+
+1. Merchant Expeditions (10)
+2. West African Contacts (10)
+
 Pursuing the riches or engaging in compeition lead to more events, where the nation can send expeditions (10), send merchants to Africa or the East (5), hire cartographers (5), and other things.
