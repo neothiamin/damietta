@@ -1,5 +1,8 @@
 #2434 - Barnaul
 
+controller = OIR
+owner = OIR
+add_core = OIR
 culture = kirgiz
 religion = tengri_pagan_reformed
 capital = "Barnaul"
@@ -11,6 +14,7 @@ base_manpower = 2
 native_size = 10
 native_ferocity = 1
 native_hostileness = 3
+is_city = yes
 
 
 

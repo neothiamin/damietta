@@ -129,3 +129,21 @@ damietta_crete_independence = {
 	discipline = 0.05
 	land_morale = 0.1
 }
+
+#Cartographers' School
+damietta_cartographers_school = {
+	range = 0.1
+	local_ship_cost = -0.25
+}
+
+#Foreign Connections
+damietta_exploratory_connections = {
+	province_trade_power_modifier = 0.2
+	local_production_efficiency = 0.1
+}
+
+#Prominent Scholar
+damietta_prominent_cartographer = {
+	local_institution_spread = 0.25
+	range = 0.05
+}

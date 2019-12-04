@@ -35,9 +35,8 @@ on_siege_won_country = {
 on_bi_yearly_pulse_4 = {
 	random_events = {		
 		100 = 0
-		50 = damietta_rahulids.3	#New Muqti
+		25 = damietta_rahulids.3	#New Muqti
 		10 = damietta_byzantium.17	#Great Minds
-		30 = damietta_col_i.3		#Exploratory Bureau (Colonialism event)
 		
 	}
 }

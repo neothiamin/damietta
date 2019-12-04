@@ -212,7 +212,9 @@ country_event = {
 	#The Venetians are tyrants!
 	option = {
 		name = damietta_ven.2.b
-		change_tag = CRE
+		change_tag = CRT
+		change_primary_culture = greek
+		change_religion = orthodox
 		add_stability = -1
 		declare_war_with_cb = {
 			casus_belli = cb_independence_war
@@ -259,10 +261,13 @@ country_event = {
 	#Stop them!
 	option = {
 		name = damietta_ven.3.a
+		ai_chance = {
+			factor = 80
+		}
 		if = {
 			limit = {
 				FROM = {
-					tag = CRE
+					tag = CRT
 				}
 			}
 			BYZ = {
@@ -277,14 +282,25 @@ country_event = {
 	#Let them go...
 	option = {
 		name = damietta_ven.3.b
+		ai_chance = {
+			factor = 20
+		}
 		trigger = {
 			FROM = {
-				tag = CRE
+				tag = CRT
 			}
 		}
-		CRE = {
-			white_peace = VEN				
-			grant_independence = yes
+		CRT = {
+			tooltip = {				
+				white_peace = VEN
+				grant_independence = yes
+			}
+			hidden_effect = {
+				country_event = {
+					id = damietta_ven.5
+					days = 2
+				}
+			}
 		}
 		add_prestige = -10
 	}
@@ -317,12 +333,43 @@ country_event = {
 	#Intervene.
 	option = {
 		name = damietta_ven.4.a
-		create_alliance = CRE
+		create_alliance = CRT
 	}
 
 	#It does not matter to us.
 	option = {
 		name = damietta_ven.4.b
 		add_prestige = 3
+	}
+}
+
+#Venice Stands Down
+country_event = {	
+	id = damietta_ven.5
+	title = damietta_ven.5.t
+	desc = damietta_ven.5.desc
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	#Hurrah!
+	option = {
+		name = damietta_ven.5.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = VEN
+		grant_independence = yes
+		add_prestige = 25
+		add_stability = 2
+	}
+
+	#We will never back down!
+	option = {		
+		name = damietta_ven.5.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -1
 	}
 }

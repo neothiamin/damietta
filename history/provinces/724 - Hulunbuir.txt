@@ -1,8 +1,8 @@
 #724 - Hulunbuir
 
-owner = KRC
-controller = KRC
-add_core = KRC
+owner = SOL
+controller = SOL
+add_core = SOL
 culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Hulunbuir"

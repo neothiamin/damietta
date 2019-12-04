@@ -1,8 +1,8 @@
 #4203 - Ju Ud
 
-owner = KRC
-controller = KRC
-add_core = KRC
+owner = KHA
+controller = KHA
+add_core = KHA
 culture = chahar
 religion = vajrayana
 capital = "Ulanhad"

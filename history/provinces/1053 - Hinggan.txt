@@ -1,8 +1,8 @@
 #1053 - Hinggan
 
-owner = MYR
-controller = MYR
-add_core = MYR
+owner = SOL
+controller = SOL
+add_core = SOL
 culture = manchu
 religion = tengri_pagan_reformed
 capital = "Hinggan"

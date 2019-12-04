@@ -80,7 +80,7 @@
  damietta_col_i.1.b:0 "Preposterous! Next you're going to tell me the Earth revolves around the Sun!"
 
  damietta_col_i.2.t:0 "Riches of the East"
- damietta_col_i.2.desc:0 "REPLACE_ME"
+ damietta_col_i.2.desc:0 "Hark! News from [damietta_primary_colonial_nation_target.GetName]! The [damietta_primary_colonial_nation_target.GetAdjective] [damietta_primary_colonial_nation_target.Monarch.GetTitle] has decided to pursue the riches found in the lands of India, China, and beyond. Their goal is to be the first to reach the lands of the East and profit from the riches thereabouts."
  damietta_col_i.2.a:0 "Not if we get there first!"
  damietta_col_i.2.b:0 "Ha! What fools..."
 
@@ -94,6 +94,17 @@
  damietta_col_i.3.f:0 "We have greater priorities at home."
  damietta_this_event_will_not_happen_again.tt:0 "This event will not happen again."
  DAMIETTA_COLONIAL_BUREAU:0 "Exploratory Bureau Rights"
+
+ damietta_col_i.4.t:0 "Maritime Academy"
+ damietta_col_i.4.desc:0 "Sailing, cartography, and navigation - these disciplines are important for any nation, but for a nation in pursuit of wealth via the seas, they are invaluable. Our recent interest in exploring the seven seas has led some in our court to suggest the foundation of a dedicated academy to teach our people the trades of the sea, so that our explorers may better pursue their travels in our name."
+ damietta_col_i.4.a:0 "Dedicate funding for the academy."
+ damietta_col_i.4.b:0 "Abstain."
+
+ damietta_col_i.5.t:0 "Prominent Student"
+ damietta_col_i.5.desc:0 "The [Root.GetName] Maritime Academy is full of the best and brightest our nation has to offer. Here, young men can learn the ways of the sea: rigging, sailing, cartography, navigation, and more. One student, though, has stood out in his class. His intellect is unparalleled among his peers, and he has a natural knack for the maritime disciplines. Such a great mind ought not go unnoticed, my [Owner.Monarch.GetTitle]..."
+ damietta_col_i.5.a:0 "Put him to work in our exploratory corps!"
+ damietta_col_i.5.b:0 "Invite him to court."
+ damietta_col_i.5.c:0 "Instruct him to stay and teach."
  
 
  #Byzantium
@@ -254,6 +265,11 @@
  damietta_ven.4.desc:0 "My [Root.Monarch.GetName]...\n\nStrange times are about in the lands of Crete. The local populace, with the support of the former Venetian-backed governor, have declared independence from the Venetians. Normally we would not intervene in foreign affairs, but Crete's central position in the Aegean and Mediterranean has strong implications for us, if its rulers were amicable to our Empire."
  damietta_ven.4.a:0 "Intervene!"
  damietta_ven.4.b:0 "No matter to us."
+
+ damietta_ven.5.t:0 "Venetians Stand Down"
+ damietta_ven.5.desc:0 "Acknowledging the difficulty of waging war on an island nation, the Venetians have offered us a peace treaty, guaranteeing our independence."
+ damietta_ven.5.a:0 "We accept! Long live Crete!"
+ damietta_ven.5.b:0 "We will never back down!"
 
  #Genoa
  damietta_gen.1.t:0 "Byzantine Trade"

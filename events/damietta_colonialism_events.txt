@@ -327,6 +327,8 @@ country_event = {
 				}
 			}
 		}
+		#For other events
+		set_country_flag = damietta_national_exploratory_bureau
 		#Fairly big jump since the Bureau is a state department
 		change_variable = {
 			which = damietta_colonial_interest_var
@@ -389,7 +391,9 @@ country_event = {
 					}
 				}
 			}
-		}
+		}		
+		#For other events
+		set_country_flag = damietta_national_exploratory_bureau
 		#Fairly big jump since the Bureau is a state department
 		change_variable = {
 			which = damietta_colonial_interest_var
@@ -620,6 +624,211 @@ country_event = {
 		subtract_variable = {
 			which = damietta_colonial_interest_var
 			value = 5
+		}
+	}
+}
+
+#Cartographers' School
+country_event = {	
+	id = damietta_col_i.4
+	title = damietta_col_i.4.t
+	desc = damietta_col_i.4.desc
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		#Must have 10 or more interest
+		check_variable = {
+			which = damietta_colonial_interest_var
+			value = 5
+		}
+		#Only fires once per country
+		NOT = {
+			has_country_flag = damietta_cartographers_school_happened
+		}
+		any_owned_province = {
+			has_port = yes
+			development = 20
+		}
+	}
+
+	immediate = {
+		set_country_flag = damietta_cartographers_school_happened
+	}
+
+	mean_time_to_happen = {
+		months = 90
+		#Having a state-sponsored exploratory bureau leads 
+		modifier = {
+			factor = 0.75
+			has_country_flag = damietta_national_exploratory_bureau
+		}
+	}
+
+	#Found a cartographers school.
+	option = {
+		name = damietta_col_i.4.a
+		#Ai should do this often, but not if they have very little money
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = {
+					treasury = 50
+				}
+			}
+		}
+		#It takes money to found an academy!
+		add_treasury = -200
+		add_dip_power = -25
+		#For future events
+		set_country_flag = damietta_has_cartographers_school
+		#Nation should have a province that meets these criteria via the trigger
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				development = 20
+			}
+			#Adds colonial range and lowers ship building cost
+			add_province_modifier = {
+				name = damietta_cartographers_school
+				duration = -1
+			}
+			#Adds trade power and production efficiency
+			every_neighbor_province = {
+				add_province_modifier = {
+					name = damietta_exploratory_connections
+					duration = 9125
+				}
+			}
+		}
+		#Equal to the bump from a state-sponsored exploratory bureau
+		change_variable = {
+			which = damietta_colonial_interest_var
+			value = 15
+		}
+	}
+
+	#Abstain.
+	option = {
+		name = damietta_col_i.4.b
+		#Lameeee
+		add_prestige = -5
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#Prominent Cartographer
+province_event = {	
+	id = damietta_col_i.5
+	title = damietta_col_i.5.t
+	desc = damietta_col_i.5.desc
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		OR = {
+			owner = {
+				check_variable = {
+					which = damietta_colonial_interest_var
+					value = 5
+				}
+			}
+			owner = {
+				has_institution = new_world_i
+			}
+		}
+		#ROOT must have a cartographers school
+		has_province_modifier = damietta_cartographers_school
+		#Nifty trick to make sure an event doesn't happen too much
+		OR = {
+			had_province_flag = {
+				flag = damietta_prominent_cartographer
+				days = 1095 #3 years
+			}
+			NOT = {				
+				has_province_flag = damietta_prominent_cartographer
+			}
+		}
+		#So that the nation can't just stockpile explorers
+		NOT = {
+			owner = {				
+				num_of_explorers = 2
+			}
+		}
+	}
+
+	#Refreshes the flag if it's not present
+	immediate = {
+		set_province_flag = damietta_prominent_cartographer
+	}
+
+	#10 years
+	mean_time_to_happen = {
+		months = 120
+		#If the owner has Colonialism embraced, then they get this event more often on average
+		modifier = {
+			factor = 0.75
+			owner = {
+				has_institution = new_world_i
+			}
+		}
+	}
+
+	#Put him to work!
+	option = {
+		name = damietta_col_i.5.a
+		owner = {
+			create_explorer = 15
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
+					}
+				}
+			}
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 5
+			}
+		}
+	}
+
+	#Invite him to court.
+	option = {
+		name = damietta_col_i.5.b
+		owner = {
+			define_advisor = {
+				type = navigator
+				skill = 2
+				discount = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
+					}
+				}
+			}
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 5
+			}
+		}
+	}
+
+	#He should stay and teach.
+	option = {
+		name = damietta_col_i.5.c
+		add_province_modifier = {
+			name = damietta_prominent_cartographer
+			duration = 1825
 		}
 	}
 }
