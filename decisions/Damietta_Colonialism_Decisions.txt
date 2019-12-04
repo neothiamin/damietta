@@ -1,3 +1,53 @@
 country_decisions = {
-	
+	damietta_declare_colonial_interest = {
+		potential = {
+			capital_scope = {
+				continent = europe
+			}
+			num_of_ports = 1
+			has_global_flag = damietta_any_nation_has_heard_whispers
+			NOT = {
+				check_variable = {
+					which = damietta_colonial_interest_var
+					value = 1
+				}
+			}
+		}
+
+		allow = {
+			num_of_ports = 10
+			treasury = 250
+			dip_power = 200
+		}
+
+		effect = {
+			add_dip_power = -200
+			add_treasury = -250
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 5
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					damietta_primary_colonizer_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					had_global_flag = {
+						flag = damietta_any_nation_has_heard_whispers
+						days = 3650
+					}
+				}
+			}
+		}
+		
+		ai_importance = 10
+	}
 }

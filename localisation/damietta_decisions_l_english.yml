@@ -44,3 +44,7 @@
  damietta_hun_any_province_in_kingdom_of_hungary_is_saxon:0 "Any province in the §YKingdom of Hungary§! is §YSaxon§! culture."
  damietta_saxons_will_begin_settling_in_our_lands:0 "§YSaxons§! will begin settling in our lands."
  damietta_every_saxon_kingdom_of_hungary_province_grows:0 "Every §YSaxon§! province owned by us grows."
+
+ #Colonialism
+ damietta_declare_colonial_interest_title:0 "Declare Colonial Interest"
+ damietta_declare_colonial_interest_desc:0 "Declare our interest in colonialism."

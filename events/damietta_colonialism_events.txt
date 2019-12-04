@@ -32,9 +32,7 @@ country_event = {
 			OR = {
 				region = france_region
 				region = iberia_region
-				region = italy_region
 				region = british_isles_region
-				region = scandinavia_region
 				region = low_countries_region
 				region = ireland_area
 			}
@@ -629,14 +627,14 @@ country_event = {
 }
 
 #Cartographers' School
-country_event = {	
+country_event = {
 	id = damietta_col_i.4
 	title = damietta_col_i.4.t
 	desc = damietta_col_i.4.desc
 	picture = COLONIZATION_eventPicture
 
 	trigger = {
-		#Must have 10 or more interest
+		#Must have 5 or more interest
 		check_variable = {
 			which = damietta_colonial_interest_var
 			value = 5
@@ -830,5 +828,117 @@ province_event = {
 			name = damietta_prominent_cartographer
 			duration = 1825
 		}
+	}
+}
+
+#Guinean Contacts
+country_event = {
+	id = damietta_col_i.6
+	title = damietta_col_i.6.t
+	desc = damietta_col_i.6.desc
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		#So that only nations with colonial interest can get this event
+		check_variable = {
+			which = damietta_colonial_interest_var
+			value = 5
+		}
+		#Basically any west african country
+		any_known_country = {
+			OR = {
+				capital_scope = {
+					region = guinea_region
+					region = niger_region
+				}
+			}
+			any_owned_province = {				
+				region = guinea_region
+				region = niger_region
+			}
+		}
+		#To prevent the event from firing in the future
+		NOT = {
+			has_country_flag = damietta_guinean_contacts
+		}
+	}
+
+	immediate = {
+		#To prevent the event from firing in the immediate future
+		set_country_flag = damietta_guinean_contacts
+		#For use in localization
+		random_known_country = {
+			limit = {
+				OR = {
+					capital_scope = {
+						region = guinea_region
+						region = niger_region
+					}
+				}
+				any_owned_province = {				
+					region = guinea_region
+					region = niger_region
+				}
+			}
+			save_event_target_as = damietta_guinean_contact_nation
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180 #15 years
+		modifier = {
+			factor = 0.75
+			any_ally = {
+				OR = {
+					capital_scope = {
+						region = guinea_region
+						region = niger_region
+					}
+				}
+				any_owned_province = {				
+					region = guinea_region
+					region = niger_region
+				}
+			}
+		}
+	}
+
+	#Send an envoy to them.
+	option = {
+		name = damietta_col_i.6.a
+		ai_chance = {
+			factor = 35
+			#Rich nations more willing to spend money
+			modifier = {
+				factor = 1.5
+				treasury = 150
+			}
+		}
+		#I was considering making an event chain for this but ehh
+		add_dip_power = -75
+		add_treasury = -50
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
+					}
+				}
+			}
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 5
+			}
+		}
+	}
+
+	#Our explorers need no aid!
+	option = {
+		name = damietta_col_i.6.b
+		ai_chance = {
+			factor = 65
+		}
+		add_prestige = -5
 	}
 }
