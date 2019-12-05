@@ -1,19 +1,22 @@
 v0.2:
 
-+++ Rework of the Renaissance
++++ A rework of the Colonialism institution! Nations now have an attribute called "Colonial Interest" which can be incremented or decremented by events! The first nation after 1470 to get 100 Colonial Interest can spawn the Colonialism institution in one of their provinces. If 1500 rolls around and no nation has 100 Colonial Interest then the institution can spawn in a different province.
 
 + Added lore for Hungary
 + Added universities to some provinces
-+ Added Hungarian missions
++ Added Hungarian missions, including some to conquer Bosnia, Wallachia, and Serbia, and one to respond to Ostsiedlung!
 + New colors for some culture groups and regions
 + New Hungarian government reform
 + Added Cretan revolt
++ New Renaissance requirements
++ New spread modifiers for the Renaissance
 
 * Removed Byzantine cores on Stenimachos and Marsa
 * Buffed Rahulid settler modifier
-
+* Cleaned up Siberian/Manchurian province history a little bit
 
 - Removed Aragonese guarantee of Hum because, uh, Hum doesn't exist
+- Removed ability to call for Byzantine Crusade after the Age of Discovery
 
 v0.1:
 
