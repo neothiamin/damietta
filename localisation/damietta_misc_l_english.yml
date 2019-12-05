@@ -42,3 +42,6 @@
  damietta_establish_latin_states_po_desc:0 "Latin States are established in Byzantine territory."
  CB_ALLOWED_damietta_establish_latin_states_po:0 "Establishment of Latin States"
  PEACE_damietta_establish_latin_states_po:0 "Establish Latin States"
+
+ damietta_is_primary_colonizer_tag:0 "Is a primary colonizer tag (**France*1, **England*1, **Great Britain*1"
+ damietta_is_secondary_colonizer_tag:0 "REPLACE_ME"

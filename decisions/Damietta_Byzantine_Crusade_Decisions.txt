@@ -7,6 +7,7 @@ country_decisions = {
 	damietta_pap_call_for_crusade_against_byz = {
 
 		potential = {
+			current_age = age_of_discovery
 			tag = PAP
 			religion = catholic
 			BYZ = {
@@ -258,6 +259,7 @@ country_decisions = {
 
 	damietta_request_permission_for_byz_crusade = {
 		potential = {
+			current_age = age_of_discovery
 			#religion = catholic
 			capital_scope = {
 				OR = {

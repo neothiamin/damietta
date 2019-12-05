@@ -105,7 +105,15 @@
  damietta_col_i.5.a:0 "Put him to work in our exploratory corps!"
  damietta_col_i.5.b:0 "Invite him to court."
  damietta_col_i.5.c:0 "Instruct him to stay and teach."
+
+ damietta_col_i.6.t:0 "Guinean Contacts"
+ damietta_col_i.6.desc:0 "Guinea, the lands on the western coast of Africa, is inhabited by peoples who have called the region home for thousands of years. The seas around Guinea are vast and the inland regions nigh-inhospitable. However, one nation, [damietta_guinean_contact_nation.GetName], has shown some amicability to our explorers. If we were to strike a deal with the [damietta_guinean_contact_nation.GetAdjective] people, we would be better prepared to traverse the land and sea alike."
+ damietta_col_i.6.a:0 "Deliver an envoy to them."
+ damietta_col_i.6.b:0 "We need no aid from natives!"
  
+ damietta_col_i.7.t:0 "Gift from [From.GetName]"
+ damietta_col_i.7.desc:0 "My [Root.Monarch.GetTitle],\n\nWe have received an envoy from the lands of [From.GetName] bearing great gifts! Though these people are foreign to us, their gold will be greatly appreciated."
+ damietta_col_i.7.a:0 "How gracious!"
 
  #Byzantium
 

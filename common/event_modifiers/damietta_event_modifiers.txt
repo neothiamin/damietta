@@ -147,3 +147,7 @@ damietta_prominent_cartographer = {
 	local_institution_spread = 0.25
 	range = 0.05
 }
+
+bt_daring_navigator = {
+	range = 0.25
+}

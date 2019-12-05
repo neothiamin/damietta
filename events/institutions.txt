@@ -202,6 +202,7 @@ country_event = {
 
 	option = {
 		name = institution_events.3.a
+		set_global_flag = damietta_colonialism_enabled
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100

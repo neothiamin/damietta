@@ -1,18 +1,28 @@
 damietta_primary_colonizer_trigger = {
-	OR = {
-		tag = POR			#Historically 1415
-		tag = CAS			#Historically 1493
-		tag = SPA			#Historically 1493 (as Castile)
-		tag = IBE			#BtP tag who should colonise if it manages to form (essentially Spain and Portugal in one)
-		tag = ENG			#Historically 1607
-		tag = GBR			#Historically 1607 (as England, also Scotland)
-		tag = FRA			#Historically 1604
-		tag = NED			#Historically 1602
-		tag = HOL			#Historically 1602	(as Netherlands)
-		tag = SCO			#Historically 1622
-		tag = DAN			#Historically 1754
-		tag = NOR			#Historically 1754 (as Denmark)
-		tag = BRI 			#Because I <3 Brittany
+	#custom_trigger_tooltip = {
+	#	tooltip = damietta_is_primary_colonizer_tag
+		OR = {
+			tag = POR			#Historically 1415
+			tag = CAS			#Historically 1493
+			tag = SPA			#Historically 1493 (as Castile)
+			tag = IBE			#BtP tag who should colonise if it manages to form (essentially Spain and Portugal in one)
+			tag = ENG			#Historically 1607
+			tag = GBR			#Historically 1607 (as England, also Scotland)
+			tag = FRA			#Historically 1604
+		}
+	#}
+}
 
-	}
+damietta_secondary_colonizer_trigger = {
+	#custom_trigger_tooltip = {
+	#	tooltip = damietta_is_secondary_colonizer_tag
+		OR = {
+			tag = SCO			#Historically 1622
+			tag = DAN			#Historically 1754
+			tag = NOR			#Historically 1754 (as Denmark)
+			tag = BRI 			#Because I <3 Brittany
+			tag = NED			#Historically 1602
+			tag = HOL			#Historically 1602	(as Netherlands)
+		}
+	#}
 }

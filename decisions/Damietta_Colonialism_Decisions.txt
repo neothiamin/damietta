@@ -7,6 +7,7 @@ country_decisions = {
 			num_of_ports = 1
 			has_global_flag = damietta_any_nation_has_heard_whispers
 			NOT = {
+				is_institution_enabled = new_world_i
 				check_variable = {
 					which = damietta_colonial_interest_var
 					value = 1

@@ -65,3 +65,9 @@ damietta_ven_abandoned_candia = {
 damietta_ostsiedlung_opinion = {
 	opinion = 25
 }
+
+#Guinean Contact
+damietta_guinean_contact = {
+	opinion = 25
+	yearly_decay = 5
+}

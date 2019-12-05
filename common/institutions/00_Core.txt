@@ -2293,16 +2293,21 @@ new_world_i = {
 					}
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = damietta_is_1500_and_no_nation_has_100_colonial_interest.tt
-				is_year = 1500
-				NOT = {
-					any_country = {
-						check_variable = {
-							which = damietta_colonial_interest_var
-							value = 100
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = damietta_is_1500_and_no_nation_has_100_colonial_interest.tt
+					is_year = 1500
+					NOT = {
+						any_country = {
+							check_variable = {
+								which = damietta_colonial_interest_var
+								value = 100
+							}
 						}
 					}
+				}			
+				owner = {
+					damietta_primary_colonizer_trigger = yes
 				}
 			}
 		}

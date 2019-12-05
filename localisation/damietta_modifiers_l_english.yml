@@ -60,6 +60,7 @@
  damietta_byz_converted_to_cath:0 "Accepted Papal Supremacy"
  damietta_ven_abandoned_candia:0 "Abandoned Us"
  damietta_ostsiedlung_opinion:0 "Promoted Ostsiedlung"
+ damietta_guinean_contact:0 "Guinean Contact"
 
  #Rahulids Muqti
  damietta_rhl_appointed_relative_mufti:0 "Hereditary Muqti"
@@ -82,3 +83,4 @@
  #Colonialism Events
  damietta_cartographers_school:0 "Maritime Academy"
  damietta_exploratory_connections:0 "Academic Connections"
+ damietta_prominent_cartographer:0 "Famed Professor"
