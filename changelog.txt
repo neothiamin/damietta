@@ -1,6 +1,6 @@
 v0.2:
 
-+++ A rework of the Colonialism institution! Nations now have an attribute called "Colonial Interest" which can be incremented or decremented by events! The first nation after 1470 to get 100 Colonial Interest can spawn the Colonialism institution in one of their provinces. If 1500 rolls around and no nation has 100 Colonial Interest then the institution can spawn in a different province.
++++ A rework of the Colonialism institution! Nations now have an attribute called "Colonial Interest" which can be incremented or decremented by events, and the first nation after 1470 to get 100 Colonial Interest can spawn the Colonialism institution in one of their provinces. If 1500 rolls around and no nation has 100 Colonial Interest then the institution can spawn any province owned by a "primary colonizer."
 
 + Added lore for Hungary
 + Added universities to some provinces
@@ -15,6 +15,7 @@ v0.2:
 * Removed Byzantine cores on Stenimachos and Marsa
 * Buffed Rahulid settler modifier
 * Cleaned up Siberian/Manchurian province history a little bit
+* Lowered "Tame the Desert" diplo tech requirement
 
 - Removed Aragonese guarantee of Hum because, uh, Hum doesn't exist
 - Removed ability to call for Byzantine Crusade after the Age of Discovery

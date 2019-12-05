@@ -12,7 +12,7 @@ country_decisions = {
 		allow = {
 			treasury = 50
 			stability = 1
-			dip_tech = 5
+			dip_tech = 4
 		}
 
 		effect = {

@@ -21,6 +21,7 @@ country_event = {
 		NOT = {
 			has_country_flag = damietta_heard_whispers_of_riches
 			has_global_flag = damietta_any_nation_has_heard_whispers
+			is_institution_enabled = new_world_i
 		}
 		#I was going to make it be, like, 90 months, but I decided five years (60 months) was enough and made the MTTH kind of long
 		#changed to 3 years
@@ -180,6 +181,7 @@ country_event = {
 		NOT = {
 			has_country_flag = damietta_primary_colonial_nation
 			has_country_flag = damietta_riches_of_the_east_happened
+			is_institution_enabled = new_world_i
 		}
 		#I decided to go for the general Western Europe superregion rather than specific regions like in the first event because the first event excluded nations like Pommerania, Lubeck, Mecklenburg, and others that might be fun to have as colonizers
 		capital_scope = {
@@ -282,6 +284,9 @@ country_event = {
 		#You only get one shot, do not miss your chance to blow
 		#This opportunity comes once in a lifetime (yoo) you better LOSE YOURSELF
 		#sorry
+		NOT = {
+			is_institution_enabled = new_world_i
+		}
 		NOT = {
 			has_country_flag = damietta_explo_bureau_happened
 		}
@@ -641,6 +646,9 @@ country_event = {
 			which = damietta_colonial_interest_var
 			value = 5
 		}
+		NOT = {			
+			is_institution_enabled = new_world_i
+		}
 		#Only fires once per country
 		NOT = {
 			has_country_flag = damietta_cartographers_school_happened
@@ -857,6 +865,9 @@ country_event = {
 		check_variable = {
 			which = damietta_colonial_interest_var
 			value = 5
+		}
+		NOT = {
+			is_institution_enabled = new_world_i
 		}
 		#Basically any west african country
 		any_known_country = {
