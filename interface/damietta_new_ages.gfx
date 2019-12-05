@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ab_byz_greek_fire"
+		texturefile = "gfx/interface/damietta_ages/ab_byz_greek_fire.dds"
+	}
+}

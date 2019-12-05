@@ -177,12 +177,13 @@ age_of_discovery = {
 			}
 		}
 		
-		ab_ottoman_siege_ability = {
+		ab_byz_greek_fire = {
 			allow = {
-				tag = TUR
+				tag = BYZ
 			}
 			modifier = {
-				siege_ability = 0.33
+				siege_ability = 0.25
+				blockade_efficiency = 0.25
 			}
 			ai_will_do = {
 				factor = 100

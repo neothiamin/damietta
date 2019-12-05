@@ -10,6 +10,7 @@ v0.2:
 + Added Cretan revolt
 + New Renaissance requirements
 + New spread modifiers for the Renaissance
++ Added Cyrenaica (CYR)
 
 * Removed Byzantine cores on Stenimachos and Marsa
 * Buffed Rahulid settler modifier
