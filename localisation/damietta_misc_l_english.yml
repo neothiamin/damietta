@@ -45,3 +45,5 @@
 
  damietta_is_primary_colonizer_tag:0 "Is a primary colonizer tag (**France*1, **England*1, **Great Britain*1"
  damietta_is_secondary_colonizer_tag:0 "REPLACE_ME"
+
+ damietta_borders_danube_1.tt:0 "Borders the Lower Danube"

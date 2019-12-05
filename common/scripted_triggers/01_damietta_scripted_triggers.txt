@@ -26,3 +26,60 @@ damietta_secondary_colonizer_trigger = {
 		}
 	#}
 }
+
+damietta_borders_danube_1 = {
+	OR = {
+		province_id = 4176
+		province_id = 7715
+		province_id = 2746
+		province_id = 7707
+		province_id = 3166
+		province_id = 7159
+		province_id = 159
+		province_id = 7765
+		province_id = 7759
+		province_id = 3163
+		province_id = 7758
+		province_id = 7757
+		province_id = 7756
+		province_id = 4531
+		province_id = 7754
+		province_id = 160
+		province_id = 7748
+		province_id = 4532
+		province_id = 7754
+		province_id = 7745
+		province_id = 7743
+		province_id = 1954
+	}
+}
+
+damietta_borders_danube_1_ctt = {
+	custom_trigger_tooltip = {
+		tooltip = damietta_borders_danube_1.tt
+		OR = {
+			province_id = 4176
+			province_id = 7715
+			province_id = 2746
+			province_id = 7707
+			province_id = 3166
+			province_id = 7159
+			province_id = 159
+			province_id = 7765
+			province_id = 7759
+			province_id = 3163
+			province_id = 7758
+			province_id = 7757
+			province_id = 7756
+			province_id = 4531
+			province_id = 7754
+			province_id = 160
+			province_id = 7748
+			province_id = 4532
+			province_id = 7754
+			province_id = 7745
+			province_id = 7743
+			province_id = 1954
+		}
+	}
+}

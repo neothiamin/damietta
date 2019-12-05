@@ -3769,7 +3769,7 @@ byzantine = {
 	#BtPLegacy Culture
 	cypriot = {
 		graphical_culture = easterngfx
-		primary = ROC
+		primary = CYP
 	}
 	#BtPLegacy Culture
 	griko = {

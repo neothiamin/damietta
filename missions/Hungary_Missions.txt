@@ -1,5 +1,22 @@
+#Template
+#template_mission = {
+#	icon = mission_icon
+#	required_missions = {
+#
+#	}
+#	provinces_to_highlight = {
+#
+#	}
+#	trigger = {
+#
+#	}
+#	effect = {
+#		
+#	}
+#}
+
 hun_balkans_group = {
-	slot = 1
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -7,6 +24,7 @@ hun_balkans_group = {
 	}
 	has_country_shield = yes
 
+	#Vanquish the Vlachs
 	hun_vanquish_vlachs = {
 		icon = mission_impaled_soldies
 		required_missions = {
@@ -55,6 +73,7 @@ hun_balkans_group = {
 		}
 	}
 
+	#Tame the Lions
 	hun_tame_the_lions = {
 		icon = mission_monarch_in_throne_room
 		required_missions = {
@@ -114,6 +133,7 @@ hun_balkans_group = {
 		}
 	}
 
+	#Banate of Bosnia
 	hun_bosnia = {
 		icon = mission_have_two_subjects
 		position = 4
@@ -167,8 +187,9 @@ hun_balkans_group = {
 		}
 	}
 
+	#Overwhelm the Eagle
 	hun_overwhelm_eagle = {
-		icon = mission_crusade_for_varna
+		icon = mission_serbian_empire
 		required_missions = {
 			hun_bosnia
 		}
@@ -234,8 +255,8 @@ hun_balkans_group = {
 	
 }
 
-hun_internal_group = {
-	slot = 3	
+hun_internal_group_1 = {
+	slot = 5	
 	generic = no
 	ai = yes
 	potential = {
@@ -243,7 +264,9 @@ hun_internal_group = {
 	}
 	has_country_shield = yes
 
+	#Ostsiedlung
 	hun_ostsiedlung_mission = {
+		position = 1
 		icon = mission_ostsiedlung
 		required_missions = {
 			
@@ -320,16 +343,63 @@ hun_internal_group = {
 				add_dip_power = 100
 			}
 		}
-		
 	}
 }
 
-hun_east_group = {
-	slot = 5
+hun_mercantile_group = {
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
 		tag = HUN
 	}
 	has_country_shield = yes
+
+	hun_danube_ports = {
+		position = 2
+		icon = mission_serbian_highlands
+		required_missions = {
+			hun_vanquish_vlachs
+		}
+		provinces_to_highlight = {
+			damietta_borders_danube_1 = yes
+			owned_by = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = hun_danube_ports.tt
+				calc_true_if = {
+					amount = 3
+					all_owned_province = {
+						damietta_borders_danube_1 = yes
+						development = 16
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned_province = {
+				limit = {
+					damietta_borders_danube_1 = yes
+					development = 16
+				}
+				add_province_modifier = {
+					name = damietta_hun_danube_port
+					duration = 9125
+				}
+			}
+		}
+	}
 }
+
+#hun_east_group = {
+#	slot = 5
+#	generic = no
+#	ai = yes
+#	potential = {
+#		tag = HUN
+#	}
+#	has_country_shield = yes
+#}

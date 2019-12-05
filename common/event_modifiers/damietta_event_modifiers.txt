@@ -151,3 +151,9 @@ damietta_prominent_cartographer = {
 bt_daring_navigator = {
 	range = 0.25
 }
+
+#Danube Port
+damietta_hun_danube_port = {
+	province_trade_power_value = 5
+	local_production_efficiency = 0.25
+}

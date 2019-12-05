@@ -17,3 +17,8 @@
  hun_ostsiedlung_mission_desc:0 "The migration of Saxons to the east, known as \"Ostsiedlung,\" is a contentious phenomenon among our populace. Some, such as the traders and craftsmen, wholeheartedly welcome Saxons into their towns and cities, while others, especially farmers and nobles, loathe the Germans, seeing them as a pest. It is time that we take a stand on the settlement of Saxons in our land."
  damietta_hun_has_promoted_ostsiedlung:0 "Has taken the decision §Y\"Promote Ostsiedlung\"§!"
  damietta_no_koh_provinces_are_saxon:0 "No owned provinces in the §YKingdom of Hungary§! are §YSaxon§!"
+
+ #Mercantile Group
+ hun_danube_ports_title:0 "Danubian Ports"
+ hun_danube_ports_desc:0 "The mighty Danube flows like an artery through our nation, carrying goods and ideas from Germany in the west to the Black Sea in the east. As the river twists and turns, towns pop up on its banks, hoping to profit from shipments passing downriver. By sponsoring the establishment and growth of important villages and towns along the Danube's banks, we can enrich our nation and spread our influence from Németország to the Fekete-tenger."
+ hun_danube_ports.tt:0 "Own three provinces on the banks of the §YDanube§! with §Y16§! or more development."

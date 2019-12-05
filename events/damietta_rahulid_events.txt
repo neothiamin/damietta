@@ -352,11 +352,15 @@ province_event = {
 			province_id = 5273
 		}
 		is_city = no
-		is_year = 1475
+		is_year = 1465
 		is_colony = no
 	}
 
 	hidden = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
 
 	#Cyrenaica spawns
 	option = {

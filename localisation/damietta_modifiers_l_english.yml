@@ -80,6 +80,9 @@
  damietta_hun_ostsiedlung_modifier:0 "Saxon Settlers"
  desc_damietta_hun_ostsiedlung_modifier:0 "This province is the target of large-scale Saxon immigration as a result of Ostsiedlung, the migration of Germanic peoples to eastern parts of Europe."
 
+ #Hungarian Missions
+ damietta_hun_danube_port:0 "Danube Port"
+
  #Colonialism Events
  damietta_cartographers_school:0 "Maritime Academy"
  damietta_exploratory_connections:0 "Academic Connections"

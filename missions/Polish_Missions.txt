@@ -280,68 +280,68 @@ plc_missions_1 = {
 	}
 }
 
-polish_missions_branch_slot = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	#revenge_for_varna_mission = {
-	#	icon = mission_crusade_for_varna
-	#	required_missions = { vassalize_the_teutonic_order }
-	#	position = 6
-	#	provinces_to_highlight = {
-	#		OR = {
-	#			AND = {
-	#				area = bulgaria_area
-	#				NOT = {
-	#					country_or_non_sovereign_subject_holds = ROOT
-	#				}
-	#			}
-	#			AND = {
-	#				OR = {
-	#					region = carpathia_region
-	#					region = balkan_region
-	#				}
-	#				owned_by = TUR
-	#			}
-	#		}
-	#	}
-	#	trigger = {
-	#		bulgaria_area = {
-	#			type = all
-	#			country_or_non_sovereign_subject_holds = ROOT
-	#		}
-	#		carpathia_region = {
-	#			type = all
-	#			NOT = {
-	#				owned_by = TUR
-	#			}
-	#		}
-	#		balkan_region = {
-	#			type = all
-	#			NOT = {
-	#				owned_by = TUR
-	#			}
-	#		}
-	#	}
-	#	effect = {
-	#		add_mil_power = 100
-	#		add_prestige = 20
-	#		add_country_modifier = {
-	#			name = "varna_avenged"
-	#			duration = 7300
-	#		}
-	#	}
-	#}
-}
+#polish_missions_branch_slot = {
+#	slot = 2
+#	generic = no
+#	ai = yes
+#	potential = {
+#		OR = {
+#			tag = POL
+#			tag = PLC
+#		}
+#		NOT = { map_setup = map_setup_random }
+#	}
+#	has_country_shield = yes
+#	
+#	revenge_for_varna_mission = {
+#		icon = mission_crusade_for_varna
+#		required_missions = { vassalize_the_teutonic_order }
+#		position = 6
+#		provinces_to_highlight = {
+#			OR = {
+#				AND = {
+#					area = bulgaria_area
+#					NOT = {
+#						country_or_non_sovereign_subject_holds = ROOT
+#					}
+#				}
+#				AND = {
+#					OR = {
+#						region = carpathia_region
+#						region = balkan_region
+#					}
+#					owned_by = TUR
+#				}
+#			}
+#		}
+#		trigger = {
+#			bulgaria_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			carpathia_region = {
+#				type = all
+#				NOT = {
+#					owned_by = TUR
+#				}
+#			}
+#			balkan_region = {
+#				type = all
+#				NOT = {
+#					owned_by = TUR
+#				}
+#			}
+#		}
+#		effect = {
+#			add_mil_power = 100
+#			add_prestige = 20
+#			add_country_modifier = {
+#				name = "varna_avenged"
+#				duration = 7300
+#			}
+#		}
+#	}
+#}
 
 polish_missions_slot_3 = {
 	slot = 3

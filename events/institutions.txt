@@ -71,6 +71,7 @@ country_event = {
 		}
 		set_global_flag = damietta_renaissance_enabled
 		hidden_effect = {
+			log = "==== Rennaisance Spawned in [GetDateText] ===="
 			every_country = {
 				limit = {
 					ai = no
@@ -221,6 +222,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			log = "==== Colonialism Spawned on [GetDateText] ===="
 			every_country = {
 				limit = {
 					ai = no
