@@ -335,3 +335,52 @@ country_event = {
 		}
 	}
 }
+
+#Spawning of Cyrenaica
+province_event = {	
+	id = damietta_rahulids.5
+	title = damietta_rahulids.5.t
+	desc = damietta_rahulids.5.desc
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			area = cyrenaica_area
+			province_id = 5272
+			province_id = 5273
+		}
+		is_city = no
+		is_year = 1475
+		is_colony = no
+	}
+
+	hidden = yes
+
+	#Cyrenaica spawns
+	option = {
+		name = damietta_rahulids.5.a
+		ai_chance = {
+			factor = 100
+		}
+		every_province = {
+			limit = {				
+				is_city = no
+				is_colony = no
+				OR = {
+					area = cyrenaica_area
+					province_id = 5272
+					province_id = 5273
+				}
+			}
+			cede_province = CYR
+			add_core = CYR
+		}
+		CYR = {
+			change_religion = sunni
+			change_primary_culture = libyan_berber_culture
+			add_government_reform = iqta
+		}
+	}
+}

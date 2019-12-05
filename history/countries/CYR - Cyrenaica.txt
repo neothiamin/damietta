@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = libyan_berber_culture
+religion = sunni
+technology_group = muslim
+capital = 2326 #Tubruq
+religious_school = shafii_school
