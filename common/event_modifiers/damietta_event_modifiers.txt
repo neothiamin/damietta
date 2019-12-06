@@ -157,3 +157,24 @@ damietta_hun_danube_port = {
 	province_trade_power_value = 5
 	local_production_efficiency = 0.25
 }
+
+#Black Sea Trade
+damietta_hun_has_black_sea_port = {
+	trade_range_modifier = 0.5
+	trade_efficiency = 0.1
+	naval_forcelimit_modifier = 0.25
+}
+
+#Black Sea Port
+damietta_hun_black_sea_port = {
+	local_ship_cost = -0.25
+	local_ship_repair = 0.25
+	province_trade_power_modifier = 0.25
+}
+
+#Adriatic Port
+damietta_hun_adriatic_port = {
+	local_ship_cost = -0.25
+	local_ship_repair = 0.25
+	province_trade_power_modifier = 0.25
+}

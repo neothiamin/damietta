@@ -82,6 +82,11 @@
 
  #Hungarian Missions
  damietta_hun_danube_port:0 "Danube Port"
+ damietta_hun_has_black_sea_port:0 "Black Sea Trade"
+ damietta_hun_black_sea_port:0 "Black Sea Port"
+ desc_damietta_hun_danube_port:0 "A focus on development has made this province a vital port for trade along the Danube river."
+ desc_damietta_hun_has_black_sea_port:0 "Our new large port on the Black Sea has bolstered our maritime abilities."
+ desc_damietta_hun_black_sea_port:0 "This province is the primary port for Hungarian trade on the Black Sea."
 
  #Colonialism Events
  damietta_cartographers_school:0 "Maritime Academy"

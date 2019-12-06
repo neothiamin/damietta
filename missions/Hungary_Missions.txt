@@ -27,6 +27,7 @@ hun_balkans_group = {
 	#Vanquish the Vlachs
 	hun_vanquish_vlachs = {
 		icon = mission_impaled_soldies
+		position = 1
 		required_missions = {
 
 		}
@@ -75,6 +76,7 @@ hun_balkans_group = {
 
 	#Tame the Lions
 	hun_tame_the_lions = {
+		position = 2
 		icon = mission_monarch_in_throne_room
 		required_missions = {
 			hun_vanquish_vlachs
@@ -136,7 +138,7 @@ hun_balkans_group = {
 	#Banate of Bosnia
 	hun_bosnia = {
 		icon = mission_have_two_subjects
-		position = 4
+		position = 3
 		required_missions = {
 		}
 		provinces_to_highlight = {
@@ -190,6 +192,7 @@ hun_balkans_group = {
 	#Overwhelm the Eagle
 	hun_overwhelm_eagle = {
 		icon = mission_serbian_empire
+		position = 4
 		required_missions = {
 			hun_bosnia
 		}
@@ -251,8 +254,171 @@ hun_balkans_group = {
 				add_prestige = 25
 			}
 		}
+	}	
+}
+
+hun_mercantile_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
 	}
-	
+	has_country_shield = yes
+
+	hun_danube_ports = {
+		position = 2
+		icon = mission_serbian_highlands
+		required_missions = {
+			hun_vanquish_vlachs
+		}
+		provinces_to_highlight = {
+			damietta_borders_danube_1 = yes
+			owned_by = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = hun_danube_ports.tt
+				calc_true_if = {
+					amount = 3
+					all_owned_province = {
+						damietta_borders_danube_1 = yes
+						development = 16
+					}
+				}
+			}
+		}
+
+		effect = {
+			random_owned_province = {
+				limit = {
+					damietta_borders_danube_1 = yes
+					development = 16
+				}
+				add_province_modifier = {
+					name = damietta_hun_danube_port
+					duration = 9125
+				}
+			}
+		}
+	}
+
+	hun_black_sea_coast = {
+		position = 3
+		icon = mission_invade_island
+		required_missions = {
+			hun_danube_ports
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = moldavia_area
+				area = western_moldovia
+				area = lower_danube_area
+				area = northern_thrace_area
+			}
+			has_port = yes
+		}
+		trigger = {
+			any_owned_province = {
+				custom_trigger_tooltip = {
+					tooltip = hun_black_sea_coast.tt
+					OR = {
+						area = moldavia_area
+						area = western_moldovia
+						area = lower_danube_area
+						area = northern_thrace_area
+					}
+					has_port = yes
+				}
+				has_cot_or_dev = {
+					COTLVL = 2
+					REQDEV = 20
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = damietta_hun_has_black_sea_port
+				duration = 7300
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = moldavia_area
+						area = western_moldovia
+						area = lower_danube_area
+						area = northern_thrace_area
+					}
+					has_port = yes
+					has_cot_or_dev = {
+						COTLVL = 2
+						REQDEV = 20
+					}
+				}
+				add_province_modifier = {
+					name = damietta_hun_black_sea_port
+					duration = -1
+				}
+				if = {
+					limit = {
+						NOT = {
+							province_has_center_of_trade_of_level = 1
+						}
+					}
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+	}
+
+	hun_adriatic_coast = {
+		position = 4
+		icon = mission_dominate_home_trade_node
+		required_missions = {
+			hun_bosnia
+		}
+		provinces_to_highlight = {
+			damietta_adratic_east = yes
+			has_port = yes
+			province_has_center_of_trade_of_level = 1
+		}
+		trigger = {
+			any_owned_province = {
+				has_cot_and_dev = {
+					COTLVL = 2
+					REQDEV = 20
+				}
+				has_port = yes
+			}
+		}
+		effect = {
+			add_prestige = 10
+			random_owned_province = {
+				limit = {
+					has_cot_and_dev = {
+						COTLVL = 2
+						REQDEV = 20
+					}
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = damietta_hun_adriatic_port
+					duration = 9125
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						owns_or_non_sovereign_subject_of = 137
+					}
+				}
+				137 = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
 }
 
 hun_internal_group_1 = {
@@ -341,54 +507,6 @@ hun_internal_group_1 = {
 					}
 				}
 				add_dip_power = 100
-			}
-		}
-	}
-}
-
-hun_mercantile_group = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		tag = HUN
-	}
-	has_country_shield = yes
-
-	hun_danube_ports = {
-		position = 2
-		icon = mission_serbian_highlands
-		required_missions = {
-			hun_vanquish_vlachs
-		}
-		provinces_to_highlight = {
-			damietta_borders_danube_1 = yes
-			owned_by = ROOT
-		}
-
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = hun_danube_ports.tt
-				calc_true_if = {
-					amount = 3
-					all_owned_province = {
-						damietta_borders_danube_1 = yes
-						development = 16
-					}
-				}
-			}
-		}
-
-		effect = {
-			random_owned_province = {
-				limit = {
-					damietta_borders_danube_1 = yes
-					development = 16
-				}
-				add_province_modifier = {
-					name = damietta_hun_danube_port
-					duration = 9125
-				}
 			}
 		}
 	}

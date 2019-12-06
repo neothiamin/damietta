@@ -27,6 +27,11 @@ damietta_secondary_colonizer_trigger = {
 	#}
 }
 
+
+##########################
+# Geography Triggers
+##########################
+
 damietta_borders_danube_1 = {
 	OR = {
 		province_id = 4176
@@ -112,5 +117,51 @@ damietta_mediterranean_sea_border = {
 		area = thessaly_area
 		area = eastern_mediterrenean_islands_area	#Crete
 		area = aegean_archipelago_area				#Aegean Islands (Rhodes, Naxos, etc.)
+	}
+}
+
+damietta_adratic_east = {
+	OR = {
+		area = croatia_area
+		area = east_adriatic_coast_area
+	}
+}
+
+#Province Triggers
+has_cot_and_dev = {
+	if = {
+		limit = {
+			has_dlc = "Dharma"
+		}
+		province_has_center_of_trade_of_level = $COTLVL$
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_dlc = "Dharma" 
+			}
+		}
+		province_has_center_of_trade_of_level = 1
+	}
+	development = $REQDEV$
+}
+
+has_cot_or_dev = {
+	OR = {
+		if = {
+			limit = {
+				has_dlc = "Dharma"
+			}
+			province_has_center_of_trade_of_level = $COTLVL$
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_dlc = "Dharma" 
+				}
+			}
+			province_has_center_of_trade_of_level = 1
+		}
+		development = $REQDEV$
 	}
 }
