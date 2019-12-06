@@ -10,6 +10,7 @@ namespace = damietta_col_i
 # Whispers of Riches
 ############################################
 
+#####20 CI
 country_event = {
 	id = damietta_col_i.1
 	title = damietta_col_i.1.t
@@ -102,7 +103,7 @@ country_event = {
 	option = {
 		name = damietta_col_i.1.a
 		ai_chance = {
-			factor = 25
+			factor = 40
 			#The more nations that decide NOT to pursue, the more often the AI WILL pursue.
 			modifier = {
 				factor = 2
@@ -153,7 +154,7 @@ country_event = {
 	option = {
 		name = damietta_col_i.1.b
 		ai_chance = {
-			factor = 75
+			factor = 60
 			modifier = {
 				factor = 5
 				#A nation with low income should focus on internal matters first.
@@ -168,6 +169,7 @@ country_event = {
 }
 
 #Riches of the East
+#####10 CI
 country_event = {	
 	id = damietta_col_i.2
 	title = damietta_col_i.2.t
@@ -269,6 +271,7 @@ country_event = {
 ############################################
 
 #Exploratory Bureau
+#####10-20 CI
 country_event = {
 	id = damietta_col_i.3
 	title = damietta_col_i.3.t
@@ -634,6 +637,7 @@ country_event = {
 }
 
 #Cartographers' School
+#####15 CI
 country_event = {
 	id = damietta_col_i.4
 	title = damietta_col_i.4.t
@@ -728,6 +732,7 @@ country_event = {
 }
 
 #Prominent Cartographer
+#####5 CI
 province_event = {	
 	id = damietta_col_i.5
 	title = damietta_col_i.5.t
@@ -854,6 +859,7 @@ province_event = {
 }
 
 #Guinean Contacts
+#####5 CI
 country_event = {
 	id = damietta_col_i.6
 	title = damietta_col_i.6.t
@@ -1024,3 +1030,101 @@ country_event = {
 		}
 	}
 }
+
+#Levantine Trade
+country_event = {
+	id = damietta_col_i.8
+	title = damietta_col_i.8.t
+	desc = damietta_col_i.8.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		#So that only nations that care get it
+		check_variable = {
+			which = damietta_colonial_interest_var
+			value = 5
+		}
+		#If colonialism exists this event can't fire
+		NOT = {
+			is_institution_enabled = new_world_i
+		}
+		#
+		any_known_country = {
+			capital_scope = {
+				region = mashriq_region
+			}
+			religion_group = christian
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+		OR = {
+			NOT = {
+				has_country_flag = damietta_levant_trade
+			}
+			#3 years
+			had_country_flag = {
+				flag = damietta_levant_trade
+				days = 925
+			}
+		}
+		capital_scope = {
+			damietta_mediterranean_sea_border = yes
+		}
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {
+		set_country_flag = damietta_levant_trade
+	}
+
+	#Press them to see what they know.
+	option = {
+		name = damietta_col_i.8.a
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	#Let them tell us what they like.
+	option = {
+		name = damietta_col_i.8.b
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	#We do not care about what they know!
+	option = {
+		name = damietta_col_i.8.c
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#WoR: 20
+#OR
+#RotE: 10
+#
+#Bureau: 10-20
+#Academy: 15
+#TOT: 55 one-time
+
+#Student: 5
+#Guinean Contacts: 5
+#TOT: 10 repeatable

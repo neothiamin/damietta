@@ -83,3 +83,34 @@ damietta_borders_danube_1_ctt = {
 		}
 	}
 }
+
+damietta_mediterranean_sea_border = {
+	OR = {
+		region = italy_region
+		area = valencia_area
+		area = catalonia_area
+		area = murcia_area
+		area = languedoc_area
+		area = west_languedoc_area
+		area = provence_area					
+		area = lower_andalucia_area
+		area = upper_andalucia_area
+		area = baleares_area
+		region = italy_region
+		area = croatia_area
+		area = east_adriatic_coast_area
+		area = albania_area
+		area = montenegro_area
+		area = northern_greece_area 				#Epirus
+		area = macedonia_area 						#West Macedonia
+		area = morea_area 							#Peloponnese
+		area = thrace_area
+		area = western_aegean_area					#Hellas
+		area = eastern_macedonia_area
+		area = northern_epirus_area					#Ionian Islands
+		area = aetolia_area
+		area = thessaly_area
+		area = eastern_mediterrenean_islands_area	#Crete
+		area = aegean_archipelago_area				#Aegean Islands (Rhodes, Naxos, etc.)
+	}
+}
