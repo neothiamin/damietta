@@ -293,4 +293,9 @@
  damietta_gen.3.t:0 "Byzantium Agrees!"
  damietta_gen.3.desc:0 "Byzantium has agreed to our offer of a trade deal!"
  damietta_gen.3.a:0 "Hurrah!"
+
+ #Hungary
+ damietta_hun.1.t:0 "Wallachian Claims"
+ damietta_hun.1.desc:0 "After Aurel I's coup against Andrew V of house Árpád, the only realm ruled by the descendants of Árpád I has been that of the Vlachs to our southeast. When Andrew V's son Károly was captured by Bulgarian forces, he was name Voivode of Wallachia under the Tsar of Bulgaria. After the collapse of Bulgaria, Wallachia became independent, ruled still by the descendants of the Árpáds. Through the lineage of Andrew V, we can claim that Wallachia is a rightful part of our domain."
+ damietta_hun.1.a:0 "Hurrah! Down with the Vlachs!"
  

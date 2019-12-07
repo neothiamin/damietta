@@ -1,0 +1,49 @@
+############################################
+# Events for Hungary
+#
+# by neothiamin
+############################################
+
+namespace = damietta_hun
+
+#Arpad Legacy
+#Something something Hungarian claim GO
+country_event = {
+	id = damietta_hun.1
+	title = damietta_hun.1.t
+	desc = damietta_hun.1.desc
+	picture = ACCUSATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		#Duh
+		tag = HUN
+		#Because if you're friendly with Wallachia you wouldn't claim their land, dumbo.
+		NOT = {
+			alliance_with = WAL
+			has_guaranteed = WAL
+		}
+		#So that if Wallachia yeets you you can't counter-claim
+		any_owned_province = {
+			area = oltenia_area
+		}
+		prestige = -25
+	}
+
+	mean_time_to_happen = {
+		months = 120 #10 years
+	}
+
+	#Hurrah!
+	option = {
+		name = damietta_hun.1.a
+		add_prestige = 10
+		wallachia_area = {
+			add_claim = ROOT
+		}
+		upper_muntenia_area = {
+			add_claim = ROOT
+		}
+	}
+}

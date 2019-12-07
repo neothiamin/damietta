@@ -291,14 +291,17 @@ hun_mercantile_group = {
 		}
 
 		effect = {
-			random_owned_province = {
-				limit = {
-					damietta_borders_danube_1 = yes
-					development = 16
-				}
-				add_province_modifier = {
-					name = damietta_hun_danube_port
-					duration = 9125
+			custom_tooltip = hun_danube_ports_eff.tt
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						damietta_borders_danube_1 = yes
+						development = 16
+					}
+					add_province_modifier = {
+						name = damietta_hun_danube_port
+						duration = 9125
+					}
 				}
 			}
 		}
@@ -316,24 +319,23 @@ hun_mercantile_group = {
 				area = western_moldovia
 				area = lower_danube_area
 				area = northern_thrace_area
+				area = yedisan_area
 			}
 			has_port = yes
 		}
 		trigger = {
-			any_owned_province = {
-				custom_trigger_tooltip = {
-					tooltip = hun_black_sea_coast.tt
+			custom_trigger_tooltip = {
+				tooltip = hun_black_sea_coast.tt
+				any_owned_province = {
 					OR = {
 						area = moldavia_area
 						area = western_moldovia
 						area = lower_danube_area
-						area = northern_thrace_area
+						area = northern_thrace_area						
+						area = yedisan_area
 					}
-					has_port = yes
-				}
-				has_cot_or_dev = {
-					COTLVL = 2
-					REQDEV = 20
+					has_port = yes	
+					development = 20
 				}
 			}
 		}
@@ -349,12 +351,10 @@ hun_mercantile_group = {
 						area = western_moldovia
 						area = lower_danube_area
 						area = northern_thrace_area
+						area = yedisan_area
 					}
 					has_port = yes
-					has_cot_or_dev = {
-						COTLVL = 2
-						REQDEV = 20
-					}
+					development = 20
 				}
 				add_province_modifier = {
 					name = damietta_hun_black_sea_port
@@ -381,25 +381,22 @@ hun_mercantile_group = {
 		provinces_to_highlight = {
 			damietta_adratic_east = yes
 			has_port = yes
-			province_has_center_of_trade_of_level = 1
 		}
 		trigger = {
-			any_owned_province = {
-				has_cot_and_dev = {
-					COTLVL = 2
-					REQDEV = 20
+			custom_trigger_tooltip = {
+				tooltip = damietta_east_adriatic.tt
+				any_owned_province = {					
+					damietta_adratic_east = yes					
+					has_port = yes
+					development = 20
 				}
-				has_port = yes
 			}
 		}
 		effect = {
 			add_prestige = 10
 			random_owned_province = {
 				limit = {
-					has_cot_and_dev = {
-						COTLVL = 2
-						REQDEV = 20
-					}
+					development = 20
 					has_port = yes
 				}
 				add_province_modifier = {

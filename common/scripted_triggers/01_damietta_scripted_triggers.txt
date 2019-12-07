@@ -124,44 +124,47 @@ damietta_adratic_east = {
 	OR = {
 		area = croatia_area
 		area = east_adriatic_coast_area
+		area = montenegro_area
+		area = friuli_area
 	}
 }
 
 #Province Triggers
-has_cot_and_dev = {
-	if = {
-		limit = {
-			has_dlc = "Dharma"
-		}
-		province_has_center_of_trade_of_level = $COTLVL$
-	}
-	else_if = {
-		limit = {
-			NOT = {
-				has_dlc = "Dharma" 
-			}
-		}
-		province_has_center_of_trade_of_level = 1
-	}
-	development = $REQDEV$
-}
-
-has_cot_or_dev = {
-	OR = {
-		if = {
-			limit = {
-				has_dlc = "Dharma"
-			}
-			province_has_center_of_trade_of_level = $COTLVL$
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_dlc = "Dharma" 
-				}
-			}
-			province_has_center_of_trade_of_level = 1
-		}
-		development = $REQDEV$
-	}
-}
+#Localizing these is hell on earth tbh
+#has_cot_and_dev = {
+#	if = {
+#		limit = {
+#			has_dlc = "Dharma"
+#		}
+#		province_has_center_of_trade_of_level = $COTLVL$
+#	}
+#	else_if = {
+#		limit = {
+#			NOT = {
+#				has_dlc = "Dharma" 
+#			}
+#		}
+#		province_has_center_of_trade_of_level = 1
+#	}
+#	development = $REQDEV$
+#}
+#
+#has_cot_or_dev = {
+#	OR = {
+#		if = {
+#			limit = {
+#				has_dlc = "Dharma"
+#			}
+#			province_has_center_of_trade_of_level = $COTLVL$
+#		}
+#		else_if = {
+#			limit = {
+#				NOT = {
+#					has_dlc = "Dharma" 
+#				}
+#			}
+#			province_has_center_of_trade_of_level = 1
+#		}
+#		development = $REQDEV$
+#	}
+#}

@@ -1117,14 +1117,3 @@ country_event = {
 
 
 
-#WoR: 20
-#OR
-#RotE: 10
-#
-#Bureau: 10-20
-#Academy: 15
-#TOT: 55 one-time
-
-#Student: 5
-#Guinean Contacts: 5
-#TOT: 10 repeatable

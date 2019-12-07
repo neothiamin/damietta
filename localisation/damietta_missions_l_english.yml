@@ -21,6 +21,11 @@
  #Mercantile Group
  hun_danube_ports_title:0 "Danubian Ports"
  hun_danube_ports_desc:0 "The mighty Danube flows like an artery through our nation, carrying goods and ideas from Germany in the west to the Black Sea in the east. As the river twists and turns, towns pop up on its banks, hoping to profit from shipments passing downriver. By sponsoring the establishment and growth of important villages and towns along the Danube's banks, we can enrich our nation and spread our influence from Németország to the Fekete-tenger."
- hun_danube_ports.tt:0 "Own three provinces on the banks of the §YDanube§! with §Y16§! or more development."
+ hun_danube_ports.tt:0 "Own three provinces on the banks of the §YLower Danube§! with §Y16§! or more development."
+ hun_danube_ports_eff.tt:0 "Random §YLower Danubian§! province with §Y16§! or more development gets §G+5§! trade power and §G+25%§! production efficiency for §Y25§! years."
  hun_black_sea_coast_title:0 "Black Sea Trade"
  hun_black_sea_coast_desc:0 "The Black Sea is a hub for trade from all around Europe and Asia. Traders from 'Rus, Central Europe, the Levant, Persia, and elsewhere all congregate in the Black Sea, trading in ports such as [285.GetName], [3165.GetName], [330.GetName], [328.GetName], and even [151.GetName]. While many of these ports are not suitable for us to conquer, possessing even one port on the Black Sea coast that is suitable for commercial trade would be incredibly beneficial to us."
+ hun_black_sea_coast.tt:0 "Any highlighted province is owned by §YHungary§! and has §Y20§! development or more."
+ hun_adriatic_coast_title:0 "Adriatic Ports"
+ hun_adriatic_coast_desc:0 "REPLACE_ME"
+ damietta_east_adriatic.tt:0 "Any highlighted province is owned by §YHungary§! and has §Y20§! development or more."
