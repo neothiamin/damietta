@@ -1,9 +1,9 @@
 # No previous file for Beyond Typus province
 
-owner = YZW			#Hawaii
-controller = YZW
-add_core = YZW
-is_city = yes
+#owner = YZW			#Hawaii
+#controller = YZW
+#add_core = YZW
+#is_city = yes
 culture = hawaiian
 religion = animism
 capital = "Waikiki"

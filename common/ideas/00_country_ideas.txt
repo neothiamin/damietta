@@ -1430,7 +1430,10 @@ NOR_ideas = {
 	}
 	
 	trigger = {
-		tag = NOR
+		OR = {
+			tag = NOR
+			tag = ICE
+		}
 	}
 	free = yes
 	

@@ -35,7 +35,9 @@ france_region = {
 		west_languedoc_area
 		upper_guyenne_area
 		upper_gascony
-		limousin_area
+		limousin_area		
+		lorraine_area
+		franche_comte_area
 	}
 }
 
@@ -177,12 +179,9 @@ south_german_region = {
 		#BTMovedFromNorthGermany
 		erzgebirge_area
 		bohemia_area
-		#BTMovedFromFrance
-		lorraine_area
 		#BTADDITIONS
 		moravia_area
 		carniola_area
-		franche_comte_area
 	}
 }
 

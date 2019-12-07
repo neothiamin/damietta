@@ -3,14 +3,15 @@
 owner = MYR
 controller = MYR
 add_core = MYR
-culture = manchu
+#culture = manchu
+culture = evenk
 religion = tengri_pagan_reformed
 capital = "Udi"
 trade_goods = fur
 hre = no
-base_tax = 2  
-base_production = 2 
-base_manpower = 2 
+base_tax = 2
+base_production = 2
+base_manpower = 2
 is_city = yes
 
 
