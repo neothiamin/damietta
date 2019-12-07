@@ -6,6 +6,7 @@ culture = slovak
 religion = catholic
 capital = "Kassa"
 trade_goods = naval_supplies
+estate = estate_nobles
 hre = no
 base_tax = 3
 base_production = 3

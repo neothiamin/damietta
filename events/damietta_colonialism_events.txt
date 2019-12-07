@@ -636,7 +636,7 @@ country_event = {
 	}
 }
 
-#Cartographers' School
+#Maritime Academy
 #####15 CI
 country_event = {
 	id = damietta_col_i.4
@@ -731,7 +731,7 @@ country_event = {
 	}
 }
 
-#Prominent Cartographer
+#Prominent Student
 #####5 CI
 province_event = {	
 	id = damietta_col_i.5
@@ -751,11 +751,11 @@ province_event = {
 				has_institution = new_world_i
 			}
 		}
-		#50 years after colonialism happened
+		#30 years after colonialism happened
 		NOT = {
 			had_global_flag = {
 				flag = damietta_colonialism_enabled
-				days = 18250
+				days = 10950
 			}
 		}
 		#ROOT must have a cartographers school
@@ -786,7 +786,6 @@ province_event = {
 		set_province_flag = damietta_prominent_cartographer
 	}
 
-	#10 years
 	mean_time_to_happen = {
 		months = 60 #5 years
 		#If the owner has Colonialism embraced, then they get this event more often on average

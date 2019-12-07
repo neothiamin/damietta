@@ -7,7 +7,7 @@ Triangle Trade: 20
 
 TOT: 75 one-time
 
-Student: 5
-Guinean Contacts: 5
+Student: 5 - MTTH 5 Years, buffer 3 years
+Guinean Contacts: 5 - MTTH 5 years
 
 TOT: 10 repeatable

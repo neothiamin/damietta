@@ -6,6 +6,7 @@ culture = hungarian
 religion = catholic
 capital = "Oradea"
 trade_goods = naval_supplies
+estate = estate_nobles
 hre = no
 base_tax = 4
 base_production = 4
