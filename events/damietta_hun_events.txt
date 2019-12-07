@@ -32,7 +32,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120 #10 years
+		months = 90 #7.5 years
 	}
 
 	#Hurrah!

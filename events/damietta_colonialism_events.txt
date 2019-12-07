@@ -1031,88 +1031,160 @@ country_event = {
 }
 
 #Levantine Trade
-country_event = {
-	id = damietta_col_i.8
-	title = damietta_col_i.8.t
-	desc = damietta_col_i.8.desc
-	picture = MERCHANTS_TALKING_eventPicture
+#I don't remember what this was supposed to be.
+#country_event = {
+#	id = damietta_col_i.8
+#	title = damietta_col_i.8.t
+#	desc = damietta_col_i.8.desc
+#	picture = MERCHANTS_TALKING_eventPicture
+#
+#	trigger = {
+#		#So that only nations that care get it
+#		check_variable = {
+#			which = damietta_colonial_interest_var
+#			value = 5
+#		}
+#		#If colonialism exists this event can't fire
+#		NOT = {
+#			is_institution_enabled = new_world_i
+#		}
+#		#
+#		any_known_country = {
+#			capital_scope = {
+#				region = mashriq_region
+#			}
+#			religion_group = christian
+#			has_opinion = {
+#				who = ROOT
+#				value = 100
+#			}
+#		}
+#		OR = {
+#			NOT = {
+#				has_country_flag = damietta_levant_trade
+#			}
+#			#3 years
+#			had_country_flag = {
+#				flag = damietta_levant_trade
+#				days = 925
+#			}
+#		}
+#		capital_scope = {
+#			damietta_mediterranean_sea_border = yes
+#		}
+#		religion_group = christian
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 30
+#	}
+#
+#	immediate = {
+#		set_country_flag = damietta_levant_trade
+#	}
+#
+#	#Press them to see what they know.
+#	option = {
+#		name = damietta_col_i.8.a
+#		ai_chance = {
+#			factor = 30
+#		}
+#	}
+#
+#	#Let them tell us what they like.
+#	option = {
+#		name = damietta_col_i.8.b
+#		ai_chance = {
+#			factor = 50
+#		}
+#	}
+#
+#	#We do not care about what they know!
+#	option = {
+#		name = damietta_col_i.8.c
+#		ai_chance = {
+#			factor = 20
+#		}
+#	}
+#}
+
+#Bight of Bonny
+province_event = {
+	id = damietta_col_i.9
+	title = damietta_col_i.9.t
+	desc = damietta_col_i.9.desc
+	picture = EXPLORERS_eventPicture
+
+	is_triggered_only = yes #pulse
 
 	trigger = {
-		#So that only nations that care get it
-		check_variable = {
-			which = damietta_colonial_interest_var
-			value = 5
+		province_id = 1097
+		FROM = {
+			technology_group = western
 		}
-		#If colonialism exists this event can't fire
-		NOT = {
-			is_institution_enabled = new_world_i
-		}
-		#
-		any_known_country = {
-			capital_scope = {
-				region = mashriq_region
-			}
-			religion_group = christian
-			has_opinion = {
-				who = ROOT
-				value = 100
-			}
-		}
-		OR = {
-			NOT = {
-				has_country_flag = damietta_levant_trade
-			}
-			#3 years
-			had_country_flag = {
-				flag = damietta_levant_trade
-				days = 925
-			}
-		}
-		capital_scope = {
-			damietta_mediterranean_sea_border = yes
-		}
-		religion_group = christian
 	}
 
-	mean_time_to_happen = {
-		months = 30
-	}
+	fire_only_once = yes
 
-	immediate = {
-		set_country_flag = damietta_levant_trade
-	}
-
-	#Press them to see what they know.
+	#Interesting!
 	option = {
-		name = damietta_col_i.8.a
+		name = damietta_col_i.9.a
 		ai_chance = {
-			factor = 30
+			factor = 65
+		}
+		FROM = {
+			add_prestige = 10
+			if = {
+				limit = {
+					NOT = {
+						is_institution_enabled = new_world_i
+						check_variable = {
+							which = damietta_colonial_interest_var
+							value = 100
+						}
+					}
+				}
+				change_variable = {
+					which = damietta_colonial_interest_var
+					value = 5
+				}
+			}
 		}
 	}
 
-	#Let them tell us what they like.
+	#Establish a naval base on the island.
 	option = {
-		name = damietta_col_i.8.b
+		name = damietta_col_i.9.b		
 		ai_chance = {
-			factor = 50
+			factor = 35
+			modifier = {
+				factor = 0.5
+				NOT = {
+					FROM = {
+						treasury = 30
+					}
+				}
+			}
 		}
-	}
-
-	#We do not care about what they know!
-	option = {
-		name = damietta_col_i.8.c
-		ai_chance = {
-			factor = 20
-		}
+		FROM = {
+			add_dip_power = -15
+			add_treasury = -25
+			if = {
+				limit = {
+					NOT = {
+						is_institution_enabled = new_world_i
+						check_variable = {
+							which = damietta_colonial_interest_var
+							value = 100
+						}
+					}
+				}
+				change_variable = {
+					which = damietta_colonial_interest_var
+					value = 10
+				}
+			}
+		}		
+		cede_province = FROM
 	}
 }
-
-
-
-
-
-
-
-
-
-

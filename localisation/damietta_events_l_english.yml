@@ -115,6 +115,11 @@
  damietta_col_i.7.desc:0 "My [Root.Monarch.GetTitle],\n\nWe have received an envoy from the lands of [From.GetName] bearing great gifts! Though these people are foreign to us, their gold will be greatly appreciated."
  damietta_col_i.7.a:0 "How gracious!"
 
+ damietta_col_i.9.t:0 "Etulá and the Bight of Bonny"
+ damietta_col_i.9.desc:0 "The Bight of Bonny is the last major bight off of the coast of Africa before the coast's sharp southward turn. The island of Fernando Po, or Etulá as it is known to the native peoples there, lies barely 32 kilometers from the coast. Our discovery of the island is a sure sign that India is just around the corner."
+ damietta_col_i.9.a:0 "Fascinating!"
+ damietta_col_i.9.b:0 "Establish a naval base on the island."
+
  #Byzantium
 
  damietta_byzantium.1.t:0 "Ambitions of Konstantinos"

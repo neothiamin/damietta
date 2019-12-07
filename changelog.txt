@@ -14,7 +14,7 @@ v0.2:
 
 * Removed Byzantine cores on Stenimachos and Marsa
 * Buffed Rahulid settler modifier
-* Cleaned up Siberian/Manchurian province history a little bit
+* LOTS of province history fixes in Manchuria and Siberia. Big ups to Dub for that!
 * Lowered "Tame the Desert" diplo tech requirement
 
 - Removed Aragonese guarantee of Hum because, uh, Hum doesn't exist
