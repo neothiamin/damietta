@@ -120,6 +120,10 @@
  damietta_col_i.9.a:0 "Fascinating!"
  damietta_col_i.9.b:0 "Establish a naval base on the island."
 
+ damietta_col_i.10.t:0 "The Cape"
+ damietta_col_i.10.desc:0 "The Cape of Storms, the Cape of Good Hope, the Tavern of the Sea - no matter what one may call it, the point at which ships may travel more easterly than southerly en route to India has been discovered. What's more, we are the ones to have found it first!"
+ damietta_col_i.10.a:0 "Glory to us!"
+
  #Byzantium
 
  damietta_byzantium.1.t:0 "Ambitions of Konstantinos"

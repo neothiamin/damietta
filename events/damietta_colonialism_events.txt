@@ -302,7 +302,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 45
 	}
 
 	#Establish the Bureau as a royal department.
@@ -661,6 +661,8 @@ country_event = {
 			has_port = yes
 			development = 20
 		}
+		#Gotta have the dough
+		treasury = 100
 	}
 
 	immediate = {
@@ -668,7 +670,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 90
+		months = 45
 		#Having a state-sponsored exploratory bureau leads 
 		modifier = {
 			factor = 0.75
@@ -787,7 +789,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60 #5 years
+		months = 30 #2.5 years
 		#If the owner has Colonialism embraced, then they get this event more often on average
 		modifier = {
 			factor = 0.75
@@ -874,6 +876,8 @@ country_event = {
 		NOT = {
 			is_institution_enabled = new_world_i
 		}
+		#Gotta have the moolah
+		treasury = 25
 		#Basically any west african country
 		any_known_country = {
 			capital_scope = {
@@ -933,7 +937,13 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60 #5 years
+		months = 30 #2.5 years
+		modifier = {
+			factor = 2
+			NOT = {
+				treasury = 75
+			}
+		}
 		modifier = {
 			factor = 0.75
 			any_ally = {
@@ -1109,22 +1119,26 @@ country_event = {
 #}
 
 #Bight of Bonny
-province_event = {
+country_event = {
 	id = damietta_col_i.9
 	title = damietta_col_i.9.t
 	desc = damietta_col_i.9.desc
 	picture = EXPLORERS_eventPicture
 
-	is_triggered_only = yes #pulse
-
 	trigger = {
-		province_id = 1097
-		FROM = {
-			technology_group = western
+		has_discovered = 1097
+		1097 = {
+			range = ROOT
 		}
+		technology_group = western
+		treasury = 30
 	}
 
 	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	#Interesting!
 	option = {
@@ -1132,22 +1146,20 @@ province_event = {
 		ai_chance = {
 			factor = 65
 		}
-		FROM = {
-			add_prestige = 10
-			if = {
-				limit = {
-					NOT = {
-						is_institution_enabled = new_world_i
-						check_variable = {
-							which = damietta_colonial_interest_var
-							value = 100
-						}
+		add_prestige = 10
+		if = {
+			limit = {
+				NOT = {
+					is_institution_enabled = new_world_i
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
 					}
 				}
-				change_variable = {
-					which = damietta_colonial_interest_var
-					value = 5
-				}
+			}
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 5
 			}
 		}
 	}
@@ -1160,31 +1172,76 @@ province_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					FROM = {
-						treasury = 30
-					}
+					treasury = 50
 				}
 			}
 		}
-		FROM = {
-			add_dip_power = -15
-			add_treasury = -25
-			if = {
-				limit = {
-					NOT = {
-						is_institution_enabled = new_world_i
-						check_variable = {
-							which = damietta_colonial_interest_var
-							value = 100
-						}
+		add_dip_power = -15
+		add_treasury = -25
+		if = {
+			limit = {
+				NOT = {
+					is_institution_enabled = new_world_i
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
 					}
 				}
-				change_variable = {
-					which = damietta_colonial_interest_var
-					value = 10
+			}
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 10
+			}
+		}
+		1097 = {
+			add_core = ROOT
+			cede_province = ROOT
+		}
+	}
+}
+
+#Cape of Good Hope
+country_event = {
+	id = damietta_col_i.10
+	title = damietta_col_i.10.t
+	desc = damietta_col_i.10.desc
+	picture = EXPLORERS_eventPicture
+
+	trigger = {
+		has_discovered = 1177 
+		1177 = {
+			range = ROOT
+		}
+		technology_group = western
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	#Glory to us!
+	option = {
+		name = damietta_col_i.10.a
+		ai_chance = {
+			factor = 100
+		}
+		add_prestige = 25
+		if = {
+			limit = {
+				NOT = {
+					is_institution_enabled = new_world_i
+					check_variable = {
+						which = damietta_colonial_interest_var
+						value = 100
+					}
 				}
 			}
-		}		
-		cede_province = FROM
+			change_variable = {
+				which = damietta_colonial_interest_var
+				value = 15
+			}
+		}
 	}
 }

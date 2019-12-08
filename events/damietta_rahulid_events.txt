@@ -337,7 +337,7 @@ country_event = {
 }
 
 #Spawning of Cyrenaica
-province_event = {	
+country_event = {	
 	id = damietta_rahulids.5
 	title = damietta_rahulids.5.t
 	desc = damietta_rahulids.5.desc
@@ -346,14 +346,15 @@ province_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			area = cyrenaica_area
-			province_id = 5272
-			province_id = 5273
-		}
-		is_city = no
+		any_province = {
+			OR = {
+				area = cyrenaica_area
+				province_id = 5272
+				province_id = 5273
+			}
+			is_empty = yes
+		}		
 		is_year = 1465
-		is_colony = no
 	}
 
 	hidden = yes
@@ -370,8 +371,7 @@ province_event = {
 		}
 		every_province = {
 			limit = {				
-				is_city = no
-				is_colony = no
+				is_empty = yes
 				OR = {
 					area = cyrenaica_area
 					province_id = 5272
@@ -379,6 +379,12 @@ province_event = {
 				}
 			}
 			cede_province = CYR
+			add_core = CYR
+		}
+		cyrenaica_area = {
+			limit = {
+				has_port = yes
+			}
 			add_core = CYR
 		}
 		CYR = {

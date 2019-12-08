@@ -1,10 +1,10 @@
 v0.2:
 
-+++ A rework of the Colonialism institution! Nations now have an attribute called "Colonial Interest" which can be incremented or decremented by events, and the first nation after 1470 to get 100 Colonial Interest can spawn the Colonialism institution in one of their provinces. If 1500 rolls around and no nation has 100 Colonial Interest then the institution can spawn any province owned by a "primary colonizer."
++++ A rework of the Colonialism institution!
 
 + Added lore for Hungary
 + Added universities to some provinces
-+ Added Hungarian missions, including some to conquer Bosnia, Wallachia, and Serbia, and one to respond to Ostsiedlung!
++ Added Hungarian missions
 + New colors for some culture groups and regions
 + New Hungarian government reform
 + Added Cretan revolt
