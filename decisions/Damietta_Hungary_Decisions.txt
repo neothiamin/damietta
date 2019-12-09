@@ -114,9 +114,10 @@ country_decisions = {
 		ai_importance = 5
 	}
 
-	#On Nobility
+	#The Role of Nobles
 	damietta_hun_on_nobility_decision = {
 		potential = {
+			always = no
 			tag = HUN
 			has_estate = estate_nobles
 			NOT = {
@@ -124,6 +125,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			stability = 1
+			adm_power = 100
 			estate_influence = {
 				estate = estate_nobles
 				influence = 25

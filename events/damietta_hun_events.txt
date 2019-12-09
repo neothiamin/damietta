@@ -48,6 +48,7 @@ country_event = {
 	}
 }
 
+#On Nobility
 country_event = {
 	id = damietta_hun.2
 	title = damietta_hun.2.t
@@ -57,6 +58,26 @@ country_event = {
 	is_triggered_only = yes
 
 	#Cut the power of the nobility.
+	option = {
+		name = damietta_hun.2.a
+		add_stability = -1
+		add_adm_power = -100
+		custom_tooltip = damietta_hun_nobility_cut.tt
+		hidden_effect = {			
+			set_country_flag = damietta_hun_cut_nobles
+			swap_non_generic_missions = yes
+		}
+	}
 
-	#
+	#Empower the nobility.
+	option = {
+		name = damietta_hun.2.b
+		add_stability = -1
+		add_adm_power = -100
+		custom_tooltip = damietta_hun_nobility_lean.tt
+		hidden_effect = {
+			set_country_flag = damietta_hun_leaning_on_nobles
+			swap_non_generic_missions = yes
+		}
+	}
 }
