@@ -47,3 +47,16 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = damietta_hun.2
+	title = damietta_hun.2.t
+	desc = damietta_hun.2.desc
+	picture = NOBLE_ESTATE_eventPicture
+
+	is_triggered_only = yes
+
+	#Cut the power of the nobility.
+
+	#
+}

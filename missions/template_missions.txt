@@ -1,0 +1,32 @@
+template_group = {
+	slot = 1 #column
+	generic = no #yes for generic missions
+	ai = yes #because why would it be no
+	potential = {
+		#Put actual triggers in here
+		always = no
+	}
+	
+	has_country_shield = yes #no if generic
+	
+	template_mission = {
+		icon = mission_icon
+		position = 1 #row
+		required_missions = {
+			#put mission IDs here
+		}
+		provinces_to_highlight = {
+			#Put triggers here
+			#province scope, implicit AND
+			always = yes
+		}
+		trigger = {
+			#Put triggers here
+			#country scope, implicit AND
+		}
+		effect = {
+			#Country scope
+			add_prestige = 5
+		}
+	}
+}

@@ -1,19 +1,28 @@
-#Template
-#template_mission = {
-#	icon = mission_icon
-#	required_missions = {
-#
-#	}
-#	provinces_to_highlight = {
-#
-#	}
-#	trigger = {
-#
-#	}
-#	effect = {
-#		
-#	}
-#}
+hun_nobility_group_a = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+		has_estate = estate_nobles
+		has_country_flag = damietta_hun_cut_nobles
+	}
+	
+	has_country_shield = yes #no if generic
+}
+
+hun_nobility_group_b = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+		has_estate = estate_nobles
+		has_country_flag = damietta_hun_leaning_on_nobles
+	}
+	
+	has_country_shield = yes #no if generic
+}
 
 hun_balkans_group = {
 	slot = 3

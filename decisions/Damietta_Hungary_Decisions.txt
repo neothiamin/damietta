@@ -4,21 +4,22 @@ country_decisions = {
 	damietta_hun_ostsiedlung_decision = {
 		potential = {
 			tag = HUN
-			custom_trigger_tooltip = {
-				tooltip = damietta_hun_any_province_in_kingdom_of_hungary_is_saxon #"Any province in the Kingdom of Hungary hass Saxon culture"
-				any_owned_province = {
-					OR = {
-						area = banat_area
-						area = southern_transylvania_area
-						area = transylvania_area
-						area = transdanubia_area
-						area = alfold_area
-						area = slovakia_area
-						area = carpathian_ruthenia_area
-					}
-					culture = saxon
+			any_owned_province = {
+				OR = {
+					area = banat_area
+					area = southern_transylvania_area
+					area = transylvania_area
+					area = transdanubia_area
+					area = alfold_area
+					area = slovakia_area
+					area = carpathian_ruthenia_area
 				}
+				culture = saxon
 			}
+			#Don't know why I put this here since potential doesn't show a tooltip
+			#custom_trigger_tooltip = {
+			#	tooltip = damietta_hun_any_province_in_kingdom_of_hungary_is_saxon #"Any province in the Kingdom of Hungary has Saxon culture"	
+			#}
 			NOT = {
 				has_country_flag = damietta_hun_ostsiedlung_promoted
 			}
@@ -97,7 +98,52 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					emperor = {
+						has_opinion = {
+							who = HUN
+							value = 150
+						}
+					}
+				}
+			}
 		}
+		ai_importance = 5
+	}
+
+	#On Nobility
+	damietta_hun_on_nobility_decision = {
+		potential = {
+			tag = HUN
+			has_estate = estate_nobles
+			NOT = {
+				has_country_flag = damietta_hun_took_on_nobility
+			}
+		}
+		allow = {
+			estate_influence = {
+				estate = estate_nobles
+				influence = 25
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 90
+				}
+			}
+		}
+		effect = {
+			set_country_flag = damietta_hun_took_on_nobility
+			country_event = {
+				id = damietta_hun.2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 2
 	}
 }
