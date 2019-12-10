@@ -48,35 +48,113 @@ country_event = {
 	}
 }
 
-#On Nobility
+############################################
+#Estate Events
+############################################
+
+#Nature of Authority
 country_event = {
 	id = damietta_hun.2
 	title = damietta_hun.2.t
 	desc = damietta_hun.2.desc
 	picture = NOBLE_ESTATE_eventPicture
 
-	is_triggered_only = yes
+	trigger = {
+		tag = HUN
+		current_age = age_of_discovery
+		government = monarchy
+	}
 
-	#Cut the power of the nobility.
+	major = yes
+
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.5
+			is_year = 1455
+		}
+	}
+
+	fire_only_once = yes
+
+	#Cut the power of the estates.
 	option = {
 		name = damietta_hun.2.a
-		add_stability = -1
 		add_adm_power = -100
-		custom_tooltip = damietta_hun_nobility_cut.tt
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = HUN_CUT_ESTATE_POWER
+			influence = -15
+			duration = 18250
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = HUN_CUT_ESTATE_POWER
+			influence = -15
+			duration = 18250
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = HUN_CUT_ESTATE_POWER
+			influence = -15
+			duration = 18250
+		}		
+		custom_tooltip = damietta_hun_estates_cut.tt
 		hidden_effect = {			
-			set_country_flag = damietta_hun_cut_nobles
+			set_country_flag = damietta_hun_cut_estates
 			swap_non_generic_missions = yes
 		}
 	}
 
-	#Empower the nobility.
+	#Empower the estates.
 	option = {
 		name = damietta_hun.2.b
-		add_stability = -1
 		add_adm_power = -100
-		custom_tooltip = damietta_hun_nobility_lean.tt
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 15
+		}		
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = HUN_EMPOWERED_ESTATES
+			influence = 15
+			duration = 18250
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 15
+		}		
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = HUN_EMPOWERED_ESTATES
+			influence = 15
+			duration = 18250
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 15
+		}		
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = HUN_EMPOWERED_ESTATES
+			influence = 15
+			duration = 18250
+		}
+		custom_tooltip = damietta_hun_estates_lean.tt
 		hidden_effect = {
-			set_country_flag = damietta_hun_leaning_on_nobles
+			set_country_flag = damietta_hun_empowered_estates
 			swap_non_generic_missions = yes
 		}
 	}

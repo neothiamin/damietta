@@ -114,39 +114,28 @@ country_decisions = {
 		ai_importance = 5
 	}
 
-	#The Role of Nobles
-	damietta_hun_on_nobility_decision = {
-		potential = {
-			always = no
-			tag = HUN
-			has_estate = estate_nobles
-			NOT = {
-				has_country_flag = damietta_hun_took_on_nobility
-			}
-		}
-		allow = {
-			stability = 1
-			adm_power = 100
-			estate_influence = {
-				estate = estate_nobles
-				influence = 25
-			}
-			NOT = {
-				estate_influence = {
-					estate = estate_nobles
-					influence = 90
-				}
-			}
-		}
-		effect = {
-			set_country_flag = damietta_hun_took_on_nobility
-			country_event = {
-				id = damietta_hun.2
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 2
-	}
+	#The Role of Estates
+	#damietta_hun_authority_decision = {
+	#	potential = {
+	#		always = no
+	#		tag = HUN
+	#		NOT = {
+	#			has_country_flag = damietta_hun_estates_decision
+	#		}
+	#	}
+	#	allow = {
+	#		adm_power = 100
+	#		stability = 1
+	#	}
+	#	effect = {
+	#		set_country_flag = damietta_hun_estates_decision
+	#		country_event = {
+	#			id = damietta_hun.2
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	ai_importance = 2
+	#}
 }

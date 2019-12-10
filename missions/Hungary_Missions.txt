@@ -1,28 +1,161 @@
-#hun_nobility_group_a = {
-#	slot = 1
-#	generic = no
-#	ai = yes
-#	potential = {
-#		tag = HUN
-#		has_estate = estate_nobles
-#		has_country_flag = damietta_hun_cut_nobles
-#	}
-#	
-#	has_country_shield = yes #no if generic
-#}
 
-#hun_nobility_group_b = {
-#	slot = 1
-#	generic = no
-#	ai = yes
-#	potential = {
-#		tag = HUN
-#		has_estate = estate_nobles
-#		has_country_flag = damietta_hun_leaning_on_nobles
-#	}
-#	
-#	has_country_shield = yes #no if generic
-#}
+
+hun_internal_group_1 = {
+	slot = 1	
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+	}
+	has_country_shield = yes
+
+	#Ostsiedlung
+	hun_ostsiedlung_mission = {
+		position = 1
+		icon = mission_ostsiedlung
+		required_missions = {
+			
+		}
+		trigger = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				OR = {
+					NOT = {
+						any_owned_province = {
+							OR = {
+								area = banat_area
+								area = southern_transylvania_area
+								area = transylvania_area
+								area = transdanubia_area
+								area = alfold_area
+								area = slovakia_area
+								area = carpathian_ruthenia_area
+							}
+							culture = saxon
+						}
+					}
+					is_year = 1455
+				}
+			}
+			else = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = damietta_hun_has_promoted_ostsiedlung
+						has_country_flag = damietta_hun_ostsiedlung_promoted
+					}
+					custom_trigger_tooltip = {
+						tooltip = damietta_no_koh_provinces_are_saxon
+						NOT = {
+							any_owned_province = {
+								OR = {
+									area = banat_area
+									area = southern_transylvania_area
+									area = transylvania_area
+									area = transdanubia_area
+									area = alfold_area
+									area = slovakia_area
+									area = carpathian_ruthenia_area
+								}
+								culture = saxon
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 15
+			if = {
+				limit = {
+					NOT = {
+						any_owned_province = {
+							OR = {
+								area = banat_area
+								area = southern_transylvania_area
+								area = transylvania_area
+								area = transdanubia_area
+								area = alfold_area
+								area = slovakia_area
+								area = carpathian_ruthenia_area
+							}
+							culture = saxon
+						}
+					}
+				}
+				add_dip_power = 100
+			}
+		}
+	}
+}
+
+hun_internal_group_1_a = {	
+	slot = 1	
+	generic = no
+	ai = yes
+	potential = {
+		always = no
+		tag = HUN
+		has_country_flag = damietta_hun_cut_estates
+	}
+	has_country_shield = yes
+
+	hun_centralize_authority = {
+		position = 2
+		icon = mission_noble_council
+		required_missions = {
+			#put mission IDs here
+		}
+		provinces_to_highlight = {
+			#Put triggers here
+			#province scope, implicit AND
+			always = yes
+		}
+		trigger = {
+			#Put triggers here
+			#country scope, implicit AND
+		}
+		effect = {
+			#Country scope
+		}
+		
+	}
+}
+
+hun_internal_group_1_b = {	
+	slot = 1	
+	generic = no
+	ai = yes
+	potential = {
+		always = no
+		tag = HUN
+		has_country_flag = damietta_hun_empowered_estates
+	}
+	has_country_shield = yes
+
+	hun_delegate_authority = {
+		position = 2
+		icon = mission_noble_council
+		required_missions = {
+			#put mission IDs here
+		}
+		provinces_to_highlight = {
+			#Put triggers here
+			#province scope, implicit AND
+			always = yes
+		}
+		trigger = {
+			#Put triggers here
+			#country scope, implicit AND
+		}
+		effect = {
+			#Country scope
+		}
+		
+	}
+}
 
 hun_balkans_group = {
 	slot = 3
@@ -422,97 +555,6 @@ hun_mercantile_group = {
 				137 = {
 					add_permanent_claim = ROOT
 				}
-			}
-		}
-	}
-}
-
-hun_internal_group_1 = {
-	slot = 5	
-	generic = no
-	ai = yes
-	potential = {
-		tag = HUN
-	}
-	has_country_shield = yes
-
-	#Ostsiedlung
-	hun_ostsiedlung_mission = {
-		position = 1
-		icon = mission_ostsiedlung
-		required_missions = {
-			
-		}
-		trigger = {
-			if = {
-				limit = {
-					ai = yes
-				}
-				OR = {
-					NOT = {
-						any_owned_province = {
-							OR = {
-								area = banat_area
-								area = southern_transylvania_area
-								area = transylvania_area
-								area = transdanubia_area
-								area = alfold_area
-								area = slovakia_area
-								area = carpathian_ruthenia_area
-							}
-							culture = saxon
-						}
-					}
-					is_year = 1455
-				}
-			}
-			else = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = damietta_hun_has_promoted_ostsiedlung
-						has_country_flag = damietta_hun_ostsiedlung_promoted
-					}
-					custom_trigger_tooltip = {
-						tooltip = damietta_no_koh_provinces_are_saxon
-						NOT = {
-							any_owned_province = {
-								OR = {
-									area = banat_area
-									area = southern_transylvania_area
-									area = transylvania_area
-									area = transdanubia_area
-									area = alfold_area
-									area = slovakia_area
-									area = carpathian_ruthenia_area
-								}
-								culture = saxon
-							}
-						}
-					}
-				}
-			}
-		}
-
-		effect = {
-			add_prestige = 15
-			if = {
-				limit = {
-					NOT = {
-						any_owned_province = {
-							OR = {
-								area = banat_area
-								area = southern_transylvania_area
-								area = transylvania_area
-								area = transdanubia_area
-								area = alfold_area
-								area = slovakia_area
-								area = carpathian_ruthenia_area
-							}
-							culture = saxon
-						}
-					}
-				}
-				add_dip_power = 100
 			}
 		}
 	}

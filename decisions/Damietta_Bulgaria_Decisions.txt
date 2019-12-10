@@ -21,7 +21,7 @@ country_decisions = {
 
 		provinces_to_highlight = {
 			OR = {
-				province_id = 7152
+				#province_id = 7152
 				province_id = 7154
 				province_id = 3165
 				province_id = 2746
@@ -39,10 +39,10 @@ country_decisions = {
 
 		allow = {			
 			calc_true_if = {
-				amount = 6
+				amount = 5
 				all_province = {
 					OR = {
-						province_id = 7152
+						#province_id = 7152
 						province_id = 7154
 						province_id = 3165
 						province_id = 2746

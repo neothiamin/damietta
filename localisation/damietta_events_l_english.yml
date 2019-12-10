@@ -93,7 +93,7 @@
  damietta_col_i.3.e:0 "Grant rights to the Bureau to a group of loyal nobles. Their ability to govern will surely aid us."
  damietta_col_i.3.f:0 "We have greater priorities at home."
  damietta_this_event_will_not_happen_again.tt:0 "This event will not happen again."
- DAMIETTA_COLONIAL_BUREAU:0 "Exploratory Bureau Rights"
+ DAMIETTA_COLONIAL_BUREAU:0 "Exploratory Bureau Rights: §Y15.0%§!"
 
  damietta_col_i.4.t:0 "Maritime Academy"
  damietta_col_i.4.desc:0 "Sailing, cartography, and navigation - these disciplines are important for any nation, but for a nation in pursuit of wealth via the seas, they are invaluable. Our recent interest in exploring the seven seas has led some in our court to suggest the foundation of a dedicated academy to teach our people the trades of the sea, so that our explorers may better pursue their travels in our name."
@@ -307,4 +307,13 @@
  damietta_hun.1.t:0 "Wallachian Claims"
  damietta_hun.1.desc:0 "After Aurel I's coup against Andrew V of house Árpád, the only realm ruled by the descendants of Árpád I has been that of the Vlachs to our southeast. When Andrew V's son Károly was captured by Bulgarian forces, he was name Voivode of Wallachia under the Tsar of Bulgaria. After the collapse of Bulgaria, Wallachia became independent, ruled still by the descendants of the Árpáds. Through the lineage of Andrew V, we can claim that Wallachia is a rightful part of our domain."
  damietta_hun.1.a:0 "Hurrah! Down with the Vlachs!"
+
+ damietta_hun.2.t:0 "Nature of Authority"
+ damietta_hun.2.desc:0 "Authority is a volatile matter of discussion in Hungary. After the accession of Aurel I, the title of King of Hungary (or \"Regnum,\" as Aurel preferred to be referred to as) took on a connotation less similar to \"ruler\" or \"sovereign\" and more similar to \"tyrant.\" Aurel's reforms stripped traditional landholders of their power and placed that power into the hands of those more sympathetic to him, namely the Saxons, Cumans, and Transylvanians who supported his rule and aided him in his seizure of power.\n\nHowever, Aurel's son, Marius \"the Fair\", saw the problems inherent in ruling a realm where the majority population holds a minority share of the power, and almost immediately undid much of his father's \"reforms.\" It was he who first used the title of \"Grand Prince\" in an attempt to show his people that he did not consider himself to be entirely above the more mundane matters of the realm.\n\nIt has been over 50 years since the death of Marius, though, and tensions are rising among the estates of Hungary - not just the landholders, but the clergy, who see the realm as being too sympathetic to its Orthodox neighbors, and the merchants, discontent with the [Root.GovernmentName]'s lack of focus on mercantilism. [Root.Monarch.GetName] must now make a decision on the nature of authority in Hungary."
+ damietta_hun.2.a:0 "Rescind authority from the estates of our realm and begin the process of centralization."
+ damietta_hun_estates_cut.tt:0 "We will gradually centralize our realm under the [Root.Monarch.GetTitle]."
+ HUN_CUT_ESTATE_POWER:0 "Rescinded Power: §Y-15.0%§!"
+ damietta_hun.2.b:0 "Empower the estates of our realm and make promises that their rights will not be disturbed."
+ damietta_hun_estates_lean.tt:0 "The estates of the realm will ask for more and more power."
+ HUN_EMPOWERED_ESTATES:0 "Empowered Estates: §Y15.0%§!"
  

@@ -493,6 +493,7 @@ country_event = {
 
 	trigger = {
 		NOT = {
+			tag = BYZ
 			religion = BYZ
 		}
 		FROM = {

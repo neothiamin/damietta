@@ -26,7 +26,6 @@ template_group = {
 		}
 		effect = {
 			#Country scope
-			add_prestige = 5
 		}
 	}
 }
