@@ -2,6 +2,7 @@
 
 owner = CAS
 controller = CAS
+add_core = LON
 add_core = CAS
 culture = leonese
 religion = catholic
