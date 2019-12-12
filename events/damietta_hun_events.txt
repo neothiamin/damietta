@@ -159,3 +159,195 @@ country_event = {
 		}
 	}
 }
+
+#Focused Centralization
+
+#Holdings Confiscated
+country_event = {	
+	id = damietta_hun.3
+	title = damietta_hun.3.t
+	desc = damietta_hun.3.desc
+	picture = NOBLE_ESTATE_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = HUN
+		has_estate_influence_modifier = {
+			estate = estate_nobles
+			modifier = HUN_EMPOWERED_ESTATES
+		}
+		estate_territory = {
+			estate = estate_nobles
+			territory = 15
+		}
+	}
+
+	#Perfect!
+	option = {
+		name = damietta_hun.3.a
+		add_treasury = 25
+		random_owned_province = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			remove_estate = estate_nobles
+			if = {
+				limit = {
+					has_estate = estate_nobles
+					owner = {
+						NOT = {
+							estate_loyalty = {
+								estate = estate_nobles
+								loyalty = 40
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 1
+				}
+				province_event = { id = nobles_estate_events.12 }
+			}
+		}
+	}
+
+	#Who will serve in the army, then?
+	option = {
+		name = damietta_hun.3.b
+		add_mil_power = -50
+		add_prestige = -15
+	}
+}
+
+#Burgher Influence Quelled
+country_event = {	
+	id = damietta_hun.4
+	title = damietta_hun.4.t
+	desc = damietta_hun.4.desc
+	picture = NOBLE_ESTATE_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = HUN
+		has_estate_influence_modifier = {
+			estate = estate_burghers
+			modifier = HUN_EMPOWERED_ESTATES
+		}
+		estate_territory = {
+			estate = estate_burghers
+			territory = 5
+		}
+	}
+
+	#Grand!
+	option = {
+		name = damietta_hun.4.a
+		add_treasury = 25
+		random_owned_province = {
+			limit = {
+				has_estate = estate_burghers
+			}			
+			remove_estate = estate_burghers
+			if = {
+				limit = {
+					has_estate = estate_burghers
+					owner = {
+						NOT = {
+							estate_loyalty = {
+								estate = estate_burghers
+								loyalty = 40
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = 1
+				}
+				province_event = { id = burghers_estate_events.16 }
+			}
+		}
+	}
+
+	#Think of the economy!
+	option = {
+		name = damietta_hun.4.b		
+		add_dip_power = -50
+		add_prestige = -15
+	}
+}
+
+#Clerical Leverage Lessened
+country_event = {	
+	id = damietta_hun.5
+	title = damietta_hun.5.t
+	desc = damietta_hun.5.desc
+	picture = NOBLE_ESTATE_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = HUN
+		has_estate_influence_modifier = {
+			estate = estate_church
+			modifier = HUN_EMPOWERED_ESTATES
+		}
+		estate_territory = {
+			estate = estate_church
+			territory = 10
+		}
+	}
+
+	#Splendid!
+	option = {
+		name = damietta_hun.5.a
+		add_treasury = 25
+		random_owned_province = {
+			limit = {
+				has_estate = estate_church
+			}
+			remove_estate = estate_church
+			if = {
+				limit = {
+					has_estate = estate_church
+					has_owner_religion = no
+					owner = {
+						NOT = {
+							estate_loyalty = {
+								estate = estate_church
+								loyalty = 40
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = 1
+				}
+				province_event = { id = church_estate_events.11 }
+			}
+		}
+	}
+
+	#Well just hold on now...
+	option = {
+		name = damietta_hun.5.b
+		add_adm_power = -50
+		add_prestige = -15
+	}
+}

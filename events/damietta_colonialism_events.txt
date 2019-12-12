@@ -235,10 +235,10 @@ country_event = {
 	option = {
 		name = damietta_col_i.2.a
 		ai_chance = {
-			factor = 40
+			factor = 50
 			#Something something special treatment
 			modifier = {
-				factor = 5
+				factor = 10
 				OR = {
 					tag = CAS
 					tag = FRA
@@ -261,7 +261,7 @@ country_event = {
 	option = {
 		name = damietta_col_i.2.b
 		ai_chance = {
-			factor = 60
+			factor = 50
 		}
 	}
 }

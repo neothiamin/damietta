@@ -316,4 +316,19 @@
  damietta_hun.2.b:0 "Empower the estates of our realm and make promises that their rights will not be disturbed."
  damietta_hun_estates_lean.tt:0 "The estates of the realm will ask for more and more power."
  HUN_EMPOWERED_ESTATES:0 "Empowered Estates: §Y15.0%§!"
+
+ damietta_hun.3.t:0 "Holdings Confiscated"
+ damietta_hun.3.desc:0 "My [Root.Monarch.GetName]...\n\nAs part of our efforts to centralize the authority in the realm, we have been effecting efforts to mitigate the influence of the factions in our nation. This time, we have effectively confiscated the holdings of a prominent noble."
+ damietta_hun.3.a:0 "Perfect!"
+ damietta_hun.3.b:0 "But who will recruit our soldiers?"
+
+ damietta_hun.4.t:0 "Monopolies Rescinded"
+ damietta_hun.4.desc:0 "My [Root.Monarch.GetName]...\n\nAs part of our efforts to centralize the authority in the realm, we have been effecting efforts to mitigate the influence of the factions in our nation. This time, we have revoked the monopolistic rights of a prominent merchant company."
+ damietta_hun.4.a:0 "Grand!"
+ damietta_hun.4.b:0 "The economy, fools!"
+
+ damietta_hun.5.t:0 "Clerical Dominance Diminished"
+ damietta_hun.5.desc:0 "My [Root.Monarch.GetName]...\n\nAs part of our efforts to centralize the authority in the realm, we have been effecting efforts to mitigate the influence of the factions in our nation. This time, we have persuaded a local bishop to hang up his mitre and robes."
+ damietta_hun.5.a:0 "Splendid!"
+ damietta_hun.5.b:0 "But... the Holy Father?"
  

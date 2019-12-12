@@ -37,6 +37,11 @@ on_bi_yearly_pulse_4 = {
 		100 = 0
 		25 = damietta_rahulids.3	#New Muqti
 		10 = damietta_byzantium.17	#Great Minds
+
+		#Hungary Authority events
+		20 = damietta_hun.3
+		20 = damietta_hun.4
+		20 = damietta_hun.5
 		
 	}
 }
