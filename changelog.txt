@@ -11,11 +11,16 @@ v0.2:
 + New Renaissance requirements
 + New spread modifiers for the Renaissance
 + Added Cyrenaica (CYR)
++ New events for Hungary - the Nature of Authority chain!
+
 
 * Removed Byzantine cores on Stenimachos and Marsa
 * Buffed Rahulid settler modifier
 * LOTS of province history fixes in Manchuria and Siberia. Big ups to Dub for that!
 * Lowered "Tame the Desert" diplo tech requirement
+* Removed Ormenio from list of provinces required to reform Bulgarian Empire
+* Reduced institution progress gain from development
+* Reduced efficacy of Knowledge Sharing
 
 - Removed Aragonese guarantee of Hum because, uh, Hum doesn't exist
 - Removed ability to call for Byzantine Crusade after the Age of Discovery
