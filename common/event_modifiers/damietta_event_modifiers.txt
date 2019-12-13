@@ -178,3 +178,9 @@ damietta_hun_adriatic_port = {
 	local_ship_repair = 0.25
 	province_trade_power_modifier = 0.25
 }
+
+#Tyrian Purple
+damietta_byz_tyrian_purple = {
+	diplomatic_reputation = 1
+	land_morale = 0.05
+}

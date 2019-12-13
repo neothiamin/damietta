@@ -1,3 +1,9 @@
+Next Update:
+
+* Added missing cores for Leon and Galicia in Spain
+* Narrowed possible nations for "Guinean Contacts" event
+* Added a CI bonus to the "Discovery of the New World!" event for Castile/Spain
+
 v0.2:
 
 +++ A rework of the Colonialism institution!
