@@ -3,6 +3,7 @@
 owner = POR
 controller = POR
 add_core = POR
+add_core = LON
 culture = leonese
 religion = catholic
 capital = "Miranda"

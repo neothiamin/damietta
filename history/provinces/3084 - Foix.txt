@@ -5,6 +5,7 @@
 owner = FOI
 controller = FOI
 add_core = FOI
+add_core = TOU
 capital = "Foix"
 is_city = yes
 culture = occitain	#aquitaine vanilla

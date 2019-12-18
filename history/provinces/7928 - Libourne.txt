@@ -4,6 +4,7 @@ owner = ENG
 controller = ENG
 add_core = ENG
 add_core = FRA
+add_core = GUY
 culture = gascon
 religion = catholic
 capital = "Libourne"

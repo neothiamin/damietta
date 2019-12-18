@@ -4,6 +4,7 @@
 
 owner = FRA
 controller = FRA
+add_core = TOU
 capital = "Le Puy"
 is_city = yes
 culture = auvergnat_culture

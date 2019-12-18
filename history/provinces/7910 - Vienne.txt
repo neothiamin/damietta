@@ -3,6 +3,7 @@
 owner = VNE
 controller = VNE
 add_core = VNE
+add_core = DAU
 culture = arpitan
 religion = catholic
 capital = "Vienne"
