@@ -39,7 +39,7 @@ color = { 40 121 66 } #34 - Chibchan / dummy - The game has a green here. It's n
 color = { 25 72 156 } #35 - Matacoan / Upper Peru - I like the game's blue here, but I made it darker. (#19489C)
 color = { 229 57 53 } #36 - Araucanian / La Plata - Reeeeeeed. (#E53935)
 color = { 193 65 54 } #37 - Cariban / Caribbeans - Side note, PDX spelled "Caribbean" wrong in the game code multiple times. Come on. Anyways, uh... this red is nice. It's base game but I like it. It's staying. (#C14136)
-color = { 183 28 28 } #38 - Egyptian / Egypt - Deadass, I've been moving this one down so much that I felt bad and decided to put it right here in the middle of the New World shit. Sorry, Egypt. As a reward for waiting, you're getting a beautiful color: a nice, strong, beautiful red. (#B71C1C)
+color = { 209 29 53 } #38 - Egyptian / Egypt - Deadass, I've been moving this one down so much that I felt bad and decided to put it right here in the middle of the New World shit. Sorry, Egypt. As a reward for waiting, you're getting a beautiful color: a nice, strong, beautiful red. (#B71C1C)
 color = { 171 71 188 } #39 - Waroid / Levant - Waroid cultures hardly exist so I didn't want to make a dummy culture for the Levant region. This color is like... the most neutral purple you could find. It's not deep, it's not pale, it's not bright, it's not dark. It's just purple. (#AB47BC)
 color = { 30 160 203 } #40 - Oghuz / Anatolia - Bright blue. It just looks good. "nEo It'S aN iNdIgO" SHUT UP (#283593)
 #END OF BATCH 2
