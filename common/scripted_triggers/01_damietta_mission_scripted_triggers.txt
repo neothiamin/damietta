@@ -1,0 +1,8 @@
+rum_push_east_provinces = {
+	OR = {
+		area = mardin_area
+		area = north_kurdistan_area
+		area = erzurum_area
+		area = pontus_area
+	}
+}

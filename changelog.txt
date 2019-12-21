@@ -3,6 +3,7 @@ Next Update:
 * Added missing cores for Leon and Galicia in Spain
 * Narrowed possible nations for "Guinean Contacts" event
 * Added a CI bonus to the "Discovery of the New World!" event for Castile/Spain
+* Edited some region/culture colors to be more in line with my addon "neo's Colors". I've preserved some from the last build though, and have included the old files if you wanna change em yourself.
 
 v0.2:
 

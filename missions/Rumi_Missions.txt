@@ -1,0 +1,137 @@
+rum_group_1 = {
+	slot = 1 #column
+	generic = no #yes for generic missions
+	ai = yes #because why would it be no
+	potential = {
+		tag = RUM
+	}
+	
+	has_country_shield = yes #no if generic
+	
+	rum_mission_anatolian_forts = {
+		icon = mission_conquer_50_development
+		position = 1 #row
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			NOT = {
+				any_province_in_state = {
+					fort_level = 1
+				}
+			}
+			owned_by = ROOT
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = damietta_rum_mission_anatolian_forts_tt_1
+				all_states = {
+					any_province_in_state = {
+						fort_level = 1
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = damietta_rum_mission_anatolian_forts_tt_2				
+				calc_true_if = {
+					amount = 10
+					all_owned_province = {
+						fort_level = 1
+					}
+				}
+			}			
+		}
+		effect = {
+			add_mil_power = 100			
+		}
+	}
+
+	rum_push_east = {
+		icon = mission_assemble_an_army
+		position = 3
+		required_missions = {
+			rum_mission_anatolian_forts
+		}
+		provinces_to_highlight = {
+			rum_push_east_provinces = yes
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = damietta_own_highlighted_provinces
+				all_province = {
+					rum_push_east_provinces = yes
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = GEO
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = GEO
+				}
+			}
+			else = {
+				georgia_area = {
+					add_permanent_claim = ROOT
+				}
+			}
+			armenia_area = {
+				add_permanent_claim = ROOT
+			}
+			shirvan_area = {
+				add_permanent_claim = ROOT
+			}
+			odishi_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	rum_encroach_into_persia = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			rum_push_east
+		}
+		provinces_to_highlight = {
+			region = persia_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = damietta_own_10_persian_provinces
+				calc_true_if = {
+					amount = 10
+					all_province = {
+						region = persia_region
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					428 = {
+						owned_by = ROOT
+					}
+				}
+				428 = {
+					add_base_production = 3
+				}
+				add_prestige = 10
+			}
+			else = {
+				add_prestige = 25
+			}
+		}
+	}
+}

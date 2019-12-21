@@ -29,3 +29,19 @@
  hun_adriatic_coast_title:0 "Adriatic Ports"
  hun_adriatic_coast_desc:0 "The Adriatic is dotted with great market cities like Venice, Trieste, and Ragusa, and the Adriatic is the first waterway west of Greece. Needless to say, control of even one trading port on the Adriatic coast would benefit us greatly."
  damietta_east_adriatic.tt:0 "Any highlighted province is owned by §YHungary§! and has §Y20§! development or more."
+
+ #Rum
+
+ #Group 1
+ rum_mission_anatolian_forts_title:0 "Anatolian Defenses"
+ rum_mission_anatolian_forts_desc:0 "The terrain of Anatolia is diverse, from mountains to valleys to the coasts of the Black Sea and White Sea. Defending this vast land is of the utmost importance."
+ damietta_rum_mission_anatolian_forts_tt_1:0 "One province in §Yevery state§! has a fort of level §Y1§! or greater."
+ damietta_rum_mission_anatolian_forts_tt_2:0 "Have at least §Y10§! forts."
+
+ rum_push_east_title:0 "Push East"
+ rum_push_east_desc:0 "Our ancestors came from the east, from the distant lands of Central Asia. The time to return is long gone, but expansion eastwards, towards the cities of Teheran and Samarkand, will bring us great wealth."
+ damietta_own_highlighted_provinces:0 "All §Yhighlighted provinces§! are owned by §Y[Root.GetName].§!"
+
+ rum_encroach_into_persia_title:0 "Enroach Into Persia"
+ rum_encroach_into_persia_desc:0 "Persia has seen empire after empire come and go. While conquest of the region outright is untennable, control of at least a small portion of Persia would bring us glory."
+ damietta_own_10_persian_provinces:0 "Own §Y10§! provinces in the §YPersia§! region."
