@@ -182,10 +182,10 @@ country_event = {
 						}
 					}
 					set_province_flag = damietta_rhl_mufti_home
-					set_variable = {
-						which = damietta_rhl_mufti_power_in_area
-						value = 0
-					}
+					#set_variable = {
+					#	which = damietta_rhl_mufti_power_in_area
+					#	value = 0
+					#}
 					save_event_target_as = damietta_event_rhl_3_target
 				}
 				else = {
@@ -200,23 +200,23 @@ country_event = {
 		}
 	}
 
-	after = {
-		event_target:damietta_event_rhl_3_target = {
-			if = {
-				limit = {
-					check_variable = {
-						which = damietta_rhl_mufti_power_in_area
-						value = 10
-					}
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
-				remove_province_modifier = damietta_rhl_appointed_relative_mufti
-			}
-		}
-	}
+	#after = {
+	#	event_target:damietta_event_rhl_3_target = {
+	#		if = {
+	#			limit = {
+	#				check_variable = {
+	#					which = damietta_rhl_mufti_power_in_area
+	#					value = 10
+	#				}
+	#			}
+	#			spawn_rebels = {
+	#				size = 3
+	#				type = noble_rebels
+	#			}
+	#			remove_province_modifier = damietta_rhl_appointed_relative_mufti
+	#		}
+	#	}
+	#}
 
 	#Appoint a relative of the old Muqti.
 	option = {
@@ -234,10 +234,10 @@ country_event = {
 			}
 		}
 		event_target:damietta_event_rhl_3_target = {
-			change_variable = {
-				which = damietta_rhl_mufti_power_in_area
-				value = 2
-			}
+			#change_variable = {
+			#	which = damietta_rhl_mufti_power_in_area
+			#	value = 2
+			#}
 			area = {
 				add_province_modifier = {
 					name = damietta_rhl_appointed_relative_mufti
@@ -252,21 +252,21 @@ country_event = {
 		name = damietta_rahulids.3.b
 		ai_chance = {
 			factor = 30
-			modifier = {
-				factor = 4
-				event_target:damietta_event_rhl_3_target = {
-					check_variable = {
-						which = damietta_rhl_mufti_power_in_area
-						value = 6
-					}
-				}
-			}
+			#modifier = {
+			#	factor = 4
+			#	event_target:damietta_event_rhl_3_target = {
+			#		check_variable = {
+			#			which = damietta_rhl_mufti_power_in_area
+			#			value = 6
+			#		}
+			#	}
+			#}
 		}
 		event_target:damietta_event_rhl_3_target = {
-			subtract_variable = {
-				which = damietta_rhl_mufti_power_in_area
-				value = 1
-			}
+			#subtract_variable = {
+			#	which = damietta_rhl_mufti_power_in_area
+			#	value = 1
+			#}
 			area = {
 				add_province_modifier = {
 					name = damietta_rhl_loyal_mufti
@@ -283,10 +283,10 @@ country_event = {
 			factor = 10
 		}
 		event_target:damietta_event_rhl_3_target = {
-			change_variable = {
-				which = damietta_rhl_mufti_power_in_area
-				value = 1
-			}
+			#change_variable = {
+			#	which = damietta_rhl_mufti_power_in_area
+			#	value = 1
+			#}
 			area = {
 				add_province_modifier = {
 					name = damietta_rhl_foreign_mufti
