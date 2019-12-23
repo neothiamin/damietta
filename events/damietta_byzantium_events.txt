@@ -153,7 +153,12 @@ country_event = {
 				days = 3650
 			}
 			has_global_flag = damietta_byz_nation_aided_konstantinos
+			has_country_flag = damietta_got_konstantinos_event
 		}
+	}
+
+	immediate = {
+		set_country_flag = damietta_got_konstantinos_event
 	}
 
 	mean_time_to_happen = {
