@@ -1,0 +1,6 @@
+#Renewed Acropolis
+dmi_byz_acropolis_again = {
+	local_development_cost = -0.1
+	local_tax_modifier = 0.25
+	province_trade_power_modifier = 0.25
+}

@@ -6,3 +6,69 @@ rum_push_east_provinces = {
 		area = pontus_area
 	}
 }
+
+dmi_byz_epirus_provinces = {
+	OR = {
+		area = aetolia_area
+		area = northern_epirus_area #Ionian Islands
+		area = northern_greece_area #Epirus
+	}
+	NOT = {
+		province_id = 7141
+		owned_by = VEN
+	}
+}
+
+dmi_byz_hellas_provinces = {
+	OR = {		
+		area = western_aegean_area
+	}
+	NOT = {
+		province_id = 3003
+		province_id = 7109
+		province_id = 7110
+	}
+}
+
+dmi_byz_bulgaria_provinces = {
+	OR = {
+		area = northern_thrace_area
+		area = upper_thrace_area
+		area = lower_danube_area
+		#area = northern_macedonia_area
+		province_id = 3183
+		province_id = 1853
+		province_id = 7146
+		province_id = 7147
+		province_id = 7148
+		province_id = 3167
+		province_id = 7704
+		province_id = 7703
+	}
+}
+
+dmi_byz_albania_provinces = {
+	OR = {
+		AND = {
+			area = albania_area
+			culture = albanian
+			NOT = {
+				province_id = 4174
+			}
+		}
+		province_id = 3182
+		province_id = 5094
+		province_id = 7141
+	}
+}
+
+dmi_byz_venetian_vultures_provinces = {
+	OR = {
+		area = thessaly_area
+		area = morea_area
+		area = western_aegean_area
+		area = northern_epirus_area
+		area = northern_greece_area
+		area = albania_area
+	}
+}

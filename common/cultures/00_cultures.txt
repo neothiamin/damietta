@@ -4849,7 +4849,7 @@ turkish_g = {
 	graphical_culture = muslimgfx
 
 	turkish = {
-		primary = RUM
+		#primary = RUM
 		dynasty_names = {
 			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
 			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"

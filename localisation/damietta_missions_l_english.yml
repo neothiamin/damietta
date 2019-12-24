@@ -1,4 +1,9 @@
 ﻿l_english:
+
+ #Shared 
+ dmi_highlighted_provs_own:0 "Own all highlighted provinces directly."
+ dmi_highlighted_provs_own_or_vassal:0 "Own or have a non-tributary subject own all highlighted provinces."
+
  #Hungary
 
  #Balkan Group
@@ -45,3 +50,52 @@
  rum_encroach_into_persia_title:0 "Enroach Into Persia"
  rum_encroach_into_persia_desc:0 "Persia has seen empire after empire come and go. While conquest of the region outright is untennable, control of at least a small portion of Persia would bring us glory."
  damietta_own_10_persian_provinces:0 "Own §Y10§! provinces in the §YPersia§! region."
+
+ #Byzantium
+
+ #Group 1a
+ dmi_byz_men_of_cloth_title:0 "Men of the Cloth"
+ dmi_byz_men_of_cloth_desc:0 "REPLACE_ME"
+ dmi_byz_tyrian_purple_title:0 "Born in Tyrian Purple"
+ dmi_byz_tyrian_purple_desc:0 "REPLACE_ME"
+
+ dmi_byz_have_dye_prov_with_10_prod.tt:0 "Own a §YDyes-producing§! province with §Y10§! or more base production."
+
+ damietta_byz_tyrian_purple:0 "Tyrian Purple"
+
+ #Group 1b
+ dmi_byz_noble_rights_title:0 "Rights of Nobles"
+ dmi_byz_noble_rights_desc:0 "REPLACE_ME"
+
+ dmi_byz_has_t2_reform:0 "Have either the §YPronoiar Governance§! reform or the §YRevived Themata§! reform."
+
+ BYZ_NOBLE_RIGHTS_GUARANTEED:0 "Rights of Nobles"
+
+ dmi_byz_bureaucratic_reform_title:0 "Bureaucratic Reform"
+ dmi_byz_bureaucratic_reform_desc:0 "REPLACE_ME"
+
+ dmi_byz_has_t3_reform:0 "Have any §YTier 3§! government reform."
+ #Group 1c
+ dmi_byz_epirus_title:0 "Epirus"
+ dmi_byz_epirus_desc:0 "REPLACE_ME" 
+ dmi_byz_integrate_hellas_title:0 "Reintegrate Hellas"
+ dmi_byz_integrate_hellas_desc:0 "REPLACE_ME"
+
+ #Group 2a
+ dmi_byz_at_the_acropolis_title:0 "At the Acropolis"
+ dmi_byz_at_the_acropolis_desc:0 "Contrary to popular belief, the Acropolis of Athens is not the temple in the middle of the city, but the large rock formation upon which the temple sits. Acropoles, with \"acropolis\" meaning \"above the city,\" were quite common in Ancient Greece, and served as hubs for the cities in which they were located. If we were to invest in the Acropolis of Athens, and construct a great church at its zenith, we could renew the old glory of the city of Athens."
+ dmi_byz_acropolis_again:0 "Renewed Acropolis"
+
+
+ #Group 2b
+ dmi_byz_bulgarian_menace_title:0 "Bulgar Menace"
+ dmi_byz_bulgarian_menace_desc:0 "REPLACE_ME"
+ dmi_byz_albania_title:0 "Albanoi"
+ dmi_byz_albania_desc:0 "REPLACE_ME" 
+ dmi_byz_venetian_vultures_title:0 "Venetian Vultures"
+ dmi_byz_venetian_vultures_desc:0 "REPLACE_ME"
+
+ none_of_the_highlighted_provinces_owned_by_ven_or_subject:0 "None of the highlighted provinces are owned by §YVenice§! or their subjects."
+ 
+ dmi_byz_across_the_strait_title:0 "Across the Strait"
+ dmi_byz_across_the_strait_desc:0 "REPLACE_ME"
