@@ -250,12 +250,46 @@ dmi_byz_missions_1c = {
 				limit = {					
 					OR = {
 						area = morea_area
-						area = hellas_area
+						area = western_aegean_area
 					}
 					country_or_non_sovereign_subject_holds = VEN
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+	}
+}
+
+dmi_byz_slot_1d = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = BYZ
+	}
+	
+	has_country_shield = yes #no if generic
+
+	dmi_byz_sicily = {
+		position = 9
+		icon = mission_invade_island
+		required_missions = {
+			dmi_byz_across_the_strait
+		}
+		provinces_to_highlight = {
+			area = sicily_area
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = dmi_highlighted_provs_own
+				all_province = {
+					area = sicily_area
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			add_prestige = 25
 		}
 	}
 }
@@ -431,6 +465,15 @@ dmi_byz_missions_2b = {
 			abruzzo_area = {
 				add_permanent_claim = ROOT
 			}
+		}
+	}
+
+	dmi_byz_italios = {
+		position = 10
+		icon = mission_pf_map_table
+		required_missions = {
+			dmi_byz_across_the_strait
+
 		}
 	}
 }

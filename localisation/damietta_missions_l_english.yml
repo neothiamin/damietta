@@ -48,7 +48,7 @@
  damietta_own_highlighted_provinces:0 "All §Yhighlighted provinces§! are owned by §Y[Root.GetName].§!"
 
  rum_encroach_into_persia_title:0 "Enroach Into Persia"
- rum_encroach_into_persia_desc:0 "Persia has seen empire after empire come and go. While conquest of the region outright is untennable, control of at least a small portion of Persia would bring us glory."
+ rum_encroach_into_persia_desc:0 "Persia has seen empire after empire come and go. While conquest of the region outright is untenable, control of at least a small portion of Persia would bring us glory."
  damietta_own_10_persian_provinces:0 "Own §Y10§! provinces in the §YPersia§! region."
 
  #Byzantium
@@ -83,7 +83,7 @@
 
  #Group 2a
  dmi_byz_at_the_acropolis_title:0 "At the Acropolis"
- dmi_byz_at_the_acropolis_desc:0 "Contrary to popular belief, the Acropolis of Athens is not the temple in the middle of the city, but the large rock formation upon which the temple sits. Acropoles, with \"acropolis\" meaning \"above the city,\" were quite common in Ancient Greece, and served as hubs for the cities in which they were located. If we were to invest in the Acropolis of Athens, and construct a great church at its zenith, we could renew the old glory of the city of Athens."
+ dmi_byz_at_the_acropolis_desc:0 "Contrary to popular belief, the Acropolis of Athens is not the temple in the middle of the city, but the large rock formation upon which the temple sits. Acropolises, with \"acropolis\" meaning \"above the city,\" were quite common in Ancient Greece, and served as hubs for the cities in which they were located. If we were to invest in the Acropolis of Athens, and construct a great church at its zenith, we could renew the old glory of the city of Athens."
  dmi_byz_acropolis_again:0 "Renewed Acropolis"
 
 

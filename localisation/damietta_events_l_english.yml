@@ -1,7 +1,7 @@
 ﻿l_english:
  #Italian States Events
  damietta_italian_states.1.t:0 "Foreign Quarters in the Levant?"
- damietta_italian_states.1.desc:0 "Mediterranean trade feeds and clothes all of Europe. From Stockholm to Sevilla, goods from the Mediterranean are vital in the lives of all people, from kings to cobblers. Now, we find ourselves with an interesting proposition which could greatly increase our wealth.\n\nRecently, the nation of [damietta_foreign_quarter_nation_target.GetName] has loosened local laws regarding foreign quarters, opening up auctions for the rights to establish such quarters in their cities. One city in particular, [damietta_foreign_quarter_province.GetName], seems particularly lucrative. Its coastal geography and established history as a trading hub make it a prime target for a [Root.GetAdjective] quarter. Shall we make our interest known?"
+ damietta_italian_states.1.desc:0 "Mediterranean trade feeds and clothes all of Europe. From Stockholm to Seville, goods from the Mediterranean are vital in the lives of all people, from kings to cobblers. Now, we find ourselves with an interesting proposition which could greatly increase our wealth.\n\nRecently, the nation of [damietta_foreign_quarter_nation_target.GetName] has loosened local laws regarding foreign quarters, opening up auctions for the rights to establish such quarters in their cities. One city in particular, [damietta_foreign_quarter_province.GetName], seems particularly lucrative. Its coastal geography and established history as a trading hub make it a prime target for a [Root.GetAdjective] quarter. Shall we make our interest known?"
  damietta_italian_states.1.a:0 "Petition [damietta_foreign_quarter_nation_target.GetName] for rights to establish a [Root.GetAdjective] quarter in [damietta_foreign_quarter_province.GetName]."
  damietta_italian_states.1.b:0 "Not this time."
 
@@ -11,7 +11,7 @@
 
  #Crusader States
  damietta_crusader_states.1.t:0 "[From.GetAdjective] Interest in Foreign Quarter"
- damietta_crusader_states.1.desc:0 "My [Root.Owner.Monarch.GetTitle]! We have received a missive from [From.GetAdjective] merchantss describing that they are interested in establishing a foreign quarter in [Root.GetName]! In exchange for special priveleges, they will be allowed to utilize our port in [Root.GetName] for their own trade efforts, resulting in increased traffic for us. What say we?"
+ damietta_crusader_states.1.desc:0 "My [Root.Owner.Monarch.GetTitle]! We have received a missive from [From.GetAdjective] merchants describing that they are interested in establishing a foreign quarter in [Root.GetName]! In exchange for special privileges, they will be allowed to utilize our port in [Root.GetName] for their own trade efforts, resulting in increased traffic for us. What say we?"
  damietta_crusader_states.1.a:0 "Of course! This agreement is beneficial to us both."
  damietta_crusader_states.1.b:0 "Politely decline their offer."
 
@@ -34,7 +34,7 @@
  damietta_bulgaria.3.desc:0 "Hurrah!\n\nWith the declaration of the new Bulgarian Empire under our rule, a key question has been posed: where to hold court?"
  damietta_bulgaria.3.a:0 "Set up court in the ancestral city of Tarnovo."
  damietta_bulgaria.3.b:0 "Maintain the current location of the royal court."
- damietta_bulgaria.3.c:0 "Begin preparations for court operations in Sofija."
+ damietta_bulgaria.3.c:0 "Begin preparations for court operations in Sofia."
 
  #Capture of Crusader Cities
  damietta_crusader_states.3.t:0 "Capture of [Root.GetName]!"
@@ -64,7 +64,7 @@
  #damietta_rahulids.4.a:0 "Hurrah!"
 
  damietta_rahulids.3.t:0 "New Muqti in [damietta_event_rhl_3_target.GetAreaName]"
- damietta_rahulids.3.desc:0 "In Iqta' systems, a realm is divided into local governates called \"Iqta',\" and these Iqta' are governed by people called Muqti. Early on in our Sultanate's history, the first Sultan Omar Rahul decided to institute a non-official policy of hereditary rule among Muqti. This meant that one family grew increasingly powerful in their Iqta' and began to wield more and more power, taking power away from the Sultan.\n\nThe fact remains, though, that the position of Muqti is not hereditary, and can be revoked at any time. Now, the Muqti in one of the Iqta', [damietta_event_rhl_3_target.GetAreaName], has passed away, and a new Muqti must be chosen."
+ damietta_rahulids.3.desc:0 "In Iqta' systems, a realm is divided into local governorates called \"Iqta',\" and these Iqta' are governed by people called Muqti. Early on in our Sultanate's history, the first Sultan Omar Rahul decided to institute a non-official policy of hereditary rule among Muqti. This meant that one family grew increasingly powerful in their Iqta' and began to wield more and more power, taking power away from the Sultan.\n\nThe fact remains, though, that the position of Muqti is not hereditary, and can be revoked at any time. Now, the Muqti in one of the Iqta', [damietta_event_rhl_3_target.GetAreaName], has passed away, and a new Muqti must be chosen."
  damietta_rahulids.3.a:0 "Appoint a relative of the old Muqti."
  damietta_rahulids.3.b:0 "Appoint a Muqti more supportive of our desires."
  damietta_rahulids.3.c:0 "Appoint a relative of a Muqti of a neighboring Iqta'."
@@ -75,7 +75,7 @@
 
  #Colonialism
  damietta_col_i.1.t:0 "Whispers of Riches"
- damietta_col_i.1.desc:0 "The lands of the East are, even in [GetYear], a mystery to many in Europe. The Travels of Marco Polo, the rumors and hearsay spread during the Mongol invasions, the goods that travel along the Silk Road from China and India, and the luxurious spices that grant incredible flavor and help preserve food - all these and more come from the East. After the Fifth Crusade, the establishment of the County of Tamiathis and the resurrection of the Kingdom of Jerusalem did wonders for Europe, and made knowledge and goods more easily available across the continent.\n\nHowever, land travel is still slow and merchants must still pay tolls when traveling through ports and marketplaces, and by the time goods like ivory, spices, and silk reach the shores of the Mediterranean, their prices have been inflated to an exorbinant level and their supply is short.\n\nTo remedy this, some have proposed the facilitation of a maritime trade network to reach Eastern markets. A few scholars even believe that a shorter route to the riches East may be traveled by sailing to the West, across the Oceanus Atlanticus. Wherever the path may lie, the pursuit of a more direct path to the Riches of the East may be in our best interest."
+ damietta_col_i.1.desc:0 "The lands of the East are, even in [GetYear], a mystery to many in Europe. The Travels of Marco Polo, the rumors and hearsay spread during the Mongol invasions, the goods that travel along the Silk Road from China and India, and the luxurious spices that grant incredible flavor and help preserve food - all these and more come from the East. After the Fifth Crusade, the establishment of the County of Tamiathis and the resurrection of the Kingdom of Jerusalem did wonders for Europe, and made knowledge and goods more easily available across the continent.\n\nHowever, land travel is still slow and merchants must still pay tolls when traveling through ports and marketplaces, and by the time goods like ivory, spices, and silk reach the shores of the Mediterranean, their prices have been inflated to an exorbitant level and their supply is short.\n\nTo remedy this, some have proposed the facilitation of a maritime trade network to reach Eastern markets. A few scholars even believe that a shorter route to the riches East may be traveled by sailing to the West, across the Oceanus Atlanticus. Wherever the path may lie, the pursuit of a more direct path to the Riches of the East may be in our best interest."
  damietta_col_i.1.a:0 "We should pursue this endeavor."
  damietta_col_i.1.b:0 "Preposterous! Next you're going to tell me the Earth revolves around the Sun!"
 
@@ -290,7 +290,7 @@
 
  #Genoa
  damietta_gen.1.t:0 "Byzantine Trade"
- damietta_gen.1.desc:0 "Byzantine ports and marketplaces dot the Aegean and beyond. After the Fourth Crusade, the Greeks in Constantinople have gotten skittish around Italian merchants. However, through clever wordplay and slight exaggeration, we might coerce them into agreeing to a trade deal that is mututally beneficial."
+ damietta_gen.1.desc:0 "Byzantine ports and marketplaces dot the Aegean and beyond. After the Fourth Crusade, the Greeks in Constantinople have gotten skittish around Italian merchants. However, through clever wordplay and slight exaggeration, we might coerce them into agreeing to a trade deal that is mutually beneficial."
  damietta_gen.1.a:0 "A grand idea!"
  damietta_gen.1.b:0 "We do not need them to get rich."
 
