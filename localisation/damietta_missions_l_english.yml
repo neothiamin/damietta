@@ -47,7 +47,7 @@
  rum_push_east_desc:0 "Our ancestors came from the east, from the distant lands of Central Asia. The time to return is long gone, but expansion eastwards, towards the cities of Teheran and Samarkand, will bring us great wealth."
  damietta_own_highlighted_provinces:0 "All §Yhighlighted provinces§! are owned by §Y[Root.GetName].§!"
 
- rum_encroach_into_persia_title:0 "Enroach Into Persia"
+ rum_encroach_into_persia_title:0 "Encroach Into Persia"
  rum_encroach_into_persia_desc:0 "Persia has seen empire after empire come and go. While conquest of the region outright is untenable, control of at least a small portion of Persia would bring us glory."
  damietta_own_10_persian_provinces:0 "Own §Y10§! provinces in the §YPersia§! region."
 
