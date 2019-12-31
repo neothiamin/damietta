@@ -35,7 +35,7 @@ add_local_autonomy = 50 #Kokhars
 	}
 } #Daulat Kahn Lodi revolt
 1525.1.1 = {
-	controller = TIM owner = TIM add_core = TIM
+	controller = TIM owner = TIM #add_core = TIM
 	revolt = { }
 } #Defects to Babur
 1526.4.21 = {

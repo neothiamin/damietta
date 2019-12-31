@@ -1,7 +1,7 @@
 #2220 - Bam
 
-owner = TIM
-controller = TIM
+owner = KRM
+controller = KRM
 culture = baluchi
 religion = shiite
 capital = "Bam"
@@ -13,7 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = BAL
 add_core = SIS
-add_core = TIM
+add_core = KRM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian
@@ -25,7 +25,7 @@ fort_15th = yes #Bam Citadel
 	controller = KHO
 	remove_core = TIM
 }
-1458.12.22 = { controller = TIM owner = TIM add_core = TIM } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
+1458.12.22 = { controller = TIM owner = TIM #add_core = TIM } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
 1469.2.4 = { controller = AKK owner = AKK add_core = AKK remove_core = TIM } #Battle of Qarabagh
 1496.2.8 = { controller = REB revolt = { type = pretender_rebels size = 0 name = "Muhammad's Faction" leader = "Muhammad Ak Koyunlu" } } # Civil war in Ak Koyunlu
 1501.7.1 = { controller = AKK revolt = { } }

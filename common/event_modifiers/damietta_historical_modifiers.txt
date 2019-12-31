@@ -11,3 +11,7 @@ damietta_uthmans_tolerance = {
 	tolerance_heretic = 1
 	tolerance_own = -1
 }
+
+shahrukhs_empire = {
+	liberty_desire = -25
+}

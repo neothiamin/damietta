@@ -1,0 +1,54 @@
+vassal = {
+	first = GOL
+	second = CIR
+	start_date = 1444.1.1
+	end_date = 1460.1.1
+}
+vassal = {
+	first = GOL
+	second = GAZ
+	start_date = 1444.1.1
+	end_date = 1460.1.1
+}
+vassal = {
+	first = GOL
+	second = SRV
+	start_date = 1444.1.1
+	end_date = 1460.1.1
+}
+#vassal = {
+#	first = GOL
+#	second = CIR
+#	start_date = 1444.1.1
+#	end_date = 1460.1.1
+#}
+vassal = {
+	first = GEO
+	second = SHE #Sheki
+	start_date = 1444.1.1
+	end_date = 1460.1.1
+}
+vassal = {
+	first = RUM
+	second = BTL
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+vassal = {
+	first = JLR
+	second = MSY
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+vassal = {
+	first = MAM
+	second = BHT
+	start_date = 1439.1.1
+	end_date = 1469.2.4
+}
+vassal = {
+	first = CHG
+	second = TIM
+	start_date = 1444.1.1
+	end_date = 1450.1.1
+}

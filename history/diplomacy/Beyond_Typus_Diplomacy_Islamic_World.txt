@@ -179,19 +179,19 @@ union = {
 	end_date = 1820.1.1
 } #Not ideal, but going with a personal union for now. Sounds like Paradox is working on the region, so I might go with what they do, depending.
 
-vassal = {
-	first = QAR
-	second = BHT
-	start_date = 1435.1.1
-	end_date = 1444.11.16   #BeyondTypus batch edit shortcut no vassal start date begin
-}
-
-vassal = {
-	first = QAR
-	second = BHT
-	start_date = 1444.11.18   #BeyondTypus batch edit shortcut no vassal start date end
-	end_date = 1469.2.4
-}
+#vassal = {
+#	first = QAR
+#	second = BHT
+#	start_date = 1435.1.1
+#	end_date = 1444.11.16   #BeyondTypus batch edit shortcut no vassal start date begin
+#}
+#
+#vassal = {
+#	first = QAR
+#	second = BHT
+#	start_date = 1444.11.18   #BeyondTypus batch edit shortcut no vassal start date end
+#	end_date = 1469.2.4
+#}
 
 
 
