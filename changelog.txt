@@ -1,3 +1,11 @@
+v0.3:
+
++++ Persia/Mesopotamia overhaul!
+
++ New political makeup in Persia/Mesopotamia
++ New Persia/Mesopotamian lore
+
+
 v0.2.1:
 
 * Added missing cores for Leon and Galicia in Spain

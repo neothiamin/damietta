@@ -23,7 +23,7 @@ discovered_by = nomad_group
 	controller = KHO
 	remove_core = TIM
 }
-1458.12.22 = { controller = TIM owner = TIM #add_core = TIM } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
+
 1469.2.4 = { controller = AKK owner = AKK add_core = AKK remove_core = TIM } #Battle of Qarabagh
 1496.2.8 = { controller = REB revolt = { type = pretender_rebels size = 1 name = "Muhammad's Faction" leader = "Muhammad Ak Koyunlu" } } # Civil war in Ak Koyunlu
 1501.7.1 = { controller = AKK revolt = { } }
