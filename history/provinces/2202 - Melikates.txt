@@ -1,7 +1,7 @@
 #2202 - Karabakh
 
-owner = QAR
-controller = QAR
+owner = KCH
+controller = KCH
 culture = armenian
 religion = coptic
 capital = "Shusha"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4 
 base_manpower = 4 
 is_city = yes
-add_core = QAR
+add_core = KCH
 fort_15th = yes
 
 discovered_by = muslim

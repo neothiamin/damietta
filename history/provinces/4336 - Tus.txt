@@ -1,7 +1,7 @@
 #4336 - Tus
 
-owner = KHO
-controller = KHO
+owner = TIM
+controller = TIM
 culture = khorasani
 religion = sunni
 capital = "Tun"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 is_city = yes
-##add_core = TIM
+add_core = TIM
 add_core = KHO
 discovered_by = muslim
 discovered_by = ottoman
@@ -24,7 +24,11 @@ discovered_by = indian
 	remove_core = TIM
 }
 1457.12.13 = { controller = QAR }
+<<<<<<< HEAD
 
+=======
+1458.12.22 = { controller = TIM owner = TIM add_core = TIM } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
+>>>>>>> parent of 63cb815... Persia Overhaul!
 1469.8.27 = { controller = KHO owner = KHO remove_core = TIM }#Death of Abu Said, Timurid lands split again
 1505.1.1 = { controller = BUK }
 1507.7.1 = {

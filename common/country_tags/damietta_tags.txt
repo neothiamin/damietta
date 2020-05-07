@@ -15,6 +15,3 @@ FES = "countries/Thessalonica.txt"
 
 #North Africa
 CYR = "countries/Cyrenaica.txt"
-
-#Persia
-JLR = "countries/Jalayirids.txt"

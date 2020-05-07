@@ -1,7 +1,7 @@
 #2312 - Wasit
 
-owner = JLR
-controller = JLR
+owner = QAR
+controller = QAR
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Wasit"
@@ -12,7 +12,7 @@ base_production = 6
 base_manpower = 4
 is_city = yes
 add_core = BSR
-add_core = JLR
+add_core = QAR
 add_core = MSY
 discovered_by = east_african
 discovered_by = muslim

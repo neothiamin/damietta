@@ -1,12 +1,12 @@
 #Shah Rokhs Empire
 
 #Ulugh Begh
-#vassal = {
-#	first = TIM
-#	second = TRS
-#	start_date = 1444.1.1
-#	end_date = 1447.3.13 #Death of Shah Rokh
-#}
+vassal = {
+	first = TIM
+	second = TRS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
 #Muhammad bin Baysonqor
 #Starts as independent as Shah Rukh/Goharshad has already decided to move against him in late 1444.
 # vassal = {
@@ -16,26 +16,26 @@
 	# end_date = 1446.1.1 #Shah Rokh falls ill in 1444, Muhammad sees his chance and rebels on the invitation of the Isfahan city council in 1446.
 # }
 #Sons of Soyurghatmish
-#vassal = {
-#	first = TIM
-#	second = AFG
-#	start_date = 1444.1.1
-#	end_date = 1447.3.13 #Death of Shah Rokh
-#}
-##Abdallah bin Ibrahim, the Child ruler.
-#vassal = {
-#	first = TIM
-#	second = FRS
-#	start_date = 1444.1.1
-#	end_date = 1447.3.13 #Death of Shah Rokh
-#}
-##Babur bin Baysonqor
-#vassal = {
-#	first = TIM
-#	second = KHO
-#	start_date = 1444.1.1
-#	end_date = 1447.3.13 #Death of Shah Rokh
-#}
+vassal = {
+	first = TIM
+	second = AFG
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Abdallah bin Ibrahim, the Child ruler.
+vassal = {
+	first = TIM
+	second = FRS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Babur bin Baysonqor
+vassal = {
+	first = TIM
+	second = KHO
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
 
 #End of Timurid Princes
 
@@ -71,12 +71,12 @@ vassal = {
 }
 
 #Kurdish Principalities generally autonomous under Qara Qoyunlu
-#vassal = {
-#	first = QAR
-#	second = BTL
-#	start_date = 1435.1.1
-#	end_date = 1469.2.4
-#}
+vassal = {
+	first = QAR
+	second = BTL
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
 
 #Melikdoms of Kharabak
 
@@ -151,12 +151,12 @@ vassal = {
 }
 
 # The Timurids - Khorasan (Abû Sa'id)
-#union = {
-#	first = TIM
-#	second = KHO
-#	start_date = 1461.1.1
-#	end_date = 1469.8.27
-#}
+union = {
+	first = TIM
+	second = KHO
+	start_date = 1461.1.1
+	end_date = 1469.8.27
+}
 
 #Ardalan
 vassal = {
@@ -241,12 +241,12 @@ vassal = {
 }
 
 #Sistan
-#vassal = {
-#	first = TIM
-#	second = SIS
-#	start_date = 1444.1.1 #1383 
-#	end_date = 1449.2.1 #Khorasan
-#}
+vassal = {
+	first = TIM
+	second = SIS
+	start_date = 1444.1.1 #1383 
+	end_date = 1449.2.1 #Khorasan
+}
 
 vassal = {
 	first = KHO
