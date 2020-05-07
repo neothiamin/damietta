@@ -1,18 +1,18 @@
-#2076 - Sialkot
+#4510 - Shorkot
 
 owner = SRH
 controller = SRH
 culture = panjabi
 religion = hinduism
-capital = "Sialkot"
-trade_goods = bt_trade_good_books
+capital = "Shorkot"
+trade_goods = cloth
 hre = no
-base_tax = 8
+base_tax = 10
 base_production = 8
 base_manpower = 4
 is_city = yes
-add_brahmins_or_church_effect = yes
 add_core = DLH
+add_core = MUL
 add_core = PUN
 add_core = SRH
 discovered_by = indian
@@ -56,7 +56,7 @@ discovered_by = chinese
 	remove_core = BNG
 } #Death of Islam Shah Sur, Suri empire split
 1554.7.1 = { controller = MUG } #Humayun invades
-1554.12.1 = { owner = MUG } #Aftermath of the battle of Sirhind
+1554.12.1 = { owner = MUG remove_core = SRH } #Aftermath of the battle of Sirhind
 1690.1.1 = { discovered_by = ENG }
 1700.1.1 = {
 	controller = REB

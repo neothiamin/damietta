@@ -1,8 +1,8 @@
 #4395 - Hisn Kayfa
 
-owner = BTL #was HSN
-controller = BTL #was HSN
-add_core = BTL #was HSN
+owner = QAR #was HSN
+controller = QAR #was HSN
+add_core = QAR #was HSN
 capital = "Hesn Kayfa"			#Syriac version
 culture = syriac_culture
 religion = coptic
