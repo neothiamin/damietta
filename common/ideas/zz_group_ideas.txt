@@ -272,9 +272,7 @@ rajput_ideas = {
 		defensiveness = 0.15
 	}
 	marwari_horses = {
-		#Same as RJP ideas.   -Leaving entry anyway, just in case... hopefully it doesn't double it, but I'm nervous leaving an empty declaration
-		cavalry_power = 0.1
-		movement_speed = 0.1
+		#Same as RJP ideas.
 	}
 	rajput_resistance = {
 		war_exhaustion = -0.03
@@ -289,6 +287,8 @@ rajput_ideas = {
 		trade_efficiency = 0.10
 	}
 }
+
+
 
 telugu_ideas = { #Telugu Ideas
 	start = {
@@ -411,7 +411,6 @@ bengali_ideas = {
 	}
 }
 
-
 gujarati_ideas = {
 	start = {
 		merchants = 1
@@ -453,7 +452,6 @@ gujarati_ideas = {
 		trade_range_modifier = 0.2
 	}
 }
-
 
 indian_muslim_ideas = {
 	start = {
@@ -562,7 +560,7 @@ horde_ideas = {
 	free = yes
 	
 	life_of_steppe_warrior = {
-		land_attrition = -0.20
+		#land_attrition = -0.20 (effect taken in OIR_ideas)
 	}
 	traditions_of_the_great_khan = {
 		cavalry_power = 0.20
@@ -574,13 +572,13 @@ horde_ideas = {
 		leader_land_shock = 1
 	}
 	tradition_of_conquest = {
-		core_creation = -0.25
+		#core_creation = -0.25 (effect taken in CHG_ideas)
 	}
 	logistics_of_khan = {
 		#manpower_recovery_speed = 0.2 (effect taken in GLH_ideas)
 	}
 	glory_of_conquest = {
-		global_manpower_modifier = 0.25
+		#global_manpower_modifier = 0.25 (effect taken in OIR_ideas)
 	}
 }
 

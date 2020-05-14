@@ -1399,7 +1399,12 @@ tanistry_reform = {
 	icon = "crown"
 	allow_normal_conversion = no
 	potential = {
+		OR = {
 		culture_group = gaelic
+			#BT Bugfixes added Celtic versions of Gaelic.
+			primary_culture = celtic_irish_culture
+			primary_culture = celtic_highland_scottish_culture
+		}
 		has_reform = tanistry_reform
 	}
 	lock_level_when_selected = yes

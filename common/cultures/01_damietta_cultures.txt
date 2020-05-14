@@ -73,6 +73,12 @@ crusader_cultures = {
 
 }
 
+turkish_g = {
+	turkish = {
+		primary = RUM
+	}
+}
+
 #tartar = {
 #	kipchak = {
 #		dynasty_names = {

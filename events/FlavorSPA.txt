@@ -2019,6 +2019,7 @@ country_event = {
 				limit = {
 					region = iberia_region
 					is_core = GRA
+					culture = andalusi_culture
 					OR = {
 						fort_level = 1
 						province_id = 223
@@ -2030,6 +2031,7 @@ country_event = {
 				limit = {
 					region = iberia_region
 					is_core = GRA
+					culture = andalusi_culture
 					NOT = { has_province_flag = alpujarras_centre_of_revolt }
 				}
 				set_province_flag = alpujarras_revolt
@@ -2058,6 +2060,8 @@ country_event = {
 			}
 			clr_province_flag = alpujarras_centre_of_revolt
 		}
+		custom_tooltip = flavor_spa.7.tooltip
+		hidden_effect = {
 		every_owned_province = {
 			limit = {
 				has_province_flag = alpujarras_revolt
@@ -2066,12 +2070,18 @@ country_event = {
 				limit = { NOT = { religion = sunni } }
 				change_religion = sunni #Crypto-Muslims
 			}
+				random_list = { #Roughly 50/50 because we have double the vanilla provinces with Granadan cores.
+					40 = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				friend = GRA
 				size = 1
 			}
 			clr_province_flag = alpujarras_revolt
+					}
+					60 = {} #No effect
+				}
+			}
 		}
 	}
 }

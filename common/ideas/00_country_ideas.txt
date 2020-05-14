@@ -5303,7 +5303,7 @@ KAZ_ideas = {
 
 ARM_ideas = {
 	start = {
-		war_exhaustion_cost = -0.1
+		war_exhaustion = -0.02
 		recover_army_morale_speed = 0.05
 	}
 
