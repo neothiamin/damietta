@@ -19,7 +19,7 @@
 #3 - -everything else, 30 some-odd of the richest nodes, though most unovehauled yet.
 #4 - zanzibar, cape_of_good_hope, ivory_coast
 #5 - panama, brazil, carribean_trade, chesapeake_bay, st_lawrence
-#6 - alexandria, tripoli_trade, tunis, safi
+#6 - alexandria_t, tripoli_trade, tunis, safi
 #7 - white_sea, murava, moscow_trade, crimea, kiev, novgorod, krakow, aegean_trade, constantinople, danube, ragusa
 #8 - napoli, venice, wien, baltic_sea, saxony, porto_trade, sevilla, barcelona, bordeaux, genua, rheinland, irish_sea, north_sea, lubeck, champagne, english_channel, lyon_trade
 
@@ -442,9 +442,9 @@ katsina={
 			2834.000000 1323.000000 2855.000000 1366.000000 2850.000000 1416.000000 2867.000000 1440.000000 2889.000000 1468.000000 2899.000000 1487.000000 2895.000000 1501.000000 2880.000000 1508.000000 2874.000000 1521.000000 2864.000000 1525.000000 2854.000000 1531.000000 2847.000000 1530.000000 2835.000000 1540.000000 2808.000000 1554.000000 2812.000000 1578.000000 2804.000000 1587.000000 2803.000000 1596.000000 2797.000000 1599.000000 
 		}
 	}
-	#Removed because it had to travel through 7 Ethiopian provinces to reach Alexandria, so just making it connect to Ethiopia instead
+	#Removed because it had to travel through 7 Ethiopian provinces to reach alexandria_t, so just making it connect to Ethiopia instead
 	#outgoing={
-	#	name="alexandria"
+	#	name="alexandria_t"
 	#	path={
 	#		2279 1156 2277 2475 2474 2448 355 356 357 2326 2325 358 
 	#	}
@@ -503,7 +503,7 @@ dongola_trade={
 	location=1228
 	inland=yes
 	outgoing={
-		name="alexandria"
+		name="alexandria_t"
 		path={
 			5279 5277 2322 1234 5278 1231 4319 360 4320 2319 2317 5267 4318 361 4317 358 
 		}
@@ -1136,7 +1136,7 @@ gulf_of_aden={
 		}
 	}
 	outgoing={
-		name="alexandria"
+		name="alexandria_t"
 		path={
 			1330 4333 1329 1328 2315 361 4317 358 
 		}
@@ -1299,7 +1299,7 @@ aleppo={
 		}
 	}
 	outgoing={
-		name="alexandria"
+		name="alexandria_t"
 		path={
 			2313 1317 1316 1315 358 
 		}
@@ -1632,7 +1632,7 @@ st_lawrence={
 ############################ North African Nodes Aproaching Western Europe ############################
 ####################################################################################################
 ####################################################################################################
-alexandria={
+alexandria_t={
 	location=5261
 	color={
 		209 29 53 
